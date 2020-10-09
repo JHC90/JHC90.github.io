@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jochens neue Seite</title>
+    <title>Jochens Docs</title>
     <link>http://example.org/</link>
-    <description>Recent content on Jochens neue Seite</description>
+    <description>Recent content on Jochens Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2020 07:18:52 +0200</lastBuildDate>
-    
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 09 Oct 2020 14:42:25 +0200</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>02_zweiterPost</title>
+      <link>http://example.org/post/2020/10/02_zweiterpost/</link>
+      <pubDate>Fri, 09 Oct 2020 14:42:25 +0200</pubDate>
+      
+      <guid>http://example.org/post/2020/10/02_zweiterpost/</guid>
+      <description>Neuer Text Neuer Inhalt zweiter Post</description>
+    </item>
     
     <item>
-      <title>Mein erster Post</title>
-      <link>http://example.org/post/2018/02/01_start/</link>
-      <pubDate>Tue, 31 Mar 2020 07:18:52 +0200</pubDate>
+      <title>01_ersterPost</title>
+      <link>http://example.org/post/2020/10/01_ersterpost/</link>
+      <pubDate>Fri, 09 Oct 2020 14:02:15 +0200</pubDate>
       
-      <guid>http://example.org/post/2018/02/01_start/</guid>
-      <description>1. Table of Contents Erklärung wie man TOC einfügt in VSCode
-ggf ein workaround in vscode =&amp;gt; gehe in die Einstellungen von VS-Code(geh aufs zahnrad links unten :-) ), dort unter User-Settings und filtere die eol heraus. Dort ändert man die default eol (end of line) in &amp;ldquo;\n\r&amp;rdquo; (standardmäßig ist auto ausgeählt). Danach klappt die Table Insection problemlos
- 1. Table of Contents 2. Titles 3. Emphasis 4. Horizontal Rule 5.</description>
+      <guid>http://example.org/post/2020/10/01_ersterpost/</guid>
+      <description>Mein erster POST hier kommt der zusätzliche Text</description>
     </item>
     
   </channel>
