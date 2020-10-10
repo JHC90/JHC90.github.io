@@ -8,7 +8,17 @@
   </url>
   
   <url>
+    <loc>http://example.org/tags/hugo/</loc>
+    <lastmod>2020-10-09T14:42:25+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/</loc>
+    <lastmod>2020-10-09T14:42:25+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/ms-server/</loc>
     <lastmod>2020-10-09T14:42:25+02:00</lastmod>
   </url>
   
@@ -18,16 +28,33 @@
   </url>
   
   <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-10-09T14:42:25+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/post/2020/10/01_ersterpost/</loc>
     <lastmod>2020-10-09T14:02:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://example.org/tags/front-matter/</loc>
+    <lastmod>2020-10-09T14:02:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://example.org/kurse/infomratik/</loc>
+    <lastmod>2020-10-09T14:02:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kurse/</loc>
+    <lastmod>2020-10-09T14:02:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kurse/web/</loc>
+    <lastmod>2020-10-09T14:02:15+02:00</lastmod>
   </url>
   
 </urlset>
