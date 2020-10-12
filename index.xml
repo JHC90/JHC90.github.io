@@ -18,24 +18,5 @@ Diese Webseite ist nach folgender Logik struktuiert:
   Über mich</description>
     </item>
     
-    <item>
-      <title>02_zweiterPost</title>
-      <link>https://jhc90.github.io/post/2020/10/02_zweiterpost/</link>
-      <pubDate>Fri, 09 Oct 2020 14:42:25 +0200</pubDate>
-      
-      <guid>https://jhc90.github.io/post/2020/10/02_zweiterpost/</guid>
-      <description>Neuer Text Neuer Inhalt zweiter Post</description>
-    </item>
-    
-    <item>
-      <title>01_ersterPost</title>
-      <link>https://jhc90.github.io/post/2020/10/01_ersterpost/</link>
-      <pubDate>Fri, 09 Oct 2020 14:02:15 +0200</pubDate>
-      
-      <guid>https://jhc90.github.io/post/2020/10/01_ersterpost/</guid>
-      <description>Mein erster POST hier kommt der zusätzliche Text
-  </description>
-    </item>
-    
   </channel>
 </rss>
