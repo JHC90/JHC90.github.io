@@ -2,27 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Jochens Docs</title>
-    <link>http://example.org/tags/hugo/</link>
+    <link>https://jhc90.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Jochens Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2020 14:42:25 +0200</lastBuildDate><atom:link href="http://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Oct 2020 14:42:25 +0200</lastBuildDate><atom:link href="https://jhc90.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>02_zweiterPost</title>
-      <link>http://example.org/post/2020/10/02_zweiterpost/</link>
+      <link>https://jhc90.github.io/post/2020/10/02_zweiterpost/</link>
       <pubDate>Fri, 09 Oct 2020 14:42:25 +0200</pubDate>
       
-      <guid>http://example.org/post/2020/10/02_zweiterpost/</guid>
+      <guid>https://jhc90.github.io/post/2020/10/02_zweiterpost/</guid>
       <description>Neuer Text Neuer Inhalt zweiter Post</description>
     </item>
     
     <item>
       <title>01_ersterPost</title>
-      <link>http://example.org/post/2020/10/01_ersterpost/</link>
+      <link>https://jhc90.github.io/post/2020/10/01_ersterpost/</link>
       <pubDate>Fri, 09 Oct 2020 14:02:15 +0200</pubDate>
       
-      <guid>http://example.org/post/2020/10/01_ersterpost/</guid>
-      <description>Mein erster POST hier kommt der zusätzliche Text</description>
+      <guid>https://jhc90.github.io/post/2020/10/01_ersterpost/</guid>
+      <description>Mein erster POST hier kommt der zusätzliche Text
+  </description>
     </item>
     
   </channel>

@@ -2,35 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jochens Docs</title>
-    <link>http://example.org/tags/</link>
+    <link>https://jhc90.github.io/tags/</link>
     <description>Recent content in Tags on Jochens Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2020 14:42:25 +0200</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2020 09:47:55 +0200</lastBuildDate><atom:link href="https://jhc90.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>welcome</title>
+      <link>https://jhc90.github.io/tags/welcome/</link>
+      <pubDate>Mon, 12 Oct 2020 09:47:55 +0200</pubDate>
+      
+      <guid>https://jhc90.github.io/tags/welcome/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
-      <link>http://example.org/tags/hugo/</link>
+      <link>https://jhc90.github.io/tags/hugo/</link>
       <pubDate>Fri, 09 Oct 2020 14:42:25 +0200</pubDate>
       
-      <guid>http://example.org/tags/hugo/</guid>
+      <guid>https://jhc90.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MS-Server</title>
-      <link>http://example.org/tags/ms-server/</link>
+      <link>https://jhc90.github.io/tags/ms-server/</link>
       <pubDate>Fri, 09 Oct 2020 14:42:25 +0200</pubDate>
       
-      <guid>http://example.org/tags/ms-server/</guid>
+      <guid>https://jhc90.github.io/tags/ms-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Front Matter</title>
-      <link>http://example.org/tags/front-matter/</link>
+      <link>https://jhc90.github.io/tags/front-matter/</link>
       <pubDate>Fri, 09 Oct 2020 14:02:15 +0200</pubDate>
       
-      <guid>http://example.org/tags/front-matter/</guid>
+      <guid>https://jhc90.github.io/tags/front-matter/</guid>
       <description></description>
     </item>
     

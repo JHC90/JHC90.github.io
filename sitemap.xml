@@ -3,58 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/post/2020/10/02_zweiterpost/</loc>
+    <loc>https://jhc90.github.io/</loc>
+    <lastmod>2020-10-12T09:47:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jhc90.github.io/post/</loc>
+    <lastmod>2020-10-12T09:47:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jhc90.github.io/tags/</loc>
+    <lastmod>2020-10-12T09:47:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jhc90.github.io/tags/welcome/</loc>
+    <lastmod>2020-10-12T09:47:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jhc90.github.io/post/welcome/</loc>
+    <lastmod>2020-10-12T09:47:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jhc90.github.io/post/2020/10/02_zweiterpost/</loc>
     <lastmod>2020-10-09T14:42:25+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/hugo/</loc>
+    <loc>https://jhc90.github.io/tags/hugo/</loc>
     <lastmod>2020-10-09T14:42:25+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://jhc90.github.io/tags/ms-server/</loc>
     <lastmod>2020-10-09T14:42:25+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ms-server/</loc>
-    <lastmod>2020-10-09T14:42:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2020-10-09T14:42:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2020-10-09T14:42:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/post/2020/10/01_ersterpost/</loc>
+    <loc>https://jhc90.github.io/post/2020/10/01_ersterpost/</loc>
     <lastmod>2020-10-09T14:02:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/front-matter/</loc>
+    <loc>https://jhc90.github.io/tags/front-matter/</loc>
     <lastmod>2020-10-09T14:02:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/kurse/infomratik/</loc>
-    <lastmod>2020-10-09T14:02:15+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/kurse/</loc>
-    <lastmod>2020-10-09T14:02:15+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/kurse/web/</loc>
-    <lastmod>2020-10-09T14:02:15+02:00</lastmod>
+    <loc>https://jhc90.github.io/categories/</loc>
   </url>
   
 </urlset>

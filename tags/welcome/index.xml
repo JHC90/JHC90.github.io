@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jochens Docs</title>
-    <link>https://jhc90.github.io/post/</link>
-    <description>Recent content in Posts on Jochens Docs</description>
+    <title>welcome on Jochens Docs</title>
+    <link>https://jhc90.github.io/tags/welcome/</link>
+    <description>Recent content in welcome on Jochens Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Oct 2020 09:47:55 +0200</lastBuildDate><atom:link href="https://jhc90.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2020 09:47:55 +0200</lastBuildDate><atom:link href="https://jhc90.github.io/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Willkommen auf meiner Webseite</title>
       <link>https://jhc90.github.io/post/welcome/</link>
@@ -16,25 +16,6 @@
       <description>Hi, Ich bin Jochen Data-Scientist Diese Webseite ist mein erster persönlicher Webauftritt. Ziel dieses Webauftritts ist es einerseits meine Wissen, das ich in den letzten Jahren in unterschiedlichen Ausbildungen erworben habe zentral und allzeit zugriffsbereit für mich und die Öffentlichkeit aufzubereiten. Anderseits dient die Webseite als ein Tool meiner Bewerbungsphase um mein Projektprotfolio, meine Arbeitsweise und Fähigkeiten unter Beweis zu stellen.
 Diese Webseite ist nach folgender Logik struktuiert:
   Über mich</description>
-    </item>
-    
-    <item>
-      <title>02_zweiterPost</title>
-      <link>https://jhc90.github.io/post/2020/10/02_zweiterpost/</link>
-      <pubDate>Fri, 09 Oct 2020 14:42:25 +0200</pubDate>
-      
-      <guid>https://jhc90.github.io/post/2020/10/02_zweiterpost/</guid>
-      <description>Neuer Text Neuer Inhalt zweiter Post</description>
-    </item>
-    
-    <item>
-      <title>01_ersterPost</title>
-      <link>https://jhc90.github.io/post/2020/10/01_ersterpost/</link>
-      <pubDate>Fri, 09 Oct 2020 14:02:15 +0200</pubDate>
-      
-      <guid>https://jhc90.github.io/post/2020/10/01_ersterpost/</guid>
-      <description>Mein erster POST hier kommt der zusätzliche Text
-  </description>
     </item>
     
   </channel>
