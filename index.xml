@@ -5,6 +5,52 @@
     <link>http://example.org/</link>
     <description>Recent content on JHC-Jochen Hollich Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Oct 2020 11:16:54 +0200</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adresse</title>
+      <link>http://example.org/impressum/adresse/</link>
+      <pubDate>Tue, 20 Oct 2020 11:16:54 +0200</pubDate>
+      
+      <guid>http://example.org/impressum/adresse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Telefon</title>
+      <link>http://example.org/impressum/telefon/</link>
+      <pubDate>Tue, 20 Oct 2020 11:16:48 +0200</pubDate>
+      
+      <guid>http://example.org/impressum/telefon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datenanalyse</title>
+      <link>http://example.org/projekte/datenanalyse/</link>
+      <pubDate>Tue, 20 Oct 2020 10:53:50 +0200</pubDate>
+      
+      <guid>http://example.org/projekte/datenanalyse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://example.org/test/</link>
+      <pubDate>Tue, 20 Oct 2020 09:27:53 +0200</pubDate>
+      
+      <guid>http://example.org/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Tue, 20 Oct 2020 09:27:49 +0200</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>hier der Inhalt von About.md </description>
+    </item>
+    
   </channel>
 </rss>
