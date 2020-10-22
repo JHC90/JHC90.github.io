@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JHC-Jochen Hollich Consulting</title>
-    <link>JHC90.github.io/</link>
-    <description>Recent content on JHC-Jochen Hollich Consulting</description>
+    <title>CSS on JHC-Jochen Hollich Consulting</title>
+    <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/</link>
+    <description>Recent content in CSS on JHC-Jochen Hollich Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2020 14:55:58 +0200</lastBuildDate><atom:link href="JHC90.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 14:45:48 +0200</lastBuildDate><atom:link href="JHC90.github.io/docus/informatik/programmieren/web-development/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>60_margin_Paddings</title>
       <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/60_margin_paddings/</link>
@@ -84,29 +84,6 @@ Beschreibung Man kann CSS auf gezielt bestimmte Inhalte einer Website und websit
 Beschreibung CSS kann auf 3 unterschiedliche Optionen eingebunden werden
  Internal Inline External  Implementierung Final Links &amp;amp; weitere Quellen Link zu meinen Web-Basics-Implementierungen-Landingpage
 </description>
-    </item>
-    
-    <item>
-      <title>01_HTML_Basics</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/html/01_html_basics/</link>
-      <pubDate>Tue, 20 Oct 2020 13:49:05 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/html/01_html_basics/</guid>
-      <description>HTML Hyper-Text-Markup-Language
-Benötigtes Vorwissen  Keines  Ziel dieser Page Grundlage von CSS internal
-Beschreibung Hier geht es darum wie CSS in ein HTML Dokument eingebunden werden kann. Dies kann grundsätzlich auf 3 Arten geschehen:
- inline = der Inhatl ist innerhalb des Tags internal = der style wird im Head beschrieben external = das CSS ist in eine externe Datei ausgelagert und wird beim rendern der HTML seite geladen  Implementierung link zu der Implementierung</description>
-    </item>
-    
-    <item>
-      <title>02_HTML_Doctypes</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/html/02_html_doctype/</link>
-      <pubDate>Tue, 20 Oct 2020 13:49:05 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/html/02_html_doctype/</guid>
-      <description>Doctype-Html Die Hypertext Markup Language (HTML, englisch für Hypertext-Auszeichnungssprache) ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten. HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt.
-HTML Dateien werden gerendert und nicht ausgeführt. Somit kann HTML nur Strukturen darsteleln aber per se keine Logik leisten
-Benötigtes Vorwissen  Keines  Ziel dieser Page Verstehen wo die Unterlagen für dieses Tutorial abgelegt sind.</description>
     </item>
     
   </channel>
