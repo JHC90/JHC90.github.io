@@ -6,7 +6,17 @@
     <description>Recent content on JHC-Jochen Hollich Consulting</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2020 14:55:58 +0200</lastBuildDate><atom:link href="JHC90.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Oct 2020 06:46:49 +0200</lastBuildDate><atom:link href="JHC90.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hintergruende</title>
+      <link>JHC90.github.io/docus/informatik/programmieren/web-development/hintergruende/</link>
+      <pubDate>Fri, 23 Oct 2020 06:46:49 +0200</pubDate>
+      
+      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/hintergruende/</guid>
+      <description>Web 1.0 Das Web 1.0 bezeichnet die Anfänge des noch jungen Internets. Es steht für die Ansammlung von Webseiten, die vollständig durch s.g. „Hyperlinks“ verbunden waren. Im Web 1.0 gab es vorwiegend statische Websites, die noch keine interaktiven Inhalte bereitstellten. Ein Hyperlink ist ein einfacher Link der einen Internetnutzer zu einer anderen Webseite weiterleitet. Das Netz war geboren.
+WEB 2.0: Das &amp;ldquo;mitmach-&amp;rdquo; Web Web 2.0-Anwendungen haben eine große Veränderung hervorgebracht, denn nun verschwimmen die Grenzen zwischen Webentwickler und Webnutzer, da nun prinzipiell jeder Nutzer in der Lage ist, Content zu produzieren und anderen Nutzern zur Verfügung zu stellen (Pierce et al, 2009).</description>
+    </item>
+    
     <item>
       <title>60_margin_Paddings</title>
       <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/60_margin_paddings/</link>
