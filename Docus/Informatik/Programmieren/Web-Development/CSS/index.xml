@@ -1,90 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CSS on JHC-Jochen Hollich Consulting</title>
-    <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/</link>
-    <description>Recent content in CSS on JHC-Jochen Hollich Consulting</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2020 14:45:48 +0200</lastBuildDate><atom:link href="JHC90.github.io/docus/informatik/programmieren/web-development/css/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>60_margin_Paddings</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/60_margin_paddings/</link>
-      <pubDate>Thu, 22 Oct 2020 14:55:58 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/css/60_margin_paddings/</guid>
-      <description>Paddings und Margins Benötigtes Vorwissen  Grundlegend CSS-Eigenschaften  Ziel dieser Page Beschreibung Mit Margins und Paddings können von Elementen(z.B. Div-Boxen) in den Kontext der Webseite eingebettet werden. Folgende Grafik veranschaulicht die Thematik:
-Grundsätzlich gibt es den Content und zu dem Content gibt es eine Broder. Der Abstand zwischen Content und Border nennt man Padding = der innere Abstand. ZUsätzlich gibt es eine Abstand zwischen der Border und dem Äußeren Abstan zu der Border.</description>
-    </item>
-    
-    <item>
-      <title>50_Position</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/50_position/</link>
-      <pubDate>Thu, 22 Oct 2020 07:07:44 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/css/50_position/</guid>
-      <description>Position Benötigtes Vorwissen  []  Ziel dieser Page Beschreibung Mögliche Positions
-  Relativ Relativ zur seite. Durch das Relativ werden nur elemente die auch die Position relativ haben zueinander bei der Darstellung betrachtet.. Anordnungen bei Überlappungen werden mit dem z-index &amp;amp; der occupacity gewartet. Relativ zu der Position wo sich das Element befinden sollte
-  Absolute Das element wird an einer bestimmten Stell implemnetiert und alle anderen Elemente ignorieren das bei</description>
-    </item>
-    
-    <item>
-      <title>40_Floating</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/40_floating/</link>
-      <pubDate>Thu, 22 Oct 2020 06:50:20 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/css/40_floating/</guid>
-      <description>Titel Benötigtes Vorwissen Ziel dieser Page Verstehen wie man Inhalte(z.b. Div-Boxen) auf Websiten &amp;amp; Pages platziert und anordnet.
-Beschreibung Das float beschreibt wie sich Inhalte (bspw div-Boxen) innerhalb einer Webseite relativ verahlten
-Implementierung Hier die erste Beispielimplementierung mit internal css:  hier wird das erstse Float nach rechts gesetzt Hier die erste Beispielimplementierung mit internal css: Final Links &amp;amp; weitere Quellen Link zu meinen Web-Basics-Implementierungen-Landingpage</description>
-    </item>
-    
-    <item>
-      <title>30_Farben</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/30_farben/</link>
-      <pubDate>Thu, 22 Oct 2020 06:34:27 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/css/30_farben/</guid>
-      <description>Farben Benötigtes Vorwissen  Keines  Ziel dieser Page Verstehen wie Farben definiert werden
-Beschreibung Es gibt die Möglichkeit
- Hexadezimalwert RGB HSV  Bei google können entsprechende Farbcodes eingesehen und übersetzt werden
-BSP: Implementierung Final Links &amp;amp; weitere Quellen Link zu meinen Web-Basics-Implementierungen-Landingpage BrowserPluginColorzilla</description>
-    </item>
-    
-    <item>
-      <title>20_CSS_DivBoxen</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/20_css_divboxen/</link>
-      <pubDate>Thu, 22 Oct 2020 06:19:53 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/css/20_css_divboxen/</guid>
-      <description>DIV-Boxen Benötigtes Vorwissen  IDs &amp;amp; Klassen   Ziel dieser Page Verstehen von Div-Boxen
- Erstellung Interaktion über IDs und Klassen  Beschreibung Div boxen ermöglichen es mehrere Inhatle (Tags) zu gruppieren. Damit lassen sich webiten leicht struktuieren auf diese Div-Boxen können dann entsprechend Eigenschaften angewendet werden.
-Normalerweise werden divs dann über IDs &amp;amp; Klassen angesprochen. Divs kann man als Abschnittscontainer verstehen.
-Implementierung erste Implementierung zweite Implementierung Final Links &amp;amp; weitere Quellen Link zu meinen Web-Basics-Implementierungen-Landingpage</description>
-    </item>
-    
-    <item>
-      <title>10_CSS_KlassenUndIDs</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/10_css_klassenundids/</link>
-      <pubDate>Tue, 20 Oct 2020 15:05:16 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/css/10_css_klassenundids/</guid>
-      <description>Klasen und IDs Benötigtes Vorwissen  HTML Öffnen des Seitenquelltextes einer Website  Ziel dieser Page Verstehen wie css auf bestimmte Bereiche (Klassen &amp;amp; IDs) einer Webseite angewendet werden kann.
-Beschreibung Man kann CSS auf gezielt bestimmte Inhalte einer Website und website anwenden. Dabei unterscheidet man zwischen
- Klassen &amp;ldquo;.&amp;rdquo; Hierbei wird eine Style Vorlage von mehreren Tags aufgerufen. Alle Tags die den gleichen Style aufrufen werden als Klassen zusammengefasst IDs &amp;ldquo;#&amp;rdquo; Bei ID wird ein Style einzig auf ein Tag-Element angewendet.</description>
-    </item>
-    
-    <item>
-      <title>00_CSS_Basics</title>
-      <link>JHC90.github.io/docus/informatik/programmieren/web-development/css/00_css_basics/</link>
-      <pubDate>Tue, 20 Oct 2020 14:46:14 +0200</pubDate>
-      
-      <guid>JHC90.github.io/docus/informatik/programmieren/web-development/css/00_css_basics/</guid>
-      <description>CSS-Basics Benötigtes Vorwissen  HTML Verständnis als Content  Ziel dieser Page Verstehen wie CSS in eine Website eingebunden werden kann
-Beschreibung CSS kann auf 3 unterschiedliche Optionen eingebunden werden
- Internal Inline External  Implementierung Final Links &amp;amp; weitere Quellen Link zu meinen Web-Basics-Implementierungen-Landingpage
-</description>
-    </item>
-    
-  </channel>
-</rss>
