@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <title>Default: Jochens Doku Platform</title>
    
-    <meta name="description" content=" Das hier ist meine Basic Doku Machine "/>"
+    <meta name="description" content=" Das hier ist meine Basic Doku Machine "/>
     <meta name="author" content="Jochen Hollich">
   
     <identifier></identifier>
 
     <!-- Integration Bootstrap -->
     <!-- Das neueste kompilierte und minimierte CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Optionales Theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <!-- Das neueste kompilierte und minimierte JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
 
   <body>
+    
       <div id="header" style="background-color: blue;">
         <p>header</p>
       </div>
 
       <div class="row">
-          <div class="col-md-4">
-              <div id="navbar" style="background-color: red;">
-                <p>navbar</p>
-              </div>
+          <div class="col-md-12">
+            <ul class="nav nav-pills">
+              <li role="presentation" ><a href="http://holdirbootstrap.de/komponenten/#nav">Start</a></li>
+              <li role="presentation"><a href="http://google.com">Profil</a></li>
+              <li role="presentation"><a href="http:/suedeutsche.de">Nachrichten</a></li>
+
+              <!----->
+              <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="http://uibk.ac.at" role="button" aria-haspopup="true" aria-expanded="false">
+                  Dropdown-Menü <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://holdirbootstrap.de/komponenten/#nav">eben1</a></li>
+                  <li><a href="http:/google.com">eben2</a></li>
+                  <li><a href="http:/suedeutsche.de">eben3</a></li>
+                </ul>
+              </li>  
+
+            </ul>
           </div>
 
-          <div class="col-md-8">
+          <div class="col-md-10">
               <div id="content" style="background-color: green;">
                   <h1>hier der Subfolder2.html</h1>
 
@@ -46,8 +62,20 @@
         <p>footer</p>
       </div>
 
-      <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
+      <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/js/jquery-1.12.4.min.js">\x3C/script>')</script>
+      <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    </body>
+    </html>-->
 
-  </body>
+      
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
+
