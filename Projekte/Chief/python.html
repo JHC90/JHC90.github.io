@@ -26,13 +26,14 @@
 
 <body>
 
-  <div id="header" style="background-color: blue; height: 200px;">
-    <p><div id="particles-js"></div></p>
-  </div>
+  <div id="sticky" style="position: fixed; top: 0; width: 100%; height: 100%">
 
-  <div class="row">
-    <div class="col-md-12">
-      <html>
+    <div id="header">
+      <p><div id="particles-js"></div></p>
+    </div>
+
+    <div id="navbar"></div>
+    <html>
  <body>
   <ul class="nav nav-pills navbar navbar-inverse">
    <li role="presentation">
@@ -181,20 +182,25 @@
   </ul>
  </body>
 </html>
-    </div>
-
-    <div class="col-md-12">
-      <div id="content" style="background-color: green;">
-        <h1>Python</h1>
-
-      </div>
-    </div>
+  </div>
   </div>
 
-  <div id="footer" style="background-color: yellow;">
+  
+  <div id="content" ></div>
+  <h1>Python</h1>
+
+  </div>
+
+   
+        
+     
+
+  <div id="footer">
     <p>ausgelagerter footer</p>
   </div>
 
+
+<!--JS-Skripte-->  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -216,6 +222,20 @@
 
 <script src="/static/js/particles.min.js"></script>
 <script src="/static/js/particles.js"></script>
+
+<!---Resizable Header-->
+<script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("sticky").style.height = "80%";
+    } else {
+      document.getElementById("sticky").style.height = "100%";
+    }
+  }
+  </script>
 </body>
 
 </html>
