@@ -482,49 +482,55 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>CSS-Floating</h1>
 
-<h2>Basic</h2>
+<h2>Vorwissen</h2>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<ul>
+<li><a href="./03_CSS_DIV_boxes.html">DIV-Boxen</a></li>
+</ul>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<h2>Floating</h2>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>Ohne Floating sind alle Inhalte Linksbündig. Damit kann man elemente an bestimmten Stellen anheftenn. Dieses fließende Kann man für elemente Ein oder ausschalten.</p>
 
-<h1>Doctype</h1>
+<p>Floating ist im Gegensatz zu positioning</p>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<h2>Implementierungen von Farbkonfiguration</h2>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<p><em>Ohne Floating</em></p>
 
-<h1>HTML-Struktur</h1>
+<p>Hier ist noch kein Floating implementiert. der nachfolgende Iframe dient lediglich dem Vergleich zu anderen Floating Optionen. </p>
 
-<p>Die Grundstruktur lautet</p>
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.7+float1" width="1005"></iframe> <br></p>
 
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<hr>
 
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
+<p><em>Floating</em><br></p>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<p>Hier hat der Erste Abschnitt den float rechtsbündig</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.7+float2" width="1005"></iframe> <br></p>
+
+<p><hr>
+<em>Floating</em><br></p>
+
+<p>Hier sind beide Div-Blöcke linksbündig</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.7+float3" width="1005"></iframe> <br></p>
+
+<p><hr>
+<em>Floating mit weiteren Tags</em><br></p>
+
+<p>Hier ist einer links und der andere Rechbündig, interessant wie sie sich verhalten wenn man die Breite des Browserfensters ändert. Vor allem wie sich das P-Tag darin verhält</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.7+float5" width="1005"></iframe> <br></p>
+
+<p><em>Floating mit weiteren Tags mit Umbruch</em><br></p>
+
+<p>Hier wurde für das P-Tag ein Umbruch eingbaut. Somit ist diese Unabhängig von der Position der "höher" gelagerteren Div-Boxen</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.7+float6" width="1005"></iframe> <br></p>
 
   </div>
 

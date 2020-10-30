@@ -482,49 +482,69 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>Special Layout</h1>
 
-<h2>Basic</h2>
+<p>hier ist es das Ziel, dass die Rubrik Projekte ihre eigene Aside-Navigaion bekommt. Dazu sollen immer alle content makrdown files in Content/projekte aufgegriffen werden und über die Projekt-Navigaion hinweg eingebunden werden</p>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<p><img src="imgs/2020-10-17-07-03-52.png" alt="" /></p>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<p>Dieses Layout ist spezifisch für die Sektion projekte.</p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>1) erstelle Folder für spezfische Sektion</p>
 
-<h1>Doctype</h1>
+<blockquote>
+  <p>mkdir themes/basic/layouts/projects/</p>
+</blockquote>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<p>2)  Erstelle single.html für die Sektion</p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<blockquote>
+  <p>touch themes/basic/layouts/projects/single.html</p>
+</blockquote>
 
-<h1>HTML-Struktur</h1>
+<p>mit dem Inhalt</p>
 
-<p>Die Grundstruktur lautet</p>
+<p>```html
+   {{ define "main" }}
+        <div class="project-container">
+            <section class="project-list">
+                <h2>Projects</h2>
+                <ul></p>
 
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<pre><code>                {{ range  (where .Site.RegularPages "Type" "in" "projects") }}
+                    &lt;li&gt;&lt;a href="{{ .RelPermalink }}"&gt;{{ .Title }}&lt;/a&gt;&lt;/li&gt;
+                {{ end }}
+            &lt;/ul&gt;
+        &lt;/section&gt;
+        &lt;section class="project"&gt;
+            &lt;h2&gt;{{ .Title }}&lt;/h2&gt;
+            {{ .Content }}
+        &lt;/section&gt;
+    &lt;/div&gt;
+{{ end }}
+</code></pre>
 
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<p>```</p>
+
+<p>Wobei die ausgabe spezfiziert werden kann mit bspw:
+   - &gt;{{ range (where .Site.RegularPages "Type" "in" "projects") }}
+   - &gt;range (where .Site.RegularPages "Type" "in" "projects").ByDate.Reverse
+   - &gt;range first 1 (where .Site.RegularPages "Type" "in"
+"projects").ByDate.Reverse</p>
+
+<p>3) zuletzt kann die spezifische Site Navigaion  noch im css file modifziert werden</p>
+
+<p><img src="imgs/2020-10-17-07-09-40.png" alt="" /></p>
+
+<p>mit dem Inhalt</p>
+
+<div class="codehilite"><pre><span></span><code>@media only screen and (min-width: 768px) {
+    nav { flex-direction: row; }
+    .project-container { display: flex; }
+    .project-container .project-list { width: 20%; }
+    .project-container .project { flex: 1; }
+    }
 </code></pre></div>
-
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
 
   </div>
 

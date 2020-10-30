@@ -482,49 +482,97 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <p>1) mkdir hugo_live
+2) hugo new site hugo_live --force
+3) cd hugo_live
+4) tree
+5) tree /f
+6) hugo server -D =&gt; leere Seite aber keinen Fehler</p>
 
-<h2>Basic</h2>
+<h1>Überarbeitung config.toml</h1>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<blockquote>
+  <p>baseURL =  "https://jhc90.github.io/"
+  languageCode =  "de-de"
+  title = "JHC-Jochen Hollich Consulting"
+  theme = "basic"</p>
+</blockquote>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<h1>Erstelle Theme</h1>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<ol>
+<li>&gt;hugo new theme basic</li>
+<li><p>Hinzufügen des Themes in die config.toml</p>
 
-<h1>Doctype</h1>
+<blockquote>
+  <p>theme = "basic"</p>
+</blockquote>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<h1>Erstelle Website index</h1>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<blockquote>
+  <p>touch ./layouts/index.html </p>
+</blockquote>
 
-<h1>HTML-Struktur</h1>
-
-<p>Die Grundstruktur lautet</p>
+<p>in dieser Datei muss nun auf den Inhalt von ./content/_index.html verwiesen werden</p>
 
 <div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;de-de&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{ .Site.Title }}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    {{ .Content }}
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<ol>
+<li>touch ./content/_index.html =&gt; modifziere</li>
+</ol>
+
+<p><p>Testen ob server läuft =&gt; nach wie vor leer</p></li>
+</ol></p>
+
+<h1>Erstelle etwas Inhalt mit Struktur</h1>
+
+<ul>
+<li>hugo new Dokumentationen_index.html</li>
+<li><p>hugo new Dokumentationen\Opeating-Systeme_index.html</p></li>
+<li><p>hugo new Dokumentationen\Opeating-Systeme\Linux_index.html</p></li>
+<li><p>hugo new Dokumentationen\Opeating-Systeme\Linux\bash.html</p></li>
+<li><p>hugo new Dokumentationen\Opeating-Systeme\Windows_index.html</p></li>
+<li>hugo new Dokumentationen\Opeating-Systeme\Windows\cmd.html</li>
+<li><p>hugo new Dokumentationen\Opeating-Systeme\Windows\powershell.html</p></li>
+<li><p>hugo new Dokumentationen\Opeating-Systeme\MAC_index.html</p></li>
+<li>
+<ul>
+<li>hugo new Dokumentationen\Programming_index.html</li>
+</ul></li>
+<li><p>hugo new Dokumentationen\Programming\Python_index.html</p></li>
+<li><p>hugo new Dokumentationen\Programming\Python_index.html</p></li>
+<li>hugo new Dokumentationen\Programming\Python\Editoren_IDE_notebooks.html</li>
+<li>hugo new Dokumentationen\Programming\Python\Installation.html</li>
+<li>hugo new Dokumentationen\Programming\Python\Environment.html</li>
+<li>hugo new Dokumentationen\Programming\Python\kompilieren.html</li>
+<li><p>hugo new Dokumentationen\Programming\Python\Datentypen.html</p></li>
+<li><p>hugo new Projekte\Netzwerkanayse_index.html</p></li>
+<li>hugo new Projekte\Netzwerkanayse\Datengeneration.html</li>
+<li>hugo new Projekte\Netzwerkanayse\Datenanalyse.html</li>
+</ul>
+
+<p><strong>Bash</strong></p>
+
+<div class="codehilite"><pre><span></span><code>hugo new Dokumentationen<span class="se">\_</span>index.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen<span class="se">\O</span>peating-Systeme<span class="se">\_</span>index.html  <span class="o">&amp;&amp;</span> hugo new Dokumentationen<span class="se">\O</span>peating-Systeme<span class="se">\L</span>inux<span class="se">\_</span>index.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen<span class="se">\O</span>peating-Systeme<span class="se">\L</span>inux<span class="se">\b</span>ash.html  <span class="o">&amp;&amp;</span> hugo new Dokumentationen<span class="se">\O</span>peating-Systeme<span class="se">\W</span>indows<span class="se">\_</span>index.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen<span class="se">\O</span>peating-Systeme<span class="se">\W</span>indows<span class="se">\c</span>md.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen<span class="se">\O</span>peating-Systeme<span class="se">\W</span>indows owershell.html  <span class="o">&amp;&amp;</span> hugo new Dokumentationen<span class="se">\O</span>peating-Systeme<span class="se">\M</span>AC<span class="se">\_</span>index.html <span class="o">&amp;&amp;</span>  <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming<span class="se">\_</span>index.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming ython<span class="se">\_</span>index.html  <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming ython<span class="se">\_</span>index.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming ython<span class="se">\E</span>ditoren_IDE_notebooks.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming ython<span class="se">\I</span>nstallation.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming ython<span class="se">\E</span>nvironment.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming ython<span class="se">\k</span>ompilieren.html <span class="o">&amp;&amp;</span> hugo new Dokumentationen rogramming ython<span class="se">\D</span>atentypen.html  <span class="o">&amp;&amp;</span> hugo new Projekte<span class="se">\N</span>etzwerkanayse<span class="se">\_</span>index.html <span class="o">&amp;&amp;</span> hugo new Projekte<span class="se">\N</span>etzwerkanayse<span class="se">\D</span>atengeneration.html <span class="o">&amp;&amp;</span> hugo new Projekte<span class="se">\N</span>etzwerkanayse<span class="se">\D</span>atenanalyse.html 
+</code></pre></div>
+
+<p><strong>Powershell</strong></p>
+
+<div class="codehilite"><pre><span></span><code><span class="nb">rmdir </span><span class="n">-r</span> <span class="p">.\</span><span class="n">content</span><span class="p">\;</span>  <span class="n">mkdir</span> <span class="n">content</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">Opeating-Systeme</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">Opeating-Systeme</span><span class="p">\</span><span class="n">Linux</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">Opeating-Systeme</span><span class="p">\</span><span class="n">Linux</span><span class="p">\</span><span class="n">bash</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">Opeating-Systeme</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">Opeating-Systeme</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">cmd</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">Opeating-Systeme</span><span class="p">\</span><span class="n">WindowsPowershell</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span><span class="p">\</span><span class="n">Opeating-Systeme</span><span class="p">\</span><span class="n">MAC</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">programming</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">programming</span> <span class="n">ython</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">rogramming</span> <span class="n">ython</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">rogramming</span> <span class="n">ython</span><span class="p">\</span><span class="n">Editoren_IDE_notebooks</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">rogramming</span> <span class="n">ython</span><span class="p">\</span><span class="n">Installation</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">rogramming</span> <span class="n">ython</span><span class="p">\</span><span class="n">Environment</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">rogramming</span> <span class="n">ython</span><span class="p">\</span><span class="n">kompilieren</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Dokumentationen</span> <span class="n">rogramming</span> <span class="n">ython</span><span class="p">\</span><span class="n">Datentypen</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Projekte</span><span class="p">\</span><span class="n">Netzwerkanayse</span><span class="p">\</span><span class="n">_index</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Projekte</span><span class="p">\</span><span class="n">Netzwerkanayse</span><span class="p">\</span><span class="n">Datengeneration</span><span class="p">.</span><span class="n">md</span><span class="p">;</span> <span class="n">hugo</span> <span class="n">new</span> <span class="n">Projekte</span><span class="p">\</span><span class="n">Netzwerkanayse</span><span class="p">\</span><span class="n">Datenanalyse</span><span class="p">.</span><span class="nb">md </span>
+</code></pre></div>
+
+<p><img src="imgs/2020-10-20-08-26-23.png" alt="alt-Text" /></p>
 
   </div>
 

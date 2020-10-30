@@ -482,49 +482,63 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>Themes</h1>
 
-<h2>Basic</h2>
+<p>die miniamlistische Struktur eines Themes besteht aus folgender Struktur</p>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<pre><code>layouts
+├── _default
+│   ├── list.html
+│   └── single.html
+└─── index.html
+</code></pre>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<p>In diesem Teil wollen wir jedoch ein extended Theme selbst erstellen.</p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<blockquote>
+  <p>hugo new theme basic</p>
+</blockquote>
 
-<h1>Doctype</h1>
+<p><img src="imgs/2020-10-16-15-02-29.png" alt="" /></p>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<h1>Wrap up</h1>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>1) in den vorherigen Kapiteln hatten wir kein Theme verwendet. Die Layout Informationenkamen aus 
+   1) portfolio/archetypes
+   2) portfolio/layouts/index.html
+   3) portfolio/_default/_default.html</p>
 
-<h1>HTML-Struktur</h1>
+<h2>2) Der Ordner <strong>themes</strong> war bisher leer</h2>
 
-<p>Die Grundstruktur lautet</p>
+<p>3) durch den Command</p>
 
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<blockquote>
+  <p>hugo new theme basic</p>
+</blockquote>
 
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
+<p>wurde die Theme Struktur erstellt. Die Theme Strukut hat ihre <strong>eignen Folder</strong> für 
+   - Archtypes
+   - Layouts</p>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<pre><code>Was das theme nicht hat ist:
+- content
+</code></pre>
+
+<p>4) startet man den Server lokal, so erkennt man dass nach wie vor die alten muster und nicht die des Themes verwendet werden. Das bedeutet tortz der Existenz der Theme data werden die Information durhc die Layout &amp; Archetype information außerhalb des Themes überschrieben. Wenn die Information außerhalb nicht exsitieren werden die Theme Konfigurationen verwendet.</p>
+
+<p>5) </p>
+
+<p>Solange</p>
+
+<h2>Einbinden des Themes in die Webseite</h2>
+
+<p>Dazu muss in der config.toml der Verweis auf das Theme hinterleg sein</p>
+
+<pre><code>baseURL =  "https://jhc90.github.io/"
+languageCode =  "de-de"
+title =  "JHC-Portfolio"
+theme = "basic"
+</code></pre>
 
   </div>
 

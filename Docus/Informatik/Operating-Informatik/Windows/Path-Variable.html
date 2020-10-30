@@ -482,49 +482,23 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>Pfad-Variable Windows</h1>
 
-<h2>Basic</h2>
+<p>Die Pfad Variable ist ein Verweis auf <a href="./../../Grundbegriffe/BinaryFile.html">Binary-Datei</a>. Ist eine Binary-Datei in der Pfad Variable hinterlegt, so kann diese aus jedem beliebigen Verzeichnis, auf welches die Konsole gegenwärtig zeigt, auf die jeweilig hinterlegt Binar zugegriffen werden.</p>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<p>Dass ein Windows eine Binary im Pfad hinterlegt ist, muss diese entsprechend den Umgebungsvariablen hinzugefügt werden. Um eine Datei zu hinterlegen geht man wiefolgt vor:</p>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<p>1) Wähle ein Verzeichnis in welchem die Binary/ies abgelget werden
+2) Öffne die Umgebungsvariablen
+3) Hinterlege sowohl den Pfad als auch die Datei selbst in sowohl den lokalen als acuh Nutzer Umgebungsvariablen <br />
+4) Melde den Nutzer ab und wieder an
+5) Prüfe in der Konsole ob die Binary nun in den Umgebungsvariablen hinterlegt ist. BSP hier </p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<blockquote>
+  <p>hugo version</p>
+</blockquote>
 
-<h1>Doctype</h1>
-
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
-
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
-
-<h1>HTML-Struktur</h1>
-
-<p>Die Grundstruktur lautet</p>
-
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<p><img src="imgs/2020-10-16-13-08-23.png" alt="" /></p>
 
   </div>
 

@@ -482,49 +482,50 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>CSS-Margin&amp;Paddings&amp;Broder</h1>
 
-<h2>Basic</h2>
+<h2>Vorwissen</h2>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<ul>
+<li><a href="./05_Floating.html">Div-Boxen</a></li>
+</ul>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<h2>Margins &amp; Paddings</h2>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<p><img src="imgs/2020-10-30-12-25-20.png" alt="" /></p>
 
-<h1>Doctype</h1>
+<p><strong>Margins</strong><br>
+- Die Berührungspunkte zwischen Zwei Elemette ist an den jeweilgen äußeren Grenzen der Margins
+- Margin ist der Abstand zwischen der "relativen Grenze = Border" und der Äußeren Grenze</p>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<p><strong>Padding</strong><br></p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<ul>
+<li>Padding ist der Abstand zwischen der "relativen Grenze = Border" und dem eigentlichen Content= innerem Element</li>
+</ul>
 
-<h1>HTML-Struktur</h1>
+<p><strong>Border</strong><br>
+- Den konkreten Border kann man ebenfalls entsprechend konfiguieren. </p>
 
-<p>Die Grundstruktur lautet</p>
+<h2>Implementierungen von Margin &amp; Padding</h2>
 
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<p>Hier wurden weder Margin noch padding werte Geändert:
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins" width="100%"></iframe> <br>
+<hr>
+ Hier wurden nur Margin werte geädert, somit verhalten sich die Boxen mit mehr abstand
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins2" width="100%"></iframe> <br>
+<hr></p>
 
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
+<p>Hier wurden nur Padding werte geädert, somit ist der Inhatll innerhalb der boxen mit Abstand
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+padding" width="100%"></iframe> <br>
+<hr>
+ Hier wurden nur Margin werte geädert:
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+paddingMargin" width="100%"></iframe> <br></p>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<hr>
+
+<p>Hier wurden nur Border werte geädert, somit kann man bspw einen Kreis erzeugen. somit sind die Border direkt ereknntlich
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.11+border" width="100%"></iframe> <br></p>
 
   </div>
 

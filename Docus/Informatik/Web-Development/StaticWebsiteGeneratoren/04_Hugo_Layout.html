@@ -482,49 +482,69 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>Layout - Homepage</h1>
 
-<h2>Basic</h2>
+<p><img src="imgs/2020-10-16-13-47-12.png" alt="" /></p>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<p>In hugo werden unterschieldiche Layouts definiert, welche für unterschiedliche darstellungstypen verwendet werden. Die Homepage ist die erste Seite die aufgerufen wird und diese hat eine eigene Darsetllung. Die anderen Seiten werden via Archetypes zunächst definiert und jedes mal wenn eine neue Seite generiert wird, greift man auf diese Vorlagen zurück. </p>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<h2>Vergleich der Seiten mit Beispiel</h2>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>| _index.html                                                                      | list.html                                                                        | single.html                                        | <br />
+|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------|-
+|                                                                         <img src="imgs/2020-10-17-06-24-50.png" alt="" />         |                                                                              <img src="imgs/2020-10-17-06-23-50.png" alt="" />    |           <img src="imgs/2020-10-17-06-24-07.png" alt="" />                                         | <br />
+| Hier wird die Seite konfiguriert, welche beim Aufruf der root-URL angezeigt wird | HIer ruft man ein directory auf. Konkret wird eine Sammlung an Links dargestellt | HIer bezeihen wir uns auf direkteine Content seite |  </p>
 
-<h1>Doctype</h1>
+<h2>Homepage</h2>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<p>das ist die Basic-Index. Die wird in Hugo anders gepflegt als die restlichen Seiten. Diese wird unter dem Pfad</p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<blockquote>
+  <p>layouts/index.html</p>
+</blockquote>
 
-<h1>HTML-Struktur</h1>
-
-<p>Die Grundstruktur lautet</p>
+<p>gepflegt.</p>
 
 <div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;de-de&quot;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{ .Site.Title }}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
-
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{ .Site.Title}}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        {{ .Content }}
     <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<p>aus dem oberen HTML-Chunk ist abzuleiten, dass der Title aus dem Config toml in die Index, in die Darstellung übertragen wird
+<img src="imgs/2020-10-16-14-00-35.png" alt="" />.</p>
+
+<p>Der Teil <strong>{{ .Content }}</strong> kommt nun aus einem eigens dafür angelegeten Markdown, welche unter dem Pfad ./content/_index.html gepflegt wird</p>
+
+<p><img src="imgs/2020-10-16-14-06-32.png" alt="" /></p>
+
+<h2>Pages &amp; Posts</h2>
+
+<p>Diese Content-Seiten werden über Vorlagen = Archetypes definiert. </p>
+
+<p>Ist ein Archetype für einen Seitentyp definiert kann mit einem einfachen Befehl direkt eine neue Content Seite angelegt werden. BSP ist hier der Archetype <strong>post</strong> definiert. Somit kann eine Content Seite nach diesem Muster Problemlos erstellt werden.</p>
+
+<p>Neben den Archtype muss aber auch wieder ein Layout definiert sein</p>
+
+<p>Um nun Inhalt für Singlepages bereitzustellen brauchen wir:</p>
+
+<ol>
+<li>ein Layout</li>
+<li>einen Archetype</li>
+<li>Befehl
+&gt;hugo new Inhalt.html
+&gt;hugo new about.html</li>
+<li>Definition des Inhalts=Content </li>
+</ol>
+
+<p><img src="imgs/2020-10-16-14-39-05.png" alt="" /></p>
 
   </div>
 

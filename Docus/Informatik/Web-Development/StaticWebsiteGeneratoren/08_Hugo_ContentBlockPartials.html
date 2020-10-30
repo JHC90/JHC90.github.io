@@ -482,49 +482,124 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>Content Blocks und Partials</h1>
 
-<h2>Basic</h2>
+<p>Wenn hugo eien Webseite baut, werden der Inhatl von der Content section mit dem jeweiligen Layout file kombiniert. Diese Layout files wiederum greifen auf das Baseof zurück. Das baseof wiederum greift auf die Partials zurücks.</p>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<p>Die Partials sind die kleinsten elementaren Bausteiene bestehend aus HTML und go code.</p>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<h2>Sideinfo</h2>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>das was für alle Seiten die Baseof ist, ist für die _index für die Hauptseite</p>
 
-<h1>Doctype</h1>
+<h1>Content Block</h1>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
-
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
-
-<h1>HTML-Struktur</h1>
-
-<p>Die Grundstruktur lautet</p>
+<p>Es gibt das <strong>themes/basic/layouts/_default/baseof.html</strong> File. Dies ist das Basefile, für jegliche weiter Seitensturkturen. In der einfachsten Form sieht dies so aus</p>
 
 <div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    {{- partial &quot;head.html&quot; . -}}
     <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
-
+        {{- partial &quot;header.html&quot; . -}}
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;content&quot;</span><span class="p">&gt;</span>
+        {{- block &quot;main&quot; . }}{{- end }}
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        {{- partial &quot;footer.html&quot; . -}}
     <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<p>Im Body erkennt man wie unterschiedliche Inhalte von anderen layout vorlagen in das Base "hineingezogen werden". Durch diesen modularen aufbau können einzelne Eemente von unterschiedlichen Vorlagen verwendet weren</p>
+
+<h1>Partials</h1>
+
+<p>Hier werden die einzelnen Bauelemente definiert</p>
+
+<ol>
+<li><p>hier die Elemente</p>
+
+<ol>
+<li>Head</li>
+</ol>
+
+<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  {{- partial &quot;head.html&quot; . -}}
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+     {{- partial &quot;header.html&quot; . -}}
+     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;content&quot;</span><span class="p">&gt;</span>
+     {{- block &quot;main&quot; . }}{{- end }}
+     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+     {{- partial &quot;footer.html&quot; . -}}
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<ol>
+<li>Header</li>
+</ol>
+
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{ .Site.Title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/about&quot;</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/resume&quot;</span><span class="p">&gt;</span>Résumé<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/contact&quot;</span><span class="p">&gt;</span>Contact<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<ol>
+<li>Footer</li>
+</ol>
+
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>Copyright {{now.Format &quot;2006&quot;}} Me.<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</code></pre></div></li>
+<li><p>Sobald die drei partials definiert sind können die Layouts</p></li>
+<li>baseof.html</li>
+<li>single.html</li>
+<li>list.html</li>
+</ol>
+
+angpeasst werden. Dadurch wird bei der Konstruktion einer jeweiligen Seite auf dien entsprechenden Partials zugegriffen.
+   1. Baseoff
+   ```html
+   <!DOCTYPE html>
+   <html>
+      {{- partial "head.html" . -}}
+      <body>
+         {{- partial "header.html" . -}}
+         <div id="content">
+         {{- block "main" . }}{{- end }}
+         </div>
+
+<p>{{- partial "footer.html" . -}}
+      </body>
+   </html>
+   ```</p>
+
+<ol>
+<li>single.html
+<code>html
+{{ define "main" }}
+  &lt;h2&gt;{{ .Title }}&lt;/h2&gt;
+{{ .Content }}
+{{ end }}
+</code></li>
+</ol>
+
+<hr />
+
+<p>Wrap up</p>
+
+<p>Bisher haben wir unterschiedliche Seite erstellt
+1) _index
+2) _About</p>
+
+<p>diese greifen beide auf utnerschiedliche Archtypes zu. Die Archtypes greifen wiederum auf die Partials zu. Wir nun auf unterschiedliche Layouts zu. Diese Layout besethen wiederum aus den Partials. Ein spezifischen Partial kann von utnerschieldichen Layouts verwendet werden- Somit können die Eigenschaften eines partials geändert werden. Dies hat dann Auswirkungen auf alle verlinkten Folder</p>
 
   </div>
 

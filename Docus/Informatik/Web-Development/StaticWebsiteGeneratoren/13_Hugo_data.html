@@ -482,49 +482,78 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>Data</h1>
 
-<h2>Basic</h2>
+<p>Hier die möglichen Datenquellen für eine Webseite:</p>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<ol>
+<li><p>Metadaten aus der Config-toml
+<img src="imgs/2020-10-17-08-25-36.png" alt="" />
+Auf diese Art wird dann auch Google-Analytics eingebunden</p></li>
+<li><p><a href="./05_Hugo_Front_Matter.html">Front Matter</a>
+BSP archtype Projects.</p>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<p>Archtypes sind die erste Grundlage für Content und können erheblich komplexer werden und Daten aus der Config toml und dem Create Command übernehmen. 
+Dazu muss aber auch entsprechend das jeweilige Layout wissen, wo es hierbei zugreifen muss. 
+Es muss gepflegt sein</p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<ul>
+<li>Archtype</li>
+<li>layout (default bzw Project Layout entsprechend die Single-Page)</li>
+<li>Aus dem Archtype im Frontmatter kann information erfolgen. Besonders hilfreich wenn alle Projektseiten die gleiche Infoa beherbern sollen</li>
+<li>Im Screenshot unten Hardcoded Info vs FrontMatter infoauslesen </li>
+</ul>
 
-<h1>Doctype</h1>
+<p><img src="imgs/2020-10-17-08-49-50.png" alt="" /></p>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<ol>
+<li>Erweitern der Informationen von List-Pages um die Summary INFO</li>
+<li>Update Layout der jeweiligen Page</li>
+<li>prüfen dass die Information in der Seite content hinteregt ist</li>
+<li>ggf im Archtype hinterlegn</li>
+<li>ggf in der Config hinterlegen</li>
+</ol></li>
+</ol>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<p><img src="imgs/2020-10-17-08-59-10.png" alt="" /></p>
 
-<h1>HTML-Struktur</h1>
+<ol>
+<li><p>Bedingtes Anzeigen von INhalten
+Hierbei wird erst geprüft ob ein Inhalt besteht. Wenn der Inhalt besteht kann dieser Aufgegriffen und verwendet werden. Hugo hat hierfür die isset Bedingung</p>
 
-<p>Die Grundstruktur lautet</p>
+<p><img src="imgs/2020-10-17-09-08-35.png" alt="" /></p>
 
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<p>Ist nun auf einer List-page eine Desctiption Information hinterlegt, so wird diese übernommen. Ist keine spezielle Description hinterlegt, so wird die List-Site description übernommen.</p>
 
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
+<p>Das ganze kann dann im nächsten Schritt für weitere Meta-Tags verwenet wertden. BSP den title in dem Partial head. html
+<img src="imgs/2020-10-17-09-52-19.png" alt="" /></p></li>
+<li><p>Data-Dirtectory
+Hier können files als</p></li>
+<li>JSON</li>
+<li>TOML</li>
+<li><p>YAML
+hitnerlegt sein</p>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<p>Bsp </p>
+
+<ul>
+<li>ablage einer JSON datei kontatk in Data</li>
+<li>Customized Page für contats =&gt; das layout liegt lokal unter layouts und nicht in Themes/layout
+&gt; touch portfolio/layouts/_default/contact.html</li>
+</ul>
+
+<p><img src="imgs/2020-10-17-10-09-47.png" alt="" /></p>
+
+<ol>
+<li>Laden von Remote Webseiten ~ mach ich nicht fertig derweil
+Einbinden der Github-URL
+1) Daten in der TOML hinterlegen
+2) Erstellen eines Layout files 
+3) touch layouts/_default/opensource.html</li>
+</ol></li>
+<li><p>LAden von rss</p></li>
+8. 
+</ol>
 
   </div>
 

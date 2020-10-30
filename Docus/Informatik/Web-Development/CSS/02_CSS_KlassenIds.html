@@ -482,49 +482,48 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>CSS-Classes &amp; Ids</h1>
 
-<h2>Basic</h2>
+<h2>Unterscheidung</h2>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<h2>Klassen</h2>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<ul>
+<li>Abkürzung: "." (punkt)</li>
+</ul>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>Möchte man eine Sammlung von Elementen gleichzeitig CSS Designimplementierungen anwenden, so wird eine Klasse verwendet</p>
 
-<h1>Doctype</h1>
+<h2>IDs</h2>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<ul>
+<li><p>Abkürzung: "#" (Hashtag)</p>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>möchte man ein dezidiertes Tag änder so verwendet man IDs</p></li>
+</ul>
 
-<h1>HTML-Struktur</h1>
+<h2>Implementierungen von Classes &amp; Ids</h2>
 
-<p>Die Grundstruktur lautet</p>
+<ul>
+<li>Es wurde <a href="./01_CSS_Basics.html">internal CSS</a> verwendet. </li>
+</ul>
 
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<p>in dem Link wurden sowohl Klassen als auch IDs verwendet.</p>
 
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.4+classes-ids" width="1005"></iframe> <br></p>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<h2>Die Hierarchie der Verwendung</h2>
+
+<p>Kommen die Css-Design in Konflikt, so werden diese in folgender Hierarchi angewendet. </p>
+
+<ol>
+<li>Klassen</li>
+<li>IDs</li>
+<li>Internal-CSS</li>
+<li><a href="./01_CSS_Basics.html">Inline-Css</a></li>
+</ol>
+
+<p>"je näher eine CSS-Definition" an dem Content dran ist, desto eher kommt es dran</p>
 
   </div>
 

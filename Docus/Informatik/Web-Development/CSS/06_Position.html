@@ -482,49 +482,67 @@
   <div id="content" ></div>
 
 
-  <h1>Hello world</h1>
+  <h1>CSS-Positioning</h1>
 
-<h2>Basic</h2>
+<h2>Vorwissen</h2>
 
-<p>hier gehts es lediglich um die Endung einer html Datei.
-Sobald lokal eine HTML-Datei geöffnet wird öffnet sich der Browser. Konkret Müssen dafür nicht mal die HTML-Tags verwendet werden. 
-Dies "unformatierten" Seiten können auch von einem Webserver bereitgestellt werden. </p>
+<ul>
+<li><a href="./05_Floating.html">Floating</a></li>
+</ul>
 
-<p>Hier ein Beispiel einer simplen HTML Datei ohne Doctype und ohne Tag-Struktur:</p>
+<h2>Postion</h2>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_helloworld" width="80%" height="500"></iframe> <br></p>
+<p>Im gegensatz zu <a href="./05_Floating.html">Floating</a> gibt man beim Positioning etwas konkreter die Position des Elements an. </p>
 
-<h1>Doctype</h1>
+<p>Es kann auf zwei arten eine Positions übergeben werden
+1. Absolute
+hier wird das Element absolut positioniert &amp; alle anderen Elemente ignorieren diese Position. Hierbei ist der absolute punkt immer die linke oberer Ecke</p>
 
-<p>Der Doctype hat nicht direkt was mit dem dargestellten Content zu tun. Dennoch werden im Content wichtige Metadaten für die gegenwärtige HTML Datei enthalten. BSP Author, Sprache, Encoding, Link zu CSS &amp; JS usw. Die untere Seite hat zwar die gleiche</p>
+<ol>
+<li><p>Relative
+Alle Elemente die Relative verschoben. Relativ zu der Position, die das Element hätte, wenn keine relative Position hinterlegt = Ursprungsposition hätte haben sollen</p></li>
+<li><p>fixed
+Wenn ein Element beim Scrollen bestehen bleiben soll(BSP eine Nav-Bar), dann kann dies mit dem Position fixed erzielt werden. Damit kann bspw ein Konstantes Hintergrundbild unabhängig vom Scrollen implementier werden</p></li>
+</ol>
 
-<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/01_html/01_a_helloworld" width="80%" height="500"></iframe> <br></p>
+<h2>Troubleshooting</h2>
 
-<h1>HTML-Struktur</h1>
+<ul>
+<li>z-Index = anordnugn "was liegt oben"</li>
+<li>opacity = durchsichtigkeit</li>
+</ul>
 
-<p>Die Grundstruktur lautet</p>
+<h2>Implementierungen von Positioning</h2>
 
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        ...
-        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="nt">In</span> <span class="nt">CSS</span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">content</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<p><hr>
+<em>Ohne position</em></p>
 
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
+<p>Hier ist noch kein Position implementiert. Der nachfolgende Iframe dient lediglich dem Vergleich zu anderen Position Optionen. </p>
 
-<p>Mit dieser Struktur können später die Inhalte von CSS direkt angesprochen und vernünftig formatiert werden.</p>
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.8+positioning" width="1005"></iframe> <br></p>
+
+<p><hr>
+<em>Gegenüberstellung Absolute und Relativ</em></p>
+
+<p>Hier ist noch kein Position implementiert. Der nachfolgende Iframe dient lediglich dem Vergleich zu anderen Position Optionen. </p>
+
+<p>| Relative  | Absolut  |
+|---|---|
+|<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.8+positioning1Realtive"></iframe> <br>|<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.8+positioning1Absolute"></iframe> <br>|</p>
+
+<p><em>Float &amp; Relative</em></p>
+
+<p>hier wird die Position relative mit dem Float zusammengenommen </p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.8+positioning2"></iframe> <br></p>
+
+<p><em>Fixed Position</em></p>
+
+<p>Egal wie weit man scrollt die Rote box bleibt fixed an ihrer Stelle, das nutzt man gern bei Nav-Bars</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.8+positioning3" &gt;</iframe> <br></p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.8+positioning4" &gt;</iframe> <br></p>
 
   </div>
 
