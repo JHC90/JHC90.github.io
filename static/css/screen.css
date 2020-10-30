@@ -1,0 +1,45 @@
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 40%;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 2;
+  }
+
+  .header
+  {
+    position: fixed;
+    z-index: 20;
+  }
+
+  .defaultNavigation{
+    position: fixed;
+    z-index: 30;
+  }
+
+  #content {
+    position: relative;
+    top:350px;
+    padding: 50px 100px 100px 100px;
+    margin: 50px 100px 100px 100px;
+
+    }
+    
+  body {
+    background-color: #c3c8c9;
+    }
+    
+  iframe {
+    background-color: #ffffff;
+    }
+
+#footer{
+  text-align: center;
+}
+
+.clear-float {
+  clear:both;
+}

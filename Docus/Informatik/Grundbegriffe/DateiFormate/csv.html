@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Jochens Doku Plattform</title>
+  <title>Default: Jochens Doku Platform</title>
 
   <meta name="description" content=" Das hier ist meine Basic Doku Machine " />
   <meta name="author" content="Jochen Hollich">
@@ -20,20 +20,18 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/static/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="./static/css/screen.css" />
 
 </head>
 
 <body>
 
-  <div id="sticky" style="position: fixed; top: 0; width: 100%; height: 100%">
-
-    <div id="header">
-      <p><div id="particles-js"></div></p>
-    </div>
-
-    <div id="navbar">
-      <html>
+  <div id="header">
+    <p><div id="particles-js"></div></p>
+   
+  </div>
+  <div id="defaultNavigation">
+    <html>
  <body>
   <ul class="nav nav-pills navbar navbar-inverse">
    <li role="presentation">
@@ -407,114 +405,22 @@
    </li>
    <li class="dropdown" role="presentation">
     <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-     lustig
-     <span class="caret">
-     </span>
-    </a>
-    <ul class="dropdown-menu">
-     <li>
-      <a href="/lustig/alt.html">
-       alt
-      </a>
-     </li>
-     <li>
-      <a href="/lustig/neu.html">
-       neu
-      </a>
-     </li>
-     <li class="dropdown-submenu">
-      <a class="test" href="#" tabindex="-1">
-       jhc
-       <span class="caret">
-       </span>
-      </a>
-      <ul class="dropdown-menu">
-       <li>
-        <a href="/lustig/jhc/mana.html">
-         mana
-        </a>
-       </li>
-       <li>
-        <a href="/lustig/jhc/silvia.html">
-         silvia
-        </a>
-       </li>
-       <li class="dropdown-submenu">
-        <a class="test" href="#" tabindex="-1">
-         Ruidisch
-         <span class="caret">
-         </span>
-        </a>
-        <ul class="dropdown-menu">
-         <li>
-          <a href="/lustig/jhc/Ruidisch/java.html">
-           java
-          </a>
-         </li>
-         <li>
-          <a href="/lustig/jhc/Ruidisch/python.html">
-           python
-          </a>
-         </li>
-        </ul>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="dropdown" role="presentation">
-    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
      Projekte
      <span class="caret">
      </span>
     </a>
     <ul class="dropdown-menu">
-     <li>
-      <a href="/Projekte/netzwerktechnik.html">
-       netzwerktechnik
-      </a>
-     </li>
-     <li>
-      <a href="/Projekte/programmierung.html">
-       programmierung
-      </a>
-     </li>
-     <li class="dropdown-submenu">
-      <a class="test" href="#" tabindex="-1">
-       Chief
-       <span class="caret">
-       </span>
-      </a>
-      <ul class="dropdown-menu">
-       <li>
-        <a href="/Projekte/Chief/java.html">
-         java
-        </a>
-       </li>
-       <li>
-        <a href="/Projekte/Chief/python.html">
-         python
-        </a>
-       </li>
-      </ul>
-     </li>
     </ul>
    </li>
   </ul>
  </body>
 </html>
-    </div>
   </div>
 
- 
-  <div id="content" >
+  <div id="content" style="background-color: green;">
     <p></p>
 
   </div>
-
-   
-        
-     
 
   <div id="footer">
     <h4>Jochen Paul Hollich</h4>
@@ -523,8 +429,6 @@
 
   </div>
 
-
-<!--JS-Skripte-->  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -544,22 +448,8 @@
     });
   </script>
 
-<script src="/static/js/particles.min.js"></script>
-<script src="/static/js/particles.js"></script>
-
-<!---Resizable Header-->
-<script>
-  // When the user scrolls down 50px from the top of the document, resize the header's font size
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      document.getElementById("sticky").style.height = "80%";
-    } else {
-      document.getElementById("sticky").style.height = "100%";
-    }
-  }
-  </script>
+<script src="./static/js/particles.min.js"></script>
+<script src="./static/js/particles.js"></script>
 </body>
 
 </html>
