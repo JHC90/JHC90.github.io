@@ -32,8 +32,8 @@
       <p><div id="particles-js"></div></p>
     </div>
 
-    <div id="navbar"></div>
-    <html>
+    <div id="navbar">
+      <html>
  <body>
   <ul class="nav nav-pills navbar navbar-inverse">
    <li role="presentation">
@@ -139,6 +139,34 @@
            <li>
             <a href="/Docus/Informatik/Operating-Informatik/Windows/PathWindows.html">
              PathWindows
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu">
+        <a class="test" href="#" tabindex="-1">
+         Programmieren
+         <span class="caret">
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu">
+          <a class="test" href="#" tabindex="-1">
+           Grundbegriffe-Programmieren
+           <span class="caret">
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li>
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/KompilierenInterpretieren.html">
+             KompilierenInterpretieren
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Programmiersprachen.html">
+             Programmiersprachen
             </a>
            </li>
           </ul>
@@ -475,14 +503,20 @@
   </ul>
  </body>
 </html>
-  </div>
+    </div>
   </div>
 
  
-  <div id="content" ></div>
+  <div id="content" >
+    <h1>Cascading Style Sheet</h1>
 
+<h2>Beispiel Implementierung</h2>
 
-  <h1>Cascading Style Sheet</h1>
+<p>Nachdem nun die Inhalte von <a href="./../HTML/01-HTML-Grundlagen.html">HTML</a> kommen kann mit CSS nun das Styling der Seite definiert werden. Ein möglicher Output sieht wiefolgt aus. </p>
+
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/cssprojekt" width="100%" height="300px"></iframe>
+
+<p>Der Iframe dient nur dazu zu erkennen welche Technologien man in dem CSS Sektion erlernt und was diese letztlich können.</p>
 
 <h2>Sinnvolle Vorwissen</h2>
 
@@ -499,6 +533,36 @@
 |ausgelagerte CSS|nein|nein|ja, neue Datei, im gegensatz zu internal braucht es keine \<style\&gt;-Tags, und im html muss noch die CSS aufgerufen werden im header</p>
 
 <p>Hier die drei CSS-Implementierungsoptionen. An live Projekten arbeitet man immer mit external CSS. In diesem Block hier arbeite ich überwiegend mit den Internal CSS, da die Snippets hier lediglich als vorlagen dienen. </p>
+
+<div id="tabpanel">
+  <ul role="tablist" id="tablist">
+    <li id="link1" role="tab" aria-controls="panel-1" aria-selected="true">1 - Button</li>
+    <li id="link2" role="tab" aria-controls="panel-2" aria-selected="false">2 - Button</li>
+    <li id="link3" role="tab" aria-controls="panel-3" aria-selected="false">3 - Button</li>
+  </ul>
+
+  <div id="tabcontent">
+    <div id="panel-1" role="tabpanel" aria-labelledby="link1" aria-hidden="false">
+      <h3>Inhalt 1</h3>
+      <p> Hier kommt was hin!</p>
+    </div>
+    <div id="panel-2" role="tabpanel" aria-labelledby="link2" aria-hidden="true">
+    <h3>Inhalt 1</h3>
+      <p> Hier kommt was hin!</p>
+    </div>
+    <div id="panel-3" role="tabpanel" aria-labelledby="link3" aria-hidden="true">
+      <h3>Inhalt 1</h3>
+      <p> Hier kommt was hin!</p>
+    </div>
+  </div>
+</div>
+
+<h1>tablist {</h1>
+
+<p>list-style: none;
+  margin: 0;
+  padding: 0;
+}</p>
 
   </div>
 
