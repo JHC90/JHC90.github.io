@@ -46,6 +46,7 @@ width:100%;
 position: absolute;
 width:100%;
 margin-top: 0%;
+
 }
 
 #contentContainer {
@@ -62,7 +63,9 @@ margin-left:2%;
 float:left;
 transition:1s;
 padding: 5px 10px 15px 20px;
-margin: 50px 0px 20px 0px;
+margin: 50px 20px 20px 20px;
+border: 0.1px gray solid ;
+border-radius: 15px 15px 15px 15px;
 }
 
 #article {
@@ -72,7 +75,9 @@ margin-left:2%;
 float:left;
 transition:1s;
 padding: 5px 10px 15px 20px;
-margin: 50px 0px 20px 0px;
+margin: 50px 20px 20px 20px;
+border: 0.1px gray solid ;
+border-radius: 15px 15px 15px 15px;
 }
 
 #sectionNavigaion {
