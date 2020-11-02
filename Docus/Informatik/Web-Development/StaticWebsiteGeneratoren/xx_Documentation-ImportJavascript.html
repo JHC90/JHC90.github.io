@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>Default: Jochens Doku Platform</title>
-
   <meta name="description" content=" Das hier ist meine Basic Doku Machine " />
   <meta name="author" content="Jochen Hollich">
-
   <identifier></identifier>
-
   <!-- Integration Bootstrap -->
   <!-- Das neueste kompilierte und minimierte CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -17,21 +13,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
   <!-- Das neueste kompilierte und minimierte JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./static/css/screen.css" />
-
+  <!-- Eigene CSS -->
+  <!--<link rel="stylesheet" type="text/css" href="./static/css/screen.css" />-->
+  <link rel="stylesheet" type="text/css" href="./static/css/defaultstyle.css" />
 </head>
-
 <body>
-
-  <div id="header">
-    <p><div id="particles-js"></div></p>
-   
-  </div>
-  <div id="defaultNavigation">
-    <html>
+	<div id="headerBOXabsolute">
+		<div id="headerBOXrelative">
+			<div id="particles-js"></div>
+			<div id="navbar">
+        <html>
  <body>
   <ul class="nav nav-pills navbar navbar-inverse">
    <li role="presentation">
@@ -108,7 +101,7 @@
        </li>
        <li class="dropdown-submenu">
         <a class="test" href="#" tabindex="-1">
-         Operating-Informatik
+         Operating-Systeme
          <span class="caret">
          </span>
         </a>
@@ -130,12 +123,12 @@
           </a>
           <ul class="dropdown-menu">
            <li>
-            <a href="/Docus/Informatik/Operating-Informatik/Windows/Path-Variable.html">
+            <a href="/Docus/Informatik/Operating-Systeme/Windows/Path-Variable.html">
              Path-Variable
             </a>
            </li>
            <li>
-            <a href="/Docus/Informatik/Operating-Informatik/Windows/PathWindows.html">
+            <a href="/Docus/Informatik/Operating-Systeme/Windows/PathWindows.html">
              PathWindows
             </a>
            </li>
@@ -414,11 +407,16 @@
    </li>
   </ul>
  </body>
-</html>
-  </div>
-
-  <div id="content" style="background-color: green;">
-    <p>1) lege den folder an
+</html> 
+			</div>
+		</div>
+	</div>
+	<div id="contentContainerausen">
+		<div id="contentContainer">
+      <div id="asideBreadCrump"></div>
+			
+			<div id="article">
+        <p>1) lege den folder an
    1) css &lt;=  dent eil aus #particles-js
    2) JS &lt;= die beiden Files aus particles.js &amp;&amp; particles.min.js
    3) Images &lt;= das screen.jpg</p>
@@ -464,16 +462,19 @@
     </body></p>
 
 <p>die bilder liegen unter statics</p>
-
-  </div>
-
-  <div id="footer">
-    <h4>Jochen Paul Hollich</h4>
+ 
+			</div>
+			<div class="clear-float"></div>
+		</div>
+		<div id="sectionNavigaion">
+		</div>
+		<div id="footer">
+      <h4>Jochen Paul Hollich</h4>
 <p>E-Mail: Jochen.P.Hollich@gmail.com</p>
 <p>Telefon: 0049 1573 255 77 56</p>
-
-  </div>
-
+ 
+		</div>	
+	</div>	
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -492,9 +493,28 @@
       });
     });
   </script>
-
 <script src="./static/js/particles.min.js"></script>
 <script src="./static/js/particles.js"></script>
-</body>
 
+<script>
+	// When the user scrolls down 50px from the top of the document, resize the header's font size
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+		document.getElementById("headerBOXabsolute").style.height = "15%";
+		document.getElementById("particles-js").style.height = "11%";
+		document.getElementById("article").style.width = "80%";
+    document.getElementById("asideBreadCrump").style.width = "15%";
+		
+	  } else {
+		document.getElementById("headerBOXabsolute").style.height = "40%";
+		document.getElementById("particles-js").style.height = "30%";
+		document.getElementById("article").style.width = "75%";
+    document.getElementById("asideBreadCrump").style.width = "20%";
+		
+		
+	  }
+	}
+	</script>
+</body>
 </html>

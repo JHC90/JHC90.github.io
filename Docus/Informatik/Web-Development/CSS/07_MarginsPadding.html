@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>Default: Jochens Doku Platform</title>
-
   <meta name="description" content=" Das hier ist meine Basic Doku Machine " />
   <meta name="author" content="Jochen Hollich">
-
   <identifier></identifier>
-
   <!-- Integration Bootstrap -->
   <!-- Das neueste kompilierte und minimierte CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -17,21 +13,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
   <!-- Das neueste kompilierte und minimierte JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./static/css/screen.css" />
-
+  <!-- Eigene CSS -->
+  <!--<link rel="stylesheet" type="text/css" href="./static/css/screen.css" />-->
+  <link rel="stylesheet" type="text/css" href="./static/css/defaultstyle.css" />
 </head>
-
 <body>
-
-  <div id="header">
-    <p><div id="particles-js"></div></p>
-   
-  </div>
-  <div id="defaultNavigation">
-    <html>
+	<div id="headerBOXabsolute">
+		<div id="headerBOXrelative">
+			<div id="particles-js"></div>
+			<div id="navbar">
+        <html>
  <body>
   <ul class="nav nav-pills navbar navbar-inverse">
    <li role="presentation">
@@ -108,7 +101,7 @@
        </li>
        <li class="dropdown-submenu">
         <a class="test" href="#" tabindex="-1">
-         Operating-Informatik
+         Operating-Systeme
          <span class="caret">
          </span>
         </a>
@@ -130,12 +123,12 @@
           </a>
           <ul class="dropdown-menu">
            <li>
-            <a href="/Docus/Informatik/Operating-Informatik/Windows/Path-Variable.html">
+            <a href="/Docus/Informatik/Operating-Systeme/Windows/Path-Variable.html">
              Path-Variable
             </a>
            </li>
            <li>
-            <a href="/Docus/Informatik/Operating-Informatik/Windows/PathWindows.html">
+            <a href="/Docus/Informatik/Operating-Systeme/Windows/PathWindows.html">
              PathWindows
             </a>
            </li>
@@ -414,16 +407,21 @@
    </li>
   </ul>
  </body>
-</html>
-  </div>
-
-  <div id="content" style="background-color: green;">
-    <h1>CSS-Margin&amp;Paddings&amp;Broder</h1>
+</html> 
+			</div>
+		</div>
+	</div>
+	<div id="contentContainerausen">
+		<div id="contentContainer">
+      <div id="asideBreadCrump"></div>
+			
+			<div id="article">
+        <h1>CSS-Margin&amp;Paddings&amp;Border</h1>
 
 <h2>Vorwissen</h2>
 
 <ul>
-<li><a href="./05_Floating.html">Div-Boxen</a></li>
+<li><a href="./03_CSS_DIV_boxes.html">Div-Boxen</a></li>
 </ul>
 
 <h2>Margins &amp; Paddings</h2>
@@ -431,14 +429,11 @@
 <p><img src="imgs/2020-10-30-12-25-20.png" alt="" /></p>
 
 <p><strong>Margins</strong><br>
-- Die Berührungspunkte zwischen Zwei Elemette ist an den jeweilgen äußeren Grenzen der Margins
+- Die Berührungspunkte zwischen Zwei Elemette ist an den jeweilgen äußeren Grenzen der Margins<br>
 - Margin ist der Abstand zwischen der "relativen Grenze = Border" und der Äußeren Grenze</p>
 
-<p><strong>Padding</strong><br></p>
-
-<ul>
-<li>Padding ist der Abstand zwischen der "relativen Grenze = Border" und dem eigentlichen Content= innerem Element</li>
-</ul>
+<p><strong>Padding</strong><br>
+- Padding ist der Abstand zwischen der "relativen Grenze = Border" und dem eigentlichen Content= innerem Element</p>
 
 <p><strong>Border</strong><br>
 - Den konkreten Border kann man ebenfalls entsprechend konfiguieren. </p>
@@ -446,32 +441,36 @@
 <h2>Implementierungen von Margin &amp; Padding</h2>
 
 <p>Hier wurden weder Margin noch padding werte Geändert:
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins" width="100%"></iframe> <br>
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins" width="100%" height="30%"></iframe> <br>
 <hr>
  Hier wurden nur Margin werte geädert, somit verhalten sich die Boxen mit mehr abstand
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins2" width="100%"></iframe> <br>
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins2" width="100%" height="30%"></iframe> <br>
 <hr></p>
 
 <p>Hier wurden nur Padding werte geädert, somit ist der Inhatll innerhalb der boxen mit Abstand
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+padding" width="100%"></iframe> <br>
-<hr>
- Hier wurden nur Margin werte geädert:
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+paddingMargin" width="100%"></iframe> <br></p>
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+padding" width="100%" height="30%"></iframe> <br></p>
+
+<p><hr>
+ Hier wurden sowohl margin als auch Padding geändert
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+paddingMargin" width="100%" height="30%"></iframe> <br></p>
 
 <hr>
 
-<p>Hier wurden nur Border werte geädert, somit kann man bspw einen Kreis erzeugen. somit sind die Border direkt ereknntlich
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.11+border" width="100%"></iframe> <br></p>
-
-  </div>
-
-  <div id="footer">
-    <h4>Jochen Paul Hollich</h4>
+<p>Hier wruden lediglich die Border geändert. Über den Border können auch 
+<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.11+border" width="100%" height="30%"></iframe> <br></p>
+ 
+			</div>
+			<div class="clear-float"></div>
+		</div>
+		<div id="sectionNavigaion">
+		</div>
+		<div id="footer">
+      <h4>Jochen Paul Hollich</h4>
 <p>E-Mail: Jochen.P.Hollich@gmail.com</p>
 <p>Telefon: 0049 1573 255 77 56</p>
-
-  </div>
-
+ 
+		</div>	
+	</div>	
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -490,9 +489,28 @@
       });
     });
   </script>
-
 <script src="./static/js/particles.min.js"></script>
 <script src="./static/js/particles.js"></script>
-</body>
 
+<script>
+	// When the user scrolls down 50px from the top of the document, resize the header's font size
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+		document.getElementById("headerBOXabsolute").style.height = "15%";
+		document.getElementById("particles-js").style.height = "11%";
+		document.getElementById("article").style.width = "80%";
+    document.getElementById("asideBreadCrump").style.width = "15%";
+		
+	  } else {
+		document.getElementById("headerBOXabsolute").style.height = "40%";
+		document.getElementById("particles-js").style.height = "30%";
+		document.getElementById("article").style.width = "75%";
+    document.getElementById("asideBreadCrump").style.width = "20%";
+		
+		
+	  }
+	}
+	</script>
+</body>
 </html>

@@ -1,0 +1,96 @@
+body{ 
+background-color: #c3c8c9;
+}
+
+#particles-js {
+position: fixed;
+top: 10;
+width: 100%;
+height:21%;
+transition:1s;
+z-index:100;
+}
+
+#headerBOXabsolute{
+position: fixed;
+margin-left: 2;
+margin-right: 2;
+background-image: url("../images/banner.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
+text-align: center;
+width: 100%;
+height:40%; 
+transition:1s;
+z-index:100;
+}
+
+#headerBOXrelative{
+}
+
+#navbar{
+position: absolute;
+bottom: 0;
+width:100%;
+}
+
+#contentContainerausen {
+position: absolute;
+width:100%;
+height:100%;
+margin-top: 0%;
+}
+
+#contentContainer {
+position: relative;
+margin: 20% auto;
+width:100%;
+height:400%;
+}
+
+#asideBreadCrump {
+background-color: orange;
+width:20%;
+margin-left:2%;
+float:left;
+transition:1s;
+padding: 5px 10px 15px 20px;
+margin: 50px 0px 20px 0px;
+}
+
+#article {
+width:75%;
+height:95%;
+margin-left:2%;
+float:left;
+transition:1s;
+padding: 5px 10px 15px 20px;
+margin: 50px 0px 20px 0px;
+}
+
+#sectionNavigaion {
+text-align: center;
+top: 1%;
+bottom: 1%;
+background-color: pink;
+width:100%;
+}
+
+#footer {
+position: relative;
+bottom: 0;
+width:100%;
+height:20%;
+text-align: center;
+}
+
+.clear-float {
+clear:both;
+}
+
+iframe {
+background-color: #ffffff;
+width:50%;
+height:300px;
+}
