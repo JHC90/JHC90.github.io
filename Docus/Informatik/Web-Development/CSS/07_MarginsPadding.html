@@ -18,6 +18,9 @@
   <!-- Eigene CSS -->
   <!--<link rel="stylesheet" type="text/css" href="./static/css/screen.css" />-->
   <link rel="stylesheet" type="text/css" href="./static/css/defaultstyle.css" />
+
+  <!--Eigene JS-->
+  <script src="./static/js/externalJS.js"></script> 
 </head>
 <body>
 	<div id="headerBOXabsolute">
@@ -160,6 +163,11 @@
              Programmiersprachen
             </a>
            </li>
+           <li>
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Typisierung.html">
+             Typisierung
+            </a>
+           </li>
           </ul>
          </li>
         </ul>
@@ -261,8 +269,38 @@
           </a>
           <ul class="dropdown-menu">
            <li>
-            <a href="/Docus/Informatik/Web-Development/JavaScript/JS_Basics.html">
-             JS_Basics
+            <a href="/Docus/Informatik/Web-Development/JavaScript/00_JS_Basics.html">
+             00_JS_Basics
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/01_JS_Einbinden.html">
+             01_JS_Einbinden
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/02_JS_HTML_Element_Zugriff.html">
+             02_JS_HTML_Element_Zugriff
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/03_JS_CSS_Element_Zugriff copy.html">
+             03_JS_CSS_Element_Zugriff copy
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/04_JS_Variablen.html">
+             04_JS_Variablen
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_.html">
+             05_JS_
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_Konditional.html">
+             05_JS_Konditional
             </a>
            </li>
           </ul>
@@ -413,7 +451,7 @@
 	</div>
 	<div id="contentContainerausen">
 		<div id="contentContainer">
-      <div id="asideBreadCrump"></div>
+      <div id="asideBreadCrump">BreadCrump</div>
 			
 			<div id="article">
         <h1>CSS-Margin&amp;Paddings&amp;Border</h1>
@@ -440,24 +478,32 @@
 
 <h2>Implementierungen von Margin &amp; Padding</h2>
 
-<p>Hier wurden weder Margin noch padding werte Geändert:
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins" width="100%" height="30%"></iframe> <br>
-<hr>
- Hier wurden nur Margin werte geädert, somit verhalten sich die Boxen mit mehr abstand
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins2" width="100%" height="30%"></iframe> <br>
-<hr></p>
+<p>Hier wurden weder Margin noch padding werte Geändert:</p>
 
-<p>Hier wurden nur Padding werte geädert, somit ist der Inhatll innerhalb der boxen mit Abstand
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+padding" width="100%" height="30%"></iframe> <br></p>
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins" width="100%" height="30%"></iframe> <br></p>
 
-<p><hr>
- Hier wurden sowohl margin als auch Padding geändert
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+paddingMargin" width="100%" height="30%"></iframe> <br></p>
+<p><hr><hr><hr>
+ Hier wurden nur Margin werte geädert, somit verhalten sich die Boxen mit mehr abstand</p>
 
-<hr>
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.9+Margins2" width="100%" height="30%"></iframe> <br></p>
 
-<p>Hier wruden lediglich die Border geändert. Über den Border können auch 
-<iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.11+border" width="100%" height="30%"></iframe> <br></p>
+<p><hr><hr><hr></p>
+
+<p>Hier wurden nur Padding werte geädert, somit ist der Inhatll innerhalb der boxen mit Abstand</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+padding" width="100%" height="30%"></iframe> <br></p>
+
+<p><hr><hr><hr></p>
+
+<p>Hier wurden sowohl margin als auch Padding geändert</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.10+paddingMargin" width="100%" height="30%"></iframe> <br></p>
+
+<p><hr><hr><hr>&gt;</p>
+
+<p>Hier wruden lediglich die Border geändert. Über den Border können auch </p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/02_CSS/2.11+border" width="100%" height="30%"></iframe> <br></p>
  
 			</div>
 			<div class="clear-float"></div>
@@ -470,47 +516,62 @@
 <p>Telefon: 0049 1573 255 77 56</p>
  
 		</div>	
-	</div>	
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $('.dropdown-submenu a.test').on("click", function (e) {
-        $(this).next('ul').toggle();
-        e.stopPropagation();
-        e.preventDefault();
-      });
-    });
-  </script>
-<script src="./static/js/particles.min.js"></script>
-<script src="./static/js/particles.js"></script>
+  </div>	
+  
 
-<script>
-	// When the user scrolls down 50px from the top of the document, resize the header's font size
-	window.onscroll = function() {scrollFunction()};
-	function scrollFunction() {
-	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-		document.getElementById("headerBOXabsolute").style.height = "15%";
-		document.getElementById("particles-js").style.height = "11%";
-		document.getElementById("article").style.width = "80%";
-    document.getElementById("asideBreadCrump").style.width = "15%";
-		
-	  } else {
-		document.getElementById("headerBOXabsolute").style.height = "40%";
-		document.getElementById("particles-js").style.height = "30%";
-		document.getElementById("article").style.width = "75%";
-    document.getElementById("asideBreadCrump").style.width = "20%";
-		
-		
-	  }
-	}
-	</script>
+  /* Bootstrap-Einbindung */
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  
+  
+  /* Nested Navigation */
+  <script>
+  $(document).ready(function () {
+    $('.dropdown-submenu a.test').on("click", function (e) {
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
+  
+  
+  
+  /* Change Size */
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  document.getElementById("headerBOXabsolute").style.height = "15%";
+  document.getElementById("particles-js").style.height = "11%";
+  document.getElementById("article").style.width = "80%";
+  document.getElementById("asideBreadCrump").style.width = "15%";
+  
+  } else {
+  document.getElementById("headerBOXabsolute").style.height = "40%";
+  document.getElementById("particles-js").style.height = "30%";
+  document.getElementById("article").style.width = "75%";
+  document.getElementById("asideBreadCrump").style.width = "20%";
+  }
+  }
+  </script>
+  
+  <script src="./particles.min.js"></script>
+  <script src="./particles.js"></script>
+    
+
+
+
+
 </body>
 </html>

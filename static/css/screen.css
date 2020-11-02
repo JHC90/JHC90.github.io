@@ -56,8 +56,10 @@ body{
   }
 
   #asideBreadCrump {
+    position: fixed;
     background-color: orange;
     width:25%;
+    height:100px;
     margin-left:2%;
     float:left;
     transition:1s;

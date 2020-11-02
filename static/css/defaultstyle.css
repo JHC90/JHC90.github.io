@@ -2,6 +2,13 @@ body{
 background-color: #c3c8c9;
 }
 
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    width:100%;
+    table-layout: fixed;
+    }
+
 #particles-js {
 position: fixed;
 top: 10;
@@ -91,6 +98,6 @@ clear:both;
 
 iframe {
 background-color: #ffffff;
-width:50%;
+width:100%;
 height:300px;
 }

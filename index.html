@@ -18,6 +18,9 @@
   <!-- Eigene CSS -->
   <!--<link rel="stylesheet" type="text/css" href="./static/css/screen.css" />-->
   <link rel="stylesheet" type="text/css" href="./static/css/defaultstyle.css" />
+
+  <!--Eigene JS-->
+  <script src="./static/js/externalJS.js"></script> 
 </head>
 <body>
 	<div id="headerBOXabsolute">
@@ -160,6 +163,11 @@
              Programmiersprachen
             </a>
            </li>
+           <li>
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Typisierung.html">
+             Typisierung
+            </a>
+           </li>
           </ul>
          </li>
         </ul>
@@ -261,8 +269,38 @@
           </a>
           <ul class="dropdown-menu">
            <li>
-            <a href="/Docus/Informatik/Web-Development/JavaScript/JS_Basics.html">
-             JS_Basics
+            <a href="/Docus/Informatik/Web-Development/JavaScript/00_JS_Basics.html">
+             00_JS_Basics
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/01_JS_Einbinden.html">
+             01_JS_Einbinden
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/02_JS_HTML_Element_Zugriff.html">
+             02_JS_HTML_Element_Zugriff
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/03_JS_CSS_Element_Zugriff copy.html">
+             03_JS_CSS_Element_Zugriff copy
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/04_JS_Variablen.html">
+             04_JS_Variablen
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_.html">
+             05_JS_
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_Konditional.html">
+             05_JS_Konditional
             </a>
            </li>
           </ul>
@@ -413,40 +451,14 @@
 	</div>
 	<div id="contentContainerausen">
 		<div id="contentContainer">
-      <div id="asideBreadCrump"></div>
+      <div id="asideBreadCrump">BreadCrump</div>
 			
 			<div id="article">
-        <h1>hier die Index.html</h1>
+        <h1>Hi, Ich bin Jochen</h1>
 
-<p>hier ein Bild:
-<img src="imgs/2020-10-26-11-48-33.png" alt="alternativer Text" />
-<img src="imgs/example.gif" alt="alternativer Text" /></p>
+<h1>Passion for DS</h1>
 
-<p>hier der zugehörige Paragraph zu dem MarkdownFile</p>
-
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunction</span><span class="p">():</span>
-    <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
-
-<h2>Link Extern</h2>
-
-<p><a href="https://www.google.de">link zu google</a></p>
-
-<h2>Iframe Extern</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_BgdXgWiaEY?list=PLiHzu4i2Hsb1tB5CZUgKPodPDUGyi9vFb" frameborder="0" ></iframe>
-
-<h2>Link Intern</h2>
-
-<p><a href="./about.html">Interner Link gleiche Hierarchie</a><br>
-<a href="./Projekte/netzwerktechnik.html">Interner Link höhere Hierarchie Level 1</a><br>
-<a href="./Docus2/Team/java.html">Interner Link höhere Hierarchie Level 2</a><br></p>
-
-<h2>Iframe intern</h2>
-
-<iframe width="560" height="315" src="article2.html" frameborder="0" ></iframe>
-
-<p>wenn der nicht geht ist es nicht so schlimm</p>
+<p>bliblablupp</p>
  
 			</div>
 			<div class="clear-float"></div>
@@ -459,47 +471,62 @@
 <p>Telefon: 0049 1573 255 77 56</p>
  
 		</div>	
-	</div>	
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $('.dropdown-submenu a.test').on("click", function (e) {
-        $(this).next('ul').toggle();
-        e.stopPropagation();
-        e.preventDefault();
-      });
-    });
-  </script>
-<script src="./static/js/particles.min.js"></script>
-<script src="./static/js/particles.js"></script>
+  </div>	
+  
 
-<script>
-	// When the user scrolls down 50px from the top of the document, resize the header's font size
-	window.onscroll = function() {scrollFunction()};
-	function scrollFunction() {
-	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-		document.getElementById("headerBOXabsolute").style.height = "15%";
-		document.getElementById("particles-js").style.height = "11%";
-		document.getElementById("article").style.width = "80%";
-    document.getElementById("asideBreadCrump").style.width = "15%";
-		
-	  } else {
-		document.getElementById("headerBOXabsolute").style.height = "40%";
-		document.getElementById("particles-js").style.height = "30%";
-		document.getElementById("article").style.width = "75%";
-    document.getElementById("asideBreadCrump").style.width = "20%";
-		
-		
-	  }
-	}
-	</script>
+  /* Bootstrap-Einbindung */
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  
+  
+  /* Nested Navigation */
+  <script>
+  $(document).ready(function () {
+    $('.dropdown-submenu a.test').on("click", function (e) {
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
+  
+  
+  
+  /* Change Size */
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  document.getElementById("headerBOXabsolute").style.height = "15%";
+  document.getElementById("particles-js").style.height = "11%";
+  document.getElementById("article").style.width = "80%";
+  document.getElementById("asideBreadCrump").style.width = "15%";
+  
+  } else {
+  document.getElementById("headerBOXabsolute").style.height = "40%";
+  document.getElementById("particles-js").style.height = "30%";
+  document.getElementById("article").style.width = "75%";
+  document.getElementById("asideBreadCrump").style.width = "20%";
+  }
+  }
+  </script>
+  
+  <script src="./particles.min.js"></script>
+  <script src="./particles.js"></script>
+    
+
+
+
+
 </body>
 </html>

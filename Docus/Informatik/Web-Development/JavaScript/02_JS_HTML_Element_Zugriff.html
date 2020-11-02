@@ -18,6 +18,9 @@
   <!-- Eigene CSS -->
   <!--<link rel="stylesheet" type="text/css" href="./static/css/screen.css" />-->
   <link rel="stylesheet" type="text/css" href="./static/css/defaultstyle.css" />
+
+  <!--Eigene JS-->
+  <script src="./static/js/externalJS.js"></script> 
 </head>
 <body>
 	<div id="headerBOXabsolute">
@@ -160,6 +163,11 @@
              Programmiersprachen
             </a>
            </li>
+           <li>
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Typisierung.html">
+             Typisierung
+            </a>
+           </li>
           </ul>
          </li>
         </ul>
@@ -261,8 +269,38 @@
           </a>
           <ul class="dropdown-menu">
            <li>
-            <a href="/Docus/Informatik/Web-Development/JavaScript/JS_Basics.html">
-             JS_Basics
+            <a href="/Docus/Informatik/Web-Development/JavaScript/00_JS_Basics.html">
+             00_JS_Basics
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/01_JS_Einbinden.html">
+             01_JS_Einbinden
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/02_JS_HTML_Element_Zugriff.html">
+             02_JS_HTML_Element_Zugriff
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/03_JS_CSS_Element_Zugriff copy.html">
+             03_JS_CSS_Element_Zugriff copy
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/04_JS_Variablen.html">
+             04_JS_Variablen
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_.html">
+             05_JS_
+            </a>
+           </li>
+           <li>
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_Konditional.html">
+             05_JS_Konditional
             </a>
            </li>
           </ul>
@@ -413,27 +451,52 @@
 	</div>
 	<div id="contentContainerausen">
 		<div id="contentContainer">
-      <div id="asideBreadCrump"></div>
+      <div id="asideBreadCrump">BreadCrump</div>
 			
 			<div id="article">
-        <h1>Java-Script</h1>
+        <h1>Auf Elemente Zugreifen - </h1>
 
-<p>Mit Java kann nun Funktionalität integriert werden</p>
+<h1>Beschreibung</h1>
 
-<ul>
-<li>Klassenlos = Es gibt Objekte, diese werden aber nicht in Klassen gespeichert</li>
-<li>Hier geht es nur darum die Funktionalität von JavaScript zu erlenen</li>
-</ul>
-
-<p><a href="https://determined-varahamihira-d7b5b4.netlify.app/03_js/3.15+reaktionstester">Link zu finalem Projekt hosted on Netlify</a>
-<a href="https://determined-varahamihira-d7b5b4.netlify.app/">Link Landing-Page von Javascript</a></p>
-
-<h1>Einbindung Inline</h1>
+<p>werden den Tags im Body IDs zugewiesen, so kann mit JS auf die Elemente zugegriffen werden.</p>
 
 <ul>
-<li>Im Head wird die sections <em>*</em>*</li>
-<li>Im Body</li>
+<li>getElementById</li>
 </ul>
+
+<p>ist hierbei ein zentraler JS-Befehl</p>
+
+<p>Dadurch können sowohl der <a href="./../HTML/01-HTML-Grundlagen.html">HTML-Inhalt</a> als auch das <a href="./../CSS/01_CSS_Basics.html">Css-Styling</a> zugegirffen und geänder werden.</p>
+
+<p>Diese Trigger können unterschiedlicher Natur sein
+- Onclick
+- Scroll</p>
+
+<h2>Implementierung</h2>
+
+<p>Hier eine einfach Implementierung von Änderungn von Inhalt mittels JS. Hierbei wird noch kein Button(=Userinteraktion) verwendet</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/03_JS/3.3+auf+elemente+zugreifen"></iframe> <br></p>
+
+<p><hr><hr><hr></p>
+
+<p>Die Folgende Implementierung des Buttons ändert sowohl den Inhalt als auch das Styling des P-Tags. Dabei gibt es bei den Tags Button einen "Trigger 'onclick'"</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/03_JS/3.4+auf+klicks+reagieren"></iframe> <br></p>
+
+<p><hr><hr><hr></p>
+
+<p>Hier wird eine ähnliche Datei mit einem Button verwendet. Konkret wird hier jedoch die ID des p-Tags ausgelesen und mittels alert ausgegeben</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/03_JS/3.4+auf+klicks+reagieren2"></iframe> <br></p>
+
+<p><hr><hr><hr></p>
+
+<p>Hier kommen weitere Funktionalitäten hinzu
+1. Wird eine String-Concatination hinzugefügt. In Java-Script verwendet man hierbei die append Function
+2. es kann auch HTML code hinzugefügt werden, Somit können die HTML-Tags allesamt verwendet werden. Somit kann der Inhalt und die HTML Darstellung mittels JS geändert werden.</p>
+
+<p><iframe src="https://determined-varahamihira-d7b5b4.netlify.app/03_JS/3.5+webseiteninhalte+anpassen.html"></iframe> <br></p>
  
 			</div>
 			<div class="clear-float"></div>
@@ -446,47 +509,62 @@
 <p>Telefon: 0049 1573 255 77 56</p>
  
 		</div>	
-	</div>	
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $('.dropdown-submenu a.test').on("click", function (e) {
-        $(this).next('ul').toggle();
-        e.stopPropagation();
-        e.preventDefault();
-      });
-    });
-  </script>
-<script src="./static/js/particles.min.js"></script>
-<script src="./static/js/particles.js"></script>
+  </div>	
+  
 
-<script>
-	// When the user scrolls down 50px from the top of the document, resize the header's font size
-	window.onscroll = function() {scrollFunction()};
-	function scrollFunction() {
-	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-		document.getElementById("headerBOXabsolute").style.height = "15%";
-		document.getElementById("particles-js").style.height = "11%";
-		document.getElementById("article").style.width = "80%";
-    document.getElementById("asideBreadCrump").style.width = "15%";
-		
-	  } else {
-		document.getElementById("headerBOXabsolute").style.height = "40%";
-		document.getElementById("particles-js").style.height = "30%";
-		document.getElementById("article").style.width = "75%";
-    document.getElementById("asideBreadCrump").style.width = "20%";
-		
-		
-	  }
-	}
-	</script>
+  /* Bootstrap-Einbindung */
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  
+  
+  /* Nested Navigation */
+  <script>
+  $(document).ready(function () {
+    $('.dropdown-submenu a.test').on("click", function (e) {
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
+  
+  
+  
+  /* Change Size */
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  document.getElementById("headerBOXabsolute").style.height = "15%";
+  document.getElementById("particles-js").style.height = "11%";
+  document.getElementById("article").style.width = "80%";
+  document.getElementById("asideBreadCrump").style.width = "15%";
+  
+  } else {
+  document.getElementById("headerBOXabsolute").style.height = "40%";
+  document.getElementById("particles-js").style.height = "30%";
+  document.getElementById("article").style.width = "75%";
+  document.getElementById("asideBreadCrump").style.width = "20%";
+  }
+  }
+  </script>
+  
+  <script src="./particles.min.js"></script>
+  <script src="./particles.js"></script>
+    
+
+
+
+
 </body>
 </html>
