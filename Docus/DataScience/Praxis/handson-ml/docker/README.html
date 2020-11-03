@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Example-Test-Site</title>
+  <title>Default: Jochens Doku Platform</title>
   <meta name="author" content="Jochen Hollich">
-  <meta name="description" content=" Example " />
-  <meta name="keywords" content=" Beispiel Implementierungen von Markdown und Web Inhalten für den Test " />
+  <meta name="description" content=" Default-Description " />
+  <meta name="keywords" content=" index, welcome " />
  
   <identifier></identifier>
   <!-- Integration Bootstrap -->
@@ -766,87 +766,47 @@
       <div id="asideBreadCrump">BreadCrump</div>
 			
 			<div id="article">
-        </p>
+        <h1>Hands-on Machine Learning in Docker</h1>
 
-<h1>1. hier die Index.html</h1>
+<p>This is the Docker configuration which allows you to run and tweak the book's notebooks without installing any dependencies on your machine!<br/>
+OK, any except <code>docker</code>. With <code>docker-compose</code>. Well, you may also want <code>make</code> (but it is only used as thin layer to call a few simple <code>docker-compose</code> commands).</p>
 
-<p><!-- TOC -->autoauto- <a href="#1-hier-die-indexmd">1. hier die Index.html</a>auto    - <a href="#11-link-extern">1.1. Link Extern</a>auto    - <a href="#12-iframe-extern">1.2. Iframe Extern</a>auto    - <a href="#13-link-intern">1.3. Link Intern</a>auto    - <a href="#14-iframe-intern">1.4. Iframe intern</a>auto- <a href="#2-hier-kommt-wieder-makrodwn">2. Hier kommt wieder Makrodwn</a>autoauto<!-- /TOC --></p>
+<h2>Prerequisites</h2>
 
-<p>hier ein Bild:
-<img src="./imgs/2020-10-26-11-48-33.png" alt="alternativer Text" />
-<img src="./imgs/example.gif" alt="alternativer Text" /></p>
+<p>As stated, the two things you need is <code>docker</code> and <code>docker-compose</code>.</p>
 
-<p>hier der zugehörige Paragraph zu dem MarkdownFile</p>
+<p>Follow the instructions on <a href="https://docs.docker.com/engine/installation/">Install Docker</a> and <a href="https://docs.docker.com/compose/install/">Install Docker Compose</a> for your environment if you haven't got <code>docker</code> already.</p>
 
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunction</span><span class="p">():</span>
-    <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
+<p>Some general knowledge about <code>docker</code> infrastructure might be useful (that's an interesting topic on its own) but is not strictly <em>required</em> to just run the notebooks.</p>
 
-<h2>1.1. Link Extern</h2>
+<h2>Usage</h2>
 
-<p><a href="https://www.google.de">link zu google</a></p>
+<h3>Prepare the image (once)</h3>
 
-<h2>1.2. Iframe Extern</h2>
+<p>Switch to <code>docker</code> directory here and run <code>make build</code> (or <code>docker-compose build</code>) to build your docker image. That may take some time but is only required once. Or perhaps a few times after you tweak something in a <code>Dockerfile</code>.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_BgdXgWiaEY?list=PLiHzu4i2Hsb1tB5CZUgKPodPDUGyi9vFb" frameborder="0" ></iframe>
+<p>After the process is finished you have a <code>handson-ml</code> image, that will be the base for your experiments. You can confirm that looking on results of <code>docker images</code> command.</p>
 
-<h2>1.3. Link Intern</h2>
+<h3>Run the notebooks</h3>
 
-<p><a href="./about.html">Interner Link gleiche Hierarchie</a><br>
-<a href="./Projekte/netzwerktechnik.html">Interner Link höhere Hierarchie Level 1</a><br>
-<a href="./Docus2/Team/java.html">Interner Link höhere Hierarchie Level 2</a><br></p>
+<p>Run <code>make run</code> (or just <code>docker-compose up</code>) to start the jupyter server inside the container (also named <code>handson-ml</code>, same as image). Just point your browser to the URL printed on the screen (or just <a href="http://localhost:8888">http://localhost:8888</a> if you enabled password authentication) and you're ready to play with the book's code!</p>
 
-<h2>1.4. Iframe intern</h2>
+<p>The server runs in the directory containing the notebooks, and the changes you make from the browser will be persisted there.</p>
 
-<iframe width="560" height="315" src="article2.html" frameborder="0" ></iframe>
+<p>You can close the server just by pressing <code>Ctrl-C</code> in terminal window.</p>
 
-<p>wenn der nicht geht ist es nicht so schlimm</p>
+<h3>Run additional commands in container</h3>
 
-<p><details>
-<summary>Codings</summary></p>
+<p>Run <code>make exec</code> (or <code>docker-compose exec handson-ml bash</code>) while the server is running to run an additional <code>bash</code> shell inside the <code>handson-ml</code> container. Now you're inside the environment prepared within the image.</p>
 
-<p><details>
-<summary>Java-Script</summary></p>
+<p>One of the useful things that can be done there would be starting TensorBoard (for example with simple <code>tb</code> command, see bashrc file).</p>
 
-<p>
+<p>Another one may be comparing versions of the notebooks using the <code>nbdiff</code> command if you haven't got <code>nbdime</code> installed locally (it is <strong>way</strong> better than plain <code>diff</code> for notebooks). See <a href="https://github.com/jupyter/nbdime">Tools for diffing and merging of Jupyter notebooks</a> for more details.</p>
 
-<div class="codehilite"><pre><span></span><code><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hallo JS-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
+<p>You can see changes you made relative to the version in git using <code>git diff</code> which is integrated with <code>nbdiff</code>.</p>
 
-
-
-</p>
-
-<p></details>  </p>
-
-<p><details>
-<summary>Python</summary></p>
-
-<p>
-
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hallo Python-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-
-
-</p>
-
-<p></details>  </p>
-
-<p><details>
-<summary>Iframe</summary></p>
-
-<p>
-<iframe width="560" height="315" src="https://witzig.de.domain-auktionen.info/" frameborder="0" ></iframe>
-</p>
-
-<p></details> <br />
-</details> <br />
-</details>  </p>
-
-<h1>2. Hier kommt wieder Makrodwn</h1>
-
-<p>[[download_button]]</p>
+<p>You may also try <code>nbd NOTEBOOK_NAME.ipynb</code> command (custom, see bashrc file) to compare one of your notebooks with its <code>checkpointed</code> version.<br/>
+To be precise, the output will tell you <em>what modifications should be re-played on the <strong>manually saved</strong> version of the notebook (located in <code>.ipynb_checkpoints</code> subdirectory) to update it to the <strong>current</strong> i.e. <strong>auto-saved</strong> version (given as command's argument - located in working directory)</em>.</p>
  
 			</div>
 			<div class="clear-float"></div>

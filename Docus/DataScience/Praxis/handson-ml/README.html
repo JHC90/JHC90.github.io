@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Example-Test-Site</title>
+  <title>Default: Jochens Doku Platform</title>
   <meta name="author" content="Jochen Hollich">
-  <meta name="description" content=" Example " />
-  <meta name="keywords" content=" Beispiel Implementierungen von Markdown und Web Inhalten für den Test " />
+  <meta name="description" content=" Default-Description " />
+  <meta name="keywords" content=" index, welcome " />
  
   <identifier></identifier>
   <!-- Integration Bootstrap -->
@@ -766,87 +766,130 @@
       <div id="asideBreadCrump">BreadCrump</div>
 			
 			<div id="article">
-        </p>
+        <h1>Machine Learning Notebooks</h1>
 
-<h1>1. hier die Index.html</h1>
+<p>This project aims at teaching you the fundamentals of Machine Learning in
+python. It contains the example code and solutions to the exercises in my O'Reilly book <a href="https://learning.oreilly.com/library/view/hands-on-machine-learning/9781491962282/">Hands-on Machine Learning with Scikit-Learn and TensorFlow</a>:</p>
 
-<p><!-- TOC -->autoauto- <a href="#1-hier-die-indexmd">1. hier die Index.html</a>auto    - <a href="#11-link-extern">1.1. Link Extern</a>auto    - <a href="#12-iframe-extern">1.2. Iframe Extern</a>auto    - <a href="#13-link-intern">1.3. Link Intern</a>auto    - <a href="#14-iframe-intern">1.4. Iframe intern</a>auto- <a href="#2-hier-kommt-wieder-makrodwn">2. Hier kommt wieder Makrodwn</a>autoauto<!-- /TOC --></p>
+<p><a href="https://learning.oreilly.com/library/view/hands-on-machine-learning/9781491962282/"><img src="http://akamaicovers.oreilly.com/images/9781491962282/cat.gif" alt="book" /></a></p>
 
-<p>hier ein Bild:
-<img src="./imgs/2020-10-26-11-48-33.png" alt="alternativer Text" />
-<img src="./imgs/example.gif" alt="alternativer Text" /></p>
+<p>Simply open the <a href="http://jupyter.org/">Jupyter</a> notebooks you are interested in:</p>
 
-<p>hier der zugehörige Paragraph zu dem MarkdownFile</p>
+<ul>
+<li>Using <a href="http://nbviewer.jupyter.org/github/ageron/handson-ml/blob/master/index.ipynb">jupyter.org's notebook viewer</a>
+<ul>
+<li>note: <a href="https://github.com/ageron/handson-ml/blob/master/index.ipynb">github.com's notebook viewer</a> also works but it is slower and the math formulas are not displayed correctly,</li>
+</ul></li>
+<li>by cloning this repository and running Jupyter locally. This option lets you play around with the code. In this case, follow the installation instructions below,</li>
+<li>or by running the notebooks in <a href="https://beta.deepnote.com">Deepnote</a>. This allows you to play around with the code online in your browser. For example, here's a link to the first chapter: <a href="https://beta.deepnote.com/launch?template=data-science&amp;url=https%3A//github.com/ageron/handson-ml/blob/master/02_end_to_end_machine_learning_project.ipynb"><img height="22"  src="https://beta.deepnote.com/buttons/launch-in-deepnote.svg"></a></li>
+</ul>
 
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunction</span><span class="p">():</span>
-    <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
+<h1>Installation</h1>
 
-<h2>1.1. Link Extern</h2>
+<p>First, you will need to install <a href="https://git-scm.com/">git</a>, if you don't have it already.</p>
 
-<p><a href="https://www.google.de">link zu google</a></p>
+<p>Next, clone this repository by opening a terminal and typing the following commands:</p>
 
-<h2>1.2. Iframe Extern</h2>
+<pre><code>$ cd $HOME  # or any other development directory you prefer
+$ git clone https://github.com/ageron/handson-ml.git
+$ cd handson-ml
+</code></pre>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_BgdXgWiaEY?list=PLiHzu4i2Hsb1tB5CZUgKPodPDUGyi9vFb" frameborder="0" ></iframe>
+<p>If you do not want to install git, you can instead download <a href="https://github.com/ageron/handson-ml/archive/master.zip">master.zip</a>, unzip it, rename the resulting directory to <code>handson-ml</code> and move it to your development directory.</p>
 
-<h2>1.3. Link Intern</h2>
+<p>If you want to go through chapter 16 on Reinforcement Learning, you will need to <a href="https://gym.openai.com/docs">install OpenAI gym</a> and its dependencies for Atari simulations.</p>
 
-<p><a href="./about.html">Interner Link gleiche Hierarchie</a><br>
-<a href="./Projekte/netzwerktechnik.html">Interner Link höhere Hierarchie Level 1</a><br>
-<a href="./Docus2/Team/java.html">Interner Link höhere Hierarchie Level 2</a><br></p>
+<p>If you are familiar with Python and you know how to install Python libraries, go ahead and install the libraries listed in <code>requirements.txt</code> and jump to the <a href="#starting-jupyter">Starting Jupyter</a> section. If you need detailed instructions, please read on.</p>
 
-<h2>1.4. Iframe intern</h2>
+<h2>Python &amp; Required Libraries</h2>
 
-<iframe width="560" height="315" src="article2.html" frameborder="0" ></iframe>
+<p>Of course, you obviously need Python. Python 3 is already preinstalled on many systems nowadays. You can check which version you have by typing the following command (you may need to replace <code>python3</code> with <code>python</code>):</p>
 
-<p>wenn der nicht geht ist es nicht so schlimm</p>
+<pre><code>$ python3 --version  # for Python 3
+</code></pre>
 
-<p><details>
-<summary>Codings</summary></p>
+<p>Any Python 3 version should be fine, preferably 3.5 or above. If you don't have Python 3, I recommend installing it. To do so, you have several options: on Windows or MacOSX, you can just download it from <a href="https://www.python.org/downloads/">python.org</a>. On MacOSX, you can alternatively use <a href="https://www.macports.org/">MacPorts</a> or <a href="https://brew.sh/">Homebrew</a>. If you are using Python 3.6 on MacOSX, you need to run the following command to install the <code>certifi</code> package of certificates because Python 3.6 on MacOSX has no certificates to validate SSL connections (see this <a href="https://stackoverflow.com/questions/27835619/urllib-and-ssl-certificate-verify-failed-error">StackOverflow question</a>):</p>
 
-<p><details>
-<summary>Java-Script</summary></p>
+<pre><code>$ /Applications/Python\ 3.6/Install\ Certificates.command
+</code></pre>
 
-<p>
+<p>On Linux, unless you know what you are doing, you should use your system's packaging system. For example, on Debian or Ubuntu, type:</p>
 
-<div class="codehilite"><pre><span></span><code><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hallo JS-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install python3 python3-pip
+</code></pre>
 
+<p>Another option is to download and install <a href="https://www.continuum.io/downloads">Anaconda</a>. This is a package that includes both Python and many scientific libraries. You should prefer the Python 3 version.</p>
 
+<p>If you choose to use Anaconda, read the next section, or else jump to the <a href="#using-pip">Using pip</a> section.</p>
 
-</p>
+<h2>Using Anaconda</h2>
 
-<p></details>  </p>
+<p>Once you have <a href="https://docs.anaconda.com/anaconda/install/">installed Anaconda</a> (or Miniconda), you can run the following command:</p>
 
-<p><details>
-<summary>Python</summary></p>
+<pre><code>$ conda env create -f environment.yml
+</code></pre>
 
-<p>
+<p>This will give you a conda environment named <code>mlbook</code>, ready to use! Just activate it and you will have everything setup
+for you:</p>
 
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hallo Python-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
+<pre><code>$ conda activate mlbook
+</code></pre>
 
+<p>You are all set! Next, jump to the <a href="#starting-jupyter">Starting Jupyter</a> section.</p>
 
+<h2>Using pip</h2>
 
-</p>
+<p>If you are not using Anaconda, you need to install several scientific Python libraries that are necessary for this project, in particular NumPy, Matplotlib, Pandas, Jupyter and TensorFlow (and a few others). For this, you can either use Python's integrated packaging system, pip, or you may prefer to use your system's own packaging system (if available, e.g. on Linux, or on MacOSX when using MacPorts or Homebrew). The advantage of using pip is that it is easy to create multiple isolated Python environments with different libraries and different library versions (e.g. one environment for each project). The advantage of using your system's packaging system is that there is less risk of having conflicts between your Python libraries and your system's other packages. Since I have many projects with different library requirements, I prefer to use pip with isolated environments. Moreover, the pip packages are usually the most recent ones available, while Anaconda and system packages often lag behind a bit.</p>
 
-<p></details>  </p>
+<p>These are the commands you need to type in a terminal if you want to use pip to install the required libraries. Note: in all the following commands, if you chose to use Python 2 rather than Python 3, you must replace <code>pip3</code> with <code>pip</code>, and <code>python3</code> with <code>python</code>.</p>
 
-<p><details>
-<summary>Iframe</summary></p>
+<p>First you need to make sure you have the latest version of pip installed:</p>
 
-<p>
-<iframe width="560" height="315" src="https://witzig.de.domain-auktionen.info/" frameborder="0" ></iframe>
-</p>
+<pre><code>$ python3 -m pip install --user --upgrade pip
+</code></pre>
 
-<p></details> <br />
-</details> <br />
-</details>  </p>
+<p>The <code>--user</code> option will install the latest version of pip only for the current user. If you prefer to install it system wide (i.e. for all users), you must have administrator rights (e.g. use <code>sudo python3</code> instead of <code>python3</code> on Linux), and you should remove the <code>--user</code> option. The same is true of the command below that uses the <code>--user</code> option.</p>
 
-<h1>2. Hier kommt wieder Makrodwn</h1>
+<p>Next, you can optionally create an isolated environment. This is recommended as it makes it possible to have a different environment for each project (e.g. one for this project), with potentially very different libraries, and different versions:</p>
 
-<p>[[download_button]]</p>
+<pre><code>$ python3 -m pip install --user --upgrade virtualenv
+$ python3 -m virtualenv -p `which python3` env
+</code></pre>
+
+<p>This creates a new directory called <code>env</code> in the current directory, containing an isolated Python environment based on Python 3. If you installed multiple versions of Python 3 on your system, you can replace <code>`which python3`</code> with the path to the Python executable you prefer to use.</p>
+
+<p>Now you must activate this environment. You will need to run this command every time you want to use this environment.</p>
+
+<pre><code>$ source ./env/bin/activate
+</code></pre>
+
+<p>On Windows, the command is slightly different:</p>
+
+<pre><code>$ .\env\Scripts\activate
+</code></pre>
+
+<p>Next, use pip to install the required python packages. If you are not using virtualenv, you should add the <code>--user</code> option (alternatively you could install the libraries system-wide, but this will probably require administrator rights, e.g. using <code>sudo pip3</code> instead of <code>pip3</code> on Linux).</p>
+
+<pre><code>$ python3 -m pip install --upgrade -r requirements.txt
+</code></pre>
+
+<p>Great! You're all set, you just need to start Jupyter now.</p>
+
+<h2>Starting Jupyter</h2>
+
+<p>Okay! You can now start Jupyter, simply type:</p>
+
+<pre><code>$ jupyter notebook
+</code></pre>
+
+<p>This should open up your browser, and you should see Jupyter's tree view, with the contents of the current directory. If your browser does not open automatically, visit <a href="http://127.0.0.1:8888/tree">127.0.0.1:8888</a>. Click on <code>index.ipynb</code> to get started!</p>
+
+<p>Congrats! You are ready to learn Machine Learning, hands on!</p>
+
+<h1>Contributors</h1>
+
+<p>I would like to thank everyone who contributed to this project, either by providing useful feedback, filing issues or submitting Pull Requests. Special thanks go to Steven Bunkley and Ziembla who created the <code>docker</code> directory.</p>
  
 			</div>
 			<div class="clear-float"></div>

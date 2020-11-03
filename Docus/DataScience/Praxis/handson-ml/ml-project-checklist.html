@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Example-Test-Site</title>
+  <title>Default: Jochens Doku Platform</title>
   <meta name="author" content="Jochen Hollich">
-  <meta name="description" content=" Example " />
-  <meta name="keywords" content=" Beispiel Implementierungen von Markdown und Web Inhalten für den Test " />
+  <meta name="description" content=" Default-Description " />
+  <meta name="keywords" content=" index, welcome " />
  
   <identifier></identifier>
   <!-- Integration Bootstrap -->
@@ -766,87 +766,183 @@
       <div id="asideBreadCrump">BreadCrump</div>
 			
 			<div id="article">
-        </p>
+        <p>This checklist can guide you through your Machine Learning projects. There are eight main steps:  </p>
 
-<h1>1. hier die Index.html</h1>
+<ol>
+<li>Frame the problem and look at the big picture.  </li>
+<li>Get the data.  </li>
+<li>Explore the data to gain insights.  </li>
+<li>Prepare the data to better expose the underlying data patterns to Machine Learning algorithms.  </li>
+<li>Explore many different models and short-list the best ones.  </li>
+<li>Fine-tune your models and combine them into a great solution.  </li>
+<li>Present your solution.  </li>
+<li>Launch, monitor, and maintain your system.  </li>
+</ol>
 
-<p><!-- TOC -->autoauto- <a href="#1-hier-die-indexmd">1. hier die Index.html</a>auto    - <a href="#11-link-extern">1.1. Link Extern</a>auto    - <a href="#12-iframe-extern">1.2. Iframe Extern</a>auto    - <a href="#13-link-intern">1.3. Link Intern</a>auto    - <a href="#14-iframe-intern">1.4. Iframe intern</a>auto- <a href="#2-hier-kommt-wieder-makrodwn">2. Hier kommt wieder Makrodwn</a>autoauto<!-- /TOC --></p>
+<p>Obviously, you should feel free to adapt this checklist to your needs.  </p>
 
-<p>hier ein Bild:
-<img src="./imgs/2020-10-26-11-48-33.png" alt="alternativer Text" />
-<img src="./imgs/example.gif" alt="alternativer Text" /></p>
+<h1>Frame the problem and look at the big picture</h1>
 
-<p>hier der zugehörige Paragraph zu dem MarkdownFile</p>
+<ol>
+<li>Define the objective in business terms.  </li>
+<li>How will your solution be used?  </li>
+<li>What are the current solutions/workarounds (if any)?  </li>
+<li>How should you frame this problem (supervised/unsupervised, online/offline, etc.)  </li>
+<li>How should performance be measured?  </li>
+<li>Is the performance measure aligned with the business objective?  </li>
+<li>What would be the minimum performance needed to reach the business objective?  </li>
+<li>What are comparable problems? Can you reuse experience or tools?  </li>
+<li>Is human expertise available?  </li>
+<li>How would you solve the problem manually?  </li>
+<li>List the assumptions you or others have made so far.  </li>
+<li>Verify assumptions if possible.  </li>
+</ol>
 
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunction</span><span class="p">():</span>
-    <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
+<h1>Get the data</h1>
 
-<h2>1.1. Link Extern</h2>
+<p>Note: automate as much as possible so you can easily get fresh data.  </p>
 
-<p><a href="https://www.google.de">link zu google</a></p>
+<ol>
+<li>List the data you need and how much you need.  </li>
+<li>Find and document where you can get that data.  </li>
+<li>Check how much space it will take.  </li>
+<li>Check legal obligations, and get the authorization if necessary.  </li>
+<li>Get access authorizations.  </li>
+<li>Create a workspace (with enough storage space).  </li>
+<li>Get the data.  </li>
+<li>Convert the data to a format you can easily manipulate (without changing the data itself).  </li>
+<li>Ensure sensitive information is deleted or protected (e.g., anonymized). </li>
+<li>Check the size and type of data (time series, sample, geographical, etc.).  </li>
+<li>Sample a test set, put it aside, and never look at it (no data snooping!).    </li>
+</ol>
 
-<h2>1.2. Iframe Extern</h2>
+<h1>Explore the data</h1>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_BgdXgWiaEY?list=PLiHzu4i2Hsb1tB5CZUgKPodPDUGyi9vFb" frameborder="0" ></iframe>
+<p>Note: try to get insights from a field expert for these steps.  </p>
 
-<h2>1.3. Link Intern</h2>
+<ol>
+<li>Create a copy of the data for exploration (sampling it down to a manageable size if necessary).</li>
+<li>Create a Jupyter notebook to keep record of your data exploration.  </li>
+<li>Study each attribute and its characteristics: <br />
+<ul>
+<li>Name  </li>
+<li>Type (categorical, int/float, bounded/unbounded, text, structured, etc.)</li>
+<li>% of missing values  </li>
+<li>Noisiness and type of noise (stochastic, outliers, rounding errors, etc.)</li>
+<li>Possibly useful for the task?  </li>
+<li>Type of distribution (Gaussian, uniform, logarithmic, etc.)</li>
+</ul></li>
+<li>For supervised learning tasks, identify the target attribute(s).</li>
+<li>Visualize the data.  </li>
+<li>Study the correlations between attributes.  </li>
+<li>Study how you would solve the problem manually.  </li>
+<li>Identify the promising transformations you may want to apply.  </li>
+<li>Identify extra data that would be useful (go back to "Get the Data" on page 502).  </li>
+<li>Document what you have learned.  </li>
+</ol>
 
-<p><a href="./about.html">Interner Link gleiche Hierarchie</a><br>
-<a href="./Projekte/netzwerktechnik.html">Interner Link höhere Hierarchie Level 1</a><br>
-<a href="./Docus2/Team/java.html">Interner Link höhere Hierarchie Level 2</a><br></p>
+<h1>Prepare the data</h1>
 
-<h2>1.4. Iframe intern</h2>
+<p>Notes: <br />
+- Work on copies of the data (keep the original dataset intact). <br />
+- Write functions for all data transformations you apply, for five reasons: <br />
+    - So you can easily prepare the data the next time you get a fresh dataset <br />
+    - So you can apply these transformations in future projects <br />
+    - To clean and prepare the test set <br />
+    - To clean and prepare new data instances <br />
+    - To make it easy to treat your preparation choices as hyperparameters  </p>
 
-<iframe width="560" height="315" src="article2.html" frameborder="0" ></iframe>
+<ol>
+<li>Data cleaning: <br />
+<ul>
+<li>Fix or remove outliers (optional).  </li>
+<li>Fill in missing values (e.g., with zero, mean, median...) or drop their rows (or columns).  </li>
+</ul></li>
+<li>Feature selection (optional): <br />
+<ul>
+<li>Drop the attributes that provide no useful information for the task.  </li>
+</ul></li>
+<li>Feature engineering, where appropriates: <br />
+<ul>
+<li>Discretize continuous features.  </li>
+<li>Decompose features (e.g., categorical, date/time, etc.).  </li>
+<li>Add promising transformations of features (e.g., log(x), sqrt(x), x^2, etc.).</li>
+<li>Aggregate features into promising new features.  </li>
+</ul></li>
+<li>Feature scaling: standardize or normalize features.  </li>
+</ol>
 
-<p>wenn der nicht geht ist es nicht so schlimm</p>
+<h1>Short-list promising models</h1>
 
-<p><details>
-<summary>Codings</summary></p>
+<p>Notes: 
+- If the data is huge, you may want to sample smaller training sets so you can train many different models in a reasonable time (be aware that this penalizes complex models such as large neural nets or Random Forests). <br />
+- Once again, try to automate these steps as much as possible.    </p>
 
-<p><details>
-<summary>Java-Script</summary></p>
+<ol>
+<li>Train many quick and dirty models from different categories (e.g., linear, naive, Bayes, SVM, Random Forests, neural net, etc.) using standard parameters.  </li>
+<li>Measure and compare their performance. <br />
+<ul>
+<li>For each model, use N-fold cross-validation and compute the mean and standard deviation of their performance. </li>
+</ul></li>
+<li>Analyze the most significant variables for each algorithm.  </li>
+<li>Analyze the types of errors the models make. <br />
+<ul>
+<li>What data would a human have used to avoid these errors?  </li>
+</ul></li>
+<li>Have a quick round of feature selection and engineering.  </li>
+<li>Have one or two more quick iterations of the five previous steps.  </li>
+<li>Short-list the top three to five most promising models, preferring models that make different types of errors.  </li>
+</ol>
 
-<p>
+<h1>Fine-Tune the System</h1>
 
-<div class="codehilite"><pre><span></span><code><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hallo JS-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
+<p>Notes: <br />
+- You will want to use as much data as possible for this step, especially as you move toward the end of fine-tuning. <br />
+- As always automate what you can.    </p>
 
+<ol>
+<li>Fine-tune the hyperparameters using cross-validation. <br />
+<ul>
+<li>Treat your data transformation choices as hyperparameters, especially when you are not sure about them (e.g., should I replace missing values with zero or the median value? Or just drop the rows?).  </li>
+<li>Unless there are very few hyperparamter values to explore, prefer random search over grid search. If training is very long, you may prefer a Bayesian optimization approach (e.g., using a Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams (<a href="https://goo.gl/PEFfGr">https://goo.gl/PEFfGr</a>))  </li>
+</ul></li>
+<li>Try Ensemble methods. Combining your best models will often perform better than running them invdividually.  </li>
+<li>Once you are confident about your final model, measure its performance on the test set to estimate the generalization error.</li>
+</ol>
 
+<blockquote>
+  <p>Don't tweak your model after measuring the generalization error: you would just start overfitting the test set.  </p>
+</blockquote>
 
-</p>
+<h1>Present your solution</h1>
 
-<p></details>  </p>
+<ol>
+<li>Document what you have done.  </li>
+<li>Create a nice presentation. <br />
+<ul>
+<li>Make sure you highlight the big picture first.  </li>
+</ul></li>
+<li>Explain why your solution achieves the business objective.  </li>
+<li>Don't forget to present interesting points you noticed along the way. <br />
+<ul>
+<li>Describe what worked and what did not.  </li>
+<li>List your assumptions and your system's limitations.  </li>
+</ul></li>
+<li>Ensure your key findings are communicated through beautiful visualizations or easy-to-remember statements (e.g., "the median income is the number-one predictor of housing prices").  </li>
+</ol>
 
-<p><details>
-<summary>Python</summary></p>
+<h1>Launch!</h1>
 
-<p>
-
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hallo Python-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-
-
-</p>
-
-<p></details>  </p>
-
-<p><details>
-<summary>Iframe</summary></p>
-
-<p>
-<iframe width="560" height="315" src="https://witzig.de.domain-auktionen.info/" frameborder="0" ></iframe>
-</p>
-
-<p></details> <br />
-</details> <br />
-</details>  </p>
-
-<h1>2. Hier kommt wieder Makrodwn</h1>
-
-<p>[[download_button]]</p>
+<ol>
+<li>Get your solution ready for production (plug into production data inputs, write unit tests, etc.).  </li>
+<li>Write monitoring code to check your system's live performance at regular intervals and trigger alerts when it drops. <br />
+<ul>
+<li>Beware of slow degradation too: models tend to "rot" as data evolves.   </li>
+<li>Measuring performance may require a human pipeline (e.g., via a crowdsourcing service).  </li>
+<li>Also monitor your inputs' quality (e.g., a malfunctioning sensor sending random values, or another team's output becoming stale). This is  particulary important for online learning systems.  </li>
+</ul></li>
+<li>Retrain your models on a regular basis on fresh data (automate as much as possible).  </li>
+</ol>
  
 			</div>
 			<div class="clear-float"></div>

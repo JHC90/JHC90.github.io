@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Example-Test-Site</title>
+  <title>Default: Jochens Doku Platform</title>
   <meta name="author" content="Jochen Hollich">
-  <meta name="description" content=" Example " />
-  <meta name="keywords" content=" Beispiel Implementierungen von Markdown und Web Inhalten für den Test " />
+  <meta name="description" content=" Default-Description " />
+  <meta name="keywords" content=" index, welcome " />
  
   <identifier></identifier>
   <!-- Integration Bootstrap -->
@@ -766,87 +766,73 @@
       <div id="asideBreadCrump">BreadCrump</div>
 			
 			<div id="article">
-        </p>
+        <h1>California Housing</h1>
 
-<h1>1. hier die Index.html</h1>
+<h2>Source</h2>
 
-<p><!-- TOC -->autoauto- <a href="#1-hier-die-indexmd">1. hier die Index.html</a>auto    - <a href="#11-link-extern">1.1. Link Extern</a>auto    - <a href="#12-iframe-extern">1.2. Iframe Extern</a>auto    - <a href="#13-link-intern">1.3. Link Intern</a>auto    - <a href="#14-iframe-intern">1.4. Iframe intern</a>auto- <a href="#2-hier-kommt-wieder-makrodwn">2. Hier kommt wieder Makrodwn</a>autoauto<!-- /TOC --></p>
+<p>This dataset is a modified version of the California Housing dataset available from <a href="http://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html">Luís Torgo's page</a> (University of Porto). Luís Torgo obtained it from the StatLib repository (which is closed now). The dataset may also be downloaded from StatLib mirrors.</p>
 
-<p>hier ein Bild:
-<img src="./imgs/2020-10-26-11-48-33.png" alt="alternativer Text" />
-<img src="./imgs/example.gif" alt="alternativer Text" /></p>
+<p>This dataset appeared in a 1997 paper titled <em>Sparse Spatial Autoregressions</em> by Pace, R. Kelley and Ronald Barry, published in the <em>Statistics and Probability Letters</em> journal. They built it using the 1990 California census data. It contains one row per census block group. A block group is the smallest geographical unit for which the U.S. Census Bureau publishes sample data (a block group typically has a population of 600 to 3,000 people).</p>
 
-<p>hier der zugehörige Paragraph zu dem MarkdownFile</p>
+<h2>Tweaks</h2>
 
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunction</span><span class="p">():</span>
-    <span class="k">return</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
+<p>The dataset in this directory is almost identical to the original, with two differences:</p>
 
-<h2>1.1. Link Extern</h2>
+<ul>
+<li>207 values were randomly removed from the <code>total_bedrooms</code> column, so we can discuss what to do with missing data.</li>
+<li>An additional categorical attribute called <code>ocean_proximity</code> was added, indicating (very roughly) whether each block group is near the ocean, near the Bay area, inland or on an island. This allows discussing what to do with categorical data.</li>
+</ul>
 
-<p><a href="https://www.google.de">link zu google</a></p>
+<p>Note that the block groups are called "districts" in the Jupyter notebooks, simply because in some contexts the name "block group" was confusing.</p>
 
-<h2>1.2. Iframe Extern</h2>
+<h2>Data description</h2>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_BgdXgWiaEY?list=PLiHzu4i2Hsb1tB5CZUgKPodPDUGyi9vFb" frameborder="0" ></iframe>
+<pre><code>&gt;&gt;&gt; housing.info()
+&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 20640 entries, 0 to 20639
+Data columns (total 10 columns):
+longitude             20640 non-null float64
+latitude              20640 non-null float64
+housing_median_age    20640 non-null float64
+total_rooms           20640 non-null float64
+total_bedrooms        20433 non-null float64
+population            20640 non-null float64
+households            20640 non-null float64
+median_income         20640 non-null float64
+median_house_value    20640 non-null float64
+ocean_proximity       20640 non-null object
+dtypes: float64(9), object(1)
+memory usage: 1.6+ MB
 
-<h2>1.3. Link Intern</h2>
+&gt;&gt;&gt; housing["ocean_proximity"].value_counts()
+&lt;1H OCEAN     9136
+INLAND        6551
+NEAR OCEAN    2658
+NEAR BAY      2290
+ISLAND           5
+Name: ocean_proximity, dtype: int64
 
-<p><a href="./about.html">Interner Link gleiche Hierarchie</a><br>
-<a href="./Projekte/netzwerktechnik.html">Interner Link höhere Hierarchie Level 1</a><br>
-<a href="./Docus2/Team/java.html">Interner Link höhere Hierarchie Level 2</a><br></p>
+&gt;&gt;&gt; housing.describe()
+          longitude      latitude  housing_median_age   total_rooms  \
+count  16513.000000  16513.000000        16513.000000  16513.000000   
+mean    -119.575972     35.639693           28.652335   2622.347605   
+std        2.002048      2.138279           12.576306   2138.559393   
+min     -124.350000     32.540000            1.000000      6.000000   
+25%     -121.800000     33.940000           18.000000   1442.000000   
+50%     -118.510000     34.260000           29.000000   2119.000000   
+75%     -118.010000     37.720000           37.000000   3141.000000   
+max     -114.310000     41.950000           52.000000  39320.000000   
 
-<h2>1.4. Iframe intern</h2>
-
-<iframe width="560" height="315" src="article2.html" frameborder="0" ></iframe>
-
-<p>wenn der nicht geht ist es nicht so schlimm</p>
-
-<p><details>
-<summary>Codings</summary></p>
-
-<p><details>
-<summary>Java-Script</summary></p>
-
-<p>
-
-<div class="codehilite"><pre><span></span><code><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hallo JS-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-
-
-</p>
-
-<p></details>  </p>
-
-<p><details>
-<summary>Python</summary></p>
-
-<p>
-
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hallo Python-Welt&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-
-
-</p>
-
-<p></details>  </p>
-
-<p><details>
-<summary>Iframe</summary></p>
-
-<p>
-<iframe width="560" height="315" src="https://witzig.de.domain-auktionen.info/" frameborder="0" ></iframe>
-</p>
-
-<p></details> <br />
-</details> <br />
-</details>  </p>
-
-<h1>2. Hier kommt wieder Makrodwn</h1>
-
-<p>[[download_button]]</p>
+       total_bedrooms    population    households  median_income  
+count    16355.000000  16513.000000  16513.000000   16513.000000  
+mean       534.885112   1419.525465    496.975050       3.875651  
+std        412.716467   1115.715084    375.737945       1.905088  
+min          2.000000      3.000000      2.000000       0.499900  
+25%        295.000000    784.000000    278.000000       2.566800  
+50%        433.000000   1164.000000    408.000000       3.541400  
+75%        644.000000   1718.000000    602.000000       4.745000  
+max       6210.000000  35682.000000   5358.000000      15.000100
+</code></pre>
  
 			</div>
 			<div class="clear-float"></div>
