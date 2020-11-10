@@ -2,11 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="pageID" content="[pageIDSplitter][pageIDSplitter]" />
-  <title>Default: Jochens Doku Platform</title>
+  <meta name="pageID" content="[pageIDSplitter]07112020200718-16_NavBar2[pageIDSplitter]" />
+  <title>16_Navbar2.</title>
   <meta name="author" content="Jochen Hollich">
-  <meta name="description" content=" Default-Description " />
-  <meta name="keywords" content=" index, welcome " />
+  <meta name="description" content=" Dieses Notebook liefert die Grunlagen für die Nav-Bar 2.0. Die Navbar 2.0 integirert die hierarchie stufen kommend von dem local Metadatainfo File  " />
+  <meta name="keywords" content=" ,navBar2.0 " />
   
   
  
@@ -1209,15 +1209,16 @@
 	</div>
 	<div id="contentContainerausen">
 		<div id="contentContainer">
-      <div id="asideBreadCrump">Page-ID:  </div>
+      <div id="asideBreadCrump">Page-ID: 07112020200718-16_NavBar2 </div>
 			
 			<div id="article">
-        <p><!DOCTYPE html></p>
+        
+<!DOCTYPE html></p>
 
 <div id="jupyter">
 <head123><meta charset="utf-8" />
 
-<title>00_DatenBeschaffung-Download</title>
+<title>16_Navbar2.0</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -14292,7 +14293,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Beschreibung">Beschreibung<a class="anchor-link" href="#Beschreibung">&#182;</a></h1><p>Dieses Notebook dient dazu, Möglichkeiten darzustellen wie Inhalte von remote Geräten geladen werden können.</p>
+<p></p>
 
 </div>
 
@@ -14302,14 +14303,24 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>hier der Link zu meinem Public-Google-Folder // sprich hierzu braucht es keine Google-Anmeldung:<br>
-    <a href="https://drive.google.com/drive/folders/17cptzULW_4is3t2_3eNy2oCEHGiDWevt?usp=sharing">https://drive.google.com/drive/folders/17cptzULW_4is3t2_3eNy2oCEHGiDWevt?usp=sharing</a><br>
-und hier der link zu den beiden Dateien, die sich in dem Folder befinden:<br>
-  1) <a href="https://drive.google.com/open?id=1WsaoZuh6eJVryqXBUNh2QUn0VbbXRyof">https://drive.google.com/open?id=1WsaoZuh6eJVryqXBUNh2QUn0VbbXRyof</a>  || DATA<br>
-  2) <a href="https://drive.google.com/open?id=1KgWXbB9jtVUncE5R0AL9enfwWGwTE0AB">https://drive.google.com/open?id=1KgWXbB9jtVUncE5R0AL9enfwWGwTE0AB</a> || DESCRITPION<br></p>
-<p>ggf änderung des Links zu einem Downloadlink nach folgendem Vorgehen: <a href="http://apps-experts.de/2014/10/das-neue-google-drive-45-direkte-downloadlinks-in-google-drive-erstellen/">http://apps-experts.de/2014/10/das-neue-google-drive-45-direkte-downloadlinks-in-google-drive-erstellen/</a></p>
-<p>a)
-<a href="https://drive.google.com/open?id=1WsaoZuh6eJVryqXBUNh2QUn0VbbXRyof/export?format=csv">https://drive.google.com/open?id=1WsaoZuh6eJVryqXBUNh2QUn0VbbXRyof/export?format=csv</a></p>
+<h1>Erstellen der Nav-bar 2.0 </h1><p>Dev-ID: 16_Navbar2</p>
+<h1 id="Status-der-Idee">Status der Idee<a class="anchor-link" href="#Status-der-Idee">&#182;</a></h1><ul>
+<li>[x]  Die Idee exisitiert &amp; Die Ideenentwicklung wurde gestartet</li>
+<li>[x]  Branch erstellt</li>
+<li>[x]  Kopie von FunctionContainer in IdeenBereich</li>
+<li>[ ]  implementierung der Idee</li>
+<li>[ ]  Merge back to master</li>
+<li>[ ]  Push Doc-Tool to remote master mit dem commit-Namen "01-DocTools-JPYNB-HTML-Converter"</li>
+<li>[ ]  Lösche den lokalen Branch </li>
+<li>[ ]  Ideenimplementierung abgeschlossen</li>
+<li>[ ]  Kopie von FunctionContainer zurück in DocToolMaintainingScript</li>
+</ul>
+<h1 id="Ziel">Ziel<a class="anchor-link" href="#Ziel">&#182;</a></h1><p>Mit diesem Skript soll nun die Navbar die Informationen von dem Metadata File einlesen und verwenden.
+Konkret sollen die Informationen:</p>
+<ul>
+<li>[ ] TabIndex,</li>
+<li>[ ] ListPage</li>
+</ul>
 
 </div>
 
@@ -14319,12 +14330,170 @@ und hier der link zu den beiden Dateien, die sich in dem Folder befinden:<br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Requests">Requests<a class="anchor-link" href="#Requests">&#182;</a></h2><p>Download PDF-Datei von willkürlicher Quelle. Ist aber an sich egal von wo, hier kann ich auch andere Daten mit herunterladen. Wichtig ist nur dass hierbei keine Anmeldung an dem Remote Standort stattfindet.</p>
-
+<h1 id="Entwicklung">Entwicklung<a class="anchor-link" href="#Entwicklung">&#182;</a></h1>
 </div>
 
 <p></div>
 </div></p>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span> <span class="k">as</span> <span class="n">bs</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">functionContainer</span> <span class="k">as</span> <span class="nn">fc</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+    </div>
+</div>
+
+<p></div></p>
+
+<p></div></p>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dir_path</span> <span class="o">=</span> <span class="s2">&quot;C:/DocTool/&quot;</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">dir_path</span><span class="p">)</span>
+<span class="n">debug</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">debug</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">fc</span><span class="o">.</span><span class="n">printDebugErrorPart</span><span class="p">(</span><span class="s2">&quot;Hammerfest&quot;</span><span class="p">,</span> <span class="s2">&quot;Skript startet&quot;</span><span class="p">)</span>
+
+
+<span class="n">listOfDirs</span><span class="o">=</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;./content/*/&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">listOfDirs</span><span class="p">)</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">debug</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Zunäcsht haben wir insgesammt &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">listOfDirs</span><span class="p">))</span> <span class="o">+</span><span class="s2">&quot; BASE-DIRECTORIES welche in die ERSTE(!!!!) Ebene UNGEFILTERT(!!!) der Navbar aufgenommen werden müssen&quot;</span>
+    <span class="n">fc</span><span class="o">.</span><span class="n">printDebugErrorPart</span><span class="p">(</span><span class="s2">&quot;Oslo&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+
+
+<span class="c1"># Finalbaselist = Welche reiter als erste dropdowns angezeigt werden BSPW: &quot;docus&quot;, &quot;Projekte&quot; usw</span>
+<span class="c1"># Konkret werden die ersten Subfolder angezeigt</span>
+<span class="n">finalBaseList</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">listOfDirs</span><span class="p">),</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">,</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="k">if</span><span class="p">(</span><span class="s2">&quot;imgs&quot;</span> <span class="ow">in</span> <span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">]):</span>
+        <span class="k">continue</span>
+    <span class="k">elif</span><span class="p">(</span><span class="s2">&quot;datasets&quot;</span> <span class="ow">in</span> <span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">]):</span>
+        <span class="k">continue</span>
+    <span class="k">elif</span><span class="p">(</span><span class="s2">&quot;images&quot;</span> <span class="ow">in</span> <span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">]):</span>
+        <span class="k">continue</span>
+    <span class="k">elif</span><span class="p">(</span><span class="s2">&quot;images&quot;</span> <span class="ow">in</span> <span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">]):</span>
+        <span class="k">continue</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">finalBaseList</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">listOfDirs</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">name</span><span class="p">])</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">debug</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Gefiltert haben wir insgesammt haben wir &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">finalBaseList</span><span class="p">))</span> <span class="o">+</span><span class="s2">&quot; BASE-DIRECTORIES welche in die ERSTE(!!!!) Ebene der Navbar aufgenommen werden müssen&quot;</span>
+    <span class="n">fc</span><span class="o">.</span><span class="n">printDebugErrorPart</span><span class="p">(</span><span class="s2">&quot;Stockholm&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+
+<span class="c1"># Einlesen des Metainfos files</span>
+<span class="n">metaInfosPDDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;C:\DocTool\DocToolMaintainingScripts\SiteMetaInfos.csv&quot;</span><span class="p">)</span>
+<span class="c1">#print(metaInfos.head123)</span>
+<span class="k">if</span><span class="p">(</span><span class="n">debug</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Das pandas dataframe wurde eingelesen. Das shape ist  &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">metaInfosPDDF</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">fc</span><span class="o">.</span><span class="n">printDebugErrorPart</span><span class="p">(</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+
+<span class="c1"># Start der Navigation // hier auch das Theme // hier sind in erster Linie die Index und die About Seite verlinkt</span>
+<span class="n">navbar</span> <span class="o">=</span> <span class="s1">&#39;&lt;ul class=&quot;nav nav-pills navbar navbar-inverse&quot;&gt; &lt;li role=&quot;presentation&quot; name=&quot;index&quot; tabindex=&quot;00&quot;&gt;&lt;a href=&quot;./index.html&quot;&gt;Start&lt;/a&gt;&lt;/li&gt;&lt;li role=&quot;presentation&quot; name =&quot;about&quot; tabindex=&quot;10&quot;&gt;&lt;a href=&quot;./about.html&quot;&gt;About&lt;/a&gt;&lt;/li&gt;&#39;</span>
+
+<span class="n">tabindexFolder</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+
+    </div>
+</div>
+
+<p></div></p>
+
+<p></div></p>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">eachBaseMenu</span> <span class="ow">in</span> <span class="n">finalBaseList</span><span class="p">:</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">debug</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Folgendes Base-Menu wurde geöffnet: &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">eachBaseMenu</span><span class="p">)</span>
+        <span class="n">fc</span><span class="o">.</span><span class="n">printDebugErrorPart</span><span class="p">(</span><span class="s2">&quot;Hamburg&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+    <span class="n">tabindexFolder</span> <span class="o">=</span> <span class="n">tabindexFolder</span> <span class="o">+</span> <span class="mi">10</span>
+    <span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span> <span class="o">+</span> <span class="s1">&#39;&lt;li role=&quot;presentation&quot; class=&quot;dropdown&quot; name=&quot;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">eachBaseMenu</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&quot;&gt;&lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;LinkZurFolderIndex&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; tabindex=&quot;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tabindexFolder</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;&quot;&gt;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">eachBaseMenu</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&lt;/a&gt;&#39;</span>
+
+    <span class="n">navbar</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">recursiveFolderHandling</span><span class="p">(</span><span class="n">eachBaseMenu</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">navbar</span><span class="p">,</span> <span class="n">metaInfosPDDF</span><span class="p">)</span>
+    <span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span> <span class="o">+</span> <span class="s1">&#39;&lt;/li&gt;&#39;</span> 
+
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">+</span><span class="s2">&quot;&lt;/ul&gt;&quot;</span>
+<span class="c1"># bisher wurde alles auf der content seite gemacht. Wir wollen aber später html Dateien verlinken</span>
+</pre></div>
+
+    </div>
+</div>
+
+<p></div></p>
+
+<p></div></p>
+
+<div class="cell border-box-sizing code_cell rendered celltag_outputPrepend">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">+</span><span class="s2">&quot;&lt;/ul&gt;&quot;</span>
+<span class="c1"># bisher wurde alles auf der content seite gemacht. Wir wollen aber später html Dateien verlinken</span>
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.html&quot;</span><span class="p">,</span><span class="s2">&quot;.html&quot;</span><span class="p">)</span>
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;./&quot;</span><span class="p">,</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">navbar</span><span class="p">)</span>
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span> 
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;html&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;body123&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;/body123&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">navbar</span> <span class="o">=</span> <span class="n">navbar</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;/html&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">navbar</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">navbar</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+
+<p></div></p>
+
+<p></div></p>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Speichern in Navbar, diese Datei wird dann im Layout aufgegriffen</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;navbar.html&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">navbar</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">debug</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;hallo&quot;</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; -Skript ist erfolgreich durchgelaufen.  Kontrolle ob im Explorer die Datei Navbar exisitiert und ob diese geöffnet werden kann, Die datei navbar kann auch im Browser geöffnet werden.&quot;</span>
+    <span class="n">fc</span><span class="o">.</span><span class="n">printDebugErrorPart</span><span class="p">(</span><span class="s2">&quot;Ushuaia&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+
+<p></div></p>
+
+<p></div></p>
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -14338,198 +14507,6 @@ und hier der link zu den beiden Dateien, die sich in dem Folder befinden:<br>
 </div>
 
 <p></div></p>
-
-<p></div></p>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Download Starting...&#39;</span><span class="p">)</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.tutorialspoint.com/python3/python_tutorial.pdf&#39;</span> <span class="c1"># =&gt; Checken ob die Datei bereits vorliegt oder nicht</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;./Sample-PDF.pdf&quot;</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output_file</span><span class="p">:</span>
-    <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Download Completed!!!&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-
-<p></div></p>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Download Starting...
-Download Completed!!!
-</pre>
-</div>
-
-<p></div></p>
-
-<p></div>
-</div></p>
-
-<p></div></p>
-
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Github">Github<a class="anchor-link" href="#Github">&#182;</a></h1>
-</div>
-
-<p></div>
-</div></p>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">tarfile</span>
-<span class="kn">from</span> <span class="nn">six.moves</span> <span class="kn">import</span> <span class="n">urllib</span>
-
-<span class="n">DOWNLOAD_ROOT</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/ageron/handson-ml/master/&quot;</span>
-<span class="n">HOUSING_PATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;datasets&quot;</span><span class="p">,</span> <span class="s2">&quot;housing&quot;</span><span class="p">)</span>
-<span class="n">HOUSING_URL</span> <span class="o">=</span> <span class="n">DOWNLOAD_ROOT</span> <span class="o">+</span> <span class="s2">&quot;datasets/housing/housing.tgz&quot;</span>
-
-<span class="k">def</span> <span class="nf">fetch_housing_data</span><span class="p">(</span><span class="n">housing_url</span><span class="o">=</span><span class="n">HOUSING_URL</span><span class="p">,</span> <span class="n">housing_path</span><span class="o">=</span><span class="n">HOUSING_PATH</span><span class="p">):</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">housing_path</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">tgz_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">housing_path</span><span class="p">,</span> <span class="s2">&quot;housing.tgz&quot;</span><span class="p">)</span>
-    <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">housing_url</span><span class="p">,</span> <span class="n">tgz_path</span><span class="p">)</span>
-    <span class="n">housing_tgz</span> <span class="o">=</span> <span class="n">tarfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">tgz_path</span><span class="p">)</span>
-    <span class="n">housing_tgz</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">housing_path</span><span class="p">)</span>
-    <span class="n">housing_tgz</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">fetch_housing_data</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-
-<p></div></p>
-
-<p></div></p>
-
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Gdown-bei-Public-G-Drvie-=-keine-Anmeldung-bei-Google">Gdown bei Public-G-Drvie = keine Anmeldung bei Google<a class="anchor-link" href="#Gdown-bei-Public-G-Drvie-=-keine-Anmeldung-bei-Google">&#182;</a></h2><p><a href="https://stackoverflow.com/questions/38511444/python-download-files-from-google-drive-using-url">https://stackoverflow.com/questions/38511444/python-download-files-from-google-drive-using-url</a><br></p>
-<p>die Bibloiothek ermöglicht es mir easy von Google-Drive Public daten herunterzuladen.</p>
-
-</div>
-
-<p></div>
-</div></p>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install gdown
-</pre></div>
-
-    </div>
-</div>
-
-<p></div></p>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Processing c:\users\1810837475\appdata\local\pip\cache\wheels\e2\62\1e\926d1ebe7b1e733c78d627fd288d01b83feaf67efc06e0e4c3\gdown-3.12.2-py3-none-any.whl
-Requirement already satisfied: requests[socks] in c:\users\1810837475\appdata\roaming\python\python38\site-packages (from gdown) (2.24.0)
-Requirement already satisfied: tqdm in c:\users\1810837475\anaconda3\lib\site-packages (from gdown) (4.47.0)
-Requirement already satisfied: filelock in c:\users\1810837475\anaconda3\lib\site-packages (from gdown) (3.0.12)
-Requirement already satisfied: six in c:\users\1810837475\anaconda3\lib\site-packages (from gdown) (1.15.0)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in c:\users\1810837475\anaconda3\lib\site-packages (from requests[socks]-&gt;gdown) (2.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in c:\users\1810837475\anaconda3\lib\site-packages (from requests[socks]-&gt;gdown) (2020.6.20)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,&lt;1.26,&gt;=1.21.1 in c:\users\1810837475\appdata\roaming\python\python38\site-packages (from requests[socks]-&gt;gdown) (1.25.11)
-Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in c:\users\1810837475\anaconda3\lib\site-packages (from requests[socks]-&gt;gdown) (3.0.4)
-Requirement already satisfied: PySocks!=1.5.7,&gt;=1.5.6; extra == &#34;socks&#34; in c:\users\1810837475\anaconda3\lib\site-packages (from requests[socks]-&gt;gdown) (1.7.1)
-Installing collected packages: gdown
-Successfully installed gdown-3.12.2
-Das System kann den angegebenen Pfad nicht finden.
-</pre>
-</div>
-
-<p></div></p>
-
-<p></div>
-</div></p>
-
-<p></div></p>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gdown</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://drive.google.com/uc?id=0B9P1L--7Wd2vU3VUVlFnbTgtS2c&#39;</span>
-<span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;./spam.txt&#39;</span>
-<span class="n">gdown</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> 
-</pre></div>
-
-    </div>
-</div>
-
-<p></div></p>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Downloading...
-From: https://drive.google.com/uc?id=0B9P1L--7Wd2vU3VUVlFnbTgtS2c
-To: c:\DocTool\content\Docus\Informatik\Programmieren\Python\Lösungen\spam.txt
-100%|██████████| 5.00/5.00 [00:00&lt;00:00, 4.94kB/s]
-</pre>
-</div>
-
-<p></div></p>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[17]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;./spam.txt&#39;</pre>
-</div>
-
-<p></div></p>
-
-<p></div>
-</div></p>
 
 <p></div>
     </div>
@@ -14550,7 +14527,7 @@ To: c:\DocTool\content\Docus\Informatik\Programmieren\Python\Lösungen\spam.txt
       </div>
 <!--########################################-->
       <div id="sectionNavigationpreviousPage">
-        <p><a href="C:/DocTool/output/index.html "> &lt;&lt;zur vorherigen WebPage in Section</a></p>
+        <p><a href="C:/DocTool/output/Projekte/00_Doc-Tool/Ideen-Container/12_Tags&Categories.html"> &lt;&lt;zur vorherigen WebPage in Section</a></p>
       </div>
 <!--########################################-->
 <!--########################################-->
@@ -14562,7 +14539,7 @@ To: c:\DocTool\content\Docus\Informatik\Programmieren\Python\Lösungen\spam.txt
    
 <!--########################################-->
       <div id="sectionNavigationfollowingPage">   
-        <p><a href="C:/DocTool/output/Docus/Informatik/Programmieren/Python/Lösungen/0_DatenBeschaffung-Download.html"> zur nächsten WebPage in Section &gt;&gt;</a></p>
+        <p><a href="C:/DocTool/output/Projekte/00_Doc-Tool/Ideen-Container/02-publishContentsRemote.html"> zur nächsten WebPage in Section &gt;&gt;</a></p>
       </div>
     </div>
 <!--########################################-->
