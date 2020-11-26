@@ -1,0 +1,2663 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="pageID" content="[pageIDSplitter]21112020-Probability-Un-abhängigeEreignisse[pageIDSplitter]" />
+  <title>Unabhängige und Abhängige Ereignisse</title>
+  <meta name="author" content="Jochen Hollich">
+  <meta name="description" content=" Hier die Einleitung zu den Wahrscheinlichkeiten " />
+  <meta name="keywords" content=" Schnittmengen, Vereinigungsmengen , Komplementärmenge " />
+  
+  
+ 
+  <identifier></identifier>
+  <!-- Integration Bootstrap -->
+  <!-- Das neueste kompilierte und minimierte CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Optionales Theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <!-- Das neueste kompilierte und minimierte JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Eigene CSS -->
+  <!--<link rel="stylesheet" type="text/css" href="/static/css/screen.css" />-->
+  <link rel="stylesheet" type="text/css" href="/static/css/defaultstyle.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/navbarCSS.css" />
+
+  <!--Inkludiert die Markdown-Formulas Darstellung-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" crossorigin="anonymous">
+
+  <!--Eigene JS-->
+  <script  src="/static/js/externalJS.js"></script> 
+</head>
+<body>
+	<div id="headerBOXabsolute">
+		<div id="headerBOXrelative">
+			<div id="particles-js"></div>
+			<div id="navbar">
+        
+ 
+  <ul class="nav nav-pills navbar navbar-inverse">
+   <li name="index" role="presentation" tabindex="00">
+    <a href="/index.html">
+     Start
+    </a>
+   </li>
+   <li name="about" role="presentation" tabindex="10">
+    <a href="/about.html">
+     About
+    </a>
+   </li>
+   <li class="dropdown" name="Docus" role="presentation">
+    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="LinkZurFolderIndex" role="button" tabindex="20">
+     Docus
+    </a>
+    <ul class="dropdown-menu">
+     <li class="dropdown-submenu" name="Auszeichnnungssprachen">
+      <a class="test" href="#" tabindex="-1">
+       Auszeichnnungssprachen
+       <span>
+       </span>
+      </a>
+      <ul class="dropdown-menu">
+       <li class="dropdown-submenu" name="Latex">
+        <a class="test" href="#" tabindex="-1">
+         Latex
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Markdown">
+        <a class="test" href="#" tabindex="-1">
+         Markdown
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li name="DestinationMarkDownCheatSheet" tabindex="1">
+          <a href="/Docus/Auszeichnnungssprachen/Markdown/DestinationMarkDownCheatSheet.html">
+           DestinationMarkDownCheatSheet
+          </a>
+         </li>
+         <li name="MarkDownCheatSheet" tabindex="0">
+          <a href="/Docus/Auszeichnnungssprachen/Markdown/MarkDownCheatSheet.html">
+           MarkDownCheatSheet
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdown-submenu" name="DataScience">
+      <a class="test" href="#" tabindex="-1">
+       DataScience
+       <span>
+       </span>
+      </a>
+      <ul class="dropdown-menu">
+       <li class="dropdown-submenu" name="Checklist">
+        <a class="test" href="#" tabindex="-1">
+         Checklist
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li name="Index-Checklist" tabindex="0">
+          <a href="/Docus/DataScience/Checklist/Index-Checklist.html">
+           Index-Checklist
+          </a>
+         </li>
+         <li class="dropdown-submenu" name="01-BigPicture">
+          <a class="test" href="#" tabindex="-1">
+           01-BigPicture
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_BusinessObejctives" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/01_BusinessObejctives.html">
+             01_BusinessObejctives
+            </a>
+           </li>
+           <li name="02_UseOfImplementation" tabindex="5">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/02_UseOfImplementation.html">
+             02_UseOfImplementation
+            </a>
+           </li>
+           <li name="03_CurrentSolutions" tabindex="6">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/03_CurrentSolutions.html">
+             03_CurrentSolutions
+            </a>
+           </li>
+           <li name="04_ProbemFraming" tabindex="7">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/04_ProbemFraming.html">
+             04_ProbemFraming
+            </a>
+           </li>
+           <li name="05_PerformanceMeasure" tabindex="8">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/05_PerformanceMeasure.html">
+             05_PerformanceMeasure
+            </a>
+           </li>
+           <li name="06_PerformanceMeasureBusinesObjective" tabindex="9">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/06_PerformanceMeasureBusinesObjective.html">
+             06_PerformanceMeasureBusinesObjective
+            </a>
+           </li>
+           <li name="07_MinimumPerformnace" tabindex="10">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/07_MinimumPerformnace.html">
+             07_MinimumPerformnace
+            </a>
+           </li>
+           <li name="08_ComparableProblems" tabindex="11">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/08_ComparableProblems.html">
+             08_ComparableProblems
+            </a>
+           </li>
+           <li name="09_HumanExpertise" tabindex="12">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/09_HumanExpertise.html">
+             09_HumanExpertise
+            </a>
+           </li>
+           <li name="10_CurrentSolutions" tabindex="1">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/10_CurrentSolutions.html">
+             10_CurrentSolutions
+            </a>
+           </li>
+           <li name="11_List_Assumptions" tabindex="2">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/11_List_Assumptions.html">
+             11_List_Assumptions
+            </a>
+           </li>
+           <li name="12-VerifyAssumptions" tabindex="3">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/12-VerifyAssumptions.html">
+             12-VerifyAssumptions
+            </a>
+           </li>
+           <li name="13-ClarifyTechnology" tabindex="4">
+            <a href="/Docus/DataScience/Checklist/01-BigPicture/13-ClarifyTechnology.html">
+             13-ClarifyTechnology
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="02_GetTheData">
+          <a class="test" href="#" tabindex="-1">
+           02_GetTheData
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_ListDataNeed" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/01_ListDataNeed.html">
+             01_ListDataNeed
+            </a>
+           </li>
+           <li name="02_FindAndDocumentWhereToGetData" tabindex="4">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/02_FindAndDocumentWhereToGetData.html">
+             02_FindAndDocumentWhereToGetData
+            </a>
+           </li>
+           <li name="03_CheckSpaceForStorage" tabindex="5">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/03_CheckSpaceForStorage.html">
+             03_CheckSpaceForStorage
+            </a>
+           </li>
+           <li name="04_Legal-Obligations" tabindex="6">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/04_Legal-Obligations.html">
+             04_Legal-Obligations
+            </a>
+           </li>
+           <li name="05_GetAccessToData" tabindex="7">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/05_GetAccessToData.html">
+             05_GetAccessToData
+            </a>
+           </li>
+           <li name="06_CreateWorkspace" tabindex="8">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/06_CreateWorkspace.html">
+             06_CreateWorkspace
+            </a>
+           </li>
+           <li name="07_GetData" tabindex="9">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/07_GetData.html">
+             07_GetData
+            </a>
+           </li>
+           <li name="08_ConvertDataToWokringFile" tabindex="10">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/08_ConvertDataToWokringFile.html">
+             08_ConvertDataToWokringFile
+            </a>
+           </li>
+           <li name="09_SensbileDaten" tabindex="11">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/09_SensbileDaten.html">
+             09_SensbileDaten
+            </a>
+           </li>
+           <li name="10_CheckSizeAndType" tabindex="1">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/10_CheckSizeAndType.html">
+             10_CheckSizeAndType
+            </a>
+           </li>
+           <li name="11_Mini-Exploration" tabindex="2">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/11_Mini-Exploration.html">
+             11_Mini-Exploration
+            </a>
+           </li>
+           <li name="12_SampleTestTrainValidation" tabindex="3">
+            <a href="/Docus/DataScience/Checklist/02_GetTheData/12_SampleTestTrainValidation.html">
+             12_SampleTestTrainValidation
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="03_Exploration">
+          <a class="test" href="#" tabindex="-1">
+           03_Exploration
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_CreateCopy" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/01_CreateCopy.html">
+             01_CreateCopy
+            </a>
+           </li>
+           <li name="02_CreateJupyter" tabindex="1">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/02_CreateJupyter.html">
+             02_CreateJupyter
+            </a>
+           </li>
+           <li name="03_StudyAttributes" tabindex="2">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/03_StudyAttributes.html">
+             03_StudyAttributes
+            </a>
+           </li>
+           <li name="04_IdentifyTargets" tabindex="3">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/04_IdentifyTargets.html">
+             04_IdentifyTargets
+            </a>
+           </li>
+           <li name="05_VisualizeData" tabindex="4">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/05_VisualizeData.html">
+             05_VisualizeData
+            </a>
+           </li>
+           <li name="06_Correlations" tabindex="5">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/06_Correlations.html">
+             06_Correlations
+            </a>
+           </li>
+           <li name="07_ManualSolution" tabindex="6">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/07_ManualSolution.html">
+             07_ManualSolution
+            </a>
+           </li>
+           <li name="08_PromissingTransformations" tabindex="7">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/08_PromissingTransformations.html">
+             08_PromissingTransformations
+            </a>
+           </li>
+           <li name="09_extraData" tabindex="8">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/09_extraData.html">
+             09_extraData
+            </a>
+           </li>
+           <li name="10_DocumentLearnings" tabindex="9">
+            <a href="/Docus/DataScience/Checklist/03_Exploration/10_DocumentLearnings.html">
+             10_DocumentLearnings
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="04_Preparation">
+          <a class="test" href="#" tabindex="-1">
+           04_Preparation
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_DataCleaning" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/04_Preparation/01_DataCleaning.html">
+             01_DataCleaning
+            </a>
+           </li>
+           <li name="02_FeatureSelection" tabindex="1">
+            <a href="/Docus/DataScience/Checklist/04_Preparation/02_FeatureSelection.html">
+             02_FeatureSelection
+            </a>
+           </li>
+           <li name="03_FeatureEngineering" tabindex="2">
+            <a href="/Docus/DataScience/Checklist/04_Preparation/03_FeatureEngineering.html">
+             03_FeatureEngineering
+            </a>
+           </li>
+           <li name="04_FeatureScaling" tabindex="3">
+            <a href="/Docus/DataScience/Checklist/04_Preparation/04_FeatureScaling.html">
+             04_FeatureScaling
+            </a>
+           </li>
+           <li name="05_Pipelines" tabindex="4">
+            <a href="/Docus/DataScience/Checklist/04_Preparation/05_Pipelines.html">
+             05_Pipelines
+            </a>
+           </li>
+           <li name="06_DataSetConfigs" tabindex="5">
+            <a href="/Docus/DataScience/Checklist/04_Preparation/06_DataSetConfigs.html">
+             06_DataSetConfigs
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="05_Short-ListPromissingModels">
+          <a class="test" href="#" tabindex="-1">
+           05_Short-ListPromissingModels
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_Quick&amp;Dirty" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/01_Quick&amp;Dirty.html">
+             01_Quick&amp;Dirty
+            </a>
+           </li>
+           <li name="02_MeasurePerformance" tabindex="1">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/02_MeasurePerformance.html">
+             02_MeasurePerformance
+            </a>
+           </li>
+           <li name="03_AnalyzeFeatureImportance" tabindex="2">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/03_AnalyzeFeatureImportance.html">
+             03_AnalyzeFeatureImportance
+            </a>
+           </li>
+           <li name="04_AnalyzeErrorTypes" tabindex="3">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/04_AnalyzeErrorTypes.html">
+             04_AnalyzeErrorTypes
+            </a>
+           </li>
+           <li name="05_FeatureSelectionAndEngineering" tabindex="4">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/05_FeatureSelectionAndEngineering.html">
+             05_FeatureSelectionAndEngineering
+            </a>
+           </li>
+           <li name="06_Repetition" tabindex="5">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/06_Repetition.html">
+             06_Repetition
+            </a>
+           </li>
+           <li name="07_Summary" tabindex="6">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/07_Summary.html">
+             07_Summary
+            </a>
+           </li>
+           <li name="08_Ohrfeige" tabindex="7">
+            <a href="/Docus/DataScience/Checklist/05_Short-ListPromissingModels/08_Ohrfeige.html">
+             08_Ohrfeige
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="06_FineTune">
+          <a class="test" href="#" tabindex="-1">
+           06_FineTune
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="10_CrossValidaton" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/06_FineTune/10_CrossValidaton.html">
+             10_CrossValidaton
+            </a>
+           </li>
+           <li name="15_HyperParameterSuchen" tabindex="1">
+            <a href="/Docus/DataScience/Checklist/06_FineTune/15_HyperParameterSuchen.html">
+             15_HyperParameterSuchen
+            </a>
+           </li>
+           <li name="20_EnsembleMethods" tabindex="2">
+            <a href="/Docus/DataScience/Checklist/06_FineTune/20_EnsembleMethods.html">
+             20_EnsembleMethods
+            </a>
+           </li>
+           <li name="30_PerformanceOnTestSet" tabindex="3">
+            <a href="/Docus/DataScience/Checklist/06_FineTune/30_PerformanceOnTestSet.html">
+             30_PerformanceOnTestSet
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="07_Present">
+          <a class="test" href="#" tabindex="-1">
+           07_Present
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_Documenation" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/07_Present/01_Documenation.html">
+             01_Documenation
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="08_Launch">
+          <a class="test" href="#" tabindex="-1">
+           08_Launch
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_Quick&amp;Dirty" tabindex="0">
+            <a href="/Docus/DataScience/Checklist/08_Launch/01_Quick&amp;Dirty.html">
+             01_Quick&amp;Dirty
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Praxis">
+        <a class="test" href="#" tabindex="-1">
+         Praxis
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="Beispiel-Projekte-handsonml">
+          <a class="test" href="#" tabindex="-1">
+           Beispiel-Projekte-handsonml
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_the_machine_learning_landscape" tabindex="0">
+            <a href="/Docus/DataScience/Praxis/Beispiel-Projekte-handsonml/01_the_machine_learning_landscape.html">
+             01_the_machine_learning_landscape
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="Klassifikation">
+          <a class="test" href="#" tabindex="-1">
+           Klassifikation
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li class="dropdown-submenu" name="50_HOML_MNIST">
+            <a class="test" href="#" tabindex="-1">
+             50_HOML_MNIST
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="10_MNIST_BigPicture" tabindex="1">
+              <a href="/Docus/DataScience/Praxis/Klassifikation/50_HOML_MNIST/10_MNIST_BigPicture.html">
+               10_MNIST_BigPicture
+              </a>
+             </li>
+             <li name="20_MNIST_Data" tabindex="2">
+              <a href="/Docus/DataScience/Praxis/Klassifikation/50_HOML_MNIST/20_MNIST_Data.html">
+               20_MNIST_Data
+              </a>
+             </li>
+             <li name="Orginal-MNIST" tabindex="0">
+              <a href="/Docus/DataScience/Praxis/Klassifikation/50_HOML_MNIST/Orginal-MNIST.html">
+               Orginal-MNIST
+              </a>
+             </li>
+             <li class="dropdown-submenu" name="backup">
+              <a class="test" href="#" tabindex="-1">
+               backup
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="Regression">
+          <a class="test" href="#" tabindex="-1">
+           Regression
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li class="dropdown-submenu" name="50_HOML-California-Housing-Prices">
+            <a class="test" href="#" tabindex="-1">
+             50_HOML-California-Housing-Prices
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="01_California_Housing_BigPicture" tabindex="1">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/01_California_Housing_BigPicture.html">
+               01_California_Housing_BigPicture
+              </a>
+             </li>
+             <li name="02_Califronia_Housing_Data" tabindex="2">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/02_Califronia_Housing_Data.html">
+               02_Califronia_Housing_Data
+              </a>
+             </li>
+             <li name="03_Califronia_Housing_EDA" tabindex="3">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/03_Califronia_Housing_EDA.html">
+               03_Califronia_Housing_EDA
+              </a>
+             </li>
+             <li name="04_Califronia_Housing_DataPreprocessing" tabindex="4">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/04_Califronia_Housing_DataPreprocessing.html">
+               04_Califronia_Housing_DataPreprocessing
+              </a>
+             </li>
+             <li name="05_Califronia_Housing_Modeling" tabindex="5">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/05_Califronia_Housing_Modeling.html">
+               05_Califronia_Housing_Modeling
+              </a>
+             </li>
+             <li name="XX_BuchOrginalLösung" tabindex="0">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/XX_BuchOrginalLösung.html">
+               XX_BuchOrginalLösung
+              </a>
+             </li>
+             <li name="XX_MichiKohlegger_Solution_ML" tabindex="6">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/XX_MichiKohlegger_Solution_ML.html">
+               XX_MichiKohlegger_Solution_ML
+              </a>
+             </li>
+             <li name="XX_MichiKohlegger_Solution_ML2" tabindex="7">
+              <a href="/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/XX_MichiKohlegger_Solution_ML2.html">
+               XX_MichiKohlegger_Solution_ML2
+              </a>
+             </li>
+             <li class="dropdown-submenu" name="pipe_tools">
+              <a class="test" href="#" tabindex="-1">
+               pipe_tools
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li class="dropdown-submenu" name="__pycache__">
+                <a class="test" href="#" tabindex="-1">
+                 __pycache__
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="__pycache__">
+              <a class="test" href="#" tabindex="-1">
+               __pycache__
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Theorie">
+        <a class="test" href="#" tabindex="-1">
+         Theorie
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li name="000_AI_ML_DL" tabindex="0">
+          <a href="/Docus/DataScience/Theorie/000_AI_ML_DL.html">
+           000_AI_ML_DL
+          </a>
+         </li>
+         <li name="001_Datasets" tabindex="1">
+          <a href="/Docus/DataScience/Theorie/001_Datasets.html">
+           001_Datasets
+          </a>
+         </li>
+         <li name="002_Generalisierung" tabindex="2">
+          <a href="/Docus/DataScience/Theorie/002_Generalisierung.html">
+           002_Generalisierung
+          </a>
+         </li>
+         <li name="003_Validation" tabindex="3">
+          <a href="/Docus/DataScience/Theorie/003_Validation.html">
+           003_Validation
+          </a>
+         </li>
+         <li name="004_Parameter" tabindex="4">
+          <a href="/Docus/DataScience/Theorie/004_Parameter.html">
+           004_Parameter
+          </a>
+         </li>
+         <li name="005_PerformanceMeasure" tabindex="5">
+          <a href="/Docus/DataScience/Theorie/005_PerformanceMeasure.html">
+           005_PerformanceMeasure
+          </a>
+         </li>
+         <li name="006_SupervisedUnsupervised" tabindex="6">
+          <a href="/Docus/DataScience/Theorie/006_SupervisedUnsupervised.html">
+           006_SupervisedUnsupervised
+          </a>
+         </li>
+         <li class="dropdown-submenu" name="Algorithmen">
+          <a class="test" href="#" tabindex="-1">
+           Algorithmen
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="001_Algorithmen" tabindex="1">
+            <a href="/Docus/DataScience/Theorie/Algorithmen/001_Algorithmen.html">
+             001_Algorithmen
+            </a>
+           </li>
+           <li name="XX_Begriffe" tabindex="0">
+            <a href="/Docus/DataScience/Theorie/Algorithmen/XX_Begriffe.html">
+             XX_Begriffe
+            </a>
+           </li>
+           <li class="dropdown-submenu" name="Regression">
+            <a class="test" href="#" tabindex="-1">
+             Regression
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li class="dropdown-submenu" name="01_Basic-Idea-Regression">
+              <a class="test" href="#" tabindex="-1">
+               01_Basic-Idea-Regression
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="05_BestFit" tabindex="0">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_Basic-Idea-Regression/05_BestFit.html">
+                 05_BestFit
+                </a>
+               </li>
+               <li name="10_Lineare-SimpleImplementation" tabindex="1">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_Basic-Idea-Regression/10_Lineare-SimpleImplementation.html">
+                 10_Lineare-SimpleImplementation
+                </a>
+               </li>
+               <li name="20_Lineare-Regression_SimpeCalc" tabindex="2">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_Basic-Idea-Regression/20_Lineare-Regression_SimpeCalc.html">
+                 20_Lineare-Regression_SimpeCalc
+                </a>
+               </li>
+               <li name="30_Lineare-Regression_Error" tabindex="3">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_Basic-Idea-Regression/30_Lineare-Regression_Error.html">
+                 30_Lineare-Regression_Error
+                </a>
+               </li>
+               <li name="40_Lineare-Regression_Performance_MAE-MSE-RMSE" tabindex="4">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_Basic-Idea-Regression/40_Lineare-Regression_Performance_MAE-MSE-RMSE.html">
+                 40_Lineare-Regression_Performance_MAE-MSE-RMSE
+                </a>
+               </li>
+               <li name="50_Lineare-Regression_Bestimmtheitsmas" tabindex="5">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_Basic-Idea-Regression/50_Lineare-Regression_Bestimmtheitsmas.html">
+                 50_Lineare-Regression_Bestimmtheitsmas
+                </a>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="01_OLS">
+              <a class="test" href="#" tabindex="-1">
+               01_OLS
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="10_Lineare-SimpleImplementation" tabindex="0">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_OLS/10_Lineare-SimpleImplementation.html">
+                 10_Lineare-SimpleImplementation
+                </a>
+               </li>
+               <li name="20_Multiple-Regression" tabindex="1">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/01_OLS/20_Multiple-Regression.html">
+                 20_Multiple-Regression
+                </a>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="02_RidgeRegression">
+              <a class="test" href="#" tabindex="-1">
+               02_RidgeRegression
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="04_LassoRegression">
+              <a class="test" href="#" tabindex="-1">
+               04_LassoRegression
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="05_PolynominaleRegression">
+              <a class="test" href="#" tabindex="-1">
+               05_PolynominaleRegression
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="100_NN">
+              <a class="test" href="#" tabindex="-1">
+               100_NN
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="10_DecisionTree-Regression">
+              <a class="test" href="#" tabindex="-1">
+               10_DecisionTree-Regression
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="20_RandomForrest-Regression">
+              <a class="test" href="#" tabindex="-1">
+               20_RandomForrest-Regression
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="30_SVM">
+              <a class="test" href="#" tabindex="-1">
+               30_SVM
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Jupyter-notebooks-Regression">
+              <a class="test" href="#" tabindex="-1">
+               Jupyter-notebooks-Regression
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Basic-Regression" tabindex="0">
+                <a href="/Docus/DataScience/Theorie/Algorithmen/Regression/Jupyter-notebooks-Regression/Basic-Regression.html">
+                 Basic-Regression
+                </a>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="AnwendungenVonMachineLearning">
+          <a class="test" href="#" tabindex="-1">
+           AnwendungenVonMachineLearning
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="MathematischeGrundlagen">
+          <a class="test" href="#" tabindex="-1">
+           MathematischeGrundlagen
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li class="dropdown-submenu" name="10_Daten">
+            <a class="test" href="#" tabindex="-1">
+             10_Daten
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="10_Data" tabindex="0">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/10_Data.html">
+               10_Data
+              </a>
+             </li>
+             <li name="20_PopulationVsStichprobe" tabindex="1">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/20_PopulationVsStichprobe.html">
+               20_PopulationVsStichprobe
+              </a>
+             </li>
+             <li name="30_EbenenDerDatenmessung" tabindex="2">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/30_EbenenDerDatenmessung.html">
+               30_EbenenDerDatenmessung
+              </a>
+             </li>
+             <li name="40_Messgrößen" tabindex="3">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/40_Messgrößen.html">
+               40_Messgrößen
+              </a>
+             </li>
+             <li name="50_Quantile" tabindex="4">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/50_Quantile.html">
+               50_Quantile
+              </a>
+             </li>
+             <li name="60_BivariateDaten" tabindex="5">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/60_BivariateDaten.html">
+               60_BivariateDaten
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="20_Wahrscheinlichkeiten">
+            <a class="test" href="#" tabindex="-1">
+             20_Wahrscheinlichkeiten
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="10_Wahrscheinlichkeiten" tabindex="0">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/10_Wahrscheinlichkeiten.html">
+               10_Wahrscheinlichkeiten
+              </a>
+             </li>
+             <li name="20_ErgebnismengeZufallsexperiment" tabindex="2">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/20_ErgebnismengeZufallsexperiment.html">
+               20_ErgebnismengeZufallsexperiment
+              </a>
+             </li>
+             <li name="30_Permutation" tabindex="1">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/30_Permutation.html">
+               30_Permutation
+              </a>
+             </li>
+             <li name="30_PermutationKombination" tabindex="3">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/30_PermutationKombination.html">
+               30_PermutationKombination
+              </a>
+             </li>
+             <li name="40_Schnittmengen" tabindex="4">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/40_Schnittmengen.html">
+               40_Schnittmengen
+              </a>
+             </li>
+             <li name="50_Un-AbhängigeEreignissae" tabindex="5">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/50_Un-AbhängigeEreignissae.html">
+               50_Un-AbhängigeEreignissae
+              </a>
+             </li>
+             <li name="60_BedingteWahrscheinlichkeit" tabindex="6">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/60_BedingteWahrscheinlichkeit.html">
+               60_BedingteWahrscheinlichkeit
+              </a>
+             </li>
+             <li name="70_AdditionsUndMultiplikationsregel" tabindex="7">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/70_AdditionsUndMultiplikationsregel.html">
+               70_AdditionsUndMultiplikationsregel
+              </a>
+             </li>
+             <li name="80_Bayes-Theorem" tabindex="8">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/80_Bayes-Theorem.html">
+               80_Bayes-Theorem
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="30_Verteilungen">
+            <a class="test" href="#" tabindex="-1">
+             30_Verteilungen
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="10_Verteilungen-Distributionen" tabindex="1">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/10_Verteilungen-Distributionen.html">
+               10_Verteilungen-Distributionen
+              </a>
+             </li>
+             <li name="20_Gleichverteilung" tabindex="2">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/20_Gleichverteilung.html">
+               20_Gleichverteilung
+              </a>
+             </li>
+             <li name="30_BinominalVerteilung" tabindex="3">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/30_BinominalVerteilung.html">
+               30_BinominalVerteilung
+              </a>
+             </li>
+             <li name="40_Poisson-Verteilung" tabindex="4">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/40_Poisson-Verteilung.html">
+               40_Poisson-Verteilung
+              </a>
+             </li>
+             <li name="50_Normalverteilung" tabindex="5">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/50_Normalverteilung.html">
+               50_Normalverteilung
+              </a>
+             </li>
+             <li name="60_Exponentialverteilung" tabindex="6">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/60_Exponentialverteilung.html">
+               60_Exponentialverteilung
+              </a>
+             </li>
+             <li name="70_Betaverteilung" tabindex="7">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/70_Betaverteilung.html">
+               70_Betaverteilung
+              </a>
+             </li>
+             <li name="interim" tabindex="0">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/interim.html">
+               interim
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="40_Statistik">
+            <a class="test" href="#" tabindex="-1">
+             40_Statistik
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="50_Anova">
+            <a class="test" href="#" tabindex="-1">
+             50_Anova
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="60_Regression">
+            <a class="test" href="#" tabindex="-1">
+             60_Regression
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="70_QuiQuadrat">
+            <a class="test" href="#" tabindex="-1">
+             70_QuiQuadrat
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="XX_Jupyter-HelperNotebooks">
+            <a class="test" href="#" tabindex="-1">
+             XX_Jupyter-HelperNotebooks
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="Untitled" tabindex="0">
+              <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/XX_Jupyter-HelperNotebooks/Untitled.html">
+               Untitled
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="Visulaisierungen">
+          <a class="test" href="#" tabindex="-1">
+           Visulaisierungen
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="40_Kresidiagramm" tabindex="0">
+            <a href="/Docus/DataScience/Theorie/Visulaisierungen/40_Kresidiagramm.html">
+             40_Kresidiagramm
+            </a>
+           </li>
+           <li name="50_Säulendiagramm" tabindex="1">
+            <a href="/Docus/DataScience/Theorie/Visulaisierungen/50_Säulendiagramm.html">
+             50_Säulendiagramm
+            </a>
+           </li>
+           <li name="60_Histogramme" tabindex="2">
+            <a href="/Docus/DataScience/Theorie/Visulaisierungen/60_Histogramme.html">
+             60_Histogramme
+            </a>
+           </li>
+           <li name="70_Boxplot" tabindex="3">
+            <a href="/Docus/DataScience/Theorie/Visulaisierungen/70_Boxplot.html">
+             70_Boxplot
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdown-submenu" name="Hardware">
+      <a class="test" href="#" tabindex="-1">
+       Hardware
+       <span>
+       </span>
+      </a>
+      <ul class="dropdown-menu">
+       <li class="dropdown-submenu" name="TP-Link">
+        <a class="test" href="#" tabindex="-1">
+         TP-Link
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li name="Repeater-WR710N" tabindex="0">
+          <a href="/Docus/Hardware/TP-Link/Repeater-WR710N.html">
+           Repeater-WR710N
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdown-submenu" name="Informatik">
+      <a class="test" href="#" tabindex="-1">
+       Informatik
+       <span>
+       </span>
+      </a>
+      <ul class="dropdown-menu">
+       <li class="dropdown-submenu" name="Grundbegriffe">
+        <a class="test" href="#" tabindex="-1">
+         Grundbegriffe
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li name="Binary" tabindex="0">
+          <a href="/Docus/Informatik/Grundbegriffe/Binary.html">
+           Binary
+          </a>
+         </li>
+         <li name="BinaryFile" tabindex="1">
+          <a href="/Docus/Informatik/Grundbegriffe/BinaryFile.html">
+           BinaryFile
+          </a>
+         </li>
+         <li name="TextFile" tabindex="2">
+          <a href="/Docus/Informatik/Grundbegriffe/TextFile.html">
+           TextFile
+          </a>
+         </li>
+         <li class="dropdown-submenu" name="DateiFormate">
+          <a class="test" href="#" tabindex="-1">
+           DateiFormate
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="csv" tabindex="0">
+            <a href="/Docus/Informatik/Grundbegriffe/DateiFormate/csv.html">
+             csv
+            </a>
+           </li>
+           <li name="json" tabindex="1">
+            <a href="/Docus/Informatik/Grundbegriffe/DateiFormate/json.html">
+             json
+            </a>
+           </li>
+           <li name="toml" tabindex="2">
+            <a href="/Docus/Informatik/Grundbegriffe/DateiFormate/toml.html">
+             toml
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Operating-Informatik">
+        <a class="test" href="#" tabindex="-1">
+         Operating-Informatik
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="Windows">
+          <a class="test" href="#" tabindex="-1">
+           Windows
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="Path-Variable" tabindex="0">
+            <a href="/Docus/Informatik/Operating-Informatik/Windows/Path-Variable.html">
+             Path-Variable
+            </a>
+           </li>
+           <li name="PathWindows" tabindex="1">
+            <a href="/Docus/Informatik/Operating-Informatik/Windows/PathWindows.html">
+             PathWindows
+            </a>
+           </li>
+           <li class="dropdown-submenu" name="Tools">
+            <a class="test" href="#" tabindex="-1">
+             Tools
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li class="dropdown-submenu" name="PC-WELTHotKeys">
+              <a class="test" href="#" tabindex="-1">
+               PC-WELTHotKeys
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Intro" tabindex="0">
+                <a href="/Docus/Informatik/Operating-Informatik/Windows/Tools/PC-WELTHotKeys/Intro.html">
+                 Intro
+                </a>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Operating-Systeme">
+        <a class="test" href="#" tabindex="-1">
+         Operating-Systeme
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="Windows">
+          <a class="test" href="#" tabindex="-1">
+           Windows
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="Path-Variable" tabindex="0">
+            <a href="/Docus/Informatik/Operating-Systeme/Windows/Path-Variable.html">
+             Path-Variable
+            </a>
+           </li>
+           <li name="PathWindows" tabindex="1">
+            <a href="/Docus/Informatik/Operating-Systeme/Windows/PathWindows.html">
+             PathWindows
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Programmieren">
+        <a class="test" href="#" tabindex="-1">
+         Programmieren
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="Grundbegriffe-Programmieren">
+          <a class="test" href="#" tabindex="-1">
+           Grundbegriffe-Programmieren
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="KompilierenInterpretieren" tabindex="0">
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/KompilierenInterpretieren.html">
+             KompilierenInterpretieren
+            </a>
+           </li>
+           <li name="Programmiersprachen" tabindex="1">
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Programmiersprachen.html">
+             Programmiersprachen
+            </a>
+           </li>
+           <li name="Typisierung" tabindex="2">
+            <a href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Typisierung.html">
+             Typisierung
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="Python">
+          <a class="test" href="#" tabindex="-1">
+           Python
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li class="dropdown-submenu" name="00_HelloWorld">
+            <a class="test" href="#" tabindex="-1">
+             00_HelloWorld
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="010_PythonBase" tabindex="0">
+              <a href="/Docus/Informatik/Programmieren/Python/00_HelloWorld/010_PythonBase.html">
+               010_PythonBase
+              </a>
+             </li>
+             <li name="015_PythonPip" tabindex="6">
+              <a href="/Docus/Informatik/Programmieren/Python/00_HelloWorld/015_PythonPip.html">
+               015_PythonPip
+              </a>
+             </li>
+             <li name="020_PythonENV" tabindex="1">
+              <a href="/Docus/Informatik/Programmieren/Python/00_HelloWorld/020_PythonENV.html">
+               020_PythonENV
+              </a>
+             </li>
+             <li name="030_PythonJupyter" tabindex="2">
+              <a href="/Docus/Informatik/Programmieren/Python/00_HelloWorld/030_PythonJupyter.html">
+               030_PythonJupyter
+              </a>
+             </li>
+             <li name="040_PythonJupyterLAB" tabindex="3">
+              <a href="/Docus/Informatik/Programmieren/Python/00_HelloWorld/040_PythonJupyterLAB.html">
+               040_PythonJupyterLAB
+              </a>
+             </li>
+             <li name="050_Pycharm" tabindex="4">
+              <a href="/Docus/Informatik/Programmieren/Python/00_HelloWorld/050_Pycharm.html">
+               050_Pycharm
+              </a>
+             </li>
+             <li name="100_Anaconda" tabindex="5">
+              <a href="/Docus/Informatik/Programmieren/Python/00_HelloWorld/100_Anaconda.html">
+               100_Anaconda
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="10_Bibliotheken">
+            <a class="test" href="#" tabindex="-1">
+             10_Bibliotheken
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="PythonVisualisirungen-Overview" tabindex="0">
+              <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/PythonVisualisirungen-Overview.html">
+               PythonVisualisirungen-Overview
+              </a>
+             </li>
+             <li class="dropdown-submenu" name="110_Seaborn">
+              <a class="test" href="#" tabindex="-1">
+               110_Seaborn
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Packet_Visualisierung_Seaborn" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/110_Seaborn/Packet_Visualisierung_Seaborn.html">
+                 Packet_Visualisierung_Seaborn
+                </a>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="120_Plotly">
+              <a class="test" href="#" tabindex="-1">
+               120_Plotly
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Packet_Visualisierung_Plotly" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/120_Plotly/Packet_Visualisierung_Plotly.html">
+                 Packet_Visualisierung_Plotly
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="data">
+                <a class="test" href="#" tabindex="-1">
+                 data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Matplotlib">
+              <a class="test" href="#" tabindex="-1">
+               Matplotlib
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="interim" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Matplotlib/interim.html">
+                 interim
+                </a>
+               </li>
+               <li name="Matplotlib" tabindex="1">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Matplotlib/Matplotlib.html">
+                 Matplotlib
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="__pycache__">
+                <a class="test" href="#" tabindex="-1">
+                 __pycache__
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Numpy">
+              <a class="test" href="#" tabindex="-1">
+               Numpy
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="1000_StoreToDrive" tabindex="2">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Numpy/1000_StoreToDrive.html">
+                 1000_StoreToDrive
+                </a>
+               </li>
+               <li name="10_NumpyOverview" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Numpy/10_NumpyOverview.html">
+                 10_NumpyOverview
+                </a>
+               </li>
+               <li name="NumpyOverview" tabindex="1">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Numpy/NumpyOverview.html">
+                 NumpyOverview
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="Data">
+                <a class="test" href="#" tabindex="-1">
+                 Data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Pandas">
+              <a class="test" href="#" tabindex="-1">
+               Pandas
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Packet_VectorMatrix_pandas" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Pandas/Packet_VectorMatrix_pandas.html">
+                 Packet_VectorMatrix_pandas
+                </a>
+               </li>
+               <li name="Packet_Visualisierung_Pandas" tabindex="1">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Pandas/Packet_Visualisierung_Pandas.html">
+                 Packet_Visualisierung_Pandas
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="data">
+                <a class="test" href="#" tabindex="-1">
+                 data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Selenium">
+              <a class="test" href="#" tabindex="-1">
+               Selenium
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="01_InstallationSlenium" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/01_InstallationSlenium.html">
+                 01_InstallationSlenium
+                </a>
+               </li>
+               <li name="02_Selenium-Basic-Interaction" tabindex="1">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/02_Selenium-Basic-Interaction.html">
+                 02_Selenium-Basic-Interaction
+                </a>
+               </li>
+               <li name="03_SeleniumUnittest" tabindex="2">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/03_SeleniumUnittest.html">
+                 03_SeleniumUnittest
+                </a>
+               </li>
+               <li name="04_Selenium" tabindex="3">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/04_Selenium.html">
+                 04_Selenium
+                </a>
+               </li>
+               <li name="SeleniumTutorial" tabindex="4">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/SeleniumTutorial.html">
+                 SeleniumTutorial
+                </a>
+               </li>
+               <li name="testfile" tabindex="5">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/testfile.html">
+                 testfile
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="WebDriver">
+                <a class="test" href="#" tabindex="-1">
+                 WebDriver
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="SK-Learn">
+              <a class="test" href="#" tabindex="-1">
+               SK-Learn
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Packet_ML_SK-Learn" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/SK-Learn/Packet_ML_SK-Learn.html">
+                 Packet_ML_SK-Learn
+                </a>
+               </li>
+               <li name="SK-Learn" tabindex="1">
+                <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/SK-Learn/SK-Learn.html">
+                 SK-Learn
+                </a>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="Lösungen">
+            <a class="test" href="#" tabindex="-1">
+             Lösungen
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="10_DatenBeschaffung-Download" tabindex="3">
+              <a href="/Docus/Informatik/Programmieren/Python/Lösungen/10_DatenBeschaffung-Download.html">
+               10_DatenBeschaffung-Download
+              </a>
+             </li>
+             <li name="20_DatenEinlesen" tabindex="4">
+              <a href="/Docus/Informatik/Programmieren/Python/Lösungen/20_DatenEinlesen.html">
+               20_DatenEinlesen
+              </a>
+             </li>
+             <li name="30_DatenFirstCheck_NA-WerteSichten_Duplikate" tabindex="5">
+              <a href="/Docus/Informatik/Programmieren/Python/Lösungen/30_DatenFirstCheck_NA-WerteSichten_Duplikate.html">
+               30_DatenFirstCheck_NA-WerteSichten_Duplikate
+              </a>
+             </li>
+             <li name="40_DataTrainTestSplit" tabindex="0">
+              <a href="/Docus/Informatik/Programmieren/Python/Lösungen/40_DataTrainTestSplit.html">
+               40_DataTrainTestSplit
+              </a>
+             </li>
+             <li name="50_DataCleaningNA-Werte" tabindex="1">
+              <a href="/Docus/Informatik/Programmieren/Python/Lösungen/50_DataCleaningNA-Werte.html">
+               50_DataCleaningNA-Werte
+              </a>
+             </li>
+             <li name="60_OneHotEncoding" tabindex="6">
+              <a href="/Docus/Informatik/Programmieren/Python/Lösungen/60_OneHotEncoding.html">
+               60_OneHotEncoding
+              </a>
+             </li>
+             <li name="test" tabindex="2">
+              <a href="/Docus/Informatik/Programmieren/Python/Lösungen/test.html">
+               test
+              </a>
+             </li>
+             <li class="dropdown-submenu" name="sklearn-pipelines">
+              <a class="test" href="#" tabindex="-1">
+               sklearn-pipelines
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="10_Basic-Idea-one-Step_Data-Pipeline" tabindex="0">
+                <a href="/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/10_Basic-Idea-one-Step_Data-Pipeline.html">
+                 10_Basic-Idea-one-Step_Data-Pipeline
+                </a>
+               </li>
+               <li name="20_Data-Pipeline_MediumAusbau" tabindex="1">
+                <a href="/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/20_Data-Pipeline_MediumAusbau.html">
+                 20_Data-Pipeline_MediumAusbau
+                </a>
+               </li>
+               <li name="30_BSP-Kohlegger" tabindex="2">
+                <a href="/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/30_BSP-Kohlegger.html">
+                 30_BSP-Kohlegger
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="pipe_tools">
+                <a class="test" href="#" tabindex="-1">
+                 pipe_tools
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                 <li class="dropdown-submenu" name="__pycache__">
+                  <a class="test" href="#" tabindex="-1">
+                   __pycache__
+                   <span>
+                   </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                  </ul>
+                 </li>
+                </ul>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="PyhonInteraktion">
+            <a class="test" href="#" tabindex="-1">
+             PyhonInteraktion
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="Jupyter-Notebook-VSC" tabindex="0">
+              <a href="/Docus/Informatik/Programmieren/Python/PyhonInteraktion/Jupyter-Notebook-VSC.html">
+               Jupyter-Notebook-VSC
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Tools">
+        <a class="test" href="#" tabindex="-1">
+         Tools
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="Dokumentation">
+          <a class="test" href="#" tabindex="-1">
+           Dokumentation
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="DocumenationsToolsOverview" tabindex="0">
+            <a href="/Docus/Informatik/Tools/Dokumentation/DocumenationsToolsOverview.html">
+             DocumenationsToolsOverview
+            </a>
+           </li>
+           <li class="dropdown-submenu" name="Git">
+            <a class="test" href="#" tabindex="-1">
+             Git
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="0_Git-Installation" tabindex="0">
+              <a href="/Docus/Informatik/Tools/Dokumentation/Git/0_Git-Installation.html">
+               0_Git-Installation
+              </a>
+             </li>
+             <li name="Git-Workflows" tabindex="1">
+              <a href="/Docus/Informatik/Tools/Dokumentation/Git/Git-Workflows.html">
+               Git-Workflows
+              </a>
+             </li>
+             <li class="dropdown-submenu" name="00_Git_Basics">
+              <a class="test" href="#" tabindex="-1">
+               00_Git_Basics
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="10_Git_Branches">
+              <a class="test" href="#" tabindex="-1">
+               10_Git_Branches
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="00_GitBranchesOverview" tabindex="2">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/00_GitBranchesOverview.html">
+                 00_GitBranchesOverview
+                </a>
+               </li>
+               <li name="10_GitBranchWechseln" tabindex="3">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/10_GitBranchWechseln.html">
+                 10_GitBranchWechseln
+                </a>
+               </li>
+               <li name="20_GitBranchAnzeigen" tabindex="4">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/20_GitBranchAnzeigen.html">
+                 20_GitBranchAnzeigen
+                </a>
+               </li>
+               <li name="30_GitCheckout-Localbranch" tabindex="5">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/30_GitCheckout-Localbranch.html">
+                 30_GitCheckout-Localbranch
+                </a>
+               </li>
+               <li name="40_GitCheckout-Remotebranch" tabindex="6">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/40_GitCheckout-Remotebranch.html">
+                 40_GitCheckout-Remotebranch
+                </a>
+               </li>
+               <li name="50_GitBranchesMerge" tabindex="7">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/50_GitBranchesMerge.html">
+                 50_GitBranchesMerge
+                </a>
+               </li>
+               <li name="60_GitBranchDelete" tabindex="8">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/60_GitBranchDelete.html">
+                 60_GitBranchDelete
+                </a>
+               </li>
+               <li name="GitCheckoutVsReset" tabindex="0">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/GitCheckoutVsReset.html">
+                 GitCheckoutVsReset
+                </a>
+               </li>
+               <li name="GitMerge" tabindex="1">
+                <a href="/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/GitMerge.html">
+                 GitMerge
+                </a>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Git_CheatSheetsPDF">
+              <a class="test" href="#" tabindex="-1">
+               Git_CheatSheetsPDF
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Udemy-Course">
+              <a class="test" href="#" tabindex="-1">
+               Udemy-Course
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li class="dropdown-submenu" name="01_Linux_Crashkurs">
+                <a class="test" href="#" tabindex="-1">
+                 01_Linux_Crashkurs
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="VS-Code">
+            <a class="test" href="#" tabindex="-1">
+             VS-Code
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="ExampleVsCode" tabindex="0">
+              <a href="/Docus/Informatik/Tools/Dokumentation/VS-Code/ExampleVsCode.html">
+               ExampleVsCode
+              </a>
+             </li>
+             <li name="VS-Code-Landing" tabindex="1">
+              <a href="/Docus/Informatik/Tools/Dokumentation/VS-Code/VS-Code-Landing.html">
+               VS-Code-Landing
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Web-Development">
+        <a class="test" href="#" tabindex="-1">
+         Web-Development
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="CSS">
+          <a class="test" href="#" tabindex="-1">
+           CSS
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01_CSS_Basics" tabindex="0">
+            <a href="/Docus/Informatik/Web-Development/CSS/01_CSS_Basics.html">
+             01_CSS_Basics
+            </a>
+           </li>
+           <li name="02_CSS_KlassenIds" tabindex="1">
+            <a href="/Docus/Informatik/Web-Development/CSS/02_CSS_KlassenIds.html">
+             02_CSS_KlassenIds
+            </a>
+           </li>
+           <li name="03_CSS_DIV_boxes" tabindex="2">
+            <a href="/Docus/Informatik/Web-Development/CSS/03_CSS_DIV_boxes.html">
+             03_CSS_DIV_boxes
+            </a>
+           </li>
+           <li name="04_Farben" tabindex="3">
+            <a href="/Docus/Informatik/Web-Development/CSS/04_Farben.html">
+             04_Farben
+            </a>
+           </li>
+           <li name="05_Floating" tabindex="4">
+            <a href="/Docus/Informatik/Web-Development/CSS/05_Floating.html">
+             05_Floating
+            </a>
+           </li>
+           <li name="06_Position" tabindex="5">
+            <a href="/Docus/Informatik/Web-Development/CSS/06_Position.html">
+             06_Position
+            </a>
+           </li>
+           <li name="07_MarginsPadding" tabindex="6">
+            <a href="/Docus/Informatik/Web-Development/CSS/07_MarginsPadding.html">
+             07_MarginsPadding
+            </a>
+           </li>
+           <li name="08_FontsTextStyling" tabindex="7">
+            <a href="/Docus/Informatik/Web-Development/CSS/08_FontsTextStyling.html">
+             08_FontsTextStyling
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="Grundbegriffe-Webentwicklung">
+          <a class="test" href="#" tabindex="-1">
+           Grundbegriffe-Webentwicklung
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="Tag" tabindex="0">
+            <a href="/Docus/Informatik/Web-Development/Grundbegriffe-Webentwicklung/Tag.html">
+             Tag
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="HTML">
+          <a class="test" href="#" tabindex="-1">
+           HTML
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="01-HTML-Grundlagen" tabindex="0">
+            <a href="/Docus/Informatik/Web-Development/HTML/01-HTML-Grundlagen.html">
+             01-HTML-Grundlagen
+            </a>
+           </li>
+           <li name="02-HTML-TextEingaben" tabindex="1">
+            <a href="/Docus/Informatik/Web-Development/HTML/02-HTML-TextEingaben.html">
+             02-HTML-TextEingaben
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="JavaScript">
+          <a class="test" href="#" tabindex="-1">
+           JavaScript
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="00_JS_Basics" tabindex="0">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/00_JS_Basics.html">
+             00_JS_Basics
+            </a>
+           </li>
+           <li name="01_JS_Einbinden" tabindex="1">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/01_JS_Einbinden.html">
+             01_JS_Einbinden
+            </a>
+           </li>
+           <li name="02_JS_HTML_Element_Zugriff" tabindex="2">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/02_JS_HTML_Element_Zugriff.html">
+             02_JS_HTML_Element_Zugriff
+            </a>
+           </li>
+           <li name="03_JS_CSS_Element_Zugriff copy" tabindex="3">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/03_JS_CSS_Element_Zugriff copy.html">
+             03_JS_CSS_Element_Zugriff copy
+            </a>
+           </li>
+           <li name="04_JS_Variablen" tabindex="4">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/04_JS_Variablen.html">
+             04_JS_Variablen
+            </a>
+           </li>
+           <li name="05_JS_" tabindex="5">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_.html">
+             05_JS_
+            </a>
+           </li>
+           <li name="05_JS_Konditional" tabindex="6">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/05_JS_Konditional.html">
+             05_JS_Konditional
+            </a>
+           </li>
+           <li name="JS_Basics" tabindex="7">
+            <a href="/Docus/Informatik/Web-Development/JavaScript/JS_Basics.html">
+             JS_Basics
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="StaticWebsiteGeneratoren">
+          <a class="test" href="#" tabindex="-1">
+           StaticWebsiteGeneratoren
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="00_Hugo_Start" tabindex="0">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/00_Hugo_Start.html">
+             00_Hugo_Start
+            </a>
+           </li>
+           <li name="01_Hugo_Installation" tabindex="18">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/01_Hugo_Installation.html">
+             01_Hugo_Installation
+            </a>
+           </li>
+           <li name="02_Hugo_CreateSite" tabindex="17">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/02_Hugo_CreateSite.html">
+             02_Hugo_CreateSite
+            </a>
+           </li>
+           <li name="03_Hugo_Config Toml" tabindex="16">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/03_Hugo_Config Toml.html">
+             03_Hugo_Config Toml
+            </a>
+           </li>
+           <li name="04_Hugo_Layout" tabindex="15">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/04_Hugo_Layout.html">
+             04_Hugo_Layout
+            </a>
+           </li>
+           <li name="05_Hugo_Front_Matter" tabindex="14">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/05_Hugo_Front_Matter.html">
+             05_Hugo_Front_Matter
+            </a>
+           </li>
+           <li name="06_Deployment" tabindex="13">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/06_Deployment.html">
+             06_Deployment
+            </a>
+           </li>
+           <li name="07_Hugo_Themes" tabindex="12">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/07_Hugo_Themes.html">
+             07_Hugo_Themes
+            </a>
+           </li>
+           <li name="08_Hugo_ContentBlockPartials" tabindex="11">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/08_Hugo_ContentBlockPartials.html">
+             08_Hugo_ContentBlockPartials
+            </a>
+           </li>
+           <li name="09_Hugo_Static" tabindex="19">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/09_Hugo_Static.html">
+             09_Hugo_Static
+            </a>
+           </li>
+           <li name="10_Hugo_Archetype" tabindex="10">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/10_Hugo_Archetype.html">
+             10_Hugo_Archetype
+            </a>
+           </li>
+           <li name="11_Hugo_List" tabindex="8">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/11_Hugo_List.Layout.html">
+             11_Hugo_List
+            </a>
+           </li>
+           <li name="12_Hugo_Special-Layout" tabindex="7">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/12_Hugo_Special-Layout.html">
+             12_Hugo_Special-Layout
+            </a>
+           </li>
+           <li name="13_Hugo_data" tabindex="6">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/13_Hugo_data.html">
+             13_Hugo_data
+            </a>
+           </li>
+           <li name="14_Hugo_Blog" tabindex="5">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/14_Hugo_Blog.html">
+             14_Hugo_Blog
+            </a>
+           </li>
+           <li name="14_Hugo_BlogPagination" tabindex="4">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/14_Hugo_BlogPagination.html">
+             14_Hugo_BlogPagination
+            </a>
+           </li>
+           <li name="hugo-images" tabindex="3">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/hugo-images.html">
+             hugo-images
+            </a>
+           </li>
+           <li name="hugo-menu-fuehrung" tabindex="2">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/hugo-menu-fuehrung.html">
+             hugo-menu-fuehrung
+            </a>
+           </li>
+           <li name="xx_Documentation-ImportJavascript" tabindex="1">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/xx_Documentation-ImportJavascript.html">
+             xx_Documentation-ImportJavascript
+            </a>
+           </li>
+           <li name="xx_Documentation-MenüFührung" tabindex="9">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/xx_Documentation-MenüFührung.html">
+             xx_Documentation-MenüFührung
+            </a>
+           </li>
+           <li name="XX_hugo-Commands" tabindex="20">
+            <a href="/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/XX_hugo-Commands.html">
+             XX_hugo-Commands
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li class="dropdown-submenu" name="XX_Deployments">
+          <a class="test" href="#" tabindex="-1">
+           XX_Deployments
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdown-submenu" name="Mathe">
+      <a class="test" href="#" tabindex="-1">
+       Mathe
+       <span>
+       </span>
+      </a>
+      <ul class="dropdown-menu">
+       <li name="Mathe-BigPicture" tabindex="0">
+        <a href="/Docus/Mathe/Mathe-BigPicture.html">
+         Mathe-BigPicture
+        </a>
+       </li>
+       <li class="dropdown-submenu" name="Regression">
+        <a class="test" href="#" tabindex="-1">
+         Regression
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li name="00_Implementierung" tabindex="0">
+          <a href="/Docus/Mathe/Regression/00_Implementierung.html">
+           00_Implementierung
+          </a>
+         </li>
+         <li name="10_PerformanceMeasureRegression" tabindex="1">
+          <a href="/Docus/Mathe/Regression/10_PerformanceMeasureRegression.html">
+           10_PerformanceMeasureRegression
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown-submenu" name="Stochastik">
+        <a class="test" href="#" tabindex="-1">
+         Stochastik
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="Statistik">
+          <a class="test" href="#" tabindex="-1">
+           Statistik
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+           <li name="XXX_Statistics_Basics_Formelsammlung" tabindex="0">
+            <a href="/Docus/Mathe/Stochastik/Statistik/XXX_Statistics_Basics_Formelsammlung.html">
+             XXX_Statistics_Basics_Formelsammlung
+            </a>
+           </li>
+           <li class="dropdown-submenu" name="Basics">
+            <a class="test" href="#" tabindex="-1">
+             Basics
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="10_Statistics_Basics_WahrscheinlichkeitUndStatistik" tabindex="24">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/10_Statistics_Basics_WahrscheinlichkeitUndStatistik.html">
+               10_Statistics_Basics_WahrscheinlichkeitUndStatistik
+              </a>
+             </li>
+             <li name="Statistics_Basics_001_Daten" tabindex="23">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_001_Daten.html">
+               Statistics_Basics_001_Daten
+              </a>
+             </li>
+             <li name="Statistics_Basics_002_PopulationVSStichprobe" tabindex="21">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_002_PopulationVSStichprobe.html">
+               Statistics_Basics_002_PopulationVSStichprobe
+              </a>
+             </li>
+             <li name="Statistics_Basics_003_Messgrößen" tabindex="20">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_003_Messgrößen.html">
+               Statistics_Basics_003_Messgrößen
+              </a>
+             </li>
+             <li name="Statistics_Basics_004_Wahrscheinlichkeiten" tabindex="19">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_004_Wahrscheinlichkeiten.html">
+               Statistics_Basics_004_Wahrscheinlichkeiten
+              </a>
+             </li>
+             <li name="Statistics_Basics_005_Permutation" tabindex="18">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_005_Permutation.html">
+               Statistics_Basics_005_Permutation
+              </a>
+             </li>
+             <li name="Statistics_Basics_006_Kombinationen" tabindex="17">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_006_Kombinationen.html">
+               Statistics_Basics_006_Kombinationen
+              </a>
+             </li>
+             <li name="Statistics_Basics_007_Mengen" tabindex="16">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_007_Mengen.html">
+               Statistics_Basics_007_Mengen
+              </a>
+             </li>
+             <li name="Statistics_Basics_008_UnabhängigeEreignisse" tabindex="15">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_008_UnabhängigeEreignisse.html">
+               Statistics_Basics_008_UnabhängigeEreignisse
+              </a>
+             </li>
+             <li name="Statistics_Basics_009_bedingteWahrscheinlichkeit" tabindex="14">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_009_bedingteWahrscheinlichkeit.html">
+               Statistics_Basics_009_bedingteWahrscheinlichkeit
+              </a>
+             </li>
+             <li name="Statistics_Basics_010_AdditionsRgelnMangen" tabindex="13">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_010_AdditionsRgelnMangen.html">
+               Statistics_Basics_010_AdditionsRgelnMangen
+              </a>
+             </li>
+             <li name="Statistics_Basics_011_BayesTheorem" tabindex="22">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_011_BayesTheorem.html">
+               Statistics_Basics_011_BayesTheorem
+              </a>
+             </li>
+             <li name="Statistics_Basics_012_Verteilungen" tabindex="0">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_012_Verteilungen.html">
+               Statistics_Basics_012_Verteilungen
+              </a>
+             </li>
+             <li name="Statistics_Basics_013_Gleichverteilung" tabindex="10">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_013_Gleichverteilung.html">
+               Statistics_Basics_013_Gleichverteilung
+              </a>
+             </li>
+             <li name="Statistics_Basics_014_Binominalverteilung" tabindex="9">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_014_Binominalverteilung.html">
+               Statistics_Basics_014_Binominalverteilung
+              </a>
+             </li>
+             <li name="Statistics_Basics_014_PoissonVerteilung copy" tabindex="8">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_014_PoissonVerteilung copy.html">
+               Statistics_Basics_014_PoissonVerteilung copy
+              </a>
+             </li>
+             <li name="Statistics_Basics_015_Normalverteilung" tabindex="7">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_015_Normalverteilung.html">
+               Statistics_Basics_015_Normalverteilung
+              </a>
+             </li>
+             <li name="Statistics_Basics_016PopulationSample" tabindex="6">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_016PopulationSample.html">
+               Statistics_Basics_016PopulationSample
+              </a>
+             </li>
+             <li name="Statistics_Basics_017ZentralerGrenzwertsatz" tabindex="5">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_017ZentralerGrenzwertsatz.html">
+               Statistics_Basics_017ZentralerGrenzwertsatz
+              </a>
+             </li>
+             <li name="Statistics_Basics_018Standardfehler" tabindex="4">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_018Standardfehler.html">
+               Statistics_Basics_018Standardfehler
+              </a>
+             </li>
+             <li name="Statistics_Basics_019Konfidenzintervall" tabindex="3">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_019Konfidenzintervall.html">
+               Statistics_Basics_019Konfidenzintervall
+              </a>
+             </li>
+             <li name="Statistics_Basics_020Hypothesentests" tabindex="2">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_020Hypothesentests.html">
+               Statistics_Basics_020Hypothesentests
+              </a>
+             </li>
+             <li name="Statistics_Basics_021_FehlerErsterUndZweiterArt" tabindex="1">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_021_FehlerErsterUndZweiterArt.html">
+               Statistics_Basics_021_FehlerErsterUndZweiterArt
+              </a>
+             </li>
+             <li name="Statistics_Basics_022_StudetnscheTVerteilung" tabindex="11">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistics_Basics_022_StudetnscheTVerteilung.html">
+               Statistics_Basics_022_StudetnscheTVerteilung
+              </a>
+             </li>
+             <li name="Statistik-Bereiche" tabindex="12">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Basics/Statistik-Bereiche.html">
+               Statistik-Bereiche
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="Korrelationen">
+            <a class="test" href="#" tabindex="-1">
+             Korrelationen
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li name="10_Correlation" tabindex="0">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Korrelationen/10_Correlation.html">
+               10_Correlation
+              </a>
+             </li>
+             <li name="EDA_5_Correlations" tabindex="1">
+              <a href="/Docus/Mathe/Stochastik/Statistik/Korrelationen/EDA_5_Correlations.html">
+               EDA_5_Correlations
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="dropdown-submenu" name="Sample-Projects">
+            <a class="test" href="#" tabindex="-1">
+             Sample-Projects
+             <span>
+             </span>
+            </a>
+            <ul class="dropdown-menu">
+             <li class="dropdown-submenu" name="Advertisment">
+              <a class="test" href="#" tabindex="-1">
+               Advertisment
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Advvertisment_SimpleRegression_WalkThrough" tabindex="0">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Advertisment/Advvertisment_SimpleRegression_WalkThrough.html">
+                 Advvertisment_SimpleRegression_WalkThrough
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="data">
+                <a class="test" href="#" tabindex="-1">
+                 data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Boston-Housing">
+              <a class="test" href="#" tabindex="-1">
+               Boston-Housing
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Boston-QuickAndDirtyImplementierung" tabindex="0">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Boston-Housing/Boston-QuickAndDirtyImplementierung.html">
+                 Boston-QuickAndDirtyImplementierung
+                </a>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Chrun">
+              <a class="test" href="#" tabindex="-1">
+               Chrun
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Chrun-Supervised-Binary-Classification" tabindex="0">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Chrun/Chrun-Supervised-Binary-Classification.html">
+                 Chrun-Supervised-Binary-Classification
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="data">
+                <a class="test" href="#" tabindex="-1">
+                 data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Clustering-Shopping-Data">
+              <a class="test" href="#" tabindex="-1">
+               Clustering-Shopping-Data
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Shoping-Data-Clustering" tabindex="0">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Clustering-Shopping-Data/Shoping-Data-Clustering.html">
+                 Shoping-Data-Clustering
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="data">
+                <a class="test" href="#" tabindex="-1">
+                 data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="Iris">
+              <a class="test" href="#" tabindex="-1">
+               Iris
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="Iris-WorkThrough" tabindex="0">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Iris/Iris-WorkThrough.html">
+                 Iris-WorkThrough
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="data">
+                <a class="test" href="#" tabindex="-1">
+                 data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+             <li class="dropdown-submenu" name="ISLR">
+              <a class="test" href="#" tabindex="-1">
+               ISLR
+               <span>
+               </span>
+              </a>
+              <ul class="dropdown-menu">
+               <li name="00_ISLR_Advertisment_LinearRegression" tabindex="0">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/ISLR/00_ISLR_Advertisment_LinearRegression.html">
+                 00_ISLR_Advertisment_LinearRegression
+                </a>
+               </li>
+               <li name="01_ISLR_Advertisment_MultipleLinearRegression-Copy1" tabindex="1">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/ISLR/01_ISLR_Advertisment_MultipleLinearRegression-Copy1.html">
+                 01_ISLR_Advertisment_MultipleLinearRegression-Copy1
+                </a>
+               </li>
+               <li name="10_ISLR_Income_" tabindex="2">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/ISLR/10_ISLR_Income_.html">
+                 10_ISLR_Income_
+                </a>
+               </li>
+               <li name="Exercise_2" tabindex="3">
+                <a href="/Docus/Mathe/Stochastik/Statistik/Sample-Projects/ISLR/Exercise_2.html">
+                 Exercise_2
+                </a>
+               </li>
+               <li class="dropdown-submenu" name="data">
+                <a class="test" href="#" tabindex="-1">
+                 data
+                 <span>
+                 </span>
+                </a>
+                <ul class="dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="dropdown" name="Projekte" role="presentation">
+    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="LinkZurFolderIndex" role="button" tabindex="30">
+     Projekte
+    </a>
+    <ul class="dropdown-menu">
+     <li class="dropdown-submenu" name="00_Doc-Tool">
+      <a class="test" href="#" tabindex="-1">
+       00_Doc-Tool
+       <span>
+       </span>
+      </a>
+      <ul class="dropdown-menu">
+       <li name="00_Doctool" tabindex="1">
+        <a href="/Projekte/00_Doc-Tool/00_Doctool.html">
+         00_Doctool
+        </a>
+       </li>
+       <li name="xx_BeispielSeite" tabindex="0">
+        <a href="/Projekte/00_Doc-Tool/xx_BeispielSeite.html">
+         xx_BeispielSeite
+        </a>
+       </li>
+       <li class="dropdown-submenu" name="TestWebsite">
+        <a class="test" href="#" tabindex="-1">
+         TestWebsite
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li class="dropdown-submenu" name="lokal">
+          <a class="test" href="#" tabindex="-1">
+           lokal
+           <span>
+           </span>
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+     <li class="dropdown-submenu" name="10_Konzeptionelles-Programmieren">
+      <a class="test" href="#" tabindex="-1">
+       10_Konzeptionelles-Programmieren
+       <span>
+       </span>
+      </a>
+      <ul class="dropdown-menu">
+       <li name="00_KonzeptionellesProgrammierenLandingpage" tabindex="0">
+        <a href="/Projekte/10_Konzeptionelles-Programmieren/00_KonzeptionellesProgrammierenLandingpage.html">
+         00_KonzeptionellesProgrammierenLandingpage
+        </a>
+       </li>
+       <li class="dropdown-submenu" name="Ideen-Container">
+        <a class="test" href="#" tabindex="-1">
+         Ideen-Container
+         <span>
+         </span>
+        </a>
+        <ul class="dropdown-menu">
+         <li name="01_ImplementierungCodSnipplets" tabindex="0">
+          <a href="/Projekte/10_Konzeptionelles-Programmieren/Ideen-Container/01_ImplementierungCodSnipplets.html">
+           01_ImplementierungCodSnipplets
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ 
+ 
+			</div>
+		</div>
+  </div>
+  
+  <div class="clear-float"></div>
+
+
+    <div id="contentContainerausen">
+      <div id="contentContainer">
+        <div id="asideBreadCrump">Page-ID: 21112020-Probability-Un-abhängigeEreignisse 
+        <hr>
+        <nav aria-label="breadcrumb"><ol class="breadcrumb">"<li class="breadcrumb-item"><a href="/Docus/SectionIndex_DocTooloutputDocus.html">Docus</a></li><li class="breadcrumb-item"><a href="/Docus/DataScience/SectionIndex_DocTooloutputDocusDataScience.html">DataScience</a></li><li class="breadcrumb-item"><a href="/Docus/DataScience/Theorie/SectionIndex_DocTooloutputDocusDataScienceTheorie.html">Theorie</a></li><li class="breadcrumb-item"><a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/SectionIndex_DocTooloutputDocusDataScienceTheorieMathematischeGrundlagen.html">MathematischeGrundlagen</a></li><li class="breadcrumb-item active" aria-current="page">20_Wahrscheinlichkeiten</li></ol></nav> 
+        
+        </div>
+        
+        <div id="article">
+          </p>
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
+
+</div>
+
+<p></div>
+</div></p>
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unabh&#228;ngige-und-abh&#228;ngige-Ereignisse">Unabh&#228;ngige und abh&#228;ngige Ereignisse<a class="anchor-link" href="#Unabh&#228;ngige-und-abh&#228;ngige-Ereignisse">&#182;</a></h1><p><img src="imgs/2020-11-23-09-40-49.png" alt=""></p>
+<h2 id="Unabh&#228;ngige-Ereignisse">Unabh&#228;ngige Ereignisse<a class="anchor-link" href="#Unabh&#228;ngige-Ereignisse">&#182;</a></h2><ul>
+<li>Eine Reihe unabhängiger Ereignissen tritt auf, wenn das Ergebnis eines Ereignisses keinen Einfluss auf das Ergebnis eines anderen Ereignisses hat.</li>
+<li>Ein Beispiel ist das zweimalige Werfen einer Münze</li>
+<li>Die Wahrscheinlichkeit, beim zweiten Wurf Kopf zu werfen, ist unabhängig vom Ergebnis des ersten Wurfes.</li>
+<li>Die Wahrscheinlichkeit, mit zwei Würfen, zweimal Kopf zu werfen ist:
+$P\left(K_{1} K_{2}\right)=P\left(K_{1}\right) \times P\left(K_{2}\right)$
+$=\frac{1}{2} \times \frac{1}{2}=\frac{1}{4}$</li>
+</ul>
+
+</div>
+
+<p></div>
+</div></p>
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Abh&#228;ngige-Ereignisse">Abh&#228;ngige Ereignisse<a class="anchor-link" href="#Abh&#228;ngige-Ereignisse">&#182;</a></h2><ul>
+<li><p>Ein abhängiges Ereignis tritt auf, wenn das Ergebnis des ersten Ereignisses die Wahrscheinlichkeit eines zweiten Ereignisses beeinflusst.</p>
+</li>
+<li><p>Ein schönes Beispiel ist das Entnehmen von farbigen Kugeln aus einem Sack ohne zurücklegen.</p>
+</li>
+<li>Stell dir vor, eine Tasche enthält 2 blaue Kugeln und 3 rote Kugeln.</li>
+<li>Wenn du zwei Murmeln aus der Tasche nimmst, wie groß ist die ahrscheinlichkeit, dass sie beide rot sind?</li>
+</ul>
+<p><img src="data:image/png;base64,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" alt="image.png"></p>
+<ul>
+<li>hier beeinflusst die Farbe der ersten Entnahme die Wahrscheinlichkeit, ob die zweite Kugel beispielsweise rot ist.</li>
+</ul>
+<p>Die allgemeine Formel der abhängigen Ereignisse lautet(Dies ist die <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/70_AdditionsUndMultiplikationsregel.html">Multiplikationsregel</a>):</p>
+<p>$P(A \cap B)=P(A) \cdot P(B \mid A)$</p>
+<p><hr></p>
+<ul>
+<li>Die Wahrscheinlichkeit, die erste Kugel zu ziehen ist noch recht einfach:
+$P\left(R_{1}\right)=\frac{3}{5}$<hr></li>
+<li><p>Die Wahrscheinlichkeit, dass die zweite gezogene Kugel rot ist, unter der Annahme, dass die erste Kugel auch rot gewesen sei lautet: 
+$P\left(R_{1}|R_{2}\right)$</p>
+</li>
+<li><p>Nach der Entnahme einer roten Kugel wäre das also: $P\left(R_{1}|R_{2}\right)=\frac{2}{4}= \frac{1}{2}$</p>
+</li>
+</ul>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS8AAADMCAYAAAAieSVAAAAgAElEQVR4Ae19B3gd1bX1GUEoobyEl0dI+ZNHGnkpjxgC5JFGCCUEY2MbDIZg4wIuEAjGNONgTDHgbuOKe++9yZaLbLnLRe6We7dsy0WW1SXv/1vnzJ45M7pXVrllJJ/7feebq6t7587smbPu2mvvs7cg8zAWMBYwFqiGFhDV8JjNIRsLGAsYC5ABL3MTGAsYC1RLCxjwqpaXzRy0sYCxgAEvcw8YCxgLVEsLGPCqlpfNHLSxgLGAAS9zDxgLGAtUSwsY8KqWl80ctLGAsYABL3MPGAsYC1RLCxjwqpaXzRy0sYCxgAEvcw8YCxgLVEsLGPCqlpfNHLSxgLGAAS9zDxgLGAtUSwsY8KqWl80ctLGAsYABL3MPGAsYC1RLCxjwqpaXzRy0sYCxgAEvcw8YCxgLVEsLGPCqlpfNHLSxgLGAAS9zDxgLGAtUSwsY8KqWl80ctLGAsYABL3MPGAsYC1RLCxjwqpaXzRy0sYCxgAGvangPXLp0ifILiujMhVw6cuo87Tp8ijbsPkYpWw7QwtQ9NGf1Lpqesp0mLd1CY5LSaNj89TRo9jrqO3019Zi0gr4Yv4w+Gb2EPhi+iN4bvIDaDZhHr385h1r3nEktuk6jJp9Npuc+nkhPfziO6nYYTX9/dyQ93G4YPfTm0KgN7P+xd0ZQ3fdH01Mdx1GjjydQ488my+Np3XMG/bPPbGrbfx69+1Ui/XtYEn00agl9NjaZuk9KoT7TVtHAWWtp6Lz1NGrBRhq/eDNNXbaNZq3cSfPXptOSjfto7Y4jtO1ABh04cZZOnbtIufmFBDuaR/W1gAGvgFy7kpJLdDGvgI6ezqKNu49R4rrdNDJxI3WZsJzeGjifMIFf6DyJ6v17jASSv7wxhKoyAEj1PxhLz340Qe63WZep1LL7DHq19yxq228uvTMokd4fspA6jVhMncckU9cJy6n7xJSoDewfYARQAjgBpABWAK1WPWZQ8y5TqXHnyRLUAG613xtZpfOH7f7adig90X6UtAFAGwD+4YjFEghnpGyn1dsPS7C7kJNPxSUlAblTzGGwBQx4sSWitC0oKqYzWTm0//gZWrntEE1ZtpX6TF1F7361gF7qNl1ORkygB9uWD4zwPv+Eaz94AX06Zin1mrKSBs9JlcwDrGPRhr1yAm7Zd4L2HTtDGWezKTu35kxEAH5OXoFkUmBUYFZgWEs27aPZq3bSxCVbaNi89ZKZgW2Cab7Zf578IQAQArwfeWt4uUHw8XdH0jOdxksgxX4AuKMXbqKk9Xto6/4MOp55gbJzCwjHZR7Rt4ABryrYuKi4RLptmDD4pe4/c41kDfgVBzt49O3wE6P+v8dQy+7TpcuGX/tuE1PkL/6YpE1yX0nrFfBgUuw3rk4VrtLlP1pQqFzwQxnnaMfBk7Ru1xFaumk/zV29S7reEgCnrpIMFD8Ur/WZTf/4dJJ0oUOxX/zA1Hl/FD3/yUR6o99ceW3hysKtx48YXH7zqLoFDHiFsSF+PU+cuUAb0o9KBjNt+XYaPn8D9Zyykt4eNF/emHA7/Dcvfs3henUYmiS1pX4z1kgdZubKHZIVYILkmZs3jNWr18twJU+ezaZNe47T3DW7pL4I7Q0/RB2HL5LABbfcf4/gb+iJADawtyFzUyVIQp9bsfUg7T5y2gBcOW4FA15EkubDrZq6fJvUXMCcymRNH4yVv75wRSCI41d6z9FMKQKXw+bmLVeYBcDsDmack8CEIAqCJnA7wwEbgx2YG3RHBCGggyLIYB6uBa448IIGBaCBHoRfPNwciHDxDcNbaCEQieHSwW2AroGoHjQW8zAWiJQFcD/6gQ0BE8gOfC/y9q9vDpVBFYDfjBU7pM52Jd+PNRq8si7mU+quozRuURp9PGoJNf18ioww8c2ALaJubXrNlFE9/CpCv4K7aETXSE1Ps5/KWgDR5+0HTsqUj37TV8sILFJI9PsXz5HWgggtZI3lmw/IiPWVcP/WKPCCloSIHjQH/0V+pN0wernbdKlDAaTW7Twio1Qm16eyU8t8Ll4WgPuIyCoiyj0nr5AaK36EdVBDzhxSTcDQkA9YEx/VGrygJazadogGz1lH/+o7p1TYG7lR0AsggBYXmzydmngDm3NSFgDTQsIyknOhpyGhmMEM0U/MhS+nrZYJu+cv5tUIs1U78AJTQjgbfr+eqPi3t4c74uaaHYfpXHbN/LWpEXedOYmoWwBaWNqe4zKKicRfXddFlPytAfNlKkh11syqDXidvZArtSssGeFfFPyaICkT0T4TiYn6fDBfUI0tgJxE6L8jEjfIiDpkFMwjJN6CkR09lVXtzi7Q4IU8Gvx6YNkI1r7B2EjuxFo9iOrmYSxgLFA5C2DJE1KDsOSMyQCWZCHPDHJMdXgEErygTyEpFAmfMCx+JbDGLjltPyG0bB7GAsYCkbEAtDLkkGF1CFYNYL5B/MdC/qB7M4EDL/jgWCALI4JtoWLA6fMXI3OlzF6MBYwFwloAng5WgmDtLOYf1nFieVpQH4ECr8ysHHql1yxpOERMDp88H1S7meMyFqixFjifnSdTigBgSIyFxxPER2DACyvyoWchxItFrFdCkl0QbwhzTMYCbIFlmw8QSiUhOhlEAAsEeCH94Z1B86WbuOPgKbad2RoLGAvE2QJIOcJSJQBY0DyhuINXfmExvT5sHd3XdoKsRxXna2W+3ljAWECzwJHMHGrz1Ur68xtDZXVe7V9xfxpX8Mo4l0uNeq+k/31rHv1vu7nUZcq6uBvEHICxgLGAa4GOk7bI+XnnW3PoxZ4LAyXnxA28oGk902uFAi6A11vz6P4OCyjzQr5rOfPMWMBYIG4WKCwqoT98kOSZo+nHg5PMGjfwwhU5dPoiPfTxYo9xmg9YTcWmjG7cbljzxcYCbIEpaw575mbTfiv4X4HYxhW8YAEA2F86LfIYqW/irkAYxxyEscCVagGwrkc/XeKZl8fP5ATKHHEHL1hj7Z5MuvNt5TpK/eutuTRm6a5A+deBumrmYIwFomyBQQt2eoCrXrflUf7Giu8+EOCFwx6YtMdjrDvbzabm3WbQ5n0nKn5W5hPGAsYClbIA1gyjsOFd7WZ45uPcjccqtb9ofigw4AWd6x9frvIY7O43p9EDbwyRfQQNiEXzNjD7vtItgPZ8aNqL3g1/emO4Zx7W6bIskDp0YMALN8/u4xeo1jvzPYZ77ovZcrkQliqg2wraUaHjsXkYCxgLVM0C6OGJclIokc7FC7GescOYtZ45OCblQNW+KEqfDhR44RyHJ+/zGA6ov2bHEdmWHgDGA92dsYwIy4rMw1jAWKB8FkBVFiz1QdNjvXUf+jigKU1hUTG1HrLOMwePBEyo5zMNHHhhqdBzfezEVTv/a8Kqg/J4sWAU663QGRrrIHnhKJq39p66UnZKxq+JeRgLGAsoC6A2FyoLo58kmuVySz8suEY11ekp2+lYppu7lZmdT3dp3k8QhXq+toEDLxzYhv1nPMj/5w8XUXaet2cdan6t3n6IOo1cTGg2wIwMFwXuJVhZ2t7jplUZX2mzvSIsAGa189Ap2XgDbf1QHl2fG28NnC8b5IarYz9sqdfz6TU3uGlLgQQv3GWfTNvmAbDe88IbEV2DlqXtp+4TUwgsjKuu8kVr3HmyBLkxSZsk4NXUbipXxOw0J+lYALXv0NF9UvJWWW0YzZJZu+J7H120oGlBK0YrwLIeWPXy98+SPfNu04GzZX0krv8LLHgdzrzoMeJ97RcQFnGX5wG/Pf3IaZq9aid1n5RCuKh8MXnb5LPJsm3Uko37ZP1uFGIzD2OBIFsA4LNl3wnZEQsFO+Fl8P2M7fOfTqRPRi+VXgda+1X0R3rnsSzPnPtTx6RARhn5GgUWvHCAz/u0r5SdlS+XgwYeSev3yl+opl9MLfULhQ7ZL3WbLi8+2qVB1Nx37Ey1qefNF9Rsq7cFoPmiKCdKM6OqKfTdf/aZTXU7lO7qDlb1wfBFsn9jJAJXU33LgbrM2hFoYwYavHrM8Wb5wpWM1AOa2aGMc9LdHLlgo3QrQ4EaftFwk7w9aL7ssoImnmhSgF/AAyfOyl830xMyUlelZu8HbhmCTqiLhaax0GznrUmXHbA+HLFY/nj6m8ei5yI6YqM5Brpmo9EsSjOjm3akHx9P3ephXhsD7DLi3AMNXtuPnPcYE/54tB8AIrSBwo2Fztrovg2KztFNnabzc4Scn/9kIkEMRdRzyrKtshkuwA16nHlcORaAZIH7Z92uI1I07zdjjewn+uLnU2QjGb5n/Fv0IG3dc6b0DKDNIqq+/8TZmDacccpTvTWPgu4y4o4KNHiBQtf+wisgZuV4o46xnBZIw0DD26T1e2j4/A30yegl1KrHDHr6w3GeiKf/xmzwwVh5Y74zKFGKp2jRji7fiIhCl1uyaZ+82VFFFje+6ZAUy6sa/rtw/0Fu2HvsjIxcg3Enrtstu1Kj/yH6HaItX/vBC6Rr9+xHEwhMyX/98TeEdHTDgv7acfgi+mr2Ohn1Q0Qc2hS+K54PLMS+6103Qfy14evjeTjl+u5AgxfO4N1xaR72hcqOQX3gVxc3+8GMcwTBFC7mgJlr6YNhSTIKCvez9nuqM0uoG1x/DaV3X+09SwIk2lCNW5QmNRAkEq7efli6DvuPn6GTZ7OlC2Fq/pd9VwAckPMEoDhy6jylHz4tI3WIUiMSN3HJFhoyN1U2nmjbf55sA8aNWfXr4n8ONw9Z6QAluHY9p6yUP0rIXMePUcbZbNlCLN7gVLZ1iHYc9Xo5n03ffrmPxP3/gQevwYu9C7b3ZWTH3WhVPQBENtH0EyC3dscRCUoAKOSsIZGweZephF9xAF24X3L/JMLfcD3AAuHCwk1BAALdmP7Vd450aZH3g/6XncckU9cJy6UYDLcGLBBMYuyiNBl2n5GyXU7ohal75PIRMA6A8fr0o1EbcLNWbjskAyVgtnPX7JLgPzl5qwQD6JIAF/wY9Jm6SqbFgPXAZh2GJhFYLfL7APhIl4F+iehbw07jZat7fwpBKPvxa8gbhB1hQ+wP+4feNHXZNql3gomhtntN0jrnbDjqIQkDFu6u6m0e9c8HHrwSNx33GHXx1uD2kYvG1cIvNvJ5sJ4TTAuBAkzyBam7ZXb0mKQ06YLgF//TMUulvoLgAk/kl7tNp6afT5GAhgn5ZIcxsqmoPxeOJ2512SJNACBT9/3RskEEWG3jzyZLBgTtCDpluwHz5LIyuGldJiwnAPXIxI1Sk5y/Np2Wbz5AG3Yfk2k1R09nSTG9qPjKTJmZmXrEM8/6LzDgVeX5PH2d16iTVx+q8j7NDpQFpCtVVCzdTjAJACQmMQINe45mSn0PmkzqrqMyAAEXC24rJj6iXmAi0O1GL9xEw+atl0tQoANB0+syfrkMdiCAgW7Mg+ekSuCA+ws2BZca7AosC2kpAGSwr7Q9x2UkDnl6EKyhAcI1hjuenVsgXT/jIkf+DvaD16AkA15VsjJu0k6TveHb1L2ZVdqn+bCxgLFAaQss3ZbhYV495+4s/aaAvRJ4t/GdsZs8Rj2TXfYSh4DZ1xyOsUC1sMD5nALPPPtjxyRCKZwgs9xAgxcMp+eeYIG2eRgLGAtExwINfd28UJIdieH+ogjR+faK7zXQ4HX0TI7n16DZgDUVP0PzCWMBY4FyWQC9JH77XqJnzgHAfv/BQuo9P3g9JQINXt1nR295ULmupnmTscAVZoEDJ7OpxcA1pQAMINZpytZAuZGBBS9Ewv7WeanHiKjzZR7GAsYC0bUA5l5i2vFSPVUBYB8FCMACC15bD5/zAFeLQWuje8XM3o0FjAU8FsBSPP8KFwBYUAoUBha8Pp+x3QNeyEO5kh6XioqoOCWFioYOpYIPPqCC9u1Ljw8/pMIRI6h4zRq6ZOqRlbo9LuYXU9LOs9R/2THqMGs/tZ+pjRn7qP2MffTJvAM0bl0GbTla/VdulDJABF4AC/NXdwGABcELCiR4oY72PT7hMPNCzU+RuJSZSUWDB1N+3bqU841vUI4QdDHEyBaCsi01LghBGNm33kq5DRtS4ejRdOnClduU5NCZPOq26Ag91GcLXf+vFWS9soxEm2Q1Wi8lwaPVYhK+8d/tU6jZqO00a/MpKii6MjPtw+HdB5O2eMhEx8lbwr01Zq8HErw+9ZWAfn98WswMEo8vKtm3jwqaNqXcr32NcoUlRyjQ4tcAXgxavM0Sgs4LS43rr6fc116jkuPH43E6cfnO1EMXqPaAbRKsPIDVJpms1kvk0MEqodVi4mG1XERqJJHVUo3/bJtMn8zdT9l5pqQRLijywPS2hH/4IIkK47yUKnDghQx60FIeD360mOJZBieaM/FSTg4VdelCuV//OuVaQoIW2FaZjMsGLoCVfzB4nROCMM7fcgvlDxhAlwrjV0YomvbDvk9eKKA3pu6nhFdTSLyyPDTT8jEsgBiDlL4VLy8k//hx++U0dcOVtZ423DVrP95b4WVleuUrG4f7joq8HijwApI/4avfNXZFMBteVsTIod5bsnIl5cPVs5lWWYDF7Iq3WcywfFsGLX17FiD23/9NxduDX+IklJ3Kem3MupN0Q9tVDmiBcVltlpHVOplEq6XasF3ElotI2MNlW2BdSSRextDA66UFJORIJPHSfLqv8yo6dSHy1UvLOr+g/W/zIW8QreOk+LqOgQIv9GdkxoXt7zosCGx2b1VurKJPP6X8q66ivMsAF9xEBix9q4OXH6gAViHHNddQ/tChVTnswHwWKy+ajEon8QrYVoqHbVnQtFot8Y3FDmgxeHmACqDlgJUNWi0WkMB4SYEXAOwb/1xIS3dduWtrId4/9PFiZ47G23UMDHjl5BfRA50WOYYBeFWHshwVmdFwEwsbNqQ8oVxEZl2sZelbKcqHcRHP226hDlx4Hgq0zghBzkhIoIutWhEimdX1ceRsPv2+x2YHuEQbV5CHtqXrWvxcdw2d5y8tJMseEqQkUM2XLAtA5YwW80i0mGuPeXR960T6bN7e6mq+Kh93y6+83bR3HDlf5X1WdgeBAa+BSd6ig49/nlzuVmeVPflYfg7AVfCnP1EetC1L6Vp+V5EjiNgy09JZlq5pXRaohKBMbZwWgnhkNWhQLQEMwPWTD9fbbMvVt8C2QgKX4yK6QjwzLuvlBcRDsatEEhKoAFbaaD6XRPM5pcZ7U4NfdSEa93ffxHQPwUjaciIaX1OufQYCvE6ez5Muou4yrko/Xa4TqC5vKmzVSjEuDbw8TEsDLAYubHXwYqYVDrgYrBikwm8tyhsypLqYTh4nXMUHem2xgQuu4nI3BUIX5FsvIoHRKskZzLYYuOS2FLuaR0ICFcDKP2zwajabhDbW7AtuQ9ZoXdy0g2c94DU8eV+0vuqy+w0EeL01ZqPHIG+P2XTZA69Obyjq0YPyNX2LI4o681LpDxZdEGoAtBRwqchhOLeQgeyMsCjTHqeFRTxOCYtCjoQEyp85s9qYsdno3RrjWk6WTIFgYZ7dxUVktUpSw055kMClu4hSw4KONc8d7BaGYFhWs9kUbtzQah5tP3Zl5dQVl1yi/+uw0JmvmLvxesQdvBBu1RkXklMzzufFyx4R/96S1asp/4YbQoKXh3lJfcsFL91FLItxueAFt9AFLX4eErhsQMv88Y+pKD094ucc6R2OTT3laFzMuBBRdKOKnHCqIofMtLAFy3K0LSnK23pWizkk/EMHL5thhQauWSSazpDj/z5ZRmcvXllRyJe/WuvM2Uc+XRLpy13u/cUVvPIKiwm9GHXwQumNmvJAdKbgf/7HiSpCoNcBi5+7Sacu6wJ4MWjprMsR320hXncVywIq/t9JYVGGEM7IatMm0OY+c7GQbm63WoGXJs67qRDMugBgLnjpLiLAS7Rwo4ZS09KBKtRzdg+bziRRaswg8aI7+i/eH2gbRvrgEEjT5yxkn3g84gpeg3wiPUKvF3JrTkJl8ahRl00+dYHLq28xo9K3AC4GK97quhYDlL49KQT5hw5eGddeS/kLF8bj3ivXd74944CTx4VlPoptcSqElr9la1zMunTwctIdnMhhaQEeorzVbJZnuKClWJYLWNNJNJnmjJtbzqIDpy6W63xqwpsWbvY2xYmXaB838MrKLaTf/9v1nYHko5bVnF+wS+fOUe43vuFEFpllYYtoIra6MI/0B91V1EELz3Xg0gGLn58CSFmWHB5w0lhWuNfP/OEPgZxTm49elJnz+nKfkFFFnzjvAJeTuzXfjiAi5cF2F3W25WFZNlDZbqH14gziIZoAtGzgenEqCYwmU+RoNWJDIG0YjYPadMAr2qPuXjwecQOv/gu91BPuY35hcTxsEJXvLOrY0Vnu4wcuBVquvsURxbLcRDAtF6hCi/DMsPwgdUIICjWOC0E88lesiIodqrLTBoN3yKiiN2tesS0nQx4CvS3Oi5ZK3xJwE1mYbzFfix76GBeDFrZNXR1L6lkvTichxzQSL9qjCcBKDavJFJKj8RSyGk+hm1+eQYcD3BC5KtfB/9kjvgrHTfqv9r8lJn/HBbzAuu73sa54r5OKpLWhdeV95zvlAi8GrrI0Lh24AGC6W6g/B3iFAi4GqGOWIIyjwio1zjzzTCRNUOV9ZWQV0FWvLlMLrR13EdnzOnhpwGUv7fHoW5yvpbMsPAdYNZ8ph9UMmha7hQxY+hbA5WVZYFsALP/4eMaOKp93ddhBYVEJ3ff+Akf3wlzGPR/rR1zAyy/4xTPcGg2Dlyxf7mhdOutil1FnXrqryMyLXUblKoaOIJblIoJlOYAlLDpmg9URYZE+DgtBzrj5ZirJyYmGOSq1z/7LjznLftyo4mXAy2FcPjeRwUtnWs1mkMBoqtxCpWdpLMtmWzq7csFqMokXJpUatTosDFSZ5EoZvpwfemPkBge8IPkcO5tbzk9G7m0xBy8Im3qRf+SMxCtaETkzevdU2L59yMoQlRHnkfKgsys8D8WwwLhcwAK74qEACyB1SAg6qI0DQpA7LMpLTvaeSBz/qjNwm5aE6ltkLUvYKNbl6FtyfaIdUZSMS0uFCAFelgQum2E54rurYbGWZTWeTBgesPrHRBIhxwS6EurO4baY4euwjb6PsX7EFLxALRv3XeVB7GFL45ehGy1j59WqdVnw0hkXMy3esjgfzkUMBV7MtpRbKOiIxazKosPCckALYLU/xNiHSObbb0fLJBXab35hCd385kq3gKBeIcK35McBL60ChFqLyOAFF9F2FR1tC64igMt2B1+cShaG5gqKxlNIjhc04HIAawKJ58eHGONoVErNCTqVddFOZeV55jEyB2L9iCl4obWSnh9yb/tEgv5Vkx6XsrMpx44msssIxsWsi2twscbFgMVbHbhCgRfytHTwYiEerEtpWQq0DlmKaTHbYoYF4NoTZhy4/fZAXIrV+7NIyAqoqHyKtAiuFOFWh+AEVPHyApIDAj3EeZktrwPXLBLN7MH5WjJHS9OyXpxKCVLHUizLZVohGNbzDFxjSTzvG8+NpSe6Boe9Rvti6oUU2o6KfaZ9TMHr9RHrPeD1ZWLws7sregOUbNxYinVxSoRe7ZT1LX8CKovz7CrqbiODFm+ZbekuIrMsCVaWcguZaYFdAbh2hxn7f/jDip5uVN4/ak2GZF3+tAiOKmKb8HKSzJx3criw3AdpEOwiNp9DCTJ3yxbnHVF+hkp3QCRRRg5ZeAdwTXHdQ8myxpP4h49hPTeexHMArTFqPDeahDYe7xK/jPOoXIwydqpXmEAdvlg/YgZeF/OK6K535jvgJVlXTs1iXbh4xVOmVAi8dMalsy4GL33LoAV964Sw5DgmBB3BsN1EaFrsGgKsMPZqTAvAtUtYcuwUgvSx69prqWB//N2eD+ccKA1ems5leZb8+HQuDbx4aY8nmsi5WlqOlsu0JmlaFkBrnD1shvXcGBKN7MGA1Wg0CTlGkXh2BN3SfFys53Dcvs/fVzXWXlTMwGvx1gwHuOA6xrsKY7SueGHPnh7wYncR7IuZl862AF46aPlzuQBYOmgpYd4bQVRsC7qWJYFLByydZe2ywWqHEOQf24UgjIKDB6NlmnLvt/noXapRBleLCKFzqZQIu1ggp0Qw87KjigAvJ39LMi1OMsVWJZe6wDWRhHQJbbcQjIsZ1nOjyWqkhngWIDXSHc+MIMGj4XC68YXR5T7P6v5GdPTSZaCl22Mr2scMvNBtVz/RNbtrVskbvhEL2ratEHgxcLG7GAq8OHeL3UQ99cHjJgpLMi3dNUzXWBYAS4KUJWi7JWibcMdWIQij+Gz8y7w8+uXmsODlCPR6pdMw4KWAa5Zah2gzLqvJdLIaY2kP3EUlxlsvQNti91BnW2NIPDeKrEYAqxFkYTyjhmg4nEqPYfTdluP5Vqjx222Hz3vmdNdZsc1ziwl4Icr48CdLnBP9U8ckKopz55Fo3VlFY8ZUCLwAWjwYuHShXmddbiqESn9gMT6UppUu3UPlFjJoAawAUFuEZQ88V2OzEIQRhCqr787YVzZ48UJrLLZ2gEvTvDifCwI9xHl2FZtMk8BlNUZkUY8i6i7iOMW4pFvILMsGrGcUYFkNh5P19LAQYyjd8frkaN1agdtvTkGRM6dBTBr2jO0qjZiA176MbM9JomV4TX0UzZkj1y1yNVR2FcNFF3XGxfoWElCZbTF4QePSGRcD1wFL6VrMttItpWnpbiFACyC12bKHDVRpQhDGJnukXX99IC7L54kHZSa9FaJKhOsuIrLoFeiVWI/IImfN87Ke0uK8k7f1D9tNfA6gNY6sRmM0F5FdQmZZQ8l62jvEU0PJHUPonndmBMKGsTqIv3Ve6szt37w9jwqKYrfELybgNWGlt7EGqjHW1EekwUuJ80hAVUt6kCHPwAXGxRFEgJdkW5bSs+AeslsItgVWxWDF241C0AZtbL711kBclqqB10wnc17P4yqlccloIoBLgZbUtyDIPzuaHF3LcR2aeqUAACAASURBVA2HkWg4VA7r6SEknhpClj1Eg8Gkjwc7zgmEDWN1EK8MTXXAC+wr/XhWrL6aYgJeb452K6Uiux5ro2rqo2T3bsq+6iqnYgQzL06N4OgiC/WhXEVmXS5wCcm6AFy6xsXAtVtYBG0LkUN2EbcKizDgIjJwAawUYFm0QVi03h6plkWpcCl/8YtAXJaZaacV87IjjI7OhSx6aF3N2V3UmJcj0tusSy6q9q5JdFxFP3AhXwtuYiO4iaOUAA/getoFLfE0GBaA6ysSDQaFGANJ1B9ADbsFt7xQNC5ujzk7PeA1b9OxaHxNyH1GHbygd/35Q7cr0ItxWoEe8uyj9GL2174WUfBC1nx44FJuoh+4WMPSgQssa70QlCoAVhatE4LWCkFr7LHzsceiZJGK7TY9Iyc0eCGLvizw0itDQOfyZM6zOD/BFue9jAvRRBlFRORQBy6Als22XOAaSKLBADXq9ydhD6tef3prxKqKnWw1f7c/4ogGHbF6RB28/OUzPp9Z85qf+i/WxR/8IGLgxXlcoRkXXEUv44KryIAFLYs1LQYuAJYftABeq4VF+1991X8qcfn72Ll8uun1ZFJlb+xmsFybKxR4OQK9XdbGFumtJsic18R5Tjx1XEUAGKdAjCQBQR5sS4rxSttSbGsIiQY246oPhuUClv48oV4/Gpi4LS42i9eXbvY15IhlClTUwSt5+0kPrfxkas2/uHlvvinBi0V6Pa/LTY3wLriWVSK0nC6kRQC4uHwNFlbreVycv+VlXAq4NluWFOHhIrJrCMBihgWgwliljRXCojNzgqPXPNp7g93J2u5iLcHLrhahtyOTDTJYoOfIIqKKITLnAV5yTSKzLiXOK1fRFuU9wAU9i11EBVpgV1a9fmTV7yuHqPclOePJvnTwZOw0n3gBlv69fnLy2vD1+r+j+jzq4IWF13p+1/iV8U+CjKpFkWW/Zk2VwUutVVTg5bIuSy6qDifOI6KoMy2wLXYPFbsCwxIOaK0UFgG0MFahJE5hcFY8DEk5GjHwkpFFCVy6QK8Dl+sqcjRRMi7JtpSWBYYlgat+P7Lq9SWr3pdkPfklCTn6kKjbh+5ue+XkePEcQrNofX436Re7woRRB6/3x6d5Tm7d3prfLh25Utk/+pEs6+wX6i/HvFik5+oQAC5EF3nJD5b6yCU+WlRR5W4p1gVXUbmIrGsl0BqR4DAtBqwUYVGKEHIsh1hfuzbfj4HYHj2bRze9tkR2/5GCfVWYF2pvMeuSKRFjZTqEX5z3ABcL8/UHKDfxSQatvhK0rCcBWL3dUac3vTsytnlOQbhQ0LT1EldPdFkWs8OKOng902uFB7wys/NjdnLx/KLcRo3CgpeKMHrdRj3CyKwLaxb1tAgGrnTL8kQVWZwH63KBC2K85QEuMCwA1nJhybFMWJRsj2ODB8fTXCG/+9edVpMq6WwL9WgUi6RUdhsdrYsroZZ2GxXrUrlclnQZkTVvp0P4xHmAl3hqsBtRrD9Asa16/UnU66vcw7oKtKw6vUnU6UXiCR49afXO4yHPo6a/iO72zL7QuhANgmPxiCp44SSwAJtPDJn1V8qjeNs2yrr1Vqd9GadIgHmVBV68BAiVIg5bqngg8rn2Wm5FCKxRVHlcKhWCXUXWuFxB3tW2VkjQErRMCEq2x1IhaIkQtOK226g4N/aVMC93LyzcnklXo/ciRxkvC168dtHVvAQv/QHjkikRtrtoZ8uXEudZ46o/UAKXeLIfiSf7kpBMqw+JOr3JqtOLEp7oRVbtns64v92Ey51Ojf2/P9crVlVVowpefjGv6YA1NfYChjqxnNdeIwYtbPVlQE42va+PIlgXZ9Ir1qV0LrAuJKG6An2CzOPaLCDOJ9BGkSDFeeRrrRWuq7jScl1DABcD1hJL0CIhKAlBgmnTQh1+IF57sFsqCQYtybpUbpdbMcIW6+USoGmECKMS6yeT9cIkkusWZXUIu4yNZF0j1RpFZ5nPULIa6BHF/mRB44KrCOCq+6XUtCTTkmyrJ4knupNVW42v1elBOw7XfDkk3A3RbfYOh6CAqKzYdSrcWyP6elTBK2Wntxt2TV4WFOqqlJw8See++U0HwC4HXi7rctcuQuviZFSAFy/72SYTULG0x6KNwk06VVHFBCnKs74FTUsHLoAWA9ea++4LdeiBeW3DwawqgZeQy3+YdWlpEQAuCV5DyXqKwWuQTDRlcV4yLh24ngBoKeAStbuTeLybHM16JQbGXvE4kClrDnvAa0zKgZgcRlTBy18GB403rrRHTrt2lQIvN8KowMsv0uvgxdnyyJTnnK2ygCtJWLRQCEpEJ6L58wN/Sf7WK9VdgG3X67oc84LWBealg5dla13WMyNJNOSF1UrnsqRAb4vzSIWQjEtFEZW2BdDqQQq0upKo3UWOa+p0pf0nzgXehtE8QFSIYWkI2+5zYtPHMabgVRPr1Zfnpshp3VoCWMhF2Fq7Muky2tn0oSKMO+0Io6oOYdlpEYp1ISUC2fKrhCAAF0cSvYwLoGXRAmFJ4Nr76aflOfy4vwc17R/qvtYW61U9eg94OZUjdK2LCwtOkAuuRaOxcumP9cwoEg2RGsELrLUlP3ZkUaZCIAUC4rwjzPdw3ETxuAKvq2p3oWkrY5dRHvcLEeYAdh+/4AGvf0/cHOadkX3ZgFdk7RlybyWHD1PWb34jNS9ey+hqXm6vRQYvPT1Cdxmhd/GCa6xZ1KOLAC6VwyVk3ha7ihDnIcrDTQTbWiAZl0XrHn445LEG9cUNB8/Td95c7DTTqCx4iYZgXTp4cSKqnTmvRxWhb7HGZetbErge/4LE37+g1wdeOQGosu4LdEzSmdc/h8UmUdWAV1lXJYL/K8nMtMFL9WEEeLnlblRHa86oVy6jK9RLl1Go9Ai12FrP6VKLqpEWwVnzyOHiqCIDF1xFBq7lv/hFIKOLlzN38q5MB7xkUw3ZUGOG1tHaLTDo5HUhPYLLN0t3cYRTh0tVh8CyHy17Xor0X5JVpw9ZT/Qm6wlEFLuTqN2VLDCux7tI4Krd8cqp23W564LafDp4vdA3Nus7DXhd7spE8P+Fy5bRme9/n7ipBud2sVCvg9cBrDW0a8+rwoIueHFel0pIZfBS6xOx5IfBC5HFxZaKKMJdhMa17Kc/pQtbtkTwrGK7q1GrjtB/vDJfq9kF8HKrR7iVI+xsermO0a4zb+d1cSFBF7yU1iUz6J9USajiid52OoRyFxV4KeC6v+1oOnnuYmxPPODfpieqPtUjJSZHa8ArJmZ2v6TkzBk6+5vfyEayVQEvzu3C2kVetwjgUvlcSD513UWkQwC41j74YLVkXK711LNdx7PpO28kym7XsrlGxMDLBi6pdXEeVw8VVazdVTKul3oHP8Dht1cs/kZyKrMvA16xsHicvqPk3DnKatrUqZbqZ14s1kPvgsvI+V3Qu7g+Fy8DYqGe1ywCvNhlXGznccFd3NWuXY0ALr5kB0/n0ENdV5Lgul3+hhqyJr2bIiFrdXmYl51Nj6RUrhIBvctJRvWC1zV1u9GXM2Oj5fA5VqetAa8IXK1z585RixYt6NSp2CTKVeWQc8eModN33EGVBS9Zm8tSUUaAF6KMEOrBuqTLCBG/Vi06OWtWVQ4zsJ8tKCqh7vP30G2vzSndDahS4IWF1vZ6xToAL5XL9UiHybR215W59Ke8F9+AV3ktFeZ9x44do1//+tckhJDb06eD36HoUkkJZXfqRCduvlmWv+Eyz3JJkMa8kJzKtejhMupLgZDbpVxGtWYR4JXyX/9Fh/v0CWOpmvXyxfwiajl8A13TzK7d5anbZVdJRbsyuSQI+V12VVRZwlktA0KZG5WUivSIXmQ90YN+8tJQmr7qystNrMzdYcCrMlazP5Oenk4//OEPJXABvDDuvPNOysysHss2Ss6epQtdulDGb39LaBxbXvDiSqgSvBISKO2Pf6SjfftScU5OFaxZPT968PRFen/yVvpZu7latVQGLzTTQM2ussHr2gZ9qfZHM2ns0p1UXEM7XEXj6tZ48Bq8eE807Cb3CVeRQUvf1qpVi84GoBeh/8TXrFlDs8K4c8UZGZQ9ZgxlvPACHbrvPtp7662045prSjGvTd/8Jm2//37a16wZZU6ZQkUBPE//ecfq7/0ns6l/0m56uncK/ea9ObKT9dWNkN/lBa/bmo+kBzrMoFe/WkYLNh6inPzg1DSLla0i8T01DryW7fBWUe05N3rLBgoKCqhu3bohAezuu+8maGEVeZTs2EFFM2ZQYZ8+VNijR+nRrx8VzZ1LJfv3V2S38r2JiYl0ww030Ne+9jWaOXNmuT9fkp9PRadPU/7+/ZSTlkaFJ06U+7PReCNqOZVs2UJFU6ZQYe/epW0Euw0YQEWJiVRy5Eg0DqHC+8wtKKKT53Npz/Es2rjvNGXlFFR4H5H8AHS71IMXaNy6k9Rz8RHqsUgfh6nHosM0OOUYLU0/S5nZwQXWGgde/vrWn0yLbgloAFjt2rVDAtg999xD58+fD3vfXcrLo+KpU6mgWTPK/cEPPI1jLwohezFii36MPC4IISumXvz5zyn31VepaMECulRcdt+6cePGSdBidlhRAAt7AjH6x6XsbCoeO5byn3+ecm67zbGLbqNwdsq+807Ka9uWipYtIwDflfo4eaGABiw/Tk8O2k7/0XYFiTbLyGqdLIdotZTcsVg2IhGt1Paq1ovp913W0Qez9lLa4QuBMl+NA69Dpy86uR/IAWk3emPUDZ6fn09///vfQwLY7373O8rK8tYYv3TyJBW++Sbl3nQT5QrLA1oMUvqWAUvfcnsz1KxHDa+8zp0Jk9z/6NOnD1mWVerYvv3tb1N2iPf7Px/Pv7HEqaBlS8q9/nqPjfxAxbbS7cPPYR8eWd//PuX37k2X8q+M4pS4dpuPXqT6g3fQVa8uI+sVNUSbZBJtAFheoMLfsukuGu/K5ruLnIYkVsskWSL7V51W0fh1JwLxQ1DjwCsrt9ADXi0GrY3J/MvLy6NHH320FEiA7dx///104cIF2da+aPBgyv2P/6BcS8gJmaMxLP+k5AmILcDKP3hSctnn8z/4ARVodbLef//9kMfzve99j7Ztiy4jrYrRwUiLevSg3Ouuu6ydymsj2Mqx089/ToULFlTlEAP/2TMXC6ndtP2U8GoKiVeWkwIsgFYyidZL1QgFXjZIMVhh6+lh+dJCWWn2z13X0aZD3h/lWBulxoEXXAO0AI915i0uXG5uLj388MMhAeP3WCT9wx9KpgW25Wdc7ALpk5GfZ2nsgQFLn4w8KbFFAcJztWrRS88/H/I4fvazn9HBg8FtSFKSnEx53/mOY6ccYYV0E9k2+la3DT/XbcPPuVjjhT//mRBxrWmPEWtO0k1tV5F4JUWxrcu5iC0XkbCHDloMXNZLC4mH7GGJVnAvJcqaZ42HbiasM4z1AzriXe/Oj/k8j+ryIBhRbzj78CdLYmrXnJwcevDBB0MCxx/scsx+tsXAlW3rWfqExHMdvHgCMlDxROQtkk+fsNM2WOPiLYIIQU6kLfrwQ8q7+uqwwC6ZKTTAMHZiwNKBne0Sbnvu1lupKCU26+KifSMWl1yiF0amS9Bi4HIYV6slJEqNxQ5oMXh5WBa6hXM5bACWZ9i1/VvMozveX0b7T8U2TSbjXK4DXCAqL38VGw8r6uCFbiLMvO5rH3v3AAD2wAMPhASwP6IYn89VvPykFI7LUxZ4IVcLAMlgpW//+te/Stc12hOoMvu/dOECFTRs6LCtcKwUoBUOuADyum34eSjQcrsp2WWyb7yRcnv3rsyhB+YzBzLz6I89t2jApbmKErRC6FshXERmWNg6YIWS2DxQFjvEQOmg6RtjF4leme6tmNx5emxkkKiD1z++XOWAF0CsoKjsaFw07sDsM2foD9/8ZkggecBmYCw0Y8tsS2dZzCTCsSxMQh5okPG/YYDryR//mBAVDeIDwJX3u9+F1bYksGv2YTuxbfRtOKBiG/GWS2PrhRpR8+xix45BNNFljwnA9cN/p5Il3USA1jKpbVnQtvzAFcJF1NmW9XIiYThgpdfy10GLuynZVWZF8zl09UtzafzaY5c93ki8YdSy/Z45HqverFEHr1eHpXpODBQz1o+if/1LMqzfhQGUv9idqnky8lYHr/KyB6w3vD3M9zSxq6bmz5gRaxOU6/sKnntOAleoAEYocGc7MWixjcIBfDig4gKN+hb1zgpXx66BabkMdJk3wVW86/NNNnClOMAl3UUduFovIoHRKskZFtxCfXCfylIsay6JFr6hgxe3g2s2m25uM5+Onc27zFFX/d9+8Fq9OzbL8qIOXqCQ7DZimxrjprPFAwdSvi3KowTNvWGA5a+2C3kB6Q72OK+5P2UxCcUaVAHAb4fZf1u5f7tX47XXUkFyctXvmgjuobBTJ4++5dcCGahgHx5sJwatsmwEpoU6Zv7BFWVDbU/fdBMVbY5NSeFImLLh0J22MK8Ylzd3CzoX3EWkPiSpobuKthAv3UNbgC8FUgAtjV3xc64qG2r7g3ZJlJkdXab/6TTvHM84H33AxPWKOniNWX7AA17T18Uu07pk0ybKv+kmB7wwISGi/zYMwDxiu5DlYRKYjDqTmC0E3Rxmv5014DppWYRxplYtKj4WG1p/uYlZnJxMuddcI8GLAxb61qttKfAqj40AZrqN/MDFRRlDARfb6eyf/kQoIRT0x6AVJxyNy3UV9cRTW+dqiXwtlafFWzCuUrqWdAvnkGjhGzp42SwrFGhZzWY59c5e+Go9gRVG6/HEF27T2fv/vTBmeWdRB6+Z6496wGviqkPRsmGp/Rb86leUZ7MuCM88IVGx9K4wQPOo7UIym9BdINZpGLjg5kDwHy0EXRdif1cLQYN04PL1aLzwzjuljjnWL1wqKKDc733PEejZRrzVNUDFvhQzBXixbXgLsNJtxHaCjdTwdgkPBVp47aTPThd79Ii1WSr0fYfP5tM1r62wWZfSuJSryNnyNuuCxgXWZYOXx02U0UNb32I9Swcqfq65hQLPmwKk0LvSP1Bh1h5NptPCrScrdE7lfbO/fj007lg9aix4FU+YoPQbO2ve7wahI/VvQgAOooJ/s7Up3Q3iichMgoGrjxB0VYj9fF0ImmgDIWrV++vVgwFm3HwzFayK3cUOdVMV9e7tuIt+G+mMi5Nydcal24efs314y3YKB15sG30L9x724ZFxyy1UtGtXqMMPxGsvjdsjk08tOwEV7qKbCuEyLta4OGfLAS+pbyFfi1MeoGmp5rrsGspts9kERsXDC1gzFNOSxRmnqyKNTaaRsMftbyZSbkHkg2UHT3lX0XScHLsS41EHr9kbvMwrFg0pL2VlUe5//qcDXswisAWTwBYsAukM4aKCtW3AYTahT0aekB+GAC2A3zeFoLlaSzN/uWd0CeJxpm7duE3AS0ePyuU+nA6hg5cOXND+eDAjZbDibShwZzsx82JXUG41QGf78Bagxfbh7fmWLeNmp7K+OHn3+VKMy2rN+lZp4BKlsuQBWiGAyw9ezLi46UhTG6ywBWDJjuH6dpqntr9oMoX6LIx8VZd+C3Z7PKtZ64+WZa6I/i/q4LV0W4bn5AYmRd6AfosUffSRFjVz3UUGL31ioiP1r8KAUF3b3eGJicnI45Uwn/muELKaqT4RmUFgIsJl9Yyrr6bCrVv9pxCTvwvatJF2Qua8H7h0GzFwcQCDAUvfso0A8qctZScGLWxPWhhK78OW7cNbthEDl8dGALMbb6Tiw4djYpeKfMkDvZDPtZwsOyVCeIDLzpbnqCKAi8FLLu2Bm8iuoh5BtHWu5rNJ8ICGpelYqnY/MyyAlsuy1POpTnVZABfG/3tjLpVEUPvCCprHPlvqmd+nsmIj1uMaRR281u874zm5rrN2VOTeqPB7YdC8737XcYX8rIt1G44qwg1CrfhfhAGjJ20GxSwCk6tRmPf+RAjaoDEunogStCxBxywhq6UeFZZne7ZFiwqfZ1U/cCknh3JvuMEDWgzuuo1gJ9a3mHXpGhcDmAQtG9wv5yIyYPGW2dXl7JT1/vtVPe2Ifn7b8YtyyQ/0LddVtNlWazuqqInz7CYqcZ5By040ZU3Ls51JovlMspqpIQGrFMOaTlaTaWQ1mapGY7R/4zGZ0E1JH+NXR05zPpOdT7XecZcFNege29URUQev9ONZHvD6YFJ0feKS5cspT6iF1jpwhZqYnMeFybhHCPp5GFCqbwPSYSEIgr6eLc/PawlBKNXMDEJnWdDXMI4IQejJyE1l0WgD48i3vkWXCmNbq6l40qSwi9ErAl6KcSEFws+2XHHer2cBtBjYdYZ1OTsd+8UvCGWzg/LoOOdgxcFLuoiJJFpgALh8+ha7h9g2n0mimd891BkW2BVKXzNY6dvJJF6YVGrU67UiYuabsuawZ273nhdbXTLq4HX8rHfd0xsjN0TMeKF2VPjee6XYhAQuzxo8tzQLMwdskRn/szDgBBfyvjD/+7MQtNfWaTAZeRKCYaEmvQtYltTZoLXpAyWf82Is3Bc0bepEXxnkdVeRGRezLt1O/NzVAVX+lh49ZFbl3zLLcu2kWGh57VS4b1+oyx6X1+7tstGtECHrcPmiinZkkRmX3DpuIoBLS4MA49KBS4rziCC6EUPoWlZjDawc4AoNVLLxrqznP5HU8wl0/YsTI2arJv1Xe8BrX0bpMlAR+7IQO4o6eOXkF3lOsEm/6GZN59WqVQq8MCn1iVlWxAzs6adhQIpZlr6FWwn25E5GQUcsZlnqfwxU0NfgooYaZz/6KMTlid5Lud//vge8/DbSWSmDFW9Z33LZlsaybF3LD1r4m9kogzvsBDbLDLQ8dsoaNCh6RqnAnk9nF9LVr9ppEXLpj7b8J1xKhMO6NMYlAQxRRHeo9Ac7T0sT4y0/eDWeQuKFyWS9MEkOL1hpTXfReNceCc+Po5RdVe+sdfRMjmdePxNBRlfeyxB18MKB/F+Hhc6JPvpp9CpLXDp/nnLsaCKzidKsC5EzN0eJJyRvwSa2CkE/LgeANbVBC5PSmZCYjJZ3QgK0wK4wwNAw4Kbq49Cvf13ea1bl95Wkp3uAK5SNAF6htC3YSQcvv77ForwfvOAm6gB/WLMRwAvAxXYCuIez09GHHqry+UdiB1M3nbaX/3A9rtDg5bCuUukQzLpmk2iB9AcFXg5wvTjTF0WcRgnQtqSLqHQs5RaCVU1wx/MALT9wjSXxvD2eG0v/GlX1/pODkvY4cxorZ0Yvr3g59Kpeh5iA15Ndlzsnivpe0cr2LUlNLcW6lH6jigfqjIvFZwYt76S0aLMQhMihzrL051juo09GblkmJ6El6ACGDVg8GQFWaCLrH+mWoP0//WlVr2W5P180Z44EL16vyDbC9nI2gp2UOO+yLXYXOZcNwMXPvWzL1fukfTQbAdjLY6dDf/hDuc8zmm/8fMFhEjKfyxbosfRHz563s+adzHknHcK7xMcBLehbnP6A5FII8zJnS6U8uKAFtmVrWRK0xpP4h8usJMN6bhyJ5+yuSc+NJuEbrYauqZJpEBTTs+oBXoczL1Zpn5X5cEzAq9XgdQ544USjtTi7aOLECoEXAxeYhJdNWDRDCLqhDPB6QYrvpd1DB7AsNRmZXXHna+hq/rETr91wAxXGaLkQmopItmXX4y8LvNhGXnBX6xQZtFRWvAtYinVZdEJYdExGVpWddPeQwYpd6PLaKf2WW6gkAG3dXh6bXiZ4gXE5wAVxXk9A5Yiix1XUkkydiKKb7oCIoQtatob1/HjHHdSZlWg0lkSjMSQajbbHKJIdwxuNIvHsCLr7vdmVwQrnM5sPnfPM58c6L3X+F8snMQGvjpO2eE5244HoVMws7NrVA166zsV15v2ukA5anA4xXAi6pgzgYgbW2CO8W5JpYTK6DMui3cKidGFJwAJIQVPzj+1CEEaswKugXTsHvHTgYuYVzkbedAiXeXE0kV1FFUlMsIHLZVsHhbIRu8/KTq6NyrIT2wjbyzU5icUEeqzvFm/5Zq36qeMqllryo0UWbXEezEu5iqGSTVV+Vingkm7heBKhGJYEKIDUKBLPoFdl6fHzN6ZVyUSIKoKE8PhoSnzyFGMCXv0XerNw522MzoLkgtdfrxB4MXDpk7KHEJQQArisEK8BxFDmBpPxgJ0vxsCVLhkWQMtywEpOQEvQdkt1v0YHbO6CvUUIKo5RE468Z5+tEHjBPjwY4CXbCiHOu9FEFUVEpFUX4hm42HVWgFV+O239+terNPEi9eFffbzu8uDliSzawMWZ8xxZlGsTZ6l1iDbjUsI8UiKQ+qAYl/UC2BaYls22AFzQseASgmEBrOxhPTOKREP0qESTXd94ehjd+96sKpkB4jwDF7ZocRiPR0zAa9pabz7I8KXRCXcXDhxYIfDiCYkthOf2YQDqFiEIbOx7Yf4P4Z5FeOkeWoL8LAsghUDAVmHJAbDikSYEpSUkxOz6F3TqVG7w8gC8xQussS2dLa/nbnGaCFxFdqX9wAX3WWehAPdwdoIGCTtt+/a3Y2ansr7o6cHbywYvT2SxjLQIgBfEecdVRDoEhHmkROiuouYi6oxLAtdIEs+OVCxLgpYCLutpNNj1j6H0107zyjq1Mv+HxFQduFDmvTAOdfNxkDEBLxQn00/4s+nbyzRQZf9ZNG2aZ1KyqxguugjQYibxchhgAmCtkGH+BFopBN0W5n3NhCDFtvQJaUmWpUBLgRVPQkzETULQRnuk3XxzZU+7wp9DI1iuFhHORh7QcqpCKNACcLGL6Irz0Lh0V9FNE2HQ0lnpTksxUsVGAegumAPUw9lpewwDG2UZ9pXx6bI+l2pLpipFsLvoal02aLHGJbd28qmegMqLqZuE0Lhknhaih7ab+PwYV4BvBNDSGdYwEg5YDSHr6cFyiKcGkzuGUL0uSWWdWpn/m5l6xDOXP58Rnblc5kHYnvHtdgAAGd1JREFU/4wJeB3wrTz/14joJKpWBrzg5jQIA0hIWAXAHHeE57ILDja3tStmENuERVuEilzyZMT+dNDCciJUX938ve+V53pF5D2RBi8AmCvOq8RcTn/wAxfYFrNSZSdlI7aTZKG2jULZacddd0XEBlXdSZXBizPnOY/rReUm6q4iJ5a6EUREEW3wki4i9KzhJJ4ZRqLhUDmsp4eSGkNIPPVV6dHgK2rcp/IC+/N9VnrAa9vh8I2cq2rjy30+JuCVV1jsOeFne0duiYJ+gpdOnaoQ80KCJCqosgCvb++2J5kK9buZ8tBvlghB/xXmcy/Z7qGajAq4dMACWDFgpQpBali07c479VOJ6vOSLVsiyrzYRnAVeekT7OQHLjBTHbgU24KNLOkShrKTayPYyqL0Rx6Jqm3Ku/Px6zLCMi9ZDVWK9aGZF9YqOmkR7C6+qFiX11XUGBdSH54fQxa7iVKIh57lApd4GmxrKFlPYQwm66mv5BANBpEaA0nUH0Bth68s72l63rf9yHnPPMaibKRNxOsRE/DCyekt0P7SaVHUzjdchNEfQUNUMFxF1QftiYdJieRTlcOlhGfoN/jsAiHoW2EADC4oGMRGkUAbhUUbhEXr7ZFqWYSxTghao430Bg2iZhP/jktOnNCajLhJu7qN2G10s+hZ77KcHC52HTnfjcV51rhcHbC0IA/tDwCfJizaZNtJt1U4O+1v08Z/OnH5e9HOMwq8tNwu6TZC6wJwNee1i1pdLinSIyEVCah2LpcELzf5FOkQHnHep29ZAC1bhLcauiwLLiJcQwCWaIABwBqgRv3+JOxh1etP/edXLjqIWl26/NNzbmzXMvovdMzAq1FvL93EsqFoPHJ++cvLTkyIwneEAR4swgZgYWK6k1LpNwxcmJQQ5ucJQf8ZZj8tJcNygQsMAoCFsVYIWu0bh2NYMQEVJbJ/8ANpJ9a8AFyVAS+I9Argw2tciLiCcbE7DcblutGWBHkGeGZasFEoO53o0ycat02F93noTB5d++oSsmzwcoDrcuDF9bjYXXSW/IQQ5yVwIapo52zBVbSjiEqIV+Cl9CzbRWSWVX+AA1gMXNha9frSki0VL8UOhlVbK/cMENtxJH4uIy5YzMDr/fFpHtRGols0HvkffignJYv0/gkJ0AgXNYTLh8nIUTMuXQP3knOUGLgAXjstQTPt4oO6y8nPW0k9S2dZFq0WaqwSFvFYISw6G+OW93mtWnmy6TkZ1WVc3sXWvOxHz+liZgo7KY0L7NSS7qIuziOiyMCli/EIVjBorbcsCVaSjVrh7XQxLS0at02l9vnHrqmypDML9W5Rwfkkms9zm2U4i6xtd9FmWwnOwmpVDUImoUKg53QIKc6zq2jrW2BdUpTXgIsBq4FyCxVIAaj6k3iyn2dc26Af5VaCOPiDbnW6LIury4gLFjPwGrZ0nwe8pq6JTmG5oqSksOCVJAQh7YHBRd++51vSotYqKg1HLvnRJqVfu5kqBH0jzH5b+xgEAGulPQBaGKu+8Q0qiXFJnMIxYyoNXmClSudSrMvVuRRwwa2WKSOaxsX5bMy4AFwIVMCdZlaKH5ZVzihtp3W3314pkInWh96dticMeAG4tGVADnjZWfQeV9HN5ZICPa9LlKxrtKZx2flaHuAa4rqI9QFc/UnUA2j1U+PJviQw6n7pjNofVy7H6/UR6z3zF+Vw4v2IGXghkU33l6OVLnEpL4+yv/tdZ/E1M69pYZb7ICG1mwZc0l2URQNZ61KLhll8xqTk/CSdTaBefbjuQW3khFSTEWCVIixZbXW5XXV1V+PGMb8PSk6epKxvftOxU3mZF+tcLusK7S76AV53FRVwMWiBcSXQGpEgmSiAnUHdb6f9b78dczuV9YUbDmVFBLyUzjVJla3hlIjnxtrAZWfKl2JcdjQRrItdRMmy+pL15JdyiLp9SI46vUnYY+TiihcDRVmrO992M+of+HAR5RdGvh5+WbYO9b+YgZe/hEazAVVbHBrqZPi1vJdeciYlwGuoEPS1EMwIS4CGaZVPmVHoGo4uPks2oeUnQXRmJoFI2Tgh6KYQ3wOGh7LRKRKskG5hUbIQtNQeZxIT+dBjur1Yp47UuRjgef2iEul9bqNmJ7jVjh5oL0LXwV0CvG0nlXTqRl3ZTUTkcJ2waI3mRnuBvbSdLmzaFFP7lOfLftJhBQlZ0hlCPYv0GvNylgFxbS6uM+/W5fK4i2BcnDnvJJ66EUVEEx2NSwLXQOkewkW0nlTAJer0scGqF4k6vUg80VOOG576ks5fzC/PaXneg+rHOvGIRSl3zwGE+SNm4IXa2fe1X+AYAc8LiqKD3iW7d9P5r39dTsyuQlCopT03CkHTZfKlm3Dpal2CULJFuouWoL2Wu16RQ/3KDXInJSJlcIFGCUHYt+6S8nMAmA5aSLlYF8e8paLVq+ncNdeUEuovB17MulCPS2bQa4vQFcCrRF0wU06HUNFXr5tYGrhU/f9lmp1gI4y0xx4LcwvH9+URq45FALx46Q/yuDBsd9GJLCrwUsAFV9FOfajvBS6wLEsCVy+y6vQkq3YPsmp3d0a7oRVvdJyVW0j3ve/O27venU/Isg/CI2bghZP1V16MlmiP78rr1IneDgMiSHFYLF1Fb9hfMQo9yVJpOCzSu+6iWuKj8pMQ6lfABe0GLhDYXLiKFK/akxHfj3Fq5sy43gc5bdpQaZfRzaTnihHsLkq3WkYYoQe6dbhY5+LI4g5hESfpwj56GoSKuHLgQtBKi1mpAncGeIAWbLQIpXrWro2rncJ9eUFRCT3cPVU10mhhty6z9S6n3I1cv8gLr1Fv3k2NsGQxQYj0NuOyM+gtLLDmdYm2ziWeAnANVuBVfwBZMnqoMS64idI9BNvyAtcN9XvRqfM54U4j7OtYyqezrvfGBSdgElPw6puY7jHEiOToFDArKSmhNi1ahGQ/P7Bzq9SkdFkXJqUOXkqkV4mWiJyxhqMWVXPmvMpRYldI5W6pSTlECELvRmZd+vaf9oRMq18/7E0Tq38g5+vs9ddLAOO1nmrJlFs1QgcuHbz0LHodvNR6RQZ4le/GNmJxnlkXllwpd1oQMy4dtBBk2dGqVazMUanvSdl9Vit540YZXfDyRhllswwuKojaXKjLxeDFrAsuo61zcXRRgddXJGxx3uMqSuDS3UQFXuLxboTRd/bGCp9bYVEJPfTxYs+c3XwwOhVhKnxwsYw24uDW+NY4No2C7lVQUEDPPPNMSND4H9uNAXCFAy/OEmfwciel7gqx1qUYhYyY2aF+pEIgooj1kAOEoOvDANjr11xDF9PTK3PNIv6ZvK5dKwxeevFF6F0uwKs1i+xWK3fRZqZaci6niQC4GLSgAQK4wLSShEULwbxuuYXyMzIifs6R3mGTYZvthhrlBy9XqHfBy0KVCORzOS7jUBJS52KBnqOK/aTG5YryDFwALYxuZD3eVY5fthpKxZVYPO3vdo9qEvHMqPdfs5gyLySm6lGLu99NjGjUIjs7mx5++OGQwIXmGXD/dFbB1T6ZWSgRWuUs+YV65HSBUeiTEu4QGIVyF1XiKQMXs4m+QtB1YQBsUEDqseOmyK5Xz66QWraNOEVCz6YHwEvwsm3k2kmt42TWpZipaye2EYMXM66FwqIFlkWJKMWzJHplw/2ToSp/Y1Lf8f4yBWB2Mw0P83KSUtlltCuiyrwuG7ywBIjrcTUcQVZDVISws+hl5rwWWaxni/MeVxHCvNK4hASuLnT9k93p8KmsCp8azqd+d7cCMlzHlelVr31f4QMp4wMxBS8cx1M9Ujw0dO2ezDIOr/z/On36NN1zzz0hgetvt90m244pIdrVc3Tw4ggaMwqwCZ6UEKE5Q1yF/NVaPA7586REjhIiZkiB0CdkrzIAbMiQIeU/ySi+Eykm5//yF62FGbNTtdrAdau5Kqq3sKCMMNolbhTAqyx6RGE5lwsJqJzLxXbS9S0wLgAXQGs+SmP36BHFM478rjOy8umn7ZNVcqqnSqpejz4MeEGoRwXUZ0cR1+NygAtLfxyRHkt9+pGoh9wtpEIgDUJFFFmgB3CJx7vQNXW60tx1eyt1omNXHPDM05e/Cp7mGHPwQgkNXQDsv2B3pYzr/1BiYiIlJCSUAq8mTZpQ/tatdPb228s1MZlR6KH/XR7WhUmpwAsLrJl1QcMBeHFuEk9KCM5wgRD1vDYEA7Msi4YPH+4/nbj8XZSaSpm33hqSnQLcXYD3LpdyXUaVSa8ijF7wcvVAIUsL6e4iMy7YCWtG5yMAUqdOXGxQ1S+duuEEXddynmxjppgXugAxeKFyBKdITHbzumRul126WWpdXI8LrGuIvV6Rs+f7kaiP5FMFXladXmTJVAjlKjJwib9/Qe8Nr3h0Eed/8NRFglekz9MdR+O7FCjUdYk5eG097K1/jS67kWpB3rlzZw94tWvXzvHRiw8dorO//CWddvQul1GAVajwv8qoR1VUXcfhaqic14XcLjAK12VUOhcSLJcLVTZH12/AJsAk+tWqRdddd53nGCHkA8BGjRoV6vrE/LWi7dvpzO23O8UGmXHBPmwjsFNogh6At9cvbrNQl4s1QVWvDMyLwUu51cpOOsAvksCl7LShQQMqzg9GOL4yF2D+lpN0yz8TVR9GbqrRRDXS8Ja8Ya2L1y+6WhcXEYRIrxZbq7WKVn3XXbTq9qaEJ3o5KRGiNjSuLnRV7S701pDKudtwF5sPXOMBriBFGPXrEXPwgnH0bkJA9xUR6CPHJ9WoUSMJDl988QW/5GxR+zzr2Wdtsb7q4KW7Q/5JCTaBgWgZ2ER6+/byOBYtWhQSwMAax44d6xxrPJ/AhTz3yCOE9YxVBS9V/keBFwczwE6RqMsAD3YKcR52OtCrVzxPPWLfnXE+n/7n/aVa6ZvIgJeo57IuuItWbZXPJaOKtbvSdXW7VdpVxMljLuqMC3ldx87mRswukdxRzMELB+9Pmfhk6raInVNubi5Nnz69zP3lDhxIJ6++2lMNlFmFTLq09S6ZcKnpXcwoFOtS9aW48oFiXUrrwqTk/KTFN95Ip+bO9RzPggUL6Nprry3FwABgEydGrqOx50sr+MelkhK62LkzZSQkOAvV2Uac38XslDVBCPWlk1JVJQ3oXRzMYE2Q3UVoXUu/9S06uyI6dd4qeOoRezsCVM2GbrT7L4YqNsilnbkWvZ952dn0MpPeLmsjwcvN59LB6+cth9CeY5VPZQCxaDM01QNe3WfvjJg9Ir2juIAXckV0dEdUA4aL5aNo9246+7e/OQDGE7O84IVFxag5xeClC9CYlJiQ25s2pfwTJ0Ke1vz58+maa67xANitt95KGzdWPB8n5BdE6MXCtDTKvP9+6TKyjSoCXm5elwIvjjAy61qUkEC7/vUvKjxb+UkXoVON2m6Stp2kn7y1QDbU8LqNkQGva+v2ou7TUim/sGplpuZtOuaZl6jBdz6nIGp2qeqO4wJeaDpbv5s3DLtg8/GqnkulPp8/Zw5l3nOPvVbPTZPg/C4nOVXWWFdaDldECAdeaY8+SudXr77s8cydO9cBsB/96Ee0Z8+ey34mHm/AD0vuhAl06pe/JLf8jZvAG4p5uezUy7wc8EpIoK0NGlD2li3xOKWYfycy8b9M2kPfe32O21hDdgPS1jIiTcLO7+J6XXIdYxjmdW39L6l1v8V05PSFKp9PZnY+YcG1TipSdgYrNcJ/knEBLxzEqnRvU47/67CQTpyLn2+dv2IFnXvtNTr64x97hGiAl563pK/RA+tid2j9HXfQgQ4dKjwZZ8+eTffeey+dCMPQ/Bcsnn8DxPIWLaIzLVvS4f/3/8pIJeGAhnKtOUUCrvWG//1fOvTxx5SzOzJR5njaozLfDRCbmnqEnu27ir7VaqrKrOfu1mimgZr0dn6XzKhH84wGvIaxHyXU60t/fG8K9Zm9iU6cjUyXarCrv3+W7AEuLMYO+iNu4AXDvDFyQyANVrh/P50fOJBOtW1Lx+rVo4MPPkh7f/tb2nXHHbTtO9+htBtvpB333kuH332XTg0fTrlVzJTHcqbq+CjYuZPO9e1Lp15/nY7UrUsHHniA9tx9N+382c9o62230aYbbqCdf/4zoUrsqdGjKe/Agep4mlE95rV7M6n73B3Ueugaqv3FIvpTx3lU6+0Z9ONXJ9GtzcbQdY2GUb0vEumjiak0ZdVeOnU+sj/w8IJafrXOMw8b9loRtaIJkTRmXMHr9IV8+sMHSY7har0zn9bvOxPJ8zP7MhYwFijDAj3m7HTmH1xGVHtBt6/q8IgreMFA6J6t+9kQCePpPlaHi2aO0VggEhYYuWy/Z+5hHmI9Y3V5xB28oKOgj6MOYE98kUzx7AdXXS6eOU5jgcpaIBRwvTsuLeZR/8oePz4Xd/DCQWT63EcA2f3/XmgArCpX1nzWWCCMBaav83a9xnyr23UZZecVhvlEMF8OBHjBNH730QBYMG8Yc1TV2wKI8uuVUTHPULMLdeqr2yMw4AX3cfDivR73EYaFCxnv/nDV7aKa4zUWCGWBuRuP0V3vzPfMsd//eyHtPlH1PLFQ3xft1wIDXnyiM1KP0G+0TiUAMBgcwIawrnkYCxgLVMwCIAb+1oOYV7/rsIA2VOPofuDAC5dl+Y6TdG97b0kOGPuFvqtob0b1/JWo2O1m3m0sEBkLoFmGf70i5tLjnyfTvozsyHxJnPYSSPCCLfafzC5VuJBZGGqARavzUJyug/laY4GIWgB9FVF2/S+dvEt+MIdQWDArp3qJ86GME1jwwsHiAnw+01u8EMbHgBb2waQtdCSz4h1RQhnCvGYsUFMsgMIHdbos82hbPG++mLmDiipRzz6Itgk0eLHB4EY+9MmSkBcD+pgBMbaU2V7JFsgrLCaUsNH7RDBooS4X9OSa9KgW4AWDIwel8/RtIQEMFwgX7JWhqZS05QShZZN5GAtcKRaAIJ+6N5OwJpHBSt/CdUwLUMuySF2XagNefMKgxP/4clXIi8QXDEuMOkzYTBNWHZQJsPxZszUWqEkWANOauvYwoZQ63/v+bfvxaXTyfF5NOm3nXKodePGRbzxwlv45fH3Yi8YXEYys2YA1NGHlQVnOFr9S5mEsUJ0tgITSnnN3eYoa8P3OW0QY049XvOVZdbJLtQUvNjLCvZ9M20Z/7OhWp+ALGGr7p45J1GrwOuo9f5d0MVHZwjyMBYJugZ3HsghR9hf7rw6pafG93qTfalq3NzLtBINuk2oPXmzgwuISWrbjJL09ZhPd817pHDG+uKG2iMxA9O+/cDdNWXOYkreflOsqUd0iEikZkdTgkKiLNlQpu05VaGBZCCbAqay8GhNt4mtfE7dZuYU0a/1R6rdgd6nmr6HuYYDWmj2Z1WphdVWvW40BL90QOQVFsgtKt9k7QuaKhbr4Zb2GSA362PEAy3uiyzKZNAvX9a0xG8scCCSU9R5U1cDNh32ivhl/T6gtap6Vdazl/Z++b9RweuTTJYR27q2HrKP3x6cRbIesbCzinb/puGegPPCWQ+focOZFwiQzrrh+91XsOX7YsPxt8upD1GnKVnkN6nVbTrjnynMtXxq09ooDLbZwjQQvPjneoj43Fn6DXT0cJuWiPDeKeY/KsfPbAekqCJKAwTbuu0pGfd8cvVGC4MdTt1KXWTukm/7Voj2EUiwTVx2imalHCH0LwHLBGBAN23UsSxbCyziXS+cuFlBuQXHEenryvRDLLfIUwd4BTmDKOGfY4LPp26nd6I0SqMoLUrrNkR0/KGlPtVxMHUn7XxHgpRsMLAEdgSHgvzN2E+FX7rHPlpbqEKzfLOZ5aNCKlV3AErGA+K8fL5a11tG8pVHvlVL/gX75+oj18lp2nLRFptN0n7NTultDl+ylMSkHpBQwe8NRWrjlhFx6tnZPJiFqDbCEZgp3etOBszIjfen2DEpMOy5zohCtBtgOT94XdoCd9p63iz6cvEXWpQN4437yV26oiq3w49Cw5wr6dNo22rD/jGG69oS+4sBLBzL9ObKOcSOj/RN0BlD414avp+e/XCXzZ5BDI0fPFVT7i+QyIz2VvVF//8FCuXIAN6rzffy92rbtqA3UZ/4uGpi0J/xYuJs+n7Hd+T/O6aMpW2WE9rk+Kz37R+s55AKFSm6s7LmYz1Ue8HEtIEcMWbJX5m9BBjGP0hYw4FXaJuV+BYAHlxSh66oMiOgIOMT7gWCA/3yOnsmRDAXr5MBIwFjBNhD5Qv1zJA7DHUegBBOuxaC19GzvFfRY56WEjlAGxMoGMQAVNFH8uID11dScrGjc2wa8omFVs0/HAgBlVMpFNRCUX1m8NUMGAQCCI5L3S2YItwtr7sAMESyAXvbqsFQJhKgk8nSPFBnMQFAB2hpcsiCzRFQBBjvHsYO9w6VEas7o5fsJNbXwQ7DnxAWp6zmGMk8qbAEDXhU2mflAECwA7RKRugu5hYRcvSNnciRAbj9yXupCSA1Zsi1DygCImAIsoV3B1e41d5dc8A9QwUoM5Akiuto3MV3WjRuz/ICM/iFVYeHm47Ro64kyB6ehgDVFMi0mCHYO8jEY8Ary1THHZixgLBDWAga8wprG/MNYwFggyBYw4BXkq2OOzVjAWCCsBQx4hTWN+YexgLFAkC1gwCvIV8ccm7GAsUBYCxjwCmsa8w9jAWOBIFvAgFeQr445NmMBY4GwFjDgFdY05h/GAsYCQbaAAa8gXx1zbMYCxgJhLWDAK6xpzD+MBYwFgmwBA15Bvjrm2IwFjAXCWsCAV1jTmH8YCxgLBNkCBryCfHXMsRkLGAuEtYABr7CmMf8wFjAWCLIFDHgF+eqYYzMWMBYIawEDXmFNY/5hLGAsEGQL/H+CObUqk37jyQAAAABJRU5ErkJggg==" alt="image.png"></p>
+<hr>
+
+<ul>
+<li>Die Wahrscheinlichkeit also, zwei rote Kugeln zu ziehen, sieht wie folgt aus:
+$$P\left(R_{1} \cap R_{2}\right)=P\left(R_{1}\right) \cdot P\left(R_{2} \mid R_{1}\right)=\frac{3}{5} \times \frac{2}{4}=\frac{6}{20}=0.3$$</li>
+</ul>
+
+</div>
+
+<p></div>
+</div></p>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+
+<p></div></p>
+
+<p></div></p>
+ 
+        </div>
+      </div>
+      
+      <div class="clear-float"></div>
+      
+<!--########################################-->  
+		<div id="sectionNavigation">
+      <div id="sectionNavigationfirstPage">
+        <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/SectionIndex_DocTooloutputDocusDataScienceTheorieMathematischeGrundlagen20_Wahrscheinlichkeiten.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"> &lt;&lt;&lt;Section-List</a>
+
+        <!--<p><a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/SectionIndex_DocTooloutputDocusDataScienceTheorieMathematischeGrundlagen20_Wahrscheinlichkeiten.html"> &lt;&lt;&lt;Section-List</a></p>-->
+      </div>
+<!--########################################-->
+      <div id="sectionNavigationpreviousPage">
+        <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/40_Schnittmengen.html " class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">&lt;&lt;zur vorherigen WebPage in Section</a>
+
+        <!--<p><a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/40_Schnittmengen.html "> &lt;&lt;zur vorherigen WebPage in Section</a></p>-->
+      </div>
+<!--########################################-->
+<!--########################################-->
+<!--########################################-->
+   
+<!--########################################-->
+      <div id="sectionNavigationfollowingPage">   
+        <a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/60_BedingteWahrscheinlichkeit.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">zur nächsten WebPage in Section &gt;&gt;</a>
+        <!--<p><a href="/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/60_BedingteWahrscheinlichkeit.html "> zur nächsten WebPage in Section &gt;&gt;</a></p>-->
+      </div>
+    </div>
+<!--########################################-->
+<p></p>
+<div class="clear-float"></div>
+<hr>
+    <div id="footer">
+      <h4>Jochen Paul Hollich</h4>
+<p>E-Mail: Jochen.P.Hollich@gmail.com</p>
+<p>Telefon: 0049 1573 255 77 56</p>
+ 
+    </div>	
+  </div>	
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  
+  
+ 
+  <script>
+  $(document).ready(function () {
+    $('.dropdown-submenu a.test').on("click", function (e) {
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
+  
+  
+  
+  
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  document.getElementById("headerBOXabsolute").style.height = "15%";
+  document.getElementById("particles-js").style.height = "11%";
+  document.getElementById("article").style.width = "80%";
+  document.getElementById("asideBreadCrump").style.width = "15%";
+  document.getElementById("navbar").style.opacity = "0.85";
+  
+  } else {
+  document.getElementById("headerBOXabsolute").style.height = "40%";
+  document.getElementById("particles-js").style.height = "30%";
+  document.getElementById("article").style.width = "75%";
+  document.getElementById("asideBreadCrump").style.width = "20%";
+  document.getElementById("navbar").style.opacity = "0.95";
+  }
+  }
+  </script>
+
+
+<!--Inkludiert die Optik von MarkdownFromulas-->
+<script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/mathtex-script-type.min.js" defer></script>
+  
+  <script src="/static/js/particles.min.js"></script>
+  <script src="/static/js/particles.js"></script>
+
+</body>
+</html>
