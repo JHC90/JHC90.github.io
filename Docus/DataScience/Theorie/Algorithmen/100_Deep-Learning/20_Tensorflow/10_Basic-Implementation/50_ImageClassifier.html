@@ -2388,6 +2388,11 @@ $(document).ready(function() {
             </a>
            </li>
            <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Grundbegriffe/GrundprinzipienDerInformatik.html">
+             GrundprinzipienDerInformatik
+            </a>
+           </li>
+           <li>
             <a class="dropdown-item" href="/Docus/Informatik/Grundbegriffe/Programme.html">
              Programme
             </a>
@@ -2427,16 +2432,39 @@ $(document).ready(function() {
           </a>
           <ul class="submenu dropdown-menu">
            <li>
-            <a class="dropdown-item" href="nan">
-             TP-Link &gt;
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Computer.html">
+             Computer
             </a>
-            <ul class="submenu dropdown-menu">
-             <li>
-              <a class="dropdown-item" href="/Docus/Informatik/Hardware/TP-Link/Repeater-WR710N.html">
-               Repeater-WR710N
-              </a>
-             </li>
-            </ul>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/EVA-Prinzip.html">
+             EVA-Prinzip
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Halbleitertechnik.html">
+             Halbleitertechnik
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Prozessor.html">
+             Prozessor
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Rechner-Architekturen.html">
+             Rechner-Architekturen
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/SchnittstelleBussysteme.html">
+             SchnittstelleBussysteme
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Standards.html">
+             Standards
+            </a>
            </li>
           </ul>
          </li>
@@ -3381,6 +3409,11 @@ $(document).ready(function() {
            Software &gt;
           </a>
           <ul class="submenu dropdown-menu">
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Software/Virtualisierung.html">
+             Virtualisierung
+            </a>
+           </li>
           </ul>
          </li>
          <li>
@@ -4532,6 +4565,25 @@ $(document).ready(function() {
          </li>
         </ul>
        </li>
+       <li>
+        <a class="dropdown-item" href="/Projekte/Home-Network/SectionIndex_ProjekteHome-Network.html">
+         Home-Network &gt;
+        </a>
+        <ul class="submenu dropdown-menu">
+         <li>
+          <a class="dropdown-item" href="nan">
+           TP-Link &gt;
+          </a>
+          <ul class="submenu dropdown-menu">
+           <li>
+            <a class="dropdown-item" href="/Projekte/Home-Network/TP-Link/Repeater-WR710N.html">
+             Repeater-WR710N
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </li>
       </ul>
      </li>
     </ul>
@@ -4751,12 +4803,12 @@ Beispiel:</p>
 <p><em>If you want to convert sparse labels (i.e., class indices) to one-hot vector labels, use the keras.utils.to_categorical() function. To
 go the other way round, use the np.argmax() function with axis=1.</em></p></li>
 <li><p>If we were doing binary classification (with one or more binary labels), then we would use the "sigmoid" (i.e., <a href="/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/XX_Logistic-Regression.md
-835/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/10_Logistic-Regression.html">logistic</a>) activation function in the output layer instead of the "<a href="/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/20_SoftmaxRegression.md
-837/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/30_NaiveBayes.md
-838/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/40_BayesNet.md
-839/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/50_DecisionTree.md
-840/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/60_RandomForest.md
-841/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/70_DecisionTreecopy.html">softmax</a>" activation function, and we would use the "binary_crossentropy" loss.</p></li>
+837/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/10_Logistic-Regression.html">logistic</a>) activation function in the output layer instead of the "<a href="/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/20_SoftmaxRegression.md
+839/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/30_NaiveBayes.md
+840/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/40_BayesNet.md
+841/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/50_DecisionTree.md
+842/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/60_RandomForest.md
+843/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/70_DecisionTreecopy.html">softmax</a>" activation function, and we would use the "binary_crossentropy" loss.</p></li>
 <li><p>Regarding the optimizer, "<a href="9112020-RegressionsStochasticGradientDescent">sgd</a>" means that we will train the model using simple Stochastic Gradient Descent. In other words, Keras will perform the backpropagation algorithm described earlier (i.e., reverse-mode autodiff plus Gradient Descent). We will discuss more efficient optimizers in Chapter 11 (they improve the Gradient Descent part, not the autodiff).</p></li>
 </ul>
 
