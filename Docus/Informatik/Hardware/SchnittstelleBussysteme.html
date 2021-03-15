@@ -5,7 +5,7 @@
   <meta name="pageID" content="[pageIDSplitter]15032021-Bus-Systeme[pageIDSplitter]" />
   <title>SchnittstelleundBussysteme</title>
   <meta name="author" content="Jochen Hollich">
-  <meta name="description" content=" Beschreibeung Section Index Hardware " />
+  <meta name="description" content=" Beschreibung Bus-Systeme " />
   <meta name="keywords" content=" Prozessor " />
   
   
@@ -2432,8 +2432,23 @@ $(document).ready(function() {
           </a>
           <ul class="submenu dropdown-menu">
            <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Arbeitsspeicher.html">
+             Arbeitsspeicher
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Chipsatz.html">
+             Chipsatz
+            </a>
+           </li>
+           <li>
             <a class="dropdown-item" href="/Docus/Informatik/Hardware/Computer.html">
              Computer
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Datenspeicher.html">
+             Datenspeicher
             </a>
            </li>
            <li>
@@ -2444,6 +2459,11 @@ $(document).ready(function() {
            <li>
             <a class="dropdown-item" href="/Docus/Informatik/Hardware/Halbleitertechnik.html">
              Halbleitertechnik
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/Motherboard.html">
+             Motherboard
             </a>
            </li>
            <li>
@@ -2459,6 +2479,11 @@ $(document).ready(function() {
            <li>
             <a class="dropdown-item" href="/Docus/Informatik/Hardware/SchnittstelleBussysteme.html">
              SchnittstelleBussysteme
+            </a>
+           </li>
+           <li>
+            <a class="dropdown-item" href="/Docus/Informatik/Hardware/SpeicherArchitektur.html">
+             SpeicherArchitektur
             </a>
            </li>
            <li>
@@ -2513,28 +2538,33 @@ $(document).ready(function() {
             </ul>
            </li>
            <li>
-            <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware/SectionIndex_DocusInformatikNetzwerktechnikHardware.html">
-             Hardware &gt;
+            <a class="dropdown-item" href="nan">
+             Hardware-Netzwerktechnik &gt;
             </a>
             <ul class="submenu dropdown-menu">
              <li>
-              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware/00_Client.html">
+              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware-Netzwerktechnik/00_Client.html">
                00_Client
               </a>
              </li>
              <li>
-              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware/10_Server.html">
+              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware-Netzwerktechnik/10_Server.html">
                10_Server
               </a>
              </li>
              <li>
-              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware/20_Hub.html">
+              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware-Netzwerktechnik/20_Hub.html">
                20_Hub
               </a>
              </li>
              <li>
-              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware/30_Switch.html">
+              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware-Netzwerktechnik/30_Switch.html">
                30_Switch
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Hardware-Netzwerktechnik/40_Medium.html">
+               40_Medium
               </a>
              </li>
             </ul>
@@ -2559,6 +2589,11 @@ $(document).ready(function() {
              <li>
               <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Protokolle/00_Ethernet.html">
                00_Ethernet
+              </a>
+             </li>
+             <li>
+              <a class="dropdown-item" href="/Docus/Informatik/Netzwerktechnik/Protokolle/05_EthernetWlan.html">
+               05_EthernetWlan
               </a>
              </li>
              <li>
@@ -3845,6 +3880,13 @@ $(document).ready(function() {
           </a>
          </li>
          <li>
+          <a class="dropdown-item" href="/Docus/Mathe/Logik/SectionIndex_DocusMatheLogik.html">
+           Logik &gt;
+          </a>
+          <ul class="submenu dropdown-menu">
+          </ul>
+         </li>
+         <li>
           <a class="dropdown-item" href="/Docus/Mathe/Regression/SectionIndex_DocusMatheRegression.html">
            Regression &gt;
           </a>
@@ -4614,11 +4656,44 @@ $(document).ready(function() {
 
 <p>Zum Anschließen von externen Geräten an einen Computer sind Schnittstellen erforderlich. Eine Schnittstelle definiert die Festlegung für die physikalischen Eigenschaften der Schnittstellenleitungen.</p>
 
-<p>Der Systembus ist eine Leitungsanordnung deren Belegung und Signalpegel definiert sind. Daran werden verschiedene Komponenten angeschlossen, die darüber untereinander oder mit dem <a href="/Docus/Informatik/Hardware/EVA-Prinzip.md
-917/Docus/Informatik/Hardware/Prozessor.html">Prozessor</a> Daten austauschen können.
+<p>Der Systembus ist eine Leitungsanordnung deren Belegung und Signalpegel definiert sind. Daran werden verschiedene Komponenten angeschlossen, die darüber untereinander oder mit dem <a href="/Docus/Informatik/Hardware/Prozessor.html">Prozessor</a> Daten austauschen können.
 Computer-Systeme verfügen in der Regel über mehrere unterschiedliche Bussysteme, über die alle Komponenten irgendwie miteinander verbunden sind. Ein einfaches Bussystem umfasst einen Adressbus, einen Datenbus und Steuerleitungen.</p>
 
+<p>Zum Anschließen von externen Geräten an einen Computer sind Schnittstellen erforderlich. Es gibt Schnittstellen, die nach außen geführt sind. Sie werden als externe Schnittstellen bezeichnet. Es gibt auch Schnittstellen, die internen Zwecken dienen. Zum Beispiel zum Erweitern weiterer externer Schnittstellen oder zum Anschließen von internen Laufwerken oder Datenspeichern, wie Festplatten oder Wechselspeicherlaufwerken</p>
+
 <p>Das Prinzip wird in der <a href="/Docus/Informatik/Hardware/Rechner-Architekturen.html">erweiterten Architektur</a> verwendet.</p>
+
+<h2>Systembus</h2>
+
+<p>Der Systembus dient zur Steuerung, der Adressierung und der Übertragung von <a href="">Daten</a>. Für jede Aufgabe hat der Systembus eigene Signalleitungen. Der Systembus teilt sich in <strong>Datenbus</strong>, <strong>Adressbus</strong> und <strong>Steuerbus</strong>.</p>
+
+<p>Hinweis: Das was ursprünglich der Systembus gewesen ist, das ist heute nur noch die Verbindung zwischen Prozessor und Chipsatz. Diese Verbindung lange Zeit auch als Front-Side-Bus (FSB) bezeichnet. Heute hat diese Verbindung je nach System oder Systemhersteller eine andere Bezeichnung.
+Weil aus Geschwindigkeitsgründen viele ehemals ausgelagerte Funktionen in den Hauptprozessor (CPU) integriert werden, ist das Konzept des systemweiten Systembusses nicht mehr gültig. In der heutigen Computerarchitektur gibt es den klassischen "Systembus" nicht mehr. Die Architektur besteht in der Regel aus verschiedenen seriellen und parallelen Bussystemen, die für die jeweiligen Erfordernisse speziell ausgelegt und entwickelt wurden. Es werden immer häufiger Punkt-zu-Punkt-Verbindungen eingesetzt. Das kommt daher, weil immer mehr Funktionen hochintegriert in wenigen Bausteinen untergebracht werden können und dadurch auch die Übertragungsrate zwischen den einzelnen Funktionseinheiten gesteigert werden kann.</p>
+
+<p><img src="imgs/2021-03-15-10-18-46.png" alt="" /></p>
+
+<p>Der Systembus verbindet die einzelnen Komponenten eines Computersystems. Neben dem <a href="">Prozessor</a> (CPU), gibt es einen Festwertspeicher (ROM), einen Arbeitsspeicher (RAM) und Eingabe- und Ausgabeeinheiten (Input und Output). Adressbus, Datenbus und Steuerbus verlaufen dabei von Einheit zu Einheit. Über diesen Bus sind alle Einheiten miteinander verbunden.
+Obwohl es in den heutigen Computersystemen keinen systemweiten Systembus mehr gibt, ist die Art und Weise der Ansteuerung von Speicher und Peripherie, wie im folgenden beschrieben, gleich geblieben.</p>
+
+<h3>Adressbus</h3>
+
+<p>Der Adressbus ist für die Übertragung von Speicher- und Peripherie-Adressen zuständig. Auf dem Adressbus wird die Adresse angelegt, von der die Daten gelesen oder wohin sie geschrieben werden sollen.
+Der Adressraum bezeichnet den adressierbaren Speicherbereich. Diese Angabe zeigt, wie viele Elemente überhaupt adressierbar sind. Die Anzahl der Adressleitungen ist ein entscheidender Faktor für die Anzahl der maximal zu adressierenden Speicherplätze. Ein Adresse mit einer Länge von n Bit entspricht einem Adressraum von 2n Elementen.</p>
+
+<h3>Datenbus</h3>
+
+<p>Zur Übertragung von Daten zwischen Prozessor, Arbeitsspeicher und Peripherie steht der Datenbus zur Verfügung. Die Anzahl der Datenbusleitungen bestimmt die Anzahl der Bit, die pro Takt übertragen werden können.
+Alle Baugruppen, die Daten an den Datenbus übergeben oder entgegennehmen können (Prozessor, Speicher, I/O), sind mit dem Datenbus verbunden. Die Datenfreigabe erfolgt durch den Prozessor über eine Steuerleitung jeweils nur für eine Baugruppe. Das heißt, es kann immer nur eine Datenübertragung zwischen zwei Baugruppen erfolgen.</p>
+
+<h3>Steuerbus</h3>
+
+<p>Der Steuerbus dient der Übertragung bestimmter Signale an die einzelnen Komponenten. Auf diese Weise wird den Baugruppen mitgeteilt, was sie zu tun haben. Z. B. die Daten vom Datenbus aufnehmen oder Daten auf den Datenbus stellen.
+Der Steuerbus beinhaltet auch die Interrupt-Leitungen über den die Peripherie-Geräte dem Prozessor eine Unterbrechungsanforderung signalisieren können. Typischerweise werden Unterbrechungsanforderungen bei Dateneingaben erzeugt.
+- Lesen aus dem RAM
+- Schreiben in das RAM
+- Eingabe von peripheren Geräten
+- Ausgabe an periphere Geräte
+- Interruptsignale</p>
  
         </div>
       </div>
@@ -4644,8 +4719,8 @@ Computer-Systeme verfügen in der Regel über mehrere unterschiedliche Bussystem
    
 <!--########################################-->
       <div id="sectionNavigationfollowingPage">   
-        <a href="/Docus/Informatik/Hardware/Standards.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">zur nächsten WebPage in Section &gt;&gt;</a>
-        <!--<p><a href="/Docus/Informatik/Hardware/Standards.html"> zur nächsten WebPage in Section &gt;&gt;</a></p>-->
+        <a href="/Docus/Informatik/Hardware/SpeicherArchitektur.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">zur nächsten WebPage in Section &gt;&gt;</a>
+        <!--<p><a href="/Docus/Informatik/Hardware/SpeicherArchitektur.html"> zur nächsten WebPage in Section &gt;&gt;</a></p>-->
       </div>
     </div>
 <!--########################################-->
