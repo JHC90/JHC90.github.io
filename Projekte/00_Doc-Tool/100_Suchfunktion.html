@@ -4648,89 +4648,23 @@ $(document).ready(function() {
          
         
         </div>
-        
-        <div id="article">
-          </p>
+        <div id=“content_idx“>
+			<div id="article">
+			  </p>
 
-<p><center><h1>Bereite Content auf<br>Remote Publish</h1></center></p>
+<p><center><h1>Suchfunktion</center></p>
 
 <p><img src="imgs/docToolBanner.jpg" alt="DocTool-Banner" /></p>
 
-<p>Dieses Notebook öffnet jede lokale HTML Seite und extrahiert alle HTML Links, Abschließend existiert eine lange Liste aller HTML Links die auf allen Webpages in der Website vorkommen. Ob die Links entsprechend tatsächlich existieren wird im Anschluss geprüft und alle Broken Links werden direkt in einer Liste gespeichert. Mit der Broken Link liste lässt sich anschließnd</p>
-
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">importlib</span>
-<span class="kn">import</span> <span class="nn">FunctionFileDoctool</span> <span class="k">as</span> <span class="nn">ffd</span>
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="c1"># Get all HTML Pages From Folder</span>
-<span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">ffd</span><span class="p">)</span>
-<span class="n">contentDirectory</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<span class="n">blocker</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">allHTMLFiles</span> <span class="o">=</span> <span class="n">ffd</span><span class="o">.</span><span class="n">returnListOfPathesForFileType</span><span class="p">(</span><span class="n">contentDirectory</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="n">blocker</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="c1">#for eachHTMLFile in allHTMLFiles:</span>
-<span class="n">allLinks</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">exampleSites</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">allHTMLFiles</span><span class="p">),</span><span class="mi">1</span><span class="p">):</span>
-<span class="c1">#for i in range(0,5,1):</span>
-    <span class="n">eachHTMLFile</span> <span class="o">=</span> <span class="n">allHTMLFiles</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">url</span>  <span class="o">=</span> <span class="n">eachHTMLFile</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">PhantomJS</span><span class="p">()</span>
-    <span class="n">driver</span><span class="o">.</span><span class="n">set_window_size</span><span class="p">(</span><span class="mi">1600</span><span class="p">,</span> <span class="mi">900</span><span class="p">)</span>
-    <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="n">links</span><span class="o">=</span><span class="n">driver</span><span class="o">.</span><span class="n">find_elements_by_css_selector</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
-
-    <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
-        <span class="n">link2beChecked</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get_attribute</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">link2beChecked</span> <span class="ow">in</span> <span class="n">allLinks</span><span class="p">):</span>
-            <span class="k">pass</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">allLinks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">link2beChecked</span><span class="p">)</span>
-            <span class="n">exampleSites</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">eachHTMLFile</span><span class="p">)</span>
-
-    <span class="n">driver</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">allLinks</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">allLinks</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">exampleSites</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
-<span class="n">brokenLinkList</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="c1">#for file in allLinks:</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">allLinks</span><span class="p">),</span><span class="mi">1</span><span class="p">):</span>
-    <span class="n">file</span> <span class="o">=</span> <span class="n">allLinks</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-
-    <span class="n">link</span> <span class="o">=</span> <span class="n">file</span>
-    <span class="n">file</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;mnt/&quot;</span><span class="p">,</span> <span class="s2">&quot;/mnt/&quot;</span><span class="p">)</span>
-    <span class="n">file</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;file:///&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;E:/MegaSync/DocTool&quot;</span><span class="p">,</span> <span class="s2">&quot;/mnt/localWindowsStorage&quot;</span><span class="p">)</span>
-    <span class="n">file</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;file:///&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;E:/MegaSync/DocTool&quot;</span><span class="p">,</span> <span class="s2">&quot;/mnt/localWindowsStorage&quot;</span><span class="p">)</span>
-    <span class="n">file</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;file:///&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;e:/MegaSync/DocTool&quot;</span><span class="p">,</span> <span class="s2">&quot;/mnt/localWindowsStorage&quot;</span><span class="p">)</span>
-
-    <span class="k">if</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">file</span><span class="p">)):</span>
-        <span class="k">pass</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kaputter Link:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Beispiel Webseite die den Link beinhaltet:</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">exampleSites</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="s2">&quot;file:////&quot;</span><span class="p">))</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Beispiel Webseite die den Link beinhaltet:</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">exampleSites</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="s2">&quot;//&quot;</span><span class="p">))</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Link Im Linux-Context:</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">file</span><span class="p">))</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Link Im Windows-Context:</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">link</span><span class="p">))</span>
-        <span class="nb">print</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">()</span>
-        <span class="n">j</span> <span class="o">=</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span>
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="c1"># Anzahl kaputte links</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Informationssammlung</span>
+<span class="p">[</span><span class="n">TUtorial</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">pcwelt</span><span class="o">.</span><span class="n">de</span><span class="o">/</span><span class="n">ratgeber</span><span class="o">/</span><span class="n">Indexsuche</span><span class="o">-</span><span class="n">fuer</span><span class="o">-</span><span class="n">die</span><span class="o">-</span><span class="n">Website</span><span class="o">-</span><span class="mf">9963262.</span><span class="n">html</span><span class="p">)</span>
+<span class="c1"># Aktuelle Idee</span>
+<span class="o">-</span> <span class="n">Indexsuche</span> <span class="n">wird</span> <span class="n">erstellt</span> <span class="o">=&gt;</span> <span class="n">eine</span> <span class="n">große</span> <span class="n">HTML</span> <span class="n">seite</span>
+<span class="o">-</span> <span class="n">Bei</span> <span class="n">der</span> <span class="n">suche</span> <span class="n">wird</span> <span class="n">die</span> 
 </code></pre></div>
  
-        </div>
+			</div>
+		</div>
       </div>
       
       <div class="clear-float"></div>

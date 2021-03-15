@@ -4648,9 +4648,9 @@ $(document).ready(function() {
          
         
         </div>
-        
-        <div id="article">
-          </p>
+        <div id=“content_idx“>
+			<div id="article">
+			  </p>
 
 <p><center><h1>MNIST<br> EDA-Checkliste</h1></center></p>
 
@@ -4660,9 +4660,9 @@ $(document).ready(function() {
 
 <p>Vorgelagerte Notebooks:
 - <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/10_MNIST_BigPicture.md
-742/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">1. Big-Picture</a>
+750/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">1. Big-Picture</a>
 - <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/10_MNIST_BigPicture.md
-742/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">2. Data-Management</a></p>
+750/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">2. Data-Management</a></p>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">FunctionFile</span> <span class="k">as</span> <span class="nn">ff</span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -4674,7 +4674,7 @@ $(document).ready(function() {
 <h1>Laden der Daten</h1>
 
 <p>Die Daten wurden bereits im vorherigen <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/10_MNIST_BigPicture.md
-742/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">Notebook - MNIST Data Management</a> gesplittet und als CSV-Dateien persistent auf der Festplatte gespeichert. Somit müssen diese Daten in diesem Notebook zunächst geladen werden. Die Funktion Daten-Laden wurde in diesem Notebook der übersichtlichkeit wegen ebenfalls ausgelagert.</p>
+750/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">Notebook - MNIST Data Management</a> gesplittet und als CSV-Dateien persistent auf der Festplatte gespeichert. Somit müssen diese Daten in diesem Notebook zunächst geladen werden. Die Funktion Daten-Laden wurde in diesem Notebook der übersichtlichkeit wegen ebenfalls ausgelagert.</p>
 
 <p>Die Daten werden nun sowohl als Pandas-Df als auch als <a href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Numpy/1000_StoreToDrive.html">Numpy-Array eingelesen</a>.</p>
 
@@ -4748,8 +4748,8 @@ $(document).ready(function() {
 
 <ul>
 <li>MNIST ist ein <a href="/Docus/DataScience/Theorie/006_SupervisedUnsupervised.md
-765/Docus/DataScience/Theorie/007_StatistischesLernen.md
-766/Docus/DataScience/Theorie/008_Algorithmus.html">supervised-Dataset</a> </li>
+773/Docus/DataScience/Theorie/007_StatistischesLernen.md
+774/Docus/DataScience/Theorie/008_Algorithmus.html">supervised-Dataset</a> </li>
 <li>Die Zielvariable wird eigenständig geladen</li>
 </ul>
 
@@ -4763,8 +4763,8 @@ $(document).ready(function() {
 </ul>
 
 <p>Die erste "Bildanschaung" hat bereits im <a href="/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/50_MNIST/20_MNIST_Data.md
-735/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/20_MNIST_Data.md
-743/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/20_MNIST_Data.mdManagement">Data-Management</a> in der Mini-Exploration stattgefunden</p>
+743/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/20_MNIST_Data.md
+751/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/20_MNIST_Data.mdManagement">Data-Management</a> in der Mini-Exploration stattgefunden</p>
 
 <h2>Sichten der Verteilungen</h2>
 
@@ -4834,7 +4834,8 @@ plt.hist(y_train_Pandas)</p>
 <li>evoila, geschehn in den bis hierhin erstellten Notebooks</li>
 </ul>
  
-        </div>
+			</div>
+		</div>
       </div>
       
       <div class="clear-float"></div>

@@ -4648,9 +4648,9 @@ $(document).ready(function() {
          
         
         </div>
-        
-        <div id="article">
-          </p>
+        <div id=“content_idx“>
+			<div id="article">
+			  </p>
 
 <p><center><h1>MNIST<br> Data-Modeling-Checkliste</h1></center></p>
 
@@ -4663,11 +4663,11 @@ Die <a href="26112020-MNIST-Section-Index">MNIST-Problematik</a> ist eigentlich 
 
 <p>Vorgelagerte Notebooks:
 - <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/10_MNIST_BigPicture.md
-742/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">1. Big-Picture</a>
+750/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">1. Big-Picture</a>
 - <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/10_MNIST_BigPicture.md
-742/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">2. Data-Management</a>
+750/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">2. Data-Management</a>
 - <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/30_MNIST_EDA.md
-744/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/30_MNIST_EDA.html">3. EDA</a></p>
+752/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/30_MNIST_EDA.html">3. EDA</a></p>
 
 <h1><a href="19112020-ShortListModels">Algorithm-Modeling</a></h1>
 
@@ -4676,9 +4676,9 @@ Die <a href="26112020-MNIST-Section-Index">MNIST-Problematik</a> ist eigentlich 
 <h1><a href="">Algorithm-Fine-Tuning</a></h1>
 
 <p>Diese Notebook arbeitet zeitlgeich die <a href="/Docus/DataScience/Checklist/02_GetTheData/20_Template_Data.md
-725/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/25_Titanic/20_Titanic_Data-Kopie.md
-750/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/02_Califronia_Housing_Data.md
-1013/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Pandas/Packet_Visualisierung_Pandas.html">Fine-Tuning-Checkliste</a> ab. Es ist erheblich hantlicher bei der Modelierung in einem Notebook zu bleibe. Es wäre zwar grundsätzlich möglich die trainierten Algorithmen zu speichern un in anderen Notebooks wieder zu öffnen, jedoch ist es komfortabler in einem Notebook hierbei zu arbeiten.</p>
+733/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/25_Titanic/20_Titanic_Data-Kopie.md
+758/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/02_Califronia_Housing_Data.md
+1021/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Pandas/Packet_Visualisierung_Pandas.html">Fine-Tuning-Checkliste</a> ab. Es ist erheblich hantlicher bei der Modelierung in einem Notebook zu bleibe. Es wäre zwar grundsätzlich möglich die trainierten Algorithmen zu speichern un in anderen Notebooks wieder zu öffnen, jedoch ist es komfortabler in einem Notebook hierbei zu arbeiten.</p>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">FunctionFile</span> <span class="k">as</span> <span class="nn">ff</span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -4689,7 +4689,7 @@ Die <a href="26112020-MNIST-Section-Index">MNIST-Problematik</a> ist eigentlich 
 <h1>Laden der Daten</h1>
 
 <p>Die Daten wurden bereits im vorherigen <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/10_MNIST_BigPicture.md
-742/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">Data-Management-Notebook</a> gesplittet und persistent auf der Festplatte gespeichert. Somit müssen diese Daten in diesem Notebook zunächst geladen werden. Die Funktion Daten-Laden wurde in diesem Notebook der übersichtlichkeit wegen ebenfalls ausgelagert.</p>
+750/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">Data-Management-Notebook</a> gesplittet und persistent auf der Festplatte gespeichert. Somit müssen diese Daten in diesem Notebook zunächst geladen werden. Die Funktion Daten-Laden wurde in diesem Notebook der übersichtlichkeit wegen ebenfalls ausgelagert.</p>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X_test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s2">&quot;C:/DocTool/content/Docus/DataScience/Praxis/Klassifikation/50_HOML_MNIST/data/X_test.csv&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="s2">&quot;C:/DocTool/content/Docus/DataScience/Praxis/Klassifikation/50_HOML_MNIST/data/X_train.csv&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
@@ -5099,7 +5099,8 @@ Saving figure roc_curve_comparison_plot
 0.8979141596470116
 </code></pre>
  
-        </div>
+			</div>
+		</div>
       </div>
       
       <div class="clear-float"></div>

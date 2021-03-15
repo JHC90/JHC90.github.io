@@ -4648,9 +4648,9 @@ $(document).ready(function() {
          
         
         </div>
-        
-        <div id="article">
-          </p>
+        <div id=“content_idx“>
+			<div id="article">
+			  </p>
 
 <p><center><h1>IRIS<br> Data-Modeling-Checkliste</h1></center></p>
 
@@ -4747,7 +4747,7 @@ require(['plotly'], function(Plotly) {
 <h1>Laden der Daten</h1>
 
 <p>Die Daten wurden bereits im vorherigen <a href="/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/10_MNIST_BigPicture.md
-742/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">Data-Management-Notebook</a> gesplittet und persistent auf der Festplatte gespeichert. Somit müssen diese Daten in diesem Notebook zunächst geladen werden. Die Funktion Daten-Laden wurde in diesem Notebook der übersichtlichkeit wegen ebenfalls ausgelagert.</p>
+750/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/10_MNIST_BigPicture.html">Data-Management-Notebook</a> gesplittet und persistent auf der Festplatte gespeichert. Somit müssen diese Daten in diesem Notebook zunächst geladen werden. Die Funktion Daten-Laden wurde in diesem Notebook der übersichtlichkeit wegen ebenfalls ausgelagert.</p>
 
 <div class="codehilite"><pre><span></span><code><span class="n">dataset_location</span> <span class="o">=</span><span class="s2">&quot;./data/dataIris.csv&quot;</span>
 <span class="n">dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataset_location</span><span class="p">)</span>
@@ -5370,7 +5370,8 @@ Consider using IPython.display.IFrame instead
 <p>An den beiden Beispielen [Titanic-Problematik]Kla(16112020-Titanic-MasterWorkout-Checklist) und <a href="/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/XX_IRISMultiClassMaster.html">IRIS-Problematik</a> lässt sichd das <a href="">No-Free-Lunch-Theorem</a> gut verdeutlichen.
 Betrachten wir in den beiden Ausarbeitungen jeweils die Perforamnce aller angewendeten Algorithmen im Vergleich so erkennt man in der Titanic Problematik dass der QDA-Algorithmus am schlechtesten performt. In der IRIS-Problematik wiederum performt eben dieser Algorithmus am besten. Aus diese Grund werden je entsprechenden zugrundeliegender DS-Probelmatik(Regression, Klassifikation, Outlier, Zeitreihen) etc. zunächst einfach alle möglichen Algorithmen angewendet, um zu erkennen, welcher Algorithmus mit der Datenlage am besten zurecht kommt.</p>
  
-        </div>
+			</div>
+		</div>
       </div>
       
       <div class="clear-float"></div>

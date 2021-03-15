@@ -4648,9 +4648,9 @@ $(document).ready(function() {
          
         
         </div>
-        
-        <div id="article">
-          </p>
+        <div id=“content_idx“>
+			<div id="article">
+			  </p>
 
 <h1>Example Implementation MNIST-Fashion</h1>
 
@@ -4845,12 +4845,12 @@ Beispiel:</p>
 <p><em>If you want to convert sparse labels (i.e., class indices) to one-hot vector labels, use the keras.utils.to_categorical() function. To
 go the other way round, use the np.argmax() function with axis=1.</em></p></li>
 <li><p>If we were doing binary classification (with one or more binary labels), then we would use the "sigmoid" (i.e., <a href="/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/XX_Logistic-Regression.md
-839/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/10_Logistic-Regression.html">logistic</a>) activation function in the output layer instead of the "<a href="/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/20_SoftmaxRegression.md
-841/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/30_NaiveBayes.md
-842/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/40_BayesNet.md
-843/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/50_DecisionTree.md
-844/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/60_RandomForest.md
-845/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/70_DecisionTreecopy.html">softmax</a>" activation function, and we would use the "binary_crossentropy" loss.</p></li>
+847/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/10_Logistic-Regression.html">logistic</a>) activation function in the output layer instead of the "<a href="/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/20_SoftmaxRegression.md
+849/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/30_NaiveBayes.md
+850/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/40_BayesNet.md
+851/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/50_DecisionTree.md
+852/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/60_RandomForest.md
+853/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/70_DecisionTreecopy.html">softmax</a>" activation function, and we would use the "binary_crossentropy" loss.</p></li>
 <li><p>Regarding the optimizer, "<a href="9112020-RegressionsStochasticGradientDescent">sgd</a>" means that we will train the model using simple Stochastic Gradient Descent. In other words, Keras will perform the backpropagation algorithm described earlier (i.e., reverse-mode autodiff plus Gradient Descent). We will discuss more efficient optimizers in Chapter 11 (they improve the Gradient Descent part, not the autodiff).</p></li>
 </ul>
 
@@ -5047,7 +5047,8 @@ Epoch 30/30
 
 <p>Dieses Notebook dient dazu eine erste Vorstellung von der Implementierung von Neuronalen Netzten zu erhalten. Konkret werden bei Bild-Verarbeitenden NNs jedoch andere Vorgehensweise wie bei den <a href="">CNNs</a> verwendet.</p>
  
-        </div>
+			</div>
+		</div>
       </div>
       
       <div class="clear-float"></div>
