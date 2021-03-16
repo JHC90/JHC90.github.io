@@ -4720,7 +4720,7 @@ in diesem Tutorial versuche ich zu erlenen wie man die [Hyperparamter] eines Neu
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(891, 12)
+ <pre><code id="answerBlock">(891, 12)
 Index(['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
        'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'],
       dtype='object')
@@ -4751,7 +4751,7 @@ Index(['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
 
 <hr />
 
-<pre><code>1. Definition einer Funktion welche das Modell erstellt&lt;br&gt;
+ <pre><code id="answerBlock">1. Definition einer Funktion welche das Modell erstellt&lt;br&gt;
 in dieser Funktion wird nun auch die konkrete Konfiguration des jeweiligen Hyperparamters festgelegt
 
 2. Definition der Tuner-Funktion&lt;br&gt;
@@ -4814,7 +4814,7 @@ print((X_train.shape))</p>
 <span class="c1">#tuner.search_space_summary() # =&gt; verifikation das Tuner passt</span>
 </code></pre></div>
 
-<pre><code>INFO:tensorflow:Reloading Oracle from existing project KerasTunerResults\tune_optimizer\oracle.json
+ <pre><code id="answerBlock">INFO:tensorflow:Reloading Oracle from existing project KerasTunerResults\tune_optimizer\oracle.json
 INFO:tensorflow:Reloading Tuner from KerasTunerResults\tune_optimizer\tuner0.json
 </code></pre>
 
@@ -4827,7 +4827,7 @@ INFO:tensorflow:Reloading Tuner from KerasTunerResults\tune_optimizer\tuner0.jso
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>INFO:tensorflow:Oracle triggered exit
+ <pre><code id="answerBlock">INFO:tensorflow:Oracle triggered exit
 </code></pre>
 
 <h3>Load-Model</h3>
@@ -4850,7 +4850,7 @@ INFO:tensorflow:Reloading Tuner from KerasTunerResults\tune_optimizer\tuner0.jso
 <span class="n">tuner</span><span class="o">.</span><span class="n">results_summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Results summary
+ <pre><code id="answerBlock">Results summary
 Results in KerasTunerResults\tune_optimizer
 Showing 10 best trials
 Objective(name='val_accuracy', direction='max')
@@ -4877,7 +4877,7 @@ Score: 0.7642458200454711
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'optimizer': 'rmsprop'}
+ <pre><code id="answerBlock">{'optimizer': 'rmsprop'}
 Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -4900,7 +4900,7 @@ _________________________________________________________________
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>INFO:tensorflow:Oracle triggered exit
+ <pre><code id="answerBlock">INFO:tensorflow:Oracle triggered exit
 </code></pre>
 
 <h3>Speichern des besten Modelles</h3>
@@ -4924,7 +4924,7 @@ _________________________________________________________________
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;saved model to disk as </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">modelName</span><span class="p">,</span><span class="n">weightName</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>saved model to disk as ./KerasTunerResults/tune_optimizer/BestModell.json ./KerasTunerResults/tune_optimizer/BestModell.h5
+ <pre><code id="answerBlock">saved model to disk as ./KerasTunerResults/tune_optimizer/BestModell.json ./KerasTunerResults/tune_optimizer/BestModell.h5
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">save_model</span> <span class="o">=</span> <span class="kc">False</span>
@@ -4938,7 +4938,7 @@ _________________________________________________________________
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;loaded model from disk&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>loaded model from disk
+ <pre><code id="answerBlock">loaded model from disk
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">loaded_model</span> <span class="o">=</span> <span class="n">model_from_json</span><span class="p">(</span><span class="n">loaded_model_json</span><span class="p">)</span>
@@ -4947,7 +4947,7 @@ _________________________________________________________________
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;loaded model from disk&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>loaded model from disk
+ <pre><code id="answerBlock">loaded model from disk
 </code></pre>
 
 <h2>Model 2 - Optimazation Learning Rate &amp;&amp; Momentum</h2>
@@ -4990,7 +4990,7 @@ _________________________________________________________________
 <span class="c1">#tuner.search_space_summary() # =&gt; verifikation das Tuner passt</span>
 </code></pre></div>
 
-<pre><code>INFO:tensorflow:Reloading Oracle from existing project KerasTunerResults\TuneLearningRate_Momentum\oracle.json
+ <pre><code id="answerBlock">INFO:tensorflow:Reloading Oracle from existing project KerasTunerResults\TuneLearningRate_Momentum\oracle.json
 INFO:tensorflow:Reloading Tuner from KerasTunerResults\TuneLearningRate_Momentum\tuner0.json
 </code></pre>
 
@@ -5001,7 +5001,7 @@ INFO:tensorflow:Reloading Tuner from KerasTunerResults\TuneLearningRate_Momentum
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Trial 13 Complete [00h 00m 10s]
+ <pre><code id="answerBlock">Trial 13 Complete [00h 00m 10s]
 val_accuracy: 0.7530726313591003
 
 Best val_accuracy So Far: 0.7765363097190857
@@ -5018,7 +5018,7 @@ INFO:tensorflow:Oracle triggered exit
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'learning_rate': 0.01, 'momentum': 0.2}
+ <pre><code id="answerBlock">{'learning_rate': 0.01, 'momentum': 0.2}
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
@@ -5081,7 +5081,7 @@ _________________________________________________________________
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Trial 7 Complete [00h 00m 10s]
+ <pre><code id="answerBlock">Trial 7 Complete [00h 00m 10s]
 val_accuracy: 0.8055865883827209
 
 Best val_accuracy So Far: 0.8189944267272949
@@ -5098,7 +5098,7 @@ INFO:tensorflow:Oracle triggered exit
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'units': 88}
+ <pre><code id="answerBlock">{'units': 88}
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
@@ -5165,7 +5165,7 @@ _________________________________________________________________
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Trial 20 Complete [00h 00m 13s]
+ <pre><code id="answerBlock">Trial 20 Complete [00h 00m 13s]
 val_accuracy: 0.8156424641609192
 
 Best val_accuracy So Far: 0.8201117396354676
@@ -5181,7 +5181,7 @@ INFO:tensorflow:Oracle triggered exit
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'num_layers': 9, 'units_0': 24, 'units_1': 56, 'units_2': 24, 'units_3': 40, 'units_4': 8, 'units_5': 32, 'units_6': 24, 'units_7': 64, 'units_8': 40, 'units_9': 56, 'units_10': 16, 'units_11': 64, 'units_12': 8}
+ <pre><code id="answerBlock">{'num_layers': 9, 'units_0': 24, 'units_1': 56, 'units_2': 24, 'units_3': 40, 'units_4': 8, 'units_5': 32, 'units_6': 24, 'units_7': 64, 'units_8': 40, 'units_9': 56, 'units_10': 16, 'units_11': 64, 'units_12': 8}
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
@@ -5271,7 +5271,7 @@ _________________________________________________________________
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Trial 8 Complete [00h 00m 10s]
+ <pre><code id="answerBlock">Trial 8 Complete [00h 00m 10s]
 val_accuracy: 0.7687150955200195
 
 Best val_accuracy So Far: 0.8145251393318176
@@ -5287,7 +5287,7 @@ INFO:tensorflow:Oracle triggered exit
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'activation': 'linear'}
+ <pre><code id="answerBlock">{'activation': 'linear'}
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
@@ -5363,7 +5363,7 @@ _________________________________________________________________
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Trial 10 Complete [00h 00m 10s]
+ <pre><code id="answerBlock">Trial 10 Complete [00h 00m 10s]
 val_accuracy: 0.8044692754745484
 
 Best val_accuracy So Far: 0.8078212261199951
@@ -5379,7 +5379,7 @@ INFO:tensorflow:Oracle triggered exit
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'drop_rate': 0.0}
+ <pre><code id="answerBlock">{'drop_rate': 0.0}
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
@@ -5459,7 +5459,7 @@ _________________________________________________________________
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Trial 20 Complete [00h 00m 10s]
+ <pre><code id="answerBlock">Trial 20 Complete [00h 00m 10s]
 val_accuracy: 0.8111731886863709
 
 Best val_accuracy So Far: 0.8245810151100159
@@ -5475,7 +5475,7 @@ INFO:tensorflow:Oracle triggered exit
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'num_layers': 4, 'units_0': 8, 'drop_rate_0': 0.6, 'units_1': 8, 'units_2': 8, 'units_3': 8, 'drop_rate_3': 0.0}
+ <pre><code id="answerBlock">{'num_layers': 4, 'units_0': 8, 'drop_rate_0': 0.6, 'units_1': 8, 'units_2': 8, 'units_3': 8, 'drop_rate_3': 0.0}
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
@@ -5520,7 +5520,7 @@ _________________________________________________________________
              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Trial 20 Complete [00h 00m 09s]
+ <pre><code id="answerBlock">Trial 20 Complete [00h 00m 09s]
 val_accuracy: 0.7821228981018067
 
 Best val_accuracy So Far: 0.8078212380409241
@@ -5537,7 +5537,7 @@ INFO:tensorflow:Oracle triggered exit
 <span class="n">best_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>{'optimizer': 'adam'}
+ <pre><code id="answerBlock">{'optimizer': 'adam'}
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
 WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2

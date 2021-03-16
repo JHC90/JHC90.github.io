@@ -4676,7 +4676,7 @@ $(document).ready(function() {
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Das Notebook wurde zuletzt am: </span><span class="se">\n</span><span class="s2">      &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">startnb</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">folgendem Gerät  ausgeführt:</span><span class="se">\n</span><span class="s2">      &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">gethostname</span><span class="p">()))</span>
 </code></pre></div>
 
-<pre><code>Das Notebook wurde zuletzt am: 
+ <pre><code id="answerBlock">Das Notebook wurde zuletzt am: 
       2020-12-16 11:43:42.135917
 folgendem Gerät  ausgeführt:
       JHC-ManagementLaptop
@@ -4740,7 +4740,7 @@ ausgeführt.
 <span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Epoch 1/20
+ <pre><code id="answerBlock">Epoch 1/20
 363/363 [==============================] - 1s 2ms/step - loss: 1.6419 - val_loss: 0.8560
 Epoch 2/20
 363/363 [==============================] - 0s 1ms/step - loss: 0.7047 - val_loss: 0.6531
@@ -4786,7 +4786,7 @@ Epoch 20/20
 <span class="n">mse_test</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>162/162 [==============================] - 0s 1ms/step - loss: 0.4212
+ <pre><code id="answerBlock">162/162 [==============================] - 0s 1ms/step - loss: 0.4212
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Prediction</span>
@@ -4794,7 +4794,7 @@ Epoch 20/20
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>WARNING:tensorflow:6 out of the last 8 calls to &lt;function Model.make_predict_function.&lt;locals&gt;.predict_function at 0x00000265135919D0&gt; triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+ <pre><code id="answerBlock">WARNING:tensorflow:6 out of the last 8 calls to &lt;function Model.make_predict_function.&lt;locals&gt;.predict_function at 0x00000265135919D0&gt; triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Plote Performance Measure der Refression, für jede Epoche</span>

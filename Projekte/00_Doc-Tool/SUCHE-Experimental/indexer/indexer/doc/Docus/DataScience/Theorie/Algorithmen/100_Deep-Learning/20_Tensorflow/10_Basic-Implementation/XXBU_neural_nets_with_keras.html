@@ -4736,7 +4736,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">y_pred</span>
 </code></pre></div>
 
-<pre><code>array([1])
+ <pre><code id="answerBlock">array([1])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="n">per_clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">per_clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
@@ -4770,7 +4770,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure perceptron_iris_plot
+ <pre><code id="answerBlock">Saving figure perceptron_iris_plot
 </code></pre>
 
 <p><img src="XXBU_neural_nets_with_keras_files/XXBU_neural_nets_with_keras_9_1.png" alt="png" /></p>
@@ -4817,7 +4817,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure activation_functions_plot
+ <pre><code id="answerBlock">Saving figure activation_functions_plot
 </code></pre>
 
 <p><img src="XXBU_neural_nets_with_keras_files/XXBU_neural_nets_with_keras_12_1.png" alt="png" /></p>
@@ -4866,13 +4866,13 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span>
 </code></pre></div>
 
-<pre><code>'2.1.0'
+ <pre><code id="answerBlock">'2.1.0'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">keras</span><span class="o">.</span><span class="n">__version__</span>
 </code></pre></div>
 
-<pre><code>'2.2.4-tf'
+ <pre><code id="answerBlock">'2.2.4-tf'
 </code></pre>
 
 <p>Let's start by loading the fashion MNIST dataset. Keras has a number of functions to load popular datasets in <code>keras.datasets</code>. The dataset is already split for you between a training set and a test set, but it can be useful to split the training set further to have a validation set:</p>
@@ -4886,7 +4886,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">X_train_full</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(60000, 28, 28)
+ <pre><code id="answerBlock">(60000, 28, 28)
 </code></pre>
 
 <p>Each pixel intensity is represented as a byte (0 to 255):</p>
@@ -4894,7 +4894,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">X_train_full</span><span class="o">.</span><span class="n">dtype</span>
 </code></pre></div>
 
-<pre><code>dtype('uint8')
+ <pre><code id="answerBlock">dtype('uint8')
 </code></pre>
 
 <p>Let's split the full training set into a validation set and a (smaller) training set. We also scale the pixel intensities down to the 0-1 range and convert them to floats, by dividing by 255.</p>
@@ -4919,7 +4919,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">y_train</span>
 </code></pre></div>
 
-<pre><code>array([4, 0, 7, ..., 3, 0, 5], dtype=uint8)
+ <pre><code id="answerBlock">array([4, 0, 7, ..., 3, 0, 5], dtype=uint8)
 </code></pre>
 
 <p>Here are the corresponding class names:</p>
@@ -4933,7 +4933,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">class_names</span><span class="p">[</span><span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
 </code></pre></div>
 
-<pre><code>'Coat'
+ <pre><code id="answerBlock">'Coat'
 </code></pre>
 
 <p>The validation set contains 5,000 images, and the test set contains 10,000 images:</p>
@@ -4941,13 +4941,13 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">X_valid</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(5000, 28, 28)
+ <pre><code id="answerBlock">(5000, 28, 28)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(10000, 28, 28)
+ <pre><code id="answerBlock">(10000, 28, 28)
 </code></pre>
 
 <p>Let's take a look at a sample of the images in the dataset:</p>
@@ -4967,7 +4967,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure fashion_mnist_plot
+ <pre><code id="answerBlock">Saving figure fashion_mnist_plot
 </code></pre>
 
 <p><img src="XXBU_neural_nets_with_keras_files/XXBU_neural_nets_with_keras_40_1.png" alt="png" /></p>
@@ -4995,7 +4995,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">layers</span>
 </code></pre></div>
 
-<pre><code>[&lt;tensorflow.python.keras.layers.core.Flatten at 0x7ff370af5780&gt;,
+ <pre><code id="answerBlock">[&lt;tensorflow.python.keras.layers.core.Flatten at 0x7ff370af5780&gt;,
  &lt;tensorflow.python.keras.layers.core.Dense at 0x7ff370af5c88&gt;,
  &lt;tensorflow.python.keras.layers.core.Dense at 0x7ff330ab36d8&gt;,
  &lt;tensorflow.python.keras.layers.core.Dense at 0x7ff330ab3828&gt;]
@@ -5004,7 +5004,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Model: "sequential"
+ <pre><code id="answerBlock">Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -5031,13 +5031,13 @@ _________________________________________________________________
 <span class="n">hidden1</span><span class="o">.</span><span class="n">name</span>
 </code></pre></div>
 
-<pre><code>'dense'
+ <pre><code id="answerBlock">'dense'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">get_layer</span><span class="p">(</span><span class="n">hidden1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="ow">is</span> <span class="n">hidden1</span>
 </code></pre></div>
 
-<pre><code>True
+ <pre><code id="answerBlock">True
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">weights</span><span class="p">,</span> <span class="n">biases</span> <span class="o">=</span> <span class="n">hidden1</span><span class="o">.</span><span class="n">get_weights</span><span class="p">()</span>
@@ -5046,7 +5046,7 @@ _________________________________________________________________
 <div class="codehilite"><pre><span></span><code><span class="n">weights</span>
 </code></pre></div>
 
-<pre><code>array([[ 0.02448617, -0.00877795, -0.02189048, ..., -0.02766046,
+ <pre><code id="answerBlock">array([[ 0.02448617, -0.00877795, -0.02189048, ..., -0.02766046,
          0.03859074, -0.06889391],
        [ 0.00476504, -0.03105379, -0.0586676 , ...,  0.00602964,
         -0.02763776, -0.04165364],
@@ -5064,13 +5064,13 @@ _________________________________________________________________
 <div class="codehilite"><pre><span></span><code><span class="n">weights</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(784, 300)
+ <pre><code id="answerBlock">(784, 300)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">biases</span>
 </code></pre></div>
 
-<pre><code>array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+ <pre><code id="answerBlock">array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
@@ -5093,7 +5093,7 @@ _________________________________________________________________
 <div class="codehilite"><pre><span></span><code><span class="n">biases</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(300,)
+ <pre><code id="answerBlock">(300,)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s2">&quot;sparse_categorical_crossentropy&quot;</span><span class="p">,</span>
@@ -5112,7 +5112,7 @@ _________________________________________________________________
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/30
 55000/55000 [==============================] - 2s 44us/sample - loss: 0.7226 - accuracy: 0.7641 - val_loss: 0.5073 - val_accuracy: 0.8320
 Epoch 2/30
@@ -5178,7 +5178,7 @@ Epoch 30/30
 <div class="codehilite"><pre><span></span><code><span class="n">history</span><span class="o">.</span><span class="n">params</span>
 </code></pre></div>
 
-<pre><code>{'batch_size': 32,
+ <pre><code id="answerBlock">{'batch_size': 32,
  'epochs': 30,
  'steps': 1719,
  'samples': 55000,
@@ -5190,13 +5190,13 @@ Epoch 30/30
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">history</span><span class="o">.</span><span class="n">epoch</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ <pre><code id="answerBlock">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>dict_keys(['loss', 'accuracy', 'val_loss', 'val_accuracy'])
+ <pre><code id="answerBlock">dict_keys(['loss', 'accuracy', 'val_loss', 'val_accuracy'])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -5208,7 +5208,7 @@ Epoch 30/30
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure keras_learning_curves_plot
+ <pre><code id="answerBlock">Saving figure keras_learning_curves_plot
 </code></pre>
 
 <p><img src="XXBU_neural_nets_with_keras_files/XXBU_neural_nets_with_keras_61_1.png" alt="png" /></p>
@@ -5216,7 +5216,7 @@ Epoch 30/30
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>10000/10000 [==============================] - 0s 21us/sample - loss: 0.3378 - accuracy: 0.8781
+ <pre><code id="answerBlock">10000/10000 [==============================] - 0s 21us/sample - loss: 0.3378 - accuracy: 0.8781
 
 
 
@@ -5230,7 +5230,7 @@ Epoch 30/30
 <span class="n">y_proba</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.01, 0.  , 0.99],
+ <pre><code id="answerBlock">array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.01, 0.  , 0.99],
        [0.  , 0.  , 0.99, 0.  , 0.01, 0.  , 0.  , 0.  , 0.  , 0.  ],
        [0.  , 1.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  , 0.  ]],
       dtype=float32)
@@ -5240,20 +5240,20 @@ Epoch 30/30
 <span class="n">y_pred</span>
 </code></pre></div>
 
-<pre><code>array([9, 2, 1])
+ <pre><code id="answerBlock">array([9, 2, 1])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">class_names</span><span class="p">)[</span><span class="n">y_pred</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array(['Ankle boot', 'Pullover', 'Trouser'], dtype='&lt;U11')
+ <pre><code id="answerBlock">array(['Ankle boot', 'Pullover', 'Trouser'], dtype='&lt;U11')
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">y_new</span> <span class="o">=</span> <span class="n">y_test</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">y_new</span>
 </code></pre></div>
 
-<pre><code>array([9, 2, 1], dtype=uint8)
+ <pre><code id="answerBlock">array([9, 2, 1], dtype=uint8)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">7.2</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">))</span>
@@ -5267,7 +5267,7 @@ Epoch 30/30
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure fashion_mnist_images_plot
+ <pre><code id="answerBlock">Saving figure fashion_mnist_images_plot
 </code></pre>
 
 <p><img src="XXBU_neural_nets_with_keras_files/XXBU_neural_nets_with_keras_67_1.png" alt="png" /></p>
@@ -5306,7 +5306,7 @@ Epoch 30/30
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/20
 11610/11610 [==============================] - 1s 44us/sample - loss: 1.6205 - val_loss: 2.0374
 Epoch 2/20
@@ -5361,7 +5361,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">y_pred</span>
 </code></pre></div>
 
-<pre><code>array([[0.37310064],
+ <pre><code id="answerBlock">array([[0.37310064],
        [1.6790789 ],
        [3.0817137 ]], dtype=float32)
 </code></pre>
@@ -5385,7 +5385,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Model: "model"
+ <pre><code id="answerBlock">Model: "model"
 __________________________________________________________________________________________________
 Layer (type)                    Output Shape         Param #     Connected to                     
 ==================================================================================================
@@ -5413,7 +5413,7 @@ ________________________________________________________________________________
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/20
 11610/11610 [==============================] - 1s 47us/sample - loss: 1.2390 - val_loss: 0.6566
 Epoch 2/20
@@ -5485,7 +5485,7 @@ Epoch 20/20
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">((</span><span class="n">X_new_A</span><span class="p">,</span> <span class="n">X_new_B</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/20
 11610/11610 [==============================] - 1s 50us/sample - loss: 1.8127 - val_loss: 2.1165
 Epoch 2/20
@@ -5553,7 +5553,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">([</span><span class="n">X_valid_A</span><span class="p">,</span> <span class="n">X_valid_B</span><span class="p">],</span> <span class="p">[</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">]))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/20
 11610/11610 [==============================] - 1s 68us/sample - loss: 2.1346 - main_output_loss: 1.9194 - aux_output_loss: 4.0632 - val_loss: 2.9120 - val_main_output_loss: 2.2555 - val_aux_output_loss: 8.8088
 Epoch 2/20
@@ -5601,7 +5601,7 @@ Epoch 20/20
 <span class="n">y_pred_main</span><span class="p">,</span> <span class="n">y_pred_aux</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="n">X_new_A</span><span class="p">,</span> <span class="n">X_new_B</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>5160/5160 [==============================] - 0s 19us/sample - loss: 0.4656 - main_output_loss: 0.4165 - aux_output_loss: 0.9111
+ <pre><code id="answerBlock">5160/5160 [==============================] - 0s 19us/sample - loss: 0.4656 - main_output_loss: 0.4165 - aux_output_loss: 0.9111
 </code></pre>
 
 <h1>The subclassing API</h1>
@@ -5633,7 +5633,7 @@ Epoch 20/20
 <span class="n">y_pred_main</span><span class="p">,</span> <span class="n">y_pred_aux</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">((</span><span class="n">X_new_A</span><span class="p">,</span> <span class="n">X_new_B</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/10
 11610/11610 [==============================] - 1s 78us/sample - loss: 2.2719 - output_1_loss: 2.1554 - output_2_loss: 3.3117 - val_loss: 4.3377 - val_output_1_loss: 2.7732 - val_output_2_loss: 18.3999
 Epoch 2/10
@@ -5678,7 +5678,7 @@ Epoch 10/10
 <span class="n">mse_test</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/10
 11610/11610 [==============================] - 1s 46us/sample - loss: 1.8423 - val_loss: 5.2165
 Epoch 2/10
@@ -5711,7 +5711,7 @@ Epoch 10/10
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[0.551559 ],
+ <pre><code id="answerBlock">array([[0.551559 ],
        [1.6555369],
        [3.0014234]], dtype=float32)
 </code></pre>
@@ -5722,7 +5722,7 @@ Epoch 10/10
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">load_weights</span><span class="p">(</span><span class="s2">&quot;my_keras_weights.ckpt&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.training.tracking.util.CheckpointLoadStatus at 0x7ff383d586d8&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.training.tracking.util.CheckpointLoadStatus at 0x7ff383d586d8&gt;
 </code></pre>
 
 <h1>Using Callbacks during Training</h1>
@@ -5748,7 +5748,7 @@ Epoch 10/10
 <span class="n">mse_test</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/10
 11610/11610 [==============================] - 1s 47us/sample - loss: 1.8423 - val_loss: 5.2165
 Epoch 2/10
@@ -5781,7 +5781,7 @@ Epoch 10/10
 <span class="n">mse_test</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/100
 11610/11610 [==============================] - 1s 47us/sample - loss: 0.4385 - val_loss: 0.4287
 Epoch 2/100
@@ -5865,7 +5865,7 @@ Epoch 100/100
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">val_train_ratio_cb</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 10912/11610 [===========================&gt;..] - ETA: 0s - loss: 0.3231
 val/train: 1.16
 11610/11610 [==============================] - 0s 30us/sample - loss: 0.3256 - val_loss: 0.3785
@@ -5885,7 +5885,7 @@ val/train: 1.16
 <span class="n">run_logdir</span>
 </code></pre></div>
 
-<pre><code>'./my_logs/run_2020_01_27-10_15_44'
+ <pre><code id="answerBlock">'./my_logs/run_2020_01_27-10_15_44'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">keras</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">clear_session</span><span class="p">()</span>
@@ -5907,7 +5907,7 @@ val/train: 1.16
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpoint_cb</span><span class="p">,</span> <span class="n">tensorboard_cb</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/30
 11610/11610 [==============================] - 1s 52us/sample - loss: 1.8423 - val_loss: 5.2165
 Epoch 2/30
@@ -5999,7 +5999,7 @@ Epoch 30/30
 <span class="n">run_logdir2</span>
 </code></pre></div>
 
-<pre><code>'./my_logs/run_2020_01_27-10_18_25'
+ <pre><code id="answerBlock">'./my_logs/run_2020_01_27-10_18_25'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">keras</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">clear_session</span><span class="p">()</span>
@@ -6021,7 +6021,7 @@ Epoch 30/30
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">checkpoint_cb</span><span class="p">,</span> <span class="n">tensorboard_cb</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/30
 11610/11610 [==============================] - 1s 52us/sample - loss: 5.6341 - val_loss: 1.3205
 Epoch 2/30
@@ -6091,7 +6091,7 @@ Epoch 30/30
 <div class="codehilite"><pre><span></span><code><span class="n">help</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">TensorBoard</span><span class="o">.</span><span class="fm">__init__</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Help on function __init__ in module tensorflow.python.keras.callbacks:
+ <pre><code id="answerBlock">Help on function __init__ in module tensorflow.python.keras.callbacks:
 
 __init__(self, log_dir='logs', histogram_freq=0, write_graph=True, write_images=False, update_freq='epoch', profile_batch=2, embeddings_freq=0, embeddings_metadata=None, **kwargs)
     Initialize self.  See help(type(self)) for accurate signature.
@@ -6123,7 +6123,7 @@ __init__(self, log_dir='logs', histogram_freq=0, write_graph=True, write_images=
               <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">EarlyStopping</span><span class="p">(</span><span class="n">patience</span><span class="o">=</span><span class="mi">10</span><span class="p">)])</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/100
 11610/11610 [==============================] - 0s 43us/sample - loss: 1.1399 - val_loss: 24.4309
 Epoch 2/100
@@ -6205,7 +6205,7 @@ Epoch 61/100
 <div class="codehilite"><pre><span></span><code><span class="n">mse_test</span> <span class="o">=</span> <span class="n">keras_reg</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>5160/5160 [==============================] - 0s 14us/sample - loss: 0.3464
+ <pre><code id="answerBlock">5160/5160 [==============================] - 0s 14us/sample - loss: 0.3464
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">y_pred</span> <span class="o">=</span> <span class="n">keras_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
@@ -6232,7 +6232,7 @@ Epoch 61/100
                   <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">EarlyStopping</span><span class="p">(</span><span class="n">patience</span><span class="o">=</span><span class="mi">10</span><span class="p">)])</span>
 </code></pre></div>
 
-<pre><code>Fitting 3 folds for each of 10 candidates, totalling 30 fits
+ <pre><code id="answerBlock">Fitting 3 folds for each of 10 candidates, totalling 30 fits
 [CV] learning_rate=0.001683454924600351, n_hidden=0, n_neurons=15 ....
 Train on 7740 samples, validate on 3870 samples
 Epoch 1/100
@@ -6329,25 +6329,25 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">rnd_search_cv</span><span class="o">.</span><span class="n">best_params_</span>
 </code></pre></div>
 
-<pre><code>{'learning_rate': 0.0033625641252688094, 'n_hidden': 2, 'n_neurons': 42}
+ <pre><code id="answerBlock">{'learning_rate': 0.0033625641252688094, 'n_hidden': 2, 'n_neurons': 42}
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">rnd_search_cv</span><span class="o">.</span><span class="n">best_score_</span>
 </code></pre></div>
 
-<pre><code>-0.35952892616378346
+ <pre><code id="answerBlock">-0.35952892616378346
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">rnd_search_cv</span><span class="o">.</span><span class="n">best_estimator_</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.keras.wrappers.scikit_learn.KerasRegressor at 0x7ff384301518&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.keras.wrappers.scikit_learn.KerasRegressor at 0x7ff384301518&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">rnd_search_cv</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>5160/5160 [==============================] - 0s 15us/sample - loss: 0.3065
+ <pre><code id="answerBlock">5160/5160 [==============================] - 0s 15us/sample - loss: 0.3065
 
 
 
@@ -6360,13 +6360,13 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <span class="n">model</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.keras.engine.sequential.Sequential at 0x7ff350924668&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.keras.engine.sequential.Sequential at 0x7ff350924668&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>5160/5160 [==============================] - 0s 15us/sample - loss: 0.3065
+ <pre><code id="answerBlock">5160/5160 [==============================] - 0s 15us/sample - loss: 0.3065
 
 
 
@@ -6395,7 +6395,7 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">X_train_full</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(60000, 28, 28)
+ <pre><code id="answerBlock">(60000, 28, 28)
 </code></pre>
 
 <p>Each pixel intensity is also represented as a byte (0 to 255):</p>
@@ -6403,7 +6403,7 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">X_train_full</span><span class="o">.</span><span class="n">dtype</span>
 </code></pre></div>
 
-<pre><code>dtype('uint8')
+ <pre><code id="answerBlock">dtype('uint8')
 </code></pre>
 
 <p>Let's split the full training set into a validation set and a (smaller) training set. We also scale the pixel intensities down to the 0-1 range and convert them to floats, by dividing by 255, just like we did for Fashion MNIST:</p>
@@ -6428,7 +6428,7 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">y_train</span>
 </code></pre></div>
 
-<pre><code>array([7, 3, 4, ..., 5, 6, 8], dtype=uint8)
+ <pre><code id="answerBlock">array([7, 3, 4, ..., 5, 6, 8], dtype=uint8)
 </code></pre>
 
 <p>The validation set contains 5,000 images, and the test set contains 10,000 images:</p>
@@ -6436,13 +6436,13 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">X_valid</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(5000, 28, 28)
+ <pre><code id="answerBlock">(5000, 28, 28)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(10000, 28, 28)
+ <pre><code id="answerBlock">(10000, 28, 28)
 </code></pre>
 
 <p>Let's take a look at a sample of the images in the dataset:</p>
@@ -6506,7 +6506,7 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">expon_lr</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 55000/55000 [==============================] - 3s 52us/sample - loss: 55143288500710.3281 - accuracy: 0.5734 - val_loss: 2.3660 - val_accuracy: 0.1100
 </code></pre>
 
@@ -6520,7 +6520,7 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Loss&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Text(0, 0.5, 'Loss')
+ <pre><code id="answerBlock">Text(0, 0.5, 'Loss')
 </code></pre>
 
 <p><img src="XXBU_neural_nets_with_keras_files/XXBU_neural_nets_with_keras_173_1.png" alt="png" /></p>
@@ -6550,7 +6550,7 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
 <span class="n">run_logdir</span>
 </code></pre></div>
 
-<pre><code>'./my_mnist_logs/run_001'
+ <pre><code id="answerBlock">'./my_mnist_logs/run_001'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">early_stopping_cb</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">EarlyStopping</span><span class="p">(</span><span class="n">patience</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -6562,7 +6562,7 @@ RandomizedSearchCV(cv=3, error_score='raise-deprecating',
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">early_stopping_cb</span><span class="p">,</span> <span class="n">checkpoint_cb</span><span class="p">,</span> <span class="n">tensorboard_cb</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/100
 55000/55000 [==============================] - 3s 46us/sample - loss: 0.2361 - accuracy: 0.9280 - val_loss: 0.1183 - val_accuracy: 0.9664
 Epoch 2/100
@@ -6621,7 +6621,7 @@ Epoch 26/100
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>10000/10000 [==============================] - 0s 26us/sample - loss: 0.0692 - accuracy: 0.9806
+ <pre><code id="answerBlock">10000/10000 [==============================] - 0s 26us/sample - loss: 0.0692 - accuracy: 0.9806
 
 
 

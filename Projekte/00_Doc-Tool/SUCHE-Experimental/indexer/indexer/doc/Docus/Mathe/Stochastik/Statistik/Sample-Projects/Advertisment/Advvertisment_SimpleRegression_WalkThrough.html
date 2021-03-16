@@ -4670,7 +4670,7 @@ $(document).ready(function() {
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Download Completed!!!&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Download Starting...
+ <pre><code id="answerBlock">Download Starting...
 Download Completed!!!
 </code></pre>
 
@@ -4680,7 +4680,7 @@ Download Completed!!!
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>      TV  radio  newspaper  sales
+ <pre><code id="answerBlock">      TV  radio  newspaper  sales
 0  230.1   37.8       69.2   22.1
 1   44.5   39.3       45.1   10.4
 2   17.2   45.9       69.3    9.3
@@ -4700,7 +4700,7 @@ Download Completed!!!
 <span class="c1"># =&gt; keine Duplikate</span>
 </code></pre></div>
 
-<pre><code>(200, 4)
+ <pre><code id="answerBlock">(200, 4)
 (200, 4)
 </code></pre>
 
@@ -4709,7 +4709,7 @@ Download Completed!!!
 <div class="codehilite"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(200, 4)
+ <pre><code id="answerBlock">(200, 4)
 </code></pre>
 
 <h1>EDA</h1>
@@ -4727,7 +4727,7 @@ Download Completed!!!
 <div class="codehilite"><pre><span></span><code><span class="n">numerical_features</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x00000201E3E23D68&gt;,
+ <pre><code id="answerBlock">array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x00000201E3E23D68&gt;,
         &lt;matplotlib.axes._subplots.AxesSubplot object at 0x00000201E39282E8&gt;],
        [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x00000201E3959860&gt;,
         &lt;matplotlib.axes._subplots.AxesSubplot object at 0x00000201E398AE10&gt;]],
@@ -4742,7 +4742,7 @@ Download Completed!!!
 <span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;seaborn.axisgrid.PairGrid at 0x201e3b68518&gt;
+ <pre><code id="answerBlock">&lt;seaborn.axisgrid.PairGrid at 0x201e3b68518&gt;
 </code></pre>
 
 <p><img src="Advvertisment_SimpleRegression_WalkThrough_files/Advvertisment_SimpleRegression_WalkThrough_11_1.png" alt="png" /></p>
@@ -4756,7 +4756,7 @@ Download Completed!!!
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;TV&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Text(0.5, 1.0, 'TV')
+ <pre><code id="answerBlock">Text(0.5, 1.0, 'TV')
 </code></pre>
 
 <p><img src="Advvertisment_SimpleRegression_WalkThrough_files/Advvertisment_SimpleRegression_WalkThrough_14_1.png" alt="png" /></p>
@@ -4765,7 +4765,7 @@ Download Completed!!!
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;radio&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Text(0.5, 1.0, 'radio')
+ <pre><code id="answerBlock">Text(0.5, 1.0, 'radio')
 </code></pre>
 
 <p><img src="Advvertisment_SimpleRegression_WalkThrough_files/Advvertisment_SimpleRegression_WalkThrough_15_1.png" alt="png" /></p>
@@ -4774,7 +4774,7 @@ Download Completed!!!
 <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;newspaper&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Text(0.5, 1.0, 'newspaper')
+ <pre><code id="answerBlock">Text(0.5, 1.0, 'newspaper')
 </code></pre>
 
 <p><img src="Advvertisment_SimpleRegression_WalkThrough_files/Advvertisment_SimpleRegression_WalkThrough_16_1.png" alt="png" /></p>
@@ -4785,7 +4785,7 @@ Download Completed!!!
 <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;sales&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Text(0.5, 1.0, 'sales')
+ <pre><code id="answerBlock">Text(0.5, 1.0, 'sales')
 </code></pre>
 
 <p><img src="Advvertisment_SimpleRegression_WalkThrough_files/Advvertisment_SimpleRegression_WalkThrough_18_1.png" alt="png" /></p>
@@ -4798,7 +4798,7 @@ Download Completed!!!
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">bottom</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">top</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(4.5, -0.5)
+ <pre><code id="answerBlock">(4.5, -0.5)
 </code></pre>
 
 <p><img src="Advvertisment_SimpleRegression_WalkThrough_files/Advvertisment_SimpleRegression_WalkThrough_19_1.png" alt="png" /></p>
@@ -4841,7 +4841,7 @@ Imputation braucht es derweil auch nicht</p>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The linear model is: Y = </span><span class="si">{:.5}</span><span class="s2"> + </span><span class="si">{:.5}</span><span class="s2">X&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reg</span><span class="o">.</span><span class="n">intercept_</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reg</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
 </code></pre></div>
 
-<pre><code>The linear model is: Y = 12.351 + 0.054693X
+ <pre><code id="answerBlock">The linear model is: Y = 12.351 + 0.054693X
 </code></pre>
 
 <h2>Prediction mit Modellierung</h2>
@@ -4868,7 +4868,7 @@ Imputation braucht es derweil auch nicht</p>
 <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">ySales_test</span><span class="p">,</span> <span class="n">predictionTEST</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>7.043343520101391
+ <pre><code id="answerBlock">7.043343520101391
 2.65392982576808
 7.472910653327248
 2.73366249806505
@@ -5018,7 +5018,7 @@ Imputation braucht es derweil auch nicht</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Automatically created module for IPython interactive environment
+ <pre><code id="answerBlock">Automatically created module for IPython interactive environment
 Coefficients: 
  [938.23786125]
 Mean squared error: 2548.07

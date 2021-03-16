@@ -4723,7 +4723,7 @@ In diesem Notebook wird einem grundlegend das Quick&amp; Dirty </p>
 <span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x152099af5e0&gt;
+ <pre><code id="answerBlock">&lt;matplotlib.axes._subplots.AxesSubplot at 0x152099af5e0&gt;
 </code></pre>
 
 <p><img src="XXX_Titanic-Master-Solution_files/XXX_Titanic-Master-Solution_9_1.png" alt="png" /></p>
@@ -4776,7 +4776,7 @@ In diesem Notebook wird einem grundlegend das Quick&amp; Dirty </p>
 <div class="codehilite"><pre><span></span><code><span class="n">pipe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_X</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>FeaturePipeline(steps=[('kid_with_two_parents_mapper',
+ <pre><code id="answerBlock">FeaturePipeline(steps=[('kid_with_two_parents_mapper',
                         &lt;PipelineTransformers.KidWithTwoParentsMapper object at 0x000001520A396DC0&gt;),
                        ('travel_alone_adder',
                         &lt;PipelineTransformers.TravelAloneMapper object at 0x000001520A396DF0&gt;),
@@ -4871,7 +4871,7 @@ test_X_prepared = preparePipeline(train_X_featureEngineered, test_X_featureEngin
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">train_X_prepared_data_List</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 </code></pre></div>
 
-<pre><code>20
+ <pre><code id="answerBlock">20
 &lt;class 'numpy.ndarray'&gt;
 </code></pre>
 
@@ -4887,7 +4887,7 @@ test_X_prepared = preparePipeline(train_X_featureEngineered, test_X_featureEngin
 <span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1520a588d90&gt;
+ <pre><code id="answerBlock">&lt;matplotlib.axes._subplots.AxesSubplot at 0x1520a588d90&gt;
 </code></pre>
 
 <p><img src="XXX_Titanic-Master-Solution_files/XXX_Titanic-Master-Solution_24_1.png" alt="png" /></p>
@@ -5052,7 +5052,7 @@ X = liegt in der Mehrdimensionalen Liste vor und muss jedes Mal entsprechend aus
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insgesamt wurden &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">analysingDataFrame</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; Paare aus Algorithmus und unterschiedlichen aufbereiteten Datasets aus dem vorgelagerten Data-Preprocessing trainiert.&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Die komplette Schleife startet um: 2020-12-14 07:38:02
+ <pre><code id="answerBlock">Die komplette Schleife startet um: 2020-12-14 07:38:02
 
 
 
@@ -5879,7 +5879,7 @@ Variables are collinear
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Verwendet wurde der Imputer: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">listofDifferentPreparedData</span><span class="p">[</span><span class="n">dataSetIndexOfInterest</span><span class="p">][</span><span class="mi">4</span><span class="p">]))</span>
 </code></pre></div>
 
-<pre><code>Verwendet wurde der Scaler: ptf.CustomStandardScaler()
+ <pre><code id="answerBlock">Verwendet wurde der Scaler: ptf.CustomStandardScaler()
 Verwendet wurde der Imputer: ptf.CustomSimpleImputer(strategy="median")
 </code></pre>
 

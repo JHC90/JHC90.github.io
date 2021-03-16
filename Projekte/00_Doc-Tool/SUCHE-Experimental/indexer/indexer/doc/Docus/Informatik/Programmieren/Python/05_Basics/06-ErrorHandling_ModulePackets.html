@@ -4681,7 +4681,7 @@ $(document).ready(function() {
 
 <p>Die grundsätzliche Terminologie und Syntax, die in Python zum Umgang mit Errors verwendet wird, ist die <b>try</b> und <b>except</b> (versuchen und ausnahmen definieren) Anweisung. Der Code, der eine Ausnahme verursachen könnte, wird in den <i>try</i> Block geschrieben. Wie mit den Ausnahmen umgegangen werden soll wird in den <i>except</i> Blocks definiert. Die Syntax sieht folgendermaßen aus:</p>
 
-<pre><code>try:
+ <pre><code id="answerBlock">try:
    Hier werden die Operationen ausgeführt...
    ...
 except AusnahmeI:
@@ -4706,7 +4706,7 @@ else:
    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Inhalt erfolgreich geschrieben
+ <pre><code id="answerBlock">Inhalt erfolgreich geschrieben
 </code></pre>
 
 <p>Jetzt können wir schauen, was passiert, wenn wir die Datei ohne Schreiberlaubnis öffnen (nur mit 'r'):
@@ -4723,7 +4723,7 @@ else:
    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Error: Konnte Datei nicht finden oder schreiben
+ <pre><code id="answerBlock">Error: Konnte Datei nicht finden oder schreiben
 </code></pre>
 
 <p>Toll! Seht wie wir nur eine print Anweisung ausgeführt haben. Der Code wurde trotzdem ausgeführt und wir waren in der Lage weitere Aktionen auszuführen. Das ist extrem nützlich, wenn man auf mögliche Input Errors im Code achten muss. So könnt ihr euch auf den Error vorbereiten und den Code weiterlaufen lassen, anstatt den Code abbrechen zu lassen, wie wir es oben gesehen haben.</p>
@@ -4734,7 +4734,7 @@ else:
 
 <p>Der <code>finally</code> Block im Code wird immer ausgeführt, unabhängig davon, ob eine Ausnahme festgestellt wurde oder nicht. Die Syntax lautet:</p>
 
-<pre><code>try:
+ <pre><code id="answerBlock">try:
     Code Block hier
     ...
     Durch irgendeine Ausnahme könnte dieser Code übersprungen werden!
@@ -4751,7 +4751,7 @@ finally:
    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Führe diesen Code Block immer aus!&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Führe diesen Code Block immer aus!
+ <pre><code id="answerBlock">Führe diesen Code Block immer aus!
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">intfrage</span><span class="p">():</span>
@@ -4765,7 +4765,7 @@ finally:
 <span class="n">intfrage</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Bitte gebe eine Zahl ein: 12
+ <pre><code id="answerBlock">Bitte gebe eine Zahl ein: 12
 Aber immerhin wurde ich ausgeführt!
 12
 </code></pre>
@@ -4788,7 +4788,7 @@ Aber immerhin wurde ich ausgeführt!
 <span class="n">intfrage</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Bitte gebe eine Zahl ein: a
+ <pre><code id="answerBlock">Bitte gebe eine Zahl ein: a
 Sieht aus, als ob du keine Zahl eingegeben hast!
 Aber immerhin wurde ich ausgeführt!
 Bitte gebe eine Zahl ein: s
@@ -4844,7 +4844,7 @@ Aber immerhin wurde ich ausgeführt!
 <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">2.4</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>3
+ <pre><code id="answerBlock">3
 </code></pre>
 
 <h2>Beinhaltete Module erkunden</h2>
@@ -4856,13 +4856,13 @@ Aber immerhin wurde ich ausgeführt!
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">math</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
+ <pre><code id="answerBlock">['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc']
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">help</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Help on built-in function ceil in module math:
+ <pre><code id="answerBlock">Help on built-in function ceil in module math:
 
 ceil(...)
     ceil(x)
@@ -4920,21 +4920,21 @@ hier lade ich nun diese Modul und verwende die Formel die hierin hinterlegt ist<
 <span class="nb">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">DemoModulPython</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'calcX']
+ <pre><code id="answerBlock">['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'calcX']
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1">#calcX(25,5) # =&gt; birgt error, da nicht ganzes modul geladen</span>
 <span class="n">DemoModulPython</span><span class="o">.</span><span class="n">calcX</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>5.0
+ <pre><code id="answerBlock">5.0
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">DemoModulPython</span> <span class="kn">import</span> <span class="o">*</span> <span class="c1"># =&gt; jetzt muss das Modul beim Aufrufen der Objekte nicht mehr referenziert werden</span>
 <span class="n">calcX</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>5.0
+ <pre><code id="answerBlock">5.0
 </code></pre>
  
 			</div>

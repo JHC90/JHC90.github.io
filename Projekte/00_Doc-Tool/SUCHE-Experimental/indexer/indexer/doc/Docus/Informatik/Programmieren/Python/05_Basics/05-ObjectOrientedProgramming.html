@@ -4696,12 +4696,12 @@ $(document).ready(function() {
 
 <p>Die Syntax für ein Attribut ist:</p>
 
-<pre><code>self.attribut = etwas
+ <pre><code id="answerBlock">self.attribut = etwas
 </code></pre>
 
 <p>Es gibt eine spezielle Methode namens:</p>
 
-<pre><code>__init__()
+ <pre><code id="answerBlock">__init__()
 </code></pre>
 
 <p>Diese Methode wird genutzt, um das Attribut eines Objektes zu initiieren. Zum Beispiel:</p>
@@ -4716,17 +4716,17 @@ $(document).ready(function() {
 
 <p>Lasst uns herunterbrechen, was wir getan haben. Die spezielle Methode</p>
 
-<pre><code>__init__()
+ <pre><code id="answerBlock">__init__()
 </code></pre>
 
 <p>wird automatisch aufgerufen, sobald das Objekt erstellt wurde:</p>
 
-<pre><code>def __init__(self,rasse):
+ <pre><code id="answerBlock">def __init__(self,rasse):
 </code></pre>
 
 <p>Jedes Attribut in einer Klassendefinition beginnt mit einer Referenz auf das Instanz-Objekt. Gewöhnlich nennt man es <code>self</code> (selbst). Die Rasse ist das Argument. Der Wert wird während der Klassenerstellung übergeben.</p>
 
-<pre><code>self.rasse = rasse
+ <pre><code id="answerBlock">self.rasse = rasse
 </code></pre>
 
 <p>Jetzt habebn wir zwei Instanzen der Hunde Klasse erstellt. Mit zwei Rassen. Um diese Attribute aufzurufen können wir nun folgendes tun:</p>
@@ -4798,7 +4798,7 @@ $(document).ready(function() {
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Die Fläche ist:&quot;</span><span class="p">,</span><span class="n">c</span><span class="o">.</span><span class="n">flaeche</span><span class="p">())</span>
 </code></pre></div>
 
-<pre><code>Der Radius ist: 2
+ <pre><code id="answerBlock">Der Radius ist: 2
 Die Fläche ist: 12.56
 Der Radius ist: 3
 Die Fläche ist: 28.26
@@ -4809,13 +4809,13 @@ Die Fläche ist: 28.26
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">Kreis</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'flaeche', 'pi', 'radiusEinstellen', 'radiusErhalten']
+ <pre><code id="answerBlock">['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'flaeche', 'pi', 'radiusEinstellen', 'radiusErhalten']
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">help</span><span class="p">(</span><span class="n">Kreis</span><span class="o">.</span><span class="n">flaeche</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Help on function flaeche in module __main__:
+ <pre><code id="answerBlock">Help on function flaeche in module __main__:
 
 flaeche(self)
     Hier ist ein Docstring der methdoe, welche mti dem Befehl "help(Kreis.flaeche)"  ausgegeb wird
@@ -4869,7 +4869,7 @@ flaeche(self)
 <span class="n">d</span><span class="o">.</span><span class="n">bellen</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Tier erschaffen
+ <pre><code id="answerBlock">Tier erschaffen
 Hund erstellt
 Hund
 Essen
@@ -4882,7 +4882,7 @@ Woof!
 <span class="n">k</span><span class="o">.</span><span class="n">sound</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Tier erschaffen
+ <pre><code id="answerBlock">Tier erschaffen
 Katze erstellt
 Katze
 Essen
@@ -4933,7 +4933,7 @@ Miau!
 <div class="codehilite"><pre><span></span><code><span class="n">buch</span> <span class="o">=</span> <span class="n">Buch</span><span class="p">(</span><span class="s2">&quot;Python rockt!&quot;</span><span class="p">,</span><span class="s2">&quot;Dr. Brunner&quot;</span><span class="p">,</span><span class="mi">987</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Ein Buch wurde geschrieben!
+ <pre><code id="answerBlock">Ein Buch wurde geschrieben!
 Ein Buch wurde zerstört!
 </code></pre>
 
@@ -4941,7 +4941,7 @@ Ein Buch wurde zerstört!
 <span class="nb">print</span><span class="p">(</span><span class="n">buch</span><span class="p">)</span> <span class="c1"># =&gt; ruf den string von der klasse auf </span>
 </code></pre></div>
 
-<pre><code>Titel: Python rockt! , Autor:Dr. Brunner , Seiten:987
+ <pre><code id="answerBlock">Titel: Python rockt! , Autor:Dr. Brunner , Seiten:987
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">buch</span><span class="p">))</span>
@@ -4949,7 +4949,7 @@ Ein Buch wurde zerstört!
 <span class="c1">#print(buch) =&gt; error =&gt; class wurd zersört</span>
 </code></pre></div>
 
-<pre><code>987
+ <pre><code id="answerBlock">987
 Ein Buch wurde zerstört!
 </code></pre>
  

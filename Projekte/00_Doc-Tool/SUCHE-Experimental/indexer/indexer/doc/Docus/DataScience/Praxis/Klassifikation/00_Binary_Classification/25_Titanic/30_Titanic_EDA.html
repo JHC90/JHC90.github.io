@@ -4688,7 +4688,7 @@ $(document).ready(function() {
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </code></pre></div>
 
-<pre><code>.\images\end_to_end_project
+ <pre><code id="answerBlock">.\images\end_to_end_project
 </code></pre>
 
 <h2><a href="/Docus/DataScience/Checklist/03_Exploration/01_CreateCopy.html">1. Erstelle EDA-Data-Kopie</a></h2>
@@ -4755,7 +4755,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure california_housing_prices_plot
+ <pre><code id="answerBlock">Saving figure california_housing_prices_plot
 </code></pre>
 
 <p><img src="30_Titanic_EDA_files/30_Titanic_EDA_6_1.png" alt="png" /></p>
@@ -4766,7 +4766,7 @@ $(document).ready(function() {
 <span class="n">sns</span><span class="o">.</span><span class="n">stripplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">housing</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;ocean_proximity&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;median_house_value&#39;</span><span class="p">,</span> <span class="n">jitter</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x2c8f72bf310&gt;
+ <pre><code id="answerBlock">&lt;matplotlib.axes._subplots.AxesSubplot at 0x2c8f72bf310&gt;
 </code></pre>
 
 <p><img src="30_Titanic_EDA_files/30_Titanic_EDA_7_1.png" alt="png" /></p>
@@ -4781,7 +4781,7 @@ $(document).ready(function() {
 <span class="n">corr_matrix</span><span class="p">[</span><span class="s2">&quot;median_house_value&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>median_house_value    1.000000
+ <pre><code id="answerBlock">median_house_value    1.000000
 median_income         0.688075
 total_rooms           0.134153
 housing_median_age    0.105623
@@ -4802,7 +4802,7 @@ Name: median_house_value, dtype: float64
 <span class="n">ffc</span><span class="o">.</span><span class="n">save_fig</span><span class="p">(</span><span class="s2">&quot;scatter_matrix_plot&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Saving figure scatter_matrix_plot
+ <pre><code id="answerBlock">Saving figure scatter_matrix_plot
 </code></pre>
 
 <p><img src="30_Titanic_EDA_files/30_Titanic_EDA_10_1.png" alt="png" /></p>
@@ -4815,7 +4815,7 @@ Name: median_house_value, dtype: float64
 <span class="n">ffc</span><span class="o">.</span><span class="n">save_fig</span><span class="p">(</span><span class="s2">&quot;income_vs_house_value_scatterplot&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Saving figure income_vs_house_value_scatterplot
+ <pre><code id="answerBlock">Saving figure income_vs_house_value_scatterplot
 </code></pre>
 
 <p><img src="30_Titanic_EDA_files/30_Titanic_EDA_12_1.png" alt="png" /></p>
@@ -4823,7 +4823,7 @@ Name: median_house_value, dtype: float64
 <div class="codehilite"><pre><span></span><code><span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">housing</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;ocean_proximity&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;seaborn.axisgrid.PairGrid at 0x2c8f765bee0&gt;
+ <pre><code id="answerBlock">&lt;seaborn.axisgrid.PairGrid at 0x2c8f765bee0&gt;
 </code></pre>
 
 <p><img src="30_Titanic_EDA_files/30_Titanic_EDA_13_1.png" alt="png" /></p>
@@ -4853,7 +4853,7 @@ im Konkreten versuchen wir aus den gegebenen Daten neue Feature(= Spalten) Zu er
 <span class="c1"># Die neuen Feature korrelieren gut mit dem Haus Preis, daher können diese weiterhin verwendet werden.</span>
 </code></pre></div>
 
-<pre><code>median_house_value          1.000000
+ <pre><code id="answerBlock">median_house_value          1.000000
 median_income               0.688075
 rooms_per_household         0.151948
 total_rooms                 0.134153

@@ -4701,7 +4701,7 @@ Die <a href="26112020-MNIST-Section-Index">MNIST-Problematik</a> ist eigentlich 
 <span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(10000, 784)
+ <pre><code id="answerBlock">(10000, 784)
 (60000, 784)
 (10000,)
 (60000,)
@@ -4725,7 +4725,7 @@ Die <a href="26112020-MNIST-Section-Index">MNIST-Problematik</a> ist eigentlich 
 <span class="n">sgd_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>SGDClassifier(max_iter=5, random_state=42, tol=-inf)
+ <pre><code id="answerBlock">SGDClassifier(max_iter=5, random_state=42, tol=-inf)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1">#print((y_train[3]))</span>
@@ -4747,7 +4747,7 @@ Die <a href="26112020-MNIST-Section-Index">MNIST-Problematik</a> ist eigentlich 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\some_digit_plot.png
+ <pre><code id="answerBlock">.\imgs\some_digit_plot.png
 Saving figure some_digit_plot
 </code></pre>
 
@@ -4764,13 +4764,13 @@ Saving figure some_digit_plot
 <span class="n">cross_val_score</span><span class="p">(</span><span class="n">sgd_clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_5</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([0.9605 , 0.963  , 0.95705])
+ <pre><code id="answerBlock">array([0.9605 , 0.963  , 0.95705])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">cross_val_score</span><span class="p">(</span><span class="n">sgd_clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_5</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([0.96733333, 0.963     , 0.96233333, 0.96333333, 0.96233333,
+ <pre><code id="answerBlock">array([0.96733333, 0.963     , 0.96233333, 0.96333333, 0.96233333,
        0.96766667, 0.95733333, 0.951     , 0.96666667, 0.956     ,
        0.966     , 0.96366667, 0.967     , 0.955     , 0.96833333,
        0.93533333, 0.93333333, 0.93533333, 0.961     , 0.94066667])
@@ -4798,7 +4798,7 @@ Saving figure some_digit_plot
     <span class="nb">print</span><span class="p">(</span><span class="n">n_correct</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_pred</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>C:\Users\1810837475\Anaconda3\lib\site-packages\sklearn\model_selection\_split.py:293: FutureWarning: Setting a random_state has no effect since shuffle is False. This will raise an error in 0.24. You should leave random_state to its default (None), or set shuffle=True.
+ <pre><code id="answerBlock">C:\Users\1810837475\Anaconda3\lib\site-packages\sklearn\model_selection\_split.py:293: FutureWarning: Setting a random_state has no effect since shuffle is False. This will raise an error in 0.24. You should leave random_state to its default (None), or set shuffle=True.
   warnings.warn(
 
 
@@ -4823,7 +4823,7 @@ Saving figure some_digit_plot
 <span class="n">cross_val_score</span><span class="p">(</span><span class="n">never_5_clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_5</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([0.9104 , 0.91155, 0.907  ])
+ <pre><code id="answerBlock">array([0.9104 , 0.91155, 0.907  ])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_predict</span>
@@ -4838,7 +4838,7 @@ Saving figure some_digit_plot
 <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[53297,  1282],
+ <pre><code id="answerBlock">array([[53297,  1282],
        [ 1107,  4314]], dtype=int64)
 </code></pre>
 
@@ -4851,7 +4851,7 @@ Saving figure some_digit_plot
 <div class="codehilite"><pre><span></span><code><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_perfect_predictions</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[54579,     0],
+ <pre><code id="answerBlock">array([[54579,     0],
        [    0,  5421]], dtype=int64)
 </code></pre>
 
@@ -4859,7 +4859,7 @@ Saving figure some_digit_plot
 <span class="n">precision_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.7709077912794854
+ <pre><code id="answerBlock">0.7709077912794854
 </code></pre>
 
 <p>wenn der Algorithmus eine instanz als 5 vorhersagt, ist dieser nur in 77% der Fälle korrekt</p>
@@ -4867,20 +4867,20 @@ Saving figure some_digit_plot
 <div class="codehilite"><pre><span></span><code><span class="n">recall_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.7957941339236303
+ <pre><code id="answerBlock">0.7957941339236303
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span>
 <span class="n">f1_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.7831533085231915
+ <pre><code id="answerBlock">0.7831533085231915
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code>
 </code></pre></div>
 
-<pre><code>0.7831533085231915
+ <pre><code id="answerBlock">0.7831533085231915
 </code></pre>
 
 <p>von 100% 5er Instanzen werden lediglich 78.31% erkannt</p>
@@ -4893,7 +4893,7 @@ Saving figure some_digit_plot
 <span class="n">y_scores</span>
 </code></pre></div>
 
-<pre><code>array([137368.35252598])
+ <pre><code id="answerBlock">array([137368.35252598])
 </code></pre>
 
 <p>Hier ein Beispiel, wie nun ein Precision &amp; Recall Trade Off manuell eingestllet werden kann. kann dann der Threshold angepasst werden</p>
@@ -4903,13 +4903,13 @@ Saving figure some_digit_plot
 <span class="n">y_some_digit_pred</span>
 </code></pre></div>
 
-<pre><code>array([False, False, False, ..., False, False, False])
+ <pre><code id="answerBlock">array([False, False, False, ..., False, False, False])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">y_some_digit_pred</span>
 </code></pre></div>
 
-<pre><code>array([False, False, False, ..., False, False, False])
+ <pre><code id="answerBlock">array([False, False, False, ..., False, False, False])
 </code></pre>
 
 <h2>Fragestellung welcher Wert denn eigentlich als Threshold manuell eingefügt werden soll?</h2>
@@ -4923,7 +4923,7 @@ Saving figure some_digit_plot
 <span class="n">y_scores</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>-366993.32438918523
+ <pre><code id="answerBlock">-366993.32438918523
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Dimensionsänderung</span>
@@ -4932,7 +4932,7 @@ Saving figure some_digit_plot
     <span class="n">y_scores</span> <span class="o">=</span> <span class="n">y_scores</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>1
+ <pre><code id="answerBlock">1
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">precision_recall_curve</span>
@@ -4953,7 +4953,7 @@ Saving figure some_digit_plot
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\precision_recall_vs_threshold_plot.png
+ <pre><code id="answerBlock">.\imgs\precision_recall_vs_threshold_plot.png
 Saving figure precision_recall_vs_threshold_plot
 </code></pre>
 
@@ -4962,7 +4962,7 @@ Saving figure precision_recall_vs_threshold_plot
 <div class="codehilite"><pre><span></span><code><span class="p">(</span><span class="n">y_train_pred</span> <span class="o">==</span> <span class="p">(</span><span class="n">y_scores</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>True
+ <pre><code id="answerBlock">True
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># bsp wir wollen 90% precision</span>
@@ -4975,14 +4975,14 @@ Saving figure precision_recall_vs_threshold_plot
 <div class="codehilite"><pre><span></span><code><span class="n">precision_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred_90</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.9020279167764024
+ <pre><code id="answerBlock">0.9020279167764024
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Im trade off geht der </span>
 <span class="n">recall_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred_90</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.6318022505072864
+ <pre><code id="answerBlock">0.6318022505072864
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Alternative Darstellung des Trade-Offs</span>
@@ -4998,7 +4998,7 @@ Saving figure precision_recall_vs_threshold_plot
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\precision_vs_recall_plot.png
+ <pre><code id="answerBlock">.\imgs\precision_vs_recall_plot.png
 Saving figure precision_vs_recall_plot
 </code></pre>
 
@@ -5013,7 +5013,7 @@ Saving figure precision_vs_recall_plot
 <span class="c1">#print(thresholds)</span>
 </code></pre></div>
 
-<pre><code>[0.         0.         0.         ... 0.99611572 0.99611572 1.        ]
+ <pre><code id="answerBlock">[0.         0.         0.         ... 0.99611572 0.99611572 1.        ]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plot_roc_curve</span><span class="p">(</span><span class="n">fpr</span><span class="p">,</span> <span class="n">tpr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -5029,7 +5029,7 @@ Saving figure precision_vs_recall_plot
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\roc_curve_plot.png
+ <pre><code id="answerBlock">.\imgs\roc_curve_plot.png
 Saving figure roc_curve_plot
 </code></pre>
 
@@ -5039,7 +5039,7 @@ Saving figure roc_curve_plot
 <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_scores</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.9639100468860672
+ <pre><code id="answerBlock">0.9639100468860672
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -5060,7 +5060,7 @@ Saving figure roc_curve_plot
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\roc_curve_comparison_plot.png
+ <pre><code id="answerBlock">.\imgs\roc_curve_comparison_plot.png
 Saving figure roc_curve_comparison_plot
 </code></pre>
 
@@ -5072,20 +5072,20 @@ Saving figure roc_curve_comparison_plot
 <span class="n">roc_auc_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_scores_forest</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.9943595128336907
+ <pre><code id="answerBlock">0.9943595128336907
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">y_train_pred_forest</span> <span class="o">=</span> <span class="n">cross_val_predict</span><span class="p">(</span><span class="n">forest_clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train_5</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">precision_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred_forest</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.983739837398374
+ <pre><code id="answerBlock">0.983739837398374
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">recall_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred_forest</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.8258623870134661
+ <pre><code id="answerBlock">0.8258623870134661
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Check Precision, Recall, F1</span>
@@ -5094,7 +5094,7 @@ Saving figure roc_curve_comparison_plot
 <span class="nb">print</span><span class="p">(</span><span class="n">f1_score</span><span class="p">(</span><span class="n">y_train_5</span><span class="p">,</span> <span class="n">y_train_pred_forest</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>0.983739837398374
+ <pre><code id="answerBlock">0.983739837398374
 0.8258623870134661
 0.8979141596470116
 </code></pre>

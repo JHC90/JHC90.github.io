@@ -4708,7 +4708,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure generated_data_plot
+ <pre><code id="answerBlock">Saving figure generated_data_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_7_1.png" alt="png" /></p>
@@ -4720,7 +4720,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">theta_best</span>
 </code></pre></div>
 
-<pre><code>array([[4.21509616],
+ <pre><code id="answerBlock">array([[4.21509616],
        [2.77011339]])
 </code></pre>
 
@@ -4730,7 +4730,7 @@ $(document).ready(function() {
 <span class="n">y_predict</span>
 </code></pre></div>
 
-<pre><code>array([[4.21509616],
+ <pre><code id="answerBlock">array([[4.21509616],
        [9.75532293]])
 </code></pre>
 
@@ -4754,7 +4754,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure linear_model_predictions
+ <pre><code id="answerBlock">Saving figure linear_model_predictions
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_13_1.png" alt="png" /></p>
@@ -4765,13 +4765,13 @@ $(document).ready(function() {
 <span class="n">lin_reg</span><span class="o">.</span><span class="n">intercept_</span><span class="p">,</span> <span class="n">lin_reg</span><span class="o">.</span><span class="n">coef_</span>
 </code></pre></div>
 
-<pre><code>(array([4.21509616]), array([[2.77011339]]))
+ <pre><code id="answerBlock">(array([4.21509616]), array([[2.77011339]]))
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">lin_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[4.21509616],
+ <pre><code id="answerBlock">array([[4.21509616],
        [9.75532293]])
 </code></pre>
 
@@ -4781,7 +4781,7 @@ $(document).ready(function() {
 <span class="n">theta_best_svd</span>
 </code></pre></div>
 
-<pre><code>array([[4.21509616],
+ <pre><code id="answerBlock">array([[4.21509616],
        [2.77011339]])
 </code></pre>
 
@@ -4790,7 +4790,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">X_b</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[4.21509616],
+ <pre><code id="answerBlock">array([[4.21509616],
        [2.77011339]])
 </code></pre>
 
@@ -4811,14 +4811,14 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">theta</span>
 </code></pre></div>
 
-<pre><code>array([[4.21509616],
+ <pre><code id="answerBlock">array([[4.21509616],
        [2.77011339]])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X_new_b</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[4.21509616],
+ <pre><code id="answerBlock">array([[4.21509616],
        [9.75532293]])
 </code></pre>
 
@@ -4855,7 +4855,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure gradient_descent_plot
+ <pre><code id="answerBlock">Saving figure gradient_descent_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_26_1.png" alt="png" /></p>
@@ -4897,7 +4897,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>                                           <span class="c1"># not shown</span>
 </code></pre></div>
 
-<pre><code>Saving figure sgd_plot
+ <pre><code id="answerBlock">Saving figure sgd_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_29_1.png" alt="png" /></p>
@@ -4905,7 +4905,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">theta</span>
 </code></pre></div>
 
-<pre><code>array([[4.21076011],
+ <pre><code id="answerBlock">array([[4.21076011],
        [2.74856079]])
 </code></pre>
 
@@ -4914,7 +4914,7 @@ $(document).ready(function() {
 <span class="n">sgd_reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
 </code></pre></div>
 
-<pre><code>SGDRegressor(alpha=0.0001, average=False, early_stopping=False, epsilon=0.1,
+ <pre><code id="answerBlock">SGDRegressor(alpha=0.0001, average=False, early_stopping=False, epsilon=0.1,
        eta0=0.1, fit_intercept=True, l1_ratio=0.15,
        learning_rate='invscaling', loss='squared_loss', max_iter=50,
        n_iter=None, n_iter_no_change=5, penalty=None, power_t=0.25,
@@ -4925,7 +4925,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">sgd_reg</span><span class="o">.</span><span class="n">intercept_</span><span class="p">,</span> <span class="n">sgd_reg</span><span class="o">.</span><span class="n">coef_</span>
 </code></pre></div>
 
-<pre><code>(array([4.16782089]), array([2.72603052]))
+ <pre><code id="answerBlock">(array([4.16782089]), array([2.72603052]))
 </code></pre>
 
 <h1>Mini-batch gradient descent</h1>
@@ -4960,7 +4960,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">theta</span>
 </code></pre></div>
 
-<pre><code>array([[4.25214635],
+ <pre><code id="answerBlock">array([[4.25214635],
        [2.7896408 ]])
 </code></pre>
 
@@ -4981,7 +4981,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure gradient_descent_paths_plot
+ <pre><code id="answerBlock">Saving figure gradient_descent_paths_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_37_1.png" alt="png" /></p>
@@ -5007,7 +5007,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure quadratic_data_plot
+ <pre><code id="answerBlock">Saving figure quadratic_data_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_41_1.png" alt="png" /></p>
@@ -5018,13 +5018,13 @@ $(document).ready(function() {
 <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array([-0.75275929])
+ <pre><code id="answerBlock">array([-0.75275929])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X_poly</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array([-0.75275929,  0.56664654])
+ <pre><code id="answerBlock">array([-0.75275929,  0.56664654])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">lin_reg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
@@ -5032,7 +5032,7 @@ $(document).ready(function() {
 <span class="n">lin_reg</span><span class="o">.</span><span class="n">intercept_</span><span class="p">,</span> <span class="n">lin_reg</span><span class="o">.</span><span class="n">coef_</span>
 </code></pre></div>
 
-<pre><code>(array([1.78134581]), array([[0.93366893, 0.56456263]]))
+ <pre><code id="answerBlock">(array([1.78134581]), array([[0.93366893, 0.56456263]]))
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X_new</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -5048,7 +5048,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure quadratic_predictions_plot
+ <pre><code id="answerBlock">Saving figure quadratic_predictions_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_45_1.png" alt="png" /></p>
@@ -5078,7 +5078,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure high_degree_polynomials_plot
+ <pre><code id="answerBlock">Saving figure high_degree_polynomials_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_46_1.png" alt="png" /></p>
@@ -5110,7 +5110,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>                                      <span class="c1"># not shown</span>
 </code></pre></div>
 
-<pre><code>Saving figure underfitting_learning_curves_plot
+ <pre><code id="answerBlock">Saving figure underfitting_learning_curves_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_48_1.png" alt="png" /></p>
@@ -5128,7 +5128,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>                        <span class="c1"># not shown</span>
 </code></pre></div>
 
-<pre><code>Saving figure learning_curves_plot
+ <pre><code id="answerBlock">Saving figure learning_curves_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_49_1.png" alt="png" /></p>
@@ -5172,7 +5172,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure ridge_regression_plot
+ <pre><code id="answerBlock">Saving figure ridge_regression_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_51_1.png" alt="png" /></p>
@@ -5183,7 +5183,7 @@ $(document).ready(function() {
 <span class="n">ridge_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">1.5</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([[1.55071465]])
+ <pre><code id="answerBlock">array([[1.55071465]])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">sgd_reg</span> <span class="o">=</span> <span class="n">SGDRegressor</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">tol</span><span class="o">=-</span><span class="n">np</span><span class="o">.</span><span class="n">infty</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s2">&quot;l2&quot;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -5191,7 +5191,7 @@ $(document).ready(function() {
 <span class="n">sgd_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">1.5</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([1.49905184])
+ <pre><code id="answerBlock">array([1.49905184])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">ridge_reg</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s2">&quot;sag&quot;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -5199,7 +5199,7 @@ $(document).ready(function() {
 <span class="n">ridge_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">1.5</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([[1.5507201]])
+ <pre><code id="answerBlock">array([[1.5507201]])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Lasso</span>
@@ -5215,7 +5215,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure lasso_regression_plot
+ <pre><code id="answerBlock">Saving figure lasso_regression_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_55_1.png" alt="png" /></p>
@@ -5226,7 +5226,7 @@ $(document).ready(function() {
 <span class="n">lasso_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">1.5</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([1.53788174])
+ <pre><code id="answerBlock">array([1.53788174])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">ElasticNet</span>
@@ -5235,7 +5235,7 @@ $(document).ready(function() {
 <span class="n">elastic_net</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">1.5</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([1.54333232])
+ <pre><code id="answerBlock">array([1.54333232])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -5292,7 +5292,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure early_stopping_plot
+ <pre><code id="answerBlock">Saving figure early_stopping_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_58_1.png" alt="png" /></p>
@@ -5317,7 +5317,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">best_epoch</span><span class="p">,</span> <span class="n">best_model</span>
 </code></pre></div>
 
-<pre><code>(239,
+ <pre><code id="answerBlock">(239,
  SGDRegressor(alpha=0.0001, average=False, early_stopping=False, epsilon=0.1,
         eta0=0.0005, fit_intercept=True, l1_ratio=0.15,
         learning_rate='constant', loss='squared_loss', max_iter=1,
@@ -5402,7 +5402,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure lasso_vs_ridge_plot
+ <pre><code id="answerBlock">Saving figure lasso_vs_ridge_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_62_1.png" alt="png" /></p>
@@ -5424,7 +5424,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure logistic_function_plot
+ <pre><code id="answerBlock">Saving figure logistic_function_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_64_1.png" alt="png" /></p>
@@ -5434,13 +5434,13 @@ $(document).ready(function() {
 <span class="nb">list</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 </code></pre></div>
 
-<pre><code>['data', 'target', 'target_names', 'DESCR', 'feature_names', 'filename']
+ <pre><code id="answerBlock">['data', 'target', 'target_names', 'DESCR', 'feature_names', 'filename']
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">DESCR</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>.. _iris_dataset:
+ <pre><code id="answerBlock">.. _iris_dataset:
 
 Iris plants dataset
 --------------------
@@ -5514,7 +5514,7 @@ latter are NOT linearly separable from each other.
 <span class="n">log_reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+ <pre><code id="answerBlock">LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
           intercept_scaling=1, max_iter=100, multi_class='warn',
           n_jobs=None, penalty='l2', random_state=42, solver='liblinear',
           tol=0.0001, verbose=0, warm_start=False)
@@ -5527,7 +5527,7 @@ latter are NOT linearly separable from each other.
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X_new</span><span class="p">,</span> <span class="n">y_proba</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;b--&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Not Iris-Virginica&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>[&lt;matplotlib.lines.Line2D at 0x10bfe7cf8&gt;]
+ <pre><code id="answerBlock">[&lt;matplotlib.lines.Line2D at 0x10bfe7cf8&gt;]
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_69_1.png" alt="png" /></p>
@@ -5555,7 +5555,7 @@ latter are NOT linearly separable from each other.
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure logistic_regression_plot
+ <pre><code id="answerBlock">Saving figure logistic_regression_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_71_1.png" alt="png" /></p>
@@ -5563,13 +5563,13 @@ latter are NOT linearly separable from each other.
 <div class="codehilite"><pre><span></span><code><span class="n">decision_boundary</span>
 </code></pre></div>
 
-<pre><code>array([1.61561562])
+ <pre><code id="answerBlock">array([1.61561562])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">log_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">1.7</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([1, 0])
+ <pre><code id="answerBlock">array([1, 0])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
@@ -5610,7 +5610,7 @@ latter are NOT linearly separable from each other.
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure logistic_regression_contour_plot
+ <pre><code id="answerBlock">Saving figure logistic_regression_contour_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_74_1.png" alt="png" /></p>
@@ -5622,7 +5622,7 @@ latter are NOT linearly separable from each other.
 <span class="n">softmax_reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
+ <pre><code id="answerBlock">LogisticRegression(C=10, class_weight=None, dual=False, fit_intercept=True,
           intercept_scaling=1, max_iter=100, multi_class='multinomial',
           n_jobs=None, penalty='l2', random_state=42, solver='lbfgs',
           tol=0.0001, verbose=0, warm_start=False)
@@ -5660,7 +5660,7 @@ latter are NOT linearly separable from each other.
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure softmax_regression_contour_plot
+ <pre><code id="answerBlock">Saving figure softmax_regression_contour_plot
 </code></pre>
 
 <p><img src="04_training_linear_models_files/04_training_linear_models_76_1.png" alt="png" /></p>
@@ -5668,13 +5668,13 @@ latter are NOT linearly separable from each other.
 <div class="codehilite"><pre><span></span><code><span class="n">softmax_reg</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([2])
+ <pre><code id="answerBlock">array([2])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">softmax_reg</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([[6.38014896e-07, 5.74929995e-02, 9.42506362e-01]])
+ <pre><code id="answerBlock">array([[6.38014896e-07, 5.74929995e-02, 9.42506362e-01]])
 </code></pre>
 
 <h1>Exercise solutions</h1>
@@ -5738,13 +5738,13 @@ latter are NOT linearly separable from each other.
 <div class="codehilite"><pre><span></span><code><span class="n">y_train</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array([0, 1, 2, 1, 1, 0, 1, 1, 1, 0])
+ <pre><code id="answerBlock">array([0, 1, 2, 1, 1, 0, 1, 1, 1, 0])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">to_one_hot</span><span class="p">(</span><span class="n">y_train</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>array([[1., 0., 0.],
+ <pre><code id="answerBlock">array([[1., 0., 0.],
        [0., 1., 0.],
        [0., 0., 1.],
        [0., 1., 0.],
@@ -5810,7 +5810,7 @@ latter are NOT linearly separable from each other.
     <span class="n">Theta</span> <span class="o">=</span> <span class="n">Theta</span> <span class="o">-</span> <span class="n">eta</span> <span class="o">*</span> <span class="n">gradients</span>
 </code></pre></div>
 
-<pre><code>0 5.446205811872683
+ <pre><code id="answerBlock">0 5.446205811872683
 500 0.8350062641405651
 1000 0.6878801447192402
 1500 0.6012379137693314
@@ -5828,7 +5828,7 @@ latter are NOT linearly separable from each other.
 <div class="codehilite"><pre><span></span><code><span class="n">Theta</span>
 </code></pre></div>
 
-<pre><code>array([[ 3.32094157, -0.6501102 , -2.99979416],
+ <pre><code id="answerBlock">array([[ 3.32094157, -0.6501102 , -2.99979416],
        [-1.1718465 ,  0.11706172,  0.10507543],
        [-0.70224261, -0.09527802,  1.4786383 ]])
 </code></pre>
@@ -5843,7 +5843,7 @@ latter are NOT linearly separable from each other.
 <span class="n">accuracy_score</span>
 </code></pre></div>
 
-<pre><code>0.9666666666666667
+ <pre><code id="answerBlock">0.9666666666666667
 </code></pre>
 
 <p>Well, this model looks pretty good. For the sake of the exercise, let's add a bit of $\ell_2$ regularization. The following training code is similar to the one above, but the loss now has an additional $\ell_2$ penalty, and the gradients have the proper additional term (note that we don't regularize the first element of <code>Theta</code> since this corresponds to the bias term). Also, let's try increasing the learning rate <code>eta</code>.</p>
@@ -5869,7 +5869,7 @@ latter are NOT linearly separable from each other.
     <span class="n">Theta</span> <span class="o">=</span> <span class="n">Theta</span> <span class="o">-</span> <span class="n">eta</span> <span class="o">*</span> <span class="n">gradients</span>
 </code></pre></div>
 
-<pre><code>0 6.629842469083912
+ <pre><code id="answerBlock">0 6.629842469083912
 500 0.5339667976629505
 1000 0.5036400750148942
 1500 0.49468910594603216
@@ -5892,7 +5892,7 @@ latter are NOT linearly separable from each other.
 <span class="n">accuracy_score</span>
 </code></pre></div>
 
-<pre><code>1.0
+ <pre><code id="answerBlock">1.0
 </code></pre>
 
 <p>Cool, perfect accuracy! We probably just got lucky with this validation set, but still, it's pleasant.</p>
@@ -5933,7 +5933,7 @@ latter are NOT linearly separable from each other.
         <span class="k">break</span>
 </code></pre></div>
 
-<pre><code>0 4.7096017363419875
+ <pre><code id="answerBlock">0 4.7096017363419875
 500 0.5739711987633519
 1000 0.5435638529109128
 1500 0.5355752782580262
@@ -5951,7 +5951,7 @@ latter are NOT linearly separable from each other.
 <span class="n">accuracy_score</span>
 </code></pre></div>
 
-<pre><code>1.0
+ <pre><code id="answerBlock">1.0
 </code></pre>
 
 <p>Still perfect, but faster.</p>
@@ -6002,7 +6002,7 @@ latter are NOT linearly separable from each other.
 <span class="n">accuracy_score</span>
 </code></pre></div>
 
-<pre><code>0.9333333333333333
+ <pre><code id="answerBlock">0.9333333333333333
 </code></pre>
 
 <p>Our perfect model turns out to have slight imperfections. This variability is likely due to the very small size of the dataset: depending on how you sample the training set, validation set and the test set, you can get quite different results. Try changing the random seed and running the code again a few times, you will see that the results will vary.</p>

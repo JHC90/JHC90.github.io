@@ -4691,7 +4691,7 @@ $(document).ready(function() {
 <li>Im Beispiel beziehe ich mich auf die Lizens-Beschreibung aus dem Buch Hands-On-Machine-Learning:</li>
 </ul>
 
-<pre><code>Use of the information and instructions contained in this work is at your own
+ <pre><code id="answerBlock">Use of the information and instructions contained in this work is at your own
 risk. If any code samples or other technology this work contains or describes is subject to open source
 licenses or the intellectual property rights of others, it is your responsibility to ensure that your use thereof
 complies with such licenses and/or rights.
@@ -4729,13 +4729,13 @@ complies with such licenses and/or rights.
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fetch_mldata wurde benutzt&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>fetch_openml wurde benutzt
+ <pre><code id="answerBlock">fetch_openml wurde benutzt
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mnist</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1">#784, =&gt; 28x28</span>
 </code></pre></div>
 
-<pre><code>(784,)
+ <pre><code id="answerBlock">(784,)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">mnist</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">],</span> <span class="n">mnist</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span>
@@ -4743,7 +4743,7 @@ complies with such licenses and/or rights.
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(70000, 784)
+ <pre><code id="answerBlock">(70000, 784)
 (70000,)
 </code></pre>
 
@@ -4820,7 +4820,7 @@ Vergleichen wir die beiden Ausgansvarianten, so ist ein klarer Unteschied zwisch
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\some_digit_plot.png
+ <pre><code id="answerBlock">.\imgs\some_digit_plot.png
 Saving figure some_digit_plot
 </code></pre>
 
@@ -4855,7 +4855,7 @@ Saving figure some_digit_plot
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\more_digits_plot.png
+ <pre><code id="answerBlock">.\imgs\more_digits_plot.png
 Saving figure more_digits_plot
 </code></pre>
 
@@ -4888,7 +4888,7 @@ Saving figure more_digits_plot
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>.\imgs\more_digits_plot.png
+ <pre><code id="answerBlock">.\imgs\more_digits_plot.png
 Saving figure more_digits_plot
 </code></pre>
 
@@ -4923,7 +4923,7 @@ hier die <a href="/Docus/DataScience/Theorie/001_Datasets.html">Theorie zu den D
 <span class="nb">print</span><span class="p">(</span><span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(60000, 784)
+ <pre><code id="answerBlock">(60000, 784)
 (60000,)
 (10000, 784)
 (10000,)

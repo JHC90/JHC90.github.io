@@ -4677,7 +4677,7 @@ https://stackabuse.com/hierarchical-clustering-with-python-and-scikit-learn/</p>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Download Completed!!!&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Download Starting...
+ <pre><code id="answerBlock">Download Starting...
 Download Completed!!!
 </code></pre>
 
@@ -4689,7 +4689,7 @@ Download Completed!!!
 <span class="c1">#customer_data.shape</span>
 </code></pre></div>
 
-<pre><code>   CustomerID   Genre  Age  Annual Income (k$)  Spending Score (1-100)
+ <pre><code id="answerBlock">   CustomerID   Genre  Age  Annual Income (k$)  Spending Score (1-100)
 0           1    Male   19                  15                      39
 1           2    Male   21                  15                      81
 2           3  Female   20                  16                       6
@@ -4716,7 +4716,7 @@ Index(['CustomerID', 'Genre', 'Age', 'Annual Income (k$)',
 <span class="nb">print</span><span class="p">((</span><span class="n">data</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>[[ 15  39]
+ <pre><code id="answerBlock">[[ 15  39]
  [ 15  81]
  [ 16   6]
  [ 16  77]
@@ -4936,7 +4936,7 @@ Index(['CustomerID', 'Genre', 'Age', 'Annual Income (k$)',
 <span class="n">cluster</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3,
+ <pre><code id="answerBlock">array([4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3,
        4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 1,
        4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -4952,7 +4952,7 @@ Index(['CustomerID', 'Genre', 'Age', 'Annual Income (k$)',
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">cluster</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;rainbow&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;matplotlib.collections.PathCollection at 0x179df402160&gt;
+ <pre><code id="answerBlock">&lt;matplotlib.collections.PathCollection at 0x179df402160&gt;
 </code></pre>
 
 <p><img src="Shoping-Data-Clustering_files/Shoping-Data-Clustering_12_1.png" alt="png" /></p>

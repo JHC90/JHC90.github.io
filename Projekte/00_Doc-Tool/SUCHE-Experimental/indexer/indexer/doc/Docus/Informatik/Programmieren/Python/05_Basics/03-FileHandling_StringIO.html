@@ -4689,14 +4689,14 @@ $(document).ready(function() {
 <span class="n">my_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>'Das ist eine neue Zeile'
+ <pre><code id="answerBlock">'Das ist eine neue Zeile'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Was passiert aber, wenn wir erneut lesen wollen?</span>
 <span class="n">my_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>''
+ <pre><code id="answerBlock">''
 </code></pre>
 
 <p>Das passiert, weil man sich Python beim Lesen als Cursor vorstellen kann, 
@@ -4707,7 +4707,7 @@ Es gibt also nichts mehr zu lesen. Wir können den Cursor folgendermaßen zurüc
 <span class="n">my_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>'Das ist eine neue Zeile'
+ <pre><code id="answerBlock">'Das ist eine neue Zeile'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Funktion</span>
@@ -4720,7 +4720,7 @@ Es gibt also nichts mehr zu lesen. Wir können den Cursor folgendermaßen zurüc
 <span class="nb">print</span><span class="p">(</span><span class="n">fileAsString</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Das ist eine neue Zeile
+ <pre><code id="answerBlock">Das ist eine neue Zeile
 </code></pre>
 
 <h3>Zeilenweise einlesen</h3>
@@ -4734,7 +4734,7 @@ Es gibt also nichts mehr zu lesen. Wir können den Cursor folgendermaßen zurüc
 <span class="n">my_NEW_file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>['Erste Zeile\n', 'Zweite Zeile\n']
+ <pre><code id="answerBlock">['Erste Zeile\n', 'Zweite Zeile\n']
 </code></pre>
 
 <h2>Schreiben</h2>
@@ -4751,7 +4751,7 @@ Es gibt also nichts mehr zu lesen. Wir können den Cursor folgendermaßen zurüc
 <span class="n">my_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>'Das ist eine neue Zeile'
+ <pre><code id="answerBlock">'Das ist eine neue Zeile'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">neuerText2beWritten</span> <span class="o">=</span> <span class="s2">&quot;Text von Funktion in File geschrieben&quot;</span>
@@ -4770,7 +4770,7 @@ Es gibt also nichts mehr zu lesen. Wir können den Cursor folgendermaßen zurüc
 <span class="n">my_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>./data/testWrittenByPython.txt
+ <pre><code id="answerBlock">./data/testWrittenByPython.txt
 
 
 
@@ -4786,7 +4786,7 @@ Es gibt also nichts mehr zu lesen. Wir können den Cursor folgendermaßen zurüc
     <span class="nb">print</span><span class="p">(</span><span class="n">zeile</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Erste Zeile
+ <pre><code id="answerBlock">Erste Zeile
 
 Zweite Zeile
 </code></pre>
@@ -4814,7 +4814,7 @@ Zweite Zeile
 <div class="codehilite"><pre><span></span><code><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>'Das ist nur ein normaler String.'
+ <pre><code id="answerBlock">'Das ist nur ein normaler String.'
 </code></pre>
 
 <p>Wir können auch hinein schreiben:</p>
@@ -4822,21 +4822,21 @@ Zweite Zeile
 <div class="codehilite"><pre><span></span><code><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot; Zweite Zeile für unser dateiähnliches Objekt.&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>46
+ <pre><code id="answerBlock">46
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Den Cursor wie bei einer Datei an den Start setzen</span>
 <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0
+ <pre><code id="answerBlock">0
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Auslesen</span>
 <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>'Das ist nur ein normaler String. Zweite Zeile für unser dateiähnliches Objekt. Zweite Zeile für unser dateiähnliches Objekt.'
+ <pre><code id="answerBlock">'Das ist nur ein normaler String. Zweite Zeile für unser dateiähnliches Objekt. Zweite Zeile für unser dateiähnliches Objekt.'
 </code></pre>
  
 			</div>

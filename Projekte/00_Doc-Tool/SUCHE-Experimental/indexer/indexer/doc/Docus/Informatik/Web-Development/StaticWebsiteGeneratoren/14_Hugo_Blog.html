@@ -4732,7 +4732,7 @@ Im Kontext von Hugo bezieht sich der Begriff Taxonomies darauf wenn man nach ein
 <p>um die Tag Seiten zu Adaptieren gehe wie folgt vor
      1. touch themes/basic/layouts/_default/tag.terms.html</p>
 
-<pre><code> ```html
+ <pre><code id="answerBlock"> ```html
   {{ define "main" }}
   &lt;h2&gt;{{ .Title }}&lt;/h2&gt;
   {{ .Content }}
@@ -4771,7 +4771,7 @@ posts = "posts/:year/:month/:slug/</p>
 </ul></li>
 </ol>
 
-<pre><code>[params]
+ <pre><code id="answerBlock">[params]
     author = "Jochen Hollich"
     description = "My portfolio site"
     gh_url = "https://api.github.com/users"

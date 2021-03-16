@@ -4682,7 +4682,7 @@ $(document).ready(function() {
 <span class="n">show_interfaces</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>INDEX  IFACE                                        IPv4             IPv6                       MAC
+ <pre><code id="answerBlock">INDEX  IFACE                                        IPv4             IPv6                       MAC
 1      Software Loopback Interface 1                127.0.0.1        ::1                        00:00:00:00:00:00
 26     Bluetooth Device (Personal Area Network)     169.254.156.170  fe80::5cc2:db6:b4ec:9caa   HonHaiPr:ff:5d:1b
 9      Microsoft Wi-Fi Direct Virtual Adapter #2    169.254.203.59   fe80::a4a9:d0ba:44e3:cb3b  3e:a9:f4:0a:2b:bc
@@ -4712,7 +4712,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">fakeip</span>
 </code></pre></div>
 
-<pre><code>'192.168.178.2'
+ <pre><code id="answerBlock">'192.168.178.2'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">ethernet</span> <span class="o">=</span> <span class="n">Ether</span><span class="p">()</span> 
@@ -4725,14 +4725,14 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">packet</span>
 </code></pre></div>
 
-<pre><code>&lt;Ether  type=ARP |&lt;ARP  op=is-at psrc=192.168.178.2 pdst=192.168.178.1 |&gt;&gt;
+ <pre><code id="answerBlock">&lt;Ether  type=ARP |&lt;ARP  op=is-at psrc=192.168.178.2 pdst=192.168.178.1 |&gt;&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
     <span class="n">sendp</span><span class="p">(</span><span class="n">packet</span> <span class="p">,</span> <span class="n">iface</span><span class="o">=</span><span class="n">iface</span><span class="p">)</span> <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>  File "&lt;ipython-input-25-1f538e1f8fbf&gt;", line 2
+ <pre><code id="answerBlock">  File "&lt;ipython-input-25-1f538e1f8fbf&gt;", line 2
     sendp(packet , iface=iface) time.sleep(1)
                                 ^
 SyntaxError: invalid syntax

@@ -4658,7 +4658,7 @@ $(document).ready(function() {
 1. es muss mehrere Blog-Einträge geben
 2. blog/portfolio/themes/basic/layouts/posts/list_with_pagination.html</p>
 
-<pre><code>{{ define "main" }}
+ <pre><code id="answerBlock">{{ define "main" }}
 &lt;h2&gt;{{ .Title }}&lt;/h2&gt;
 » {{ range (.Paginator 1).Pages }}
 {{ partial "post_summary.html" . }}

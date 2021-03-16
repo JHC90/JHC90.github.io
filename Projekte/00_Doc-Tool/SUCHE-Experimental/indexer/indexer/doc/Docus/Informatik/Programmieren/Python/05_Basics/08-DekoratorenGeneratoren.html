@@ -4682,7 +4682,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">funk</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>1
+ <pre><code id="answerBlock">1
 </code></pre>
 
 <h2>Geltungsbereich Wiederholung</h2>
@@ -4707,7 +4707,7 @@ $(document).ready(function() {
 <span class="p">(</span><span class="n">hallo</span><span class="p">(</span><span class="s2">&quot;Armin&quot;</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Hallo David
+ <pre><code id="answerBlock">Hallo David
 
 
 
@@ -4723,7 +4723,7 @@ $(document).ready(function() {
 <span class="nb">print</span><span class="p">(</span><span class="n">gruss</span><span class="p">())</span> <span class="c1">#&lt;= diese zuordnung ist nun nicht mehr abhängig von der initilallen hallo funktion</span>
 </code></pre></div>
 
-<pre><code>&lt;function hallo at 0x00000222D2435488&gt;
+ <pre><code id="answerBlock">&lt;function hallo at 0x00000222D2435488&gt;
 Hallo David
 </code></pre>
 
@@ -4733,7 +4733,7 @@ Hallo David
 <span class="n">gruss</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>'Hallo David'
+ <pre><code id="answerBlock">'Hallo David'
 </code></pre>
 
 <h2>Wiederholung VerschachtelteFunktionen</h2>
@@ -4774,7 +4774,7 @@ Hallo David
 <span class="n">funk_braucht_dek</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Diese Funktion braucht einen Dekorator
+ <pre><code id="answerBlock">Diese Funktion braucht einen Dekorator
 </code></pre>
 
 <h3>Schreibweise Dek Version1</h3>
@@ -4786,7 +4786,7 @@ Hallo David
 <div class="codehilite"><pre><span></span><code><span class="n">funk_braucht_dek</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Code würde hier stehen, der vor der funk ausgeführt wird.
+ <pre><code id="answerBlock">Code würde hier stehen, der vor der funk ausgeführt wird.
 Diese Funktion braucht einen Dekorator
 Hier steht, was nach der funk ausgeführt wird.
 </code></pre>
@@ -4803,7 +4803,7 @@ Hier steht, was nach der funk ausgeführt wird.
 <div class="codehilite"><pre><span></span><code><span class="n">funk_braucht_dek</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Code würde hier stehen, der vor der funk ausgeführt wird.
+ <pre><code id="answerBlock">Code würde hier stehen, der vor der funk ausgeführt wird.
 Diese Funktion braucht einen Dekorator.
 Hier steht, was nach der funk ausgeführt wird.
 </code></pre>
@@ -4815,7 +4815,7 @@ Hier steht, was nach der funk ausgeführt wird.
 <span class="nb">print</span><span class="p">(</span><span class="n">jchOwnFunction</span><span class="p">())</span>
 </code></pre></div>
 
-<pre><code>Code würde hier stehen, der vor der funk ausgeführt wird.
+ <pre><code id="answerBlock">Code würde hier stehen, der vor der funk ausgeführt wird.
 JHC-OWN-Function.
 Hier steht, was nach der funk ausgeführt wird.
 None
@@ -4845,7 +4845,7 @@ None
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0
+ <pre><code id="answerBlock">0
 1
 8
 27
@@ -4884,7 +4884,7 @@ None
     <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>1
+ <pre><code id="answerBlock">1
 1
 2
 3
@@ -4914,7 +4914,7 @@ None
 <div class="codehilite"><pre><span></span><code><span class="n">fibon</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+ <pre><code id="answerBlock">[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 </code></pre>
 
 <h1>next() und iter()</h1>
@@ -4937,19 +4937,19 @@ None
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>0
+ <pre><code id="answerBlock">0
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>1
+ <pre><code id="answerBlock">1
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>---------------------------------------------------------------------------
+ <pre><code id="answerBlock">---------------------------------------------------------------------------
 
 StopIteration                             Traceback (most recent call last)
 
@@ -4975,7 +4975,7 @@ StopIteration:
     <span class="nb">print</span><span class="p">(</span><span class="n">buchst</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>h
+ <pre><code id="answerBlock">h
 a
 l
 l
@@ -5001,7 +5001,7 @@ Interessant! Das bedeutet, dass String Objekte Iteration unterstützen, wir aber
 <span class="nb">next</span><span class="p">(</span><span class="n">s_iter</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>'o'
+ <pre><code id="answerBlock">'o'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code>

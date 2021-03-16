@@ -4739,7 +4739,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure sigmoid_saturation_plot
+ <pre><code id="answerBlock">Saving figure sigmoid_saturation_plot
 </code></pre>
 
 <p><img src="XX_training_deep_neural_networks%20-%20Kopie_files/XX_training_deep_neural_networks%20-%20Kopie_8_1.png" alt="png" /></p>
@@ -4749,7 +4749,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="p">[</span><span class="n">name</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">initializers</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)]</span>
 </code></pre></div>
 
-<pre><code>['Constant',
+ <pre><code id="answerBlock">['Constant',
  'GlorotNormal',
  'GlorotUniform',
  'Identity',
@@ -4780,7 +4780,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">,</span> <span class="n">kernel_initializer</span><span class="o">=</span><span class="s2">&quot;he_normal&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc228455278&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc228455278&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">init</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">initializers</span><span class="o">.</span><span class="n">VarianceScaling</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="mf">2.</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;fan_avg&#39;</span><span class="p">,</span>
@@ -4788,7 +4788,7 @@ $(document).ready(function() {
 <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">,</span> <span class="n">kernel_initializer</span><span class="o">=</span><span class="n">init</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc25bba6e10&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc25bba6e10&gt;
 </code></pre>
 
 <h2>Nonsaturating Activation Functions</h2>
@@ -4812,7 +4812,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure leaky_relu_plot
+ <pre><code id="answerBlock">Saving figure leaky_relu_plot
 </code></pre>
 
 <p><img src="XX_training_deep_neural_networks%20-%20Kopie_files/XX_training_deep_neural_networks%20-%20Kopie_16_1.png" alt="png" /></p>
@@ -4820,7 +4820,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="p">[</span><span class="n">m</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">activations</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">m</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)]</span>
 </code></pre></div>
 
-<pre><code>['deserialize',
+ <pre><code id="answerBlock">['deserialize',
  'elu',
  'exponential',
  'get',
@@ -4839,7 +4839,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="p">[</span><span class="n">m</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="p">)</span> <span class="k">if</span> <span class="s2">&quot;relu&quot;</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
 </code></pre></div>
 
-<pre><code>['LeakyReLU', 'PReLU', 'ReLU', 'ThresholdedReLU']
+ <pre><code id="answerBlock">['LeakyReLU', 'PReLU', 'ReLU', 'ThresholdedReLU']
 </code></pre>
 
 <p>Let's train a neural network on Fashion MNIST using the Leaky ReLU:</p>
@@ -4873,7 +4873,7 @@ $(document).ready(function() {
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/10
 55000/55000 [==============================] - 2s 41us/sample - loss: 1.2810 - accuracy: 0.6205 - val_loss: 0.8869 - val_accuracy: 0.7160
 Epoch 2/10
@@ -4920,7 +4920,7 @@ Epoch 10/10
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/10
 55000/55000 [==============================] - 3s 47us/sample - loss: 1.3452 - accuracy: 0.6203 - val_loss: 0.9241 - val_accuracy: 0.7170
 Epoch 2/10
@@ -4961,7 +4961,7 @@ Epoch 10/10
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure elu_plot
+ <pre><code id="answerBlock">Saving figure elu_plot
 </code></pre>
 
 <p><img src="XX_training_deep_neural_networks%20-%20Kopie_files/XX_training_deep_neural_networks%20-%20Kopie_30_1.png" alt="png" /></p>
@@ -4971,7 +4971,7 @@ Epoch 10/10
 <div class="codehilite"><pre><span></span><code><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;elu&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc208500a90&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc208500a90&gt;
 </code></pre>
 
 <h3>SELU</h3>
@@ -5002,7 +5002,7 @@ Epoch 10/10
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure selu_plot
+ <pre><code id="answerBlock">Saving figure selu_plot
 </code></pre>
 
 <p><img src="XX_training_deep_neural_networks%20-%20Kopie_files/XX_training_deep_neural_networks%20-%20Kopie_37_1.png" alt="png" /></p>
@@ -5020,7 +5020,7 @@ Epoch 10/10
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Layer </span><span class="si">{}</span><span class="s2">: mean </span><span class="si">{:.2f}</span><span class="s2">, std deviation </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="n">means</span><span class="p">,</span> <span class="n">stds</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Layer 0: mean -0.00, std deviation 1.00
+ <pre><code id="answerBlock">Layer 0: mean -0.00, std deviation 1.00
 Layer 100: mean 0.02, std deviation 0.96
 Layer 200: mean 0.01, std deviation 0.90
 Layer 300: mean -0.02, std deviation 0.92
@@ -5038,7 +5038,7 @@ Layer 900: mean 0.02, std deviation 1.00
                    <span class="n">kernel_initializer</span><span class="o">=</span><span class="s2">&quot;lecun_normal&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc228758668&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.keras.layers.core.Dense at 0x7fc228758668&gt;
 </code></pre>
 
 <p>Let's create a neural net for Fashion MNIST with 100 hidden layers, using the SELU activation function:</p>
@@ -5075,7 +5075,7 @@ Layer 900: mean 0.02, std deviation 1.00
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/5
 55000/55000 [==============================] - 13s 238us/sample - loss: 1.1277 - accuracy: 0.5573 - val_loss: 0.8152 - val_accuracy: 0.6700
 Epoch 2/5
@@ -5111,7 +5111,7 @@ Epoch 5/5
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/5
 55000/55000 [==============================] - 12s 213us/sample - loss: 1.7518 - accuracy: 0.2797 - val_loss: 1.2328 - val_accuracy: 0.4720
 Epoch 2/5
@@ -5142,7 +5142,7 @@ Epoch 5/5
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Model: "sequential_4"
+ <pre><code id="answerBlock">Model: "sequential_4"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -5170,7 +5170,7 @@ _________________________________________________________________
 <span class="p">[(</span><span class="n">var</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">var</span><span class="o">.</span><span class="n">trainable</span><span class="p">)</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">bn1</span><span class="o">.</span><span class="n">variables</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>[('batch_normalization/gamma:0', True),
+ <pre><code id="answerBlock">[('batch_normalization/gamma:0', True),
  ('batch_normalization/beta:0', True),
  ('batch_normalization/moving_mean:0', False),
  ('batch_normalization/moving_variance:0', False)]
@@ -5179,7 +5179,7 @@ _________________________________________________________________
 <div class="codehilite"><pre><span></span><code><span class="n">bn1</span><span class="o">.</span><span class="n">updates</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Operation 'cond/Identity' type=Identity&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Operation 'cond/Identity' type=Identity&gt;,
  &lt;tf.Operation 'cond_1/Identity' type=Identity&gt;]
 </code></pre>
 
@@ -5192,7 +5192,7 @@ _________________________________________________________________
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/10
 55000/55000 [==============================] - 3s 63us/sample - loss: 0.8760 - accuracy: 0.7122 - val_loss: 0.5509 - val_accuracy: 0.8224
 Epoch 2/10
@@ -5239,7 +5239,7 @@ Epoch 10/10
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/10
 55000/55000 [==============================] - 4s 64us/sample - loss: 0.8656 - accuracy: 0.7094 - val_loss: 0.5650 - val_accuracy: 0.8098
 Epoch 2/10
@@ -5302,26 +5302,26 @@ Epoch 10/10
 <div class="codehilite"><pre><span></span><code><span class="n">X_train_A</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(43986, 28, 28)
+ <pre><code id="answerBlock">(43986, 28, 28)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">X_train_B</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(200, 28, 28)
+ <pre><code id="answerBlock">(200, 28, 28)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">y_train_A</span><span class="p">[:</span><span class="mi">30</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array([4, 0, 5, 7, 7, 7, 4, 4, 3, 4, 0, 1, 6, 3, 4, 3, 2, 6, 5, 3, 4, 5,
+ <pre><code id="answerBlock">array([4, 0, 5, 7, 7, 7, 4, 4, 3, 4, 0, 1, 6, 3, 4, 3, 2, 6, 5, 3, 4, 5,
        1, 3, 4, 2, 0, 6, 7, 1], dtype=uint8)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">y_train_B</span><span class="p">[:</span><span class="mi">30</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array([1., 1., 0., 0., 0., 0., 1., 1., 1., 0., 0., 1., 1., 0., 0., 0., 0.,
+ <pre><code id="answerBlock">array([1., 1., 0., 0., 0., 0., 1., 1., 1., 0., 0., 1., 1., 0., 0., 0., 0.,
        0., 0., 1., 1., 0., 0., 1., 1., 0., 1., 1., 1., 1.], dtype=float32)
 </code></pre>
 
@@ -5345,7 +5345,7 @@ Epoch 10/10
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_A</span><span class="p">,</span> <span class="n">y_valid_A</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 43986 samples, validate on 4014 samples
+ <pre><code id="answerBlock">Train on 43986 samples, validate on 4014 samples
 Epoch 1/20
 43986/43986 [==============================] - 2s 49us/sample - loss: 0.5902 - accuracy: 0.8131 - val_loss: 0.3784 - val_accuracy: 0.8692
 Epoch 2/20
@@ -5407,7 +5407,7 @@ Epoch 20/20
                       <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_B</span><span class="p">,</span> <span class="n">y_valid_B</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 200 samples, validate on 986 samples
+ <pre><code id="answerBlock">Train on 200 samples, validate on 986 samples
 Epoch 1/20
 200/200 [==============================] - 0s 2ms/sample - loss: 0.9509 - accuracy: 0.4800 - val_loss: 0.6533 - val_accuracy: 0.5568
 Epoch 2/20
@@ -5453,7 +5453,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Model: "sequential_5"
+ <pre><code id="answerBlock">Model: "sequential_5"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -5511,7 +5511,7 @@ _________________________________________________________________
                            <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_B</span><span class="p">,</span> <span class="n">y_valid_B</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 200 samples, validate on 986 samples
+ <pre><code id="answerBlock">Train on 200 samples, validate on 986 samples
 Epoch 1/4
 200/200 [==============================] - 0s 2ms/sample - loss: 0.5619 - accuracy: 0.6650 - val_loss: 0.5669 - val_accuracy: 0.6531
 Epoch 2/4
@@ -5560,7 +5560,7 @@ Epoch 16/16
 <div class="codehilite"><pre><span></span><code><span class="n">model_B</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_B</span><span class="p">,</span> <span class="n">y_test_B</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 28us/sample - loss: 0.1426 - accuracy: 0.9695
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 28us/sample - loss: 0.1426 - accuracy: 0.9695
 
 
 
@@ -5572,7 +5572,7 @@ Epoch 16/16
 <div class="codehilite"><pre><span></span><code><span class="n">model_B_on_A</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_B</span><span class="p">,</span> <span class="n">y_test_B</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 25us/sample - loss: 0.0697 - accuracy: 0.9925
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 25us/sample - loss: 0.0697 - accuracy: 0.9925
 
 
 
@@ -5586,7 +5586,7 @@ Epoch 16/16
 <div class="codehilite"><pre><span></span><code><span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="mf">96.95</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">100</span> <span class="o">-</span> <span class="mf">99.25</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>3.933333333333337
+ <pre><code id="answerBlock">3.933333333333337
 </code></pre>
 
 <h1>Faster Optimizers</h1>
@@ -5650,7 +5650,7 @@ Epoch 16/16
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/25
 55000/55000 [==============================] - 2s 45us/sample - loss: 0.4842 - accuracy: 0.8319 - val_loss: 0.4167 - val_accuracy: 0.8572
 Epoch 2/25
@@ -5753,7 +5753,7 @@ Epoch 25/25
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">lr_scheduler</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/25
 55000/55000 [==============================] - 5s 99us/sample - loss: 0.8503 - accuracy: 0.7562 - val_loss: 0.7115 - val_accuracy: 0.7578
 Epoch 2/25
@@ -5859,7 +5859,7 @@ Epoch 25/25
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">exp_decay</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/25
 55000/55000 [==============================] - 6s 106us/sample - loss: 0.7950 - accuracy: 0.7678 - val_loss: 0.7626 - val_accuracy: 0.7202
 Epoch 2/25
@@ -5964,7 +5964,7 @@ Epoch 25/25
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">lr_scheduler</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/25
 55000/55000 [==============================] - 6s 105us/sample - loss: 0.8429 - accuracy: 0.7634 - val_loss: 0.9667 - val_accuracy: 0.6432
 Epoch 2/25
@@ -6050,7 +6050,7 @@ Epoch 25/25
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">lr_scheduler</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/25
 55000/55000 [==============================] - 2s 44us/sample - loss: 0.5950 - accuracy: 0.8063 - val_loss: 0.5177 - val_accuracy: 0.8426
 Epoch 2/25
@@ -6138,7 +6138,7 @@ Epoch 25/25
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/25
 55000/55000 [==============================] - 2s 44us/sample - loss: 0.4872 - accuracy: 0.8296 - val_loss: 0.4141 - val_accuracy: 0.8548
 Epoch 2/25
@@ -6253,7 +6253,7 @@ Epoch 25/25
 <span class="n">plot_lr_vs_loss</span><span class="p">(</span><span class="n">rates</span><span class="p">,</span> <span class="n">losses</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples
+ <pre><code id="answerBlock">Train on 55000 samples
 55000/55000 [==============================] - 1s 22us/sample - loss: nan - accuracy: 0.3879
 </code></pre>
 
@@ -6293,7 +6293,7 @@ Epoch 25/25
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">onecycle</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/25
 55000/55000 [==============================] - 1s 22us/sample - loss: 0.6576 - accuracy: 0.7743 - val_loss: 0.4901 - val_accuracy: 0.8300
 Epoch 2/25
@@ -6374,7 +6374,7 @@ Epoch 25/25
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/2
 55000/55000 [==============================] - 7s 130us/sample - loss: 1.5735 - accuracy: 0.8126 - val_loss: 0.7327 - val_accuracy: 0.8222
 Epoch 2/2
@@ -6400,7 +6400,7 @@ Epoch 2/2
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/2
 55000/55000 [==============================] - 7s 133us/sample - loss: 1.6006 - accuracy: 0.8129 - val_loss: 0.7374 - val_accuracy: 0.8236
 Epoch 2/2
@@ -6424,7 +6424,7 @@ Epoch 2/2
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/2
 55000/55000 [==============================] - 8s 139us/sample - loss: 0.5856 - accuracy: 0.7992 - val_loss: 0.3908 - val_accuracy: 0.8570
 Epoch 2/2
@@ -6453,7 +6453,7 @@ Epoch 2/2
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/20
 55000/55000 [==============================] - 3s 55us/sample - loss: 0.6616 - accuracy: 0.7616 - val_loss: 0.6682 - val_accuracy: 0.8258
 Epoch 2/20
@@ -6499,7 +6499,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>10000/10000 [==============================] - 0s 25us/sample - loss: 0.4736 - accuracy: 0.8648
+ <pre><code id="answerBlock">10000/10000 [==============================] - 0s 25us/sample - loss: 0.4736 - accuracy: 0.8648
 
 
 
@@ -6511,7 +6511,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>55000/55000 [==============================] - 1s 22us/sample - loss: 0.3532 - accuracy: 0.8859
+ <pre><code id="answerBlock">55000/55000 [==============================] - 1s 22us/sample - loss: 0.3532 - accuracy: 0.8859
 
 
 
@@ -6523,7 +6523,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples
+ <pre><code id="answerBlock">Train on 55000 samples
 55000/55000 [==============================] - 2s 44us/sample - loss: 0.4186 - accuracy: 0.8451
 </code></pre>
 
@@ -6539,7 +6539,7 @@ Epoch 20/20
 <span class="n">y_std</span> <span class="o">=</span> <span class="n">y_probas</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>WARNING:tensorflow:Layer flatten_18 is casting an input tensor from dtype float64 to the layer's dtype of float32, which is new behavior in TensorFlow 2.  The layer has dtype float32 because it's dtype defaults to floatx.
+ <pre><code id="answerBlock">WARNING:tensorflow:Layer flatten_18 is casting an input tensor from dtype float64 to the layer's dtype of float32, which is new behavior in TensorFlow 2.  The layer has dtype float32 because it's dtype defaults to floatx.
 
 If you intended to run this layer in float32, you can safely ignore this warning. If in doubt, this warning is likely only an issue if you are porting a TensorFlow 1.X model to TensorFlow 2.
 
@@ -6549,13 +6549,13 @@ To change all layers to have dtype float64 by default, call `tf.keras.backend.se
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">[:</span><span class="mi">1</span><span class="p">]),</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 1.]], dtype=float32)
+ <pre><code id="answerBlock">array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 1.]], dtype=float32)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">y_probas</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">1</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[[0.  , 0.  , 0.  , 0.  , 0.  , 0.01, 0.  , 0.05, 0.  , 0.94]],
+ <pre><code id="answerBlock">array([[[0.  , 0.  , 0.  , 0.  , 0.  , 0.01, 0.  , 0.05, 0.  , 0.94]],
 
        [[0.  , 0.  , 0.  , 0.  , 0.  , 0.08, 0.  , 0.17, 0.  , 0.75]],
 
@@ -6760,7 +6760,7 @@ To change all layers to have dtype float64 by default, call `tf.keras.backend.se
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">y_proba</span><span class="p">[:</span><span class="mi">1</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.12, 0.  , 0.06, 0.  , 0.81]],
+ <pre><code id="answerBlock">array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.12, 0.  , 0.06, 0.  , 0.81]],
       dtype=float32)
 </code></pre>
 
@@ -6768,7 +6768,7 @@ To change all layers to have dtype float64 by default, call `tf.keras.backend.se
 <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">y_std</span><span class="p">[:</span><span class="mi">1</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.19, 0.01, 0.08, 0.01, 0.21]],
+ <pre><code id="answerBlock">array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.19, 0.01, 0.08, 0.01, 0.21]],
       dtype=float32)
 </code></pre>
 
@@ -6779,7 +6779,7 @@ To change all layers to have dtype float64 by default, call `tf.keras.backend.se
 <span class="n">accuracy</span>
 </code></pre></div>
 
-<pre><code>0.8606
+ <pre><code id="answerBlock">0.8606
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">MCDropout</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dropout</span><span class="p">):</span>
@@ -6804,7 +6804,7 @@ To change all layers to have dtype float64 by default, call `tf.keras.backend.se
 <div class="codehilite"><pre><span></span><code><span class="n">mc_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Model: "sequential_20"
+ <pre><code id="answerBlock">Model: "sequential_20"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -6840,7 +6840,7 @@ _________________________________________________________________
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">([</span><span class="n">mc_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">[:</span><span class="mi">1</span><span class="p">])</span> <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.12, 0.  , 0.07, 0.01, 0.79]],
+ <pre><code id="answerBlock">array([[0.  , 0.  , 0.  , 0.  , 0.  , 0.12, 0.  , 0.07, 0.01, 0.79]],
       dtype=float32)
 </code></pre>
 
@@ -6866,7 +6866,7 @@ _________________________________________________________________
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/2
 55000/55000 [==============================] - 6s 114us/sample - loss: 0.4734 - accuracy: 0.8364 - val_loss: 0.3999 - val_accuracy: 0.8614
 Epoch 2/2
@@ -6954,7 +6954,7 @@ Epoch 2/2
           <span class="n">callbacks</span><span class="o">=</span><span class="n">callbacks</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 45000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 45000 samples, validate on 5000 samples
 Epoch 1/100
 45000/45000 [==============================] - 9s 208us/sample - loss: 4.0892 - accuracy: 0.1672 - val_loss: 2.1601 - val_accuracy: 0.2020
 Epoch 2/100
@@ -7037,7 +7037,7 @@ Epoch 59/100
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>5000/5000 [==============================] - 0s 65us/sample - loss: 1.5099 - accuracy: 0.4736
+ <pre><code id="answerBlock">5000/5000 [==============================] - 0s 65us/sample - loss: 1.5099 - accuracy: 0.4736
 
 
 
@@ -7093,7 +7093,7 @@ Epoch 59/100
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 45000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 45000 samples, validate on 5000 samples
 Epoch 1/100
 45000/45000 [==============================] - 21s 466us/sample - loss: 1.8365 - accuracy: 0.3390 - val_loss: 1.6330 - val_accuracy: 0.4174
 Epoch 2/100
@@ -7227,7 +7227,7 @@ Epoch 38/100
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 45000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 45000 samples, validate on 5000 samples
 Epoch 1/100
 45000/45000 [==============================] - 12s 268us/sample - loss: 1.9310 - accuracy: 0.3055 - val_loss: 1.7814 - val_accuracy: 0.3566
 Epoch 2/100
@@ -7307,7 +7307,7 @@ Epoch 33/100
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>5000/5000 [==============================] - 0s 74us/sample - loss: 1.4626 - accuracy: 0.5140
+ <pre><code id="answerBlock">5000/5000 [==============================] - 0s 74us/sample - loss: 1.4626 - accuracy: 0.5140
 
 
 
@@ -7362,7 +7362,7 @@ Epoch 33/100
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 45000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 45000 samples, validate on 5000 samples
 Epoch 1/100
 45000/45000 [==============================] - 12s 263us/sample - loss: 1.8763 - accuracy: 0.3330 - val_loss: 1.7595 - val_accuracy: 0.3668
 Epoch 2/100
@@ -7471,7 +7471,7 @@ Epoch 30/100
 <span class="n">accuracy</span>
 </code></pre></div>
 
-<pre><code>0.5094
+ <pre><code id="answerBlock">0.5094
 </code></pre>
 
 <p>We only get virtually no accuracy improvement in this case (from 50.8% to 50.9%).</p>
@@ -7508,7 +7508,7 @@ Epoch 30/100
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">rates</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">rates</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">losses</span><span class="p">),</span> <span class="p">(</span><span class="n">losses</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nb">min</span><span class="p">(</span><span class="n">losses</span><span class="p">))</span> <span class="o">/</span> <span class="mf">1.4</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 45000 samples
+ <pre><code id="answerBlock">Train on 45000 samples
 45000/45000 [==============================] - 3s 60us/sample - loss: nan - accuracy: 0.1403
 
 
@@ -7547,7 +7547,7 @@ Epoch 30/100
                     <span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">onecycle</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>Train on 45000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 45000 samples, validate on 5000 samples
 Epoch 1/15
 45000/45000 [==============================] - 3s 69us/sample - loss: 2.0504 - accuracy: 0.2823 - val_loss: 1.7711 - val_accuracy: 0.3706
 Epoch 2/15

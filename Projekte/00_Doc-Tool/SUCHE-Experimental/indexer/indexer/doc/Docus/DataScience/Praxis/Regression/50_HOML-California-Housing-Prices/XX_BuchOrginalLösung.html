@@ -7961,7 +7961,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <span class="n">rnd_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">housing_prepared</span><span class="p">,</span> <span class="n">housing_labels</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>RandomizedSearchCV(cv=5, error_score='raise-deprecating',
+ <pre><code id="answerBlock">RandomizedSearchCV(cv=5, error_score='raise-deprecating',
           estimator=RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
            max_features='auto', max_leaf_nodes=None,
            min_impurity_decrease=0.0, min_impurity_split=None,
@@ -7980,7 +7980,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
     <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="n">mean_score</span><span class="p">),</span> <span class="n">params</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>49150.657232934034 {'max_features': 7, 'n_estimators': 180}
+ <pre><code id="answerBlock">49150.657232934034 {'max_features': 7, 'n_estimators': 180}
 51389.85295710133 {'max_features': 5, 'n_estimators': 15}
 50796.12045980556 {'max_features': 3, 'n_estimators': 72}
 50835.09932039744 {'max_features': 5, 'n_estimators': 21}
@@ -7996,7 +7996,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <span class="n">feature_importances</span>
 </code></pre></div>
 
-<pre><code>array([7.33442355e-02, 6.29090705e-02, 4.11437985e-02, 1.46726854e-02,
+ <pre><code id="answerBlock">array([7.33442355e-02, 6.29090705e-02, 4.11437985e-02, 1.46726854e-02,
        1.41064835e-02, 1.48742809e-02, 1.42575993e-02, 3.66158981e-01,
        5.64191792e-02, 1.08792957e-01, 5.33510773e-02, 1.03114883e-02,
        1.64780994e-01, 6.02803867e-05, 1.96041560e-03, 2.85647464e-03])
@@ -8010,7 +8010,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">feature_importances</span><span class="p">,</span> <span class="n">attributes</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>[(0.3661589806181342, 'median_income'),
+ <pre><code id="answerBlock">[(0.3661589806181342, 'median_income'),
  (0.1647809935615905, 'INLAND'),
  (0.10879295677551573, 'pop_per_hhold'),
  (0.07334423551601242, 'longitude'),
@@ -8043,7 +8043,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <div class="codehilite"><pre><span></span><code><span class="n">final_rmse</span>
 </code></pre></div>
 
-<pre><code>47730.22690385927
+ <pre><code id="answerBlock">47730.22690385927
 </code></pre>
 
 <p>We can compute a 95% confidence interval for the test RMSE:</p>
@@ -8061,7 +8061,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
                          <span class="n">scale</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">sem</span><span class="p">(</span><span class="n">squared_errors</span><span class="p">)))</span>
 </code></pre></div>
 
-<pre><code>array([45685.10470776, 49691.25001878])
+ <pre><code id="answerBlock">array([45685.10470776, 49691.25001878])
 </code></pre>
 
 <p>We could compute the interval manually like this:</p>
@@ -8071,7 +8071,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean</span> <span class="o">-</span> <span class="n">tmargin</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean</span> <span class="o">+</span> <span class="n">tmargin</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(45685.10470776014, 49691.25001877871)
+ <pre><code id="answerBlock">(45685.10470776014, 49691.25001877871)
 </code></pre>
 
 <p>Alternatively, we could use a z-scores rather than t-scores:</p>
@@ -8081,7 +8081,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean</span> <span class="o">-</span> <span class="n">zmargin</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean</span> <span class="o">+</span> <span class="n">zmargin</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(45685.717918136594, 49690.68623889426)
+ <pre><code id="answerBlock">(45685.717918136594, 49690.68623889426)
 </code></pre>
 
 <h1>Extra material</h1>
@@ -8097,7 +8097,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <span class="n">full_pipeline_with_predictor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">some_data</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([210644.60459286, 317768.80697211, 210956.43331178,  59218.98886849,
+ <pre><code id="answerBlock">array([210644.60459286, 317768.80697211, 210956.43331178,  59218.98886849,
        189747.55849879])
 </code></pre>
 
@@ -8146,7 +8146,7 @@ Let's look at the score of each hyperparameter combination tested during the gri
 <span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">housing_prepared</span><span class="p">,</span> <span class="n">housing_labels</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Fitting 5 folds for each of 50 candidates, totalling 250 fits
+ <pre><code id="answerBlock">Fitting 5 folds for each of 50 candidates, totalling 250 fits
 
 
 [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
@@ -8175,7 +8175,7 @@ GridSearchCV(cv=5, error_score='raise-deprecating',
 <span class="n">rmse</span>
 </code></pre></div>
 
-<pre><code>70363.90313964167
+ <pre><code id="answerBlock">70363.90313964167
 </code></pre>
 
 <p>That's much worse than the <code>RandomForestRegressor</code>. Let's check the best hyperparameters found:</p>
@@ -8183,7 +8183,7 @@ GridSearchCV(cv=5, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span>
 </code></pre></div>
 
-<pre><code>{'C': 30000.0, 'kernel': 'linear'}
+ <pre><code id="answerBlock">{'C': 30000.0, 'kernel': 'linear'}
 </code></pre>
 
 <p>The linear kernel seems better than the RBF kernel. Notice that the value of <code>C</code> is the maximum tested value. When this happens you definitely want to launch the grid search again with higher values for <code>C</code> (removing the smallest values), because it is likely that higher values of <code>C</code> will be better.</p>
@@ -8212,7 +8212,7 @@ GridSearchCV(cv=5, error_score='raise-deprecating',
 <span class="n">rnd_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">housing_prepared</span><span class="p">,</span> <span class="n">housing_labels</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Fitting 5 folds for each of 50 candidates, totalling 250 fits
+ <pre><code id="answerBlock">Fitting 5 folds for each of 50 candidates, totalling 250 fits
 
 
 [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
@@ -8242,7 +8242,7 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <span class="n">rmse</span>
 </code></pre></div>
 
-<pre><code>54767.99053704408
+ <pre><code id="answerBlock">54767.99053704408
 </code></pre>
 
 <p>Now this is much closer to the performance of the <code>RandomForestRegressor</code> (but not quite there yet). Let's check the best hyperparameters found:</p>
@@ -8250,7 +8250,7 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">rnd_search</span><span class="o">.</span><span class="n">best_params_</span>
 </code></pre></div>
 
-<pre><code>{'C': 157055.10989448498, 'gamma': 0.26497040005002437, 'kernel': 'rbf'}
+ <pre><code id="answerBlock">{'C': 157055.10989448498, 'gamma': 0.26497040005002437, 'kernel': 'rbf'}
 </code></pre>
 
 <p>This time the search found a good set of hyperparameters for the RBF kernel. Randomized search tends to find better hyperparameters than grid search in the same amount of time.</p>
@@ -8322,13 +8322,13 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <span class="n">top_k_feature_indices</span>
 </code></pre></div>
 
-<pre><code>array([ 0,  1,  7,  9, 12])
+ <pre><code id="answerBlock">array([ 0,  1,  7,  9, 12])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">attributes</span><span class="p">)[</span><span class="n">top_k_feature_indices</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array(['longitude', 'latitude', 'median_income', 'pop_per_hhold',
+ <pre><code id="answerBlock">array(['longitude', 'latitude', 'median_income', 'pop_per_hhold',
        'INLAND'], dtype='&lt;U18')
 </code></pre>
 
@@ -8337,7 +8337,7 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">feature_importances</span><span class="p">,</span> <span class="n">attributes</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="n">k</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>[(0.3661589806181342, 'median_income'),
+ <pre><code id="answerBlock">[(0.3661589806181342, 'median_income'),
  (0.1647809935615905, 'INLAND'),
  (0.10879295677551573, 'pop_per_hhold'),
  (0.07334423551601242, 'longitude'),
@@ -8360,7 +8360,7 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">housing_prepared_top_k_features</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array([[-1.15604281,  0.77194962, -0.61493744, -0.08649871,  0.        ],
+ <pre><code id="answerBlock">array([[-1.15604281,  0.77194962, -0.61493744, -0.08649871,  0.        ],
        [-1.17602483,  0.6596948 ,  1.33645936, -0.03353391,  0.        ],
        [ 1.18684903, -1.34218285, -0.5320456 , -0.09240499,  0.        ]])
 </code></pre>
@@ -8370,7 +8370,7 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">housing_prepared</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="n">top_k_feature_indices</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>array([[-1.15604281,  0.77194962, -0.61493744, -0.08649871,  0.        ],
+ <pre><code id="answerBlock">array([[-1.15604281,  0.77194962, -0.61493744, -0.08649871,  0.        ],
        [-1.17602483,  0.6596948 ,  1.33645936, -0.03353391,  0.        ],
        [ 1.18684903, -1.34218285, -0.5320456 , -0.09240499,  0.        ]])
 </code></pre>
@@ -8391,7 +8391,7 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">prepare_select_and_predict_pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">housing</span><span class="p">,</span> <span class="n">housing_labels</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Pipeline(memory=None,
+ <pre><code id="answerBlock">Pipeline(memory=None,
      steps=[('preparation', ColumnTransformer(n_jobs=1, remainder='drop', sparse_threshold=0.3,
          transformer_weights=None,
          transformers=[('num', Pipeline(memory=None,
@@ -8409,7 +8409,7 @@ RandomizedSearchCV(cv=5, error_score='raise-deprecating',
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Labels:</span><span class="se">\t\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">some_labels</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Predictions:     [203214.28978849 371846.88152572 173295.65441612  47328.3970888 ]
+ <pre><code id="answerBlock">Predictions:     [203214.28978849 371846.88152572 173295.65441612  47328.3970888 ]
 Labels:      [286600.0, 340600.0, 196900.0, 46300.0]
 </code></pre>
 
@@ -8429,7 +8429,7 @@ Labels:      [286600.0, 340600.0, 196900.0, 46300.0]
 <span class="n">grid_search_prep</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">housing</span><span class="p">,</span> <span class="n">housing_labels</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Fitting 5 folds for each of 48 candidates, totalling 240 fits
+ <pre><code id="answerBlock">Fitting 5 folds for each of 48 candidates, totalling 240 fits
 
 
 [Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
@@ -8458,7 +8458,7 @@ GridSearchCV(cv=5, error_score='raise-deprecating',
 <div class="codehilite"><pre><span></span><code><span class="n">grid_search_prep</span><span class="o">.</span><span class="n">best_params_</span>
 </code></pre></div>
 
-<pre><code>{'feature_selection__k': 15,
+ <pre><code id="answerBlock">{'feature_selection__k': 15,
  'preparation__num__imputer__strategy': 'most_frequent'}
 </code></pre>
 

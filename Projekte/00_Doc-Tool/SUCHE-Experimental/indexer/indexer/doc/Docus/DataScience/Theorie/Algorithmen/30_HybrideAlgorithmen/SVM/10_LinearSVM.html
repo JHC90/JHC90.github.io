@@ -4712,14 +4712,14 @@ $(document).ready(function() {
 <span class="n">svm_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Pipeline(steps=[('scaler', StandardScaler()),
+ <pre><code id="answerBlock">Pipeline(steps=[('scaler', StandardScaler()),
                 ('linear_svc', LinearSVC(C=1, loss='hinge', random_state=42))])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">svm_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mf">5.5</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">]])</span>
 </code></pre></div>
 
-<pre><code>array([1.])
+ <pre><code id="answerBlock">array([1.])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># erstellen eines graphen um unterschiedliche c-Level zu vergleichen</span>
@@ -4740,7 +4740,7 @@ $(document).ready(function() {
 <span class="n">scaled_svm_clf2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>C:\Users\1810837475\Anaconda3\lib\site-packages\sklearn\svm\_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+ <pre><code id="answerBlock">C:\Users\1810837475\Anaconda3\lib\site-packages\sklearn\svm\_base.py:976: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
   warnings.warn("Liblinear failed to converge, increase "
 
 
@@ -4812,7 +4812,7 @@ Pipeline(steps=[('scaler', StandardScaler()),
 <span class="c1">#save_fig(&quot;regularization_plot&quot;)</span>
 </code></pre></div>
 
-<pre><code>(4.0, 6.0, 0.8, 2.8)
+ <pre><code id="answerBlock">(4.0, 6.0, 0.8, 2.8)
 </code></pre>
 
 <p><img src="10_LinearSVM_files/10_LinearSVM_14_1.png" alt="png" /></p>

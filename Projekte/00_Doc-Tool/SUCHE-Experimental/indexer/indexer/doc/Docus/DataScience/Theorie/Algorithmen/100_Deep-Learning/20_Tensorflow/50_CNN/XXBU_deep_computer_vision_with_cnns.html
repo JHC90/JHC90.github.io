@@ -4779,17 +4779,17 @@ $(document).ready(function() {
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure china_original
+ <pre><code id="answerBlock">Saving figure china_original
 </code></pre>
 
 <p><img src="XXBU_deep_computer_vision_with_cnns_files/XXBU_deep_computer_vision_with_cnns_12_1.png" alt="png" /></p>
 
-<pre><code>Saving figure china_vertical
+ <pre><code id="answerBlock">Saving figure china_vertical
 </code></pre>
 
 <p><img src="XXBU_deep_computer_vision_with_cnns_files/XXBU_deep_computer_vision_with_cnns_12_3.png" alt="png" /></p>
 
-<pre><code>Saving figure china_horizontal
+ <pre><code id="answerBlock">Saving figure china_horizontal
 </code></pre>
 
 <p><img src="XXBU_deep_computer_vision_with_cnns_files/XXBU_deep_computer_vision_with_cnns_12_5.png" alt="png" /></p>
@@ -4893,7 +4893,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure china_max_pooling
+ <pre><code id="answerBlock">Saving figure china_max_pooling
 </code></pre>
 
 <p><img src="XXBU_deep_computer_vision_with_cnns_files/XXBU_deep_computer_vision_with_cnns_28_1.png" alt="png" /></p>
@@ -4921,7 +4921,7 @@ $(document).ready(function() {
 <span class="n">depth_output</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>TensorShape([2, 70, 120, 1])
+ <pre><code id="answerBlock">TensorShape([2, 70, 120, 1])
 </code></pre>
 
 <p>Or just use a <code>Lambda</code> layer:</p>
@@ -4933,7 +4933,7 @@ $(document).ready(function() {
 <span class="n">depth_output</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>TensorShape([2, 70, 120, 1])
+ <pre><code id="answerBlock">TensorShape([2, 70, 120, 1])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
@@ -4979,7 +4979,7 @@ $(document).ready(function() {
 <span class="n">global_avg_pool</span><span class="p">(</span><span class="n">cropped_images</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: id=151, shape=(2, 3), dtype=float64, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: id=151, shape=(2, 3), dtype=float64, numpy=
 array([[0.27887768, 0.2250719 , 0.20967274],
        [0.51288515, 0.45951634, 0.33423483]])&gt;
 </code></pre>
@@ -4988,7 +4988,7 @@ array([[0.27887768, 0.2250719 , 0.20967274],
 <span class="n">output_global_avg2</span><span class="p">(</span><span class="n">cropped_images</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: id=155, shape=(2, 3), dtype=float64, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: id=155, shape=(2, 3), dtype=float64, numpy=
 array([[0.27887768, 0.2250719 , 0.20967274],
        [0.51288515, 0.45951634, 0.33423483]])&gt;
 </code></pre>
@@ -5040,7 +5040,7 @@ array([[0.27887768, 0.2250719 , 0.20967274],
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/10
 55000/55000 [==============================] - 51s 923us/sample - loss: 0.7183 - accuracy: 0.7529 - val_loss: 0.4029 - val_accuracy: 0.8510
 Epoch 2/10
@@ -5114,7 +5114,7 @@ Epoch 10/10
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Model: "sequential"
+ <pre><code id="answerBlock">Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -5186,7 +5186,7 @@ _________________________________________________________________
 <span class="n">plot_color_image</span><span class="p">(</span><span class="n">images_resized</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>WARNING: Logging before flag parsing goes to stderr.
+ <pre><code id="answerBlock">WARNING: Logging before flag parsing goes to stderr.
 W0323 19:04:32.720291 140735783818112 image.py:648] Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
 </code></pre>
 
@@ -5219,7 +5219,7 @@ W0323 19:04:32.720291 140735783818112 image.py:648] Clipping input data to the v
 <div class="codehilite"><pre><span></span><code><span class="n">Y_proba</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(2, 1000)
+ <pre><code id="answerBlock">(2, 1000)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">top_K</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">applications</span><span class="o">.</span><span class="n">resnet50</span><span class="o">.</span><span class="n">decode_predictions</span><span class="p">(</span><span class="n">Y_proba</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -5230,7 +5230,7 @@ W0323 19:04:32.720291 140735783818112 image.py:648] Clipping input data to the v
     <span class="nb">print</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Image #0
+ <pre><code id="answerBlock">Image #0
   n03877845 - palace       42.87%
   n02825657 - bell_cote    40.57%
   n03781244 - monastery    14.56%
@@ -5251,20 +5251,20 @@ Image #1
 <div class="codehilite"><pre><span></span><code><span class="n">info</span><span class="o">.</span><span class="n">splits</span>
 </code></pre></div>
 
-<pre><code>{'train': &lt;tfds.core.SplitInfo num_examples=3670&gt;}
+ <pre><code id="answerBlock">{'train': &lt;tfds.core.SplitInfo num_examples=3670&gt;}
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">info</span><span class="o">.</span><span class="n">splits</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>&lt;tfds.core.SplitInfo num_examples=3670&gt;
+ <pre><code id="answerBlock">&lt;tfds.core.SplitInfo num_examples=3670&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">class_names</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">features</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">names</span>
 <span class="n">class_names</span>
 </code></pre></div>
 
-<pre><code>['dandelion', 'daisy', 'tulips', 'sunflowers', 'roses']
+ <pre><code id="answerBlock">['dandelion', 'daisy', 'tulips', 'sunflowers', 'roses']
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">n_classes</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">features</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">num_classes</span>
@@ -5274,7 +5274,7 @@ Image #1
 <span class="n">dataset_size</span>
 </code></pre></div>
 
-<pre><code>3670
+ <pre><code id="answerBlock">3670
 </code></pre>
 
 <p><strong>Warning:</strong> TFDS's split API has evolved since the book was published. The <a href="https://www.tensorflow.org/datasets/splits">new split API</a> (called S3) is much simpler to use:</p>
@@ -5377,7 +5377,7 @@ Image #1
     <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">layer</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0 input_2
+ <pre><code id="answerBlock">0 input_2
 1 block1_conv1
 2 block1_conv1_bn
 3 block1_conv1_act
@@ -5463,7 +5463,7 @@ Image #1
                     <span class="n">epochs</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Epoch 1/5
+ <pre><code id="answerBlock">Epoch 1/5
 86/86 [==============================] - 46s 532ms/step - loss: 0.6858 - accuracy: 0.7758 - val_loss: 1.7375 - val_accuracy: 0.7335
 Epoch 2/5
 86/86 [==============================] - 39s 450ms/step - loss: 0.3833 - accuracy: 0.8765 - val_loss: 1.2491 - val_accuracy: 0.7592
@@ -5489,7 +5489,7 @@ Epoch 5/5
                     <span class="n">epochs</span><span class="o">=</span><span class="mi">40</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Epoch 1/40
+ <pre><code id="answerBlock">Epoch 1/40
 86/86 [==============================] - 172s 2s/step - loss: 0.2257 - accuracy: 0.9288 - val_loss: 0.6762 - val_accuracy: 0.8346
 Epoch 2/40
 86/86 [==============================] - 128s 1s/step - loss: 0.1124 - accuracy: 0.9640 - val_loss: 0.3932 - val_accuracy: 0.9154
@@ -5595,7 +5595,7 @@ Epoch 40/40
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">fake_train_set</span><span class="p">,</span> <span class="n">steps_per_epoch</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Epoch 1/2
+ <pre><code id="answerBlock">Epoch 1/2
 5/5 [==============================] - 134s 27s/step - loss: 1.3279 - dense_5_loss: 1.5696 - dense_6_loss: 0.3612 - dense_5_accuracy: 0.2625 - dense_6_accuracy: 0.2562
 Epoch 2/2
 5/5 [==============================] - 93s 19s/step - loss: 1.0533 - dense_5_loss: 1.2658 - dense_6_loss: 0.2035 - dense_5_accuracy: 0.5938 - dense_6_accuracy: 0.2000
@@ -5641,7 +5641,7 @@ Epoch 2/2
 <span class="n">output</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>TensorShape([2, 449, 449, 5])
+ <pre><code id="answerBlock">TensorShape([2, 449, 449, 5])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -5709,7 +5709,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">manual_output</span><span class="o">.</span><span class="n">numpy</span><span class="p">(),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-7</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>True
+ <pre><code id="answerBlock">True
 </code></pre>
 
 <h1>Exercises</h1>
@@ -5756,7 +5756,7 @@ Epoch 2/2
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 55000 samples, validate on 5000 samples
+ <pre><code id="answerBlock">Train on 55000 samples, validate on 5000 samples
 Epoch 1/10
 55000/55000 [==============================] - 102s 2ms/sample - loss: 0.1887 - accuracy: 0.9417 - val_loss: 0.0502 - val_accuracy: 0.9864
 Epoch 2/10

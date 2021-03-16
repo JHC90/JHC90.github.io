@@ -5090,7 +5090,7 @@ Im folgenden werden eigene Featrue erstellt. Konkret wollen wir ein Feature mit 
 <span class="nb">print</span><span class="p">(</span><span class="n">housing_extra_attribs</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>(16512, 13)
+ <pre><code id="answerBlock">(16512, 13)
 &lt;class 'pandas.core.frame.DataFrame'&gt;
   Unnamed: 0 longitude latitude housing_median_age total_rooms total_bedrooms  \
 0      17606   -121.89    37.29                 38        1568            351   
@@ -5118,7 +5118,7 @@ Im folgenden werden eigene Featrue erstellt. Konkret wollen wir ein Feature mit 
 <span class="n">housing_extra_attribs</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+ <pre><code id="answerBlock">&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 16512 entries, 0 to 16511
 Data columns (total 13 columns):
  #   Column                    Non-Null Count  Dtype  
@@ -5147,7 +5147,7 @@ memory usage: 1.6+ MB
 <span class="n">corr_matrix</span><span class="p">[</span><span class="s2">&quot;median_house_value&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(16512, 13)
+ <pre><code id="answerBlock">(16512, 13)
 (16512, 14)
 
 
@@ -5176,7 +5176,7 @@ Name: median_house_value, dtype: float64
 <div class="codehilite"><pre><span></span><code><span class="n">housingDF</span><span class="o">.</span><span class="n">dtypes</span>
 </code></pre></div>
 
-<pre><code>Unnamed: 0                    float64
+ <pre><code id="answerBlock">Unnamed: 0                    float64
 longitude                     float64
 latitude                      float64
 housing_median_age            float64
@@ -5209,7 +5209,7 @@ dtype: object
 <span class="nb">print</span><span class="p">(</span><span class="n">finalPreporcessedDF</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>(16512, 15)
+ <pre><code id="answerBlock">(16512, 15)
 (16512, 15)
    Unnamed: 0  longitude  latitude  housing_median_age  total_rooms  \
 0    0.853087    0.24502  0.504782             0.72549     0.039731   
@@ -5260,7 +5260,7 @@ dtype: object
 <span class="nb">print</span><span class="p">(</span><span class="n">housing_test_labels</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(16512, 11)
+ <pre><code id="answerBlock">(16512, 11)
 (16512, 10)
 (16512,)
 ####################
@@ -5311,7 +5311,7 @@ dtype: object
 <span class="nb">print</span><span class="p">(</span><span class="n">housing_test_prepared</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(16512, 18)
+ <pre><code id="answerBlock">(16512, 18)
 (16512, 18)
 (4128, 18)
 </code></pre>
@@ -5325,7 +5325,7 @@ dtype: object
 <span class="nb">print</span><span class="p">(</span><span class="n">titlesDFinterim</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>18
+ <pre><code id="answerBlock">18
 ['IndexScaled', 'longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income', 'ocean_proximity', 'income_cat', 'rooms_per_household', 'population_per_household', 'ocean_proximity_&lt;1H OCEAN', 'ocean_proximity_INLAND', 'ocean_proximity_ISLAND', 'ocean_proximity_NEAR BAY', 'ocean_proximity_NEAR OCEAN']
 </code></pre>
 

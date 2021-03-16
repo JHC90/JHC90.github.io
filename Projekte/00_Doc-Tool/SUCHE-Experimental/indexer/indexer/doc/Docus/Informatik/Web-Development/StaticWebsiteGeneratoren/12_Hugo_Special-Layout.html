@@ -4679,7 +4679,7 @@ $(document).ready(function() {
                 <h2>Projects</h2>
                 <ul></p>
 
-<pre><code>                {{ range  (where .Site.RegularPages "Type" "in" "projects") }}
+ <pre><code id="answerBlock">                {{ range  (where .Site.RegularPages "Type" "in" "projects") }}
                     &lt;li&gt;&lt;a href="{{ .RelPermalink }}"&gt;{{ .Title }}&lt;/a&gt;&lt;/li&gt;
                 {{ end }}
             &lt;/ul&gt;

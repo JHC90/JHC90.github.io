@@ -4722,7 +4722,7 @@ Das sind die Features, die wir bekommen haben...</p>
 <li>Im Beispiel beziehe ich mich auf die Lizens-Beschreibung aus dem Buch:</li>
 </ul>
 
-<pre><code>Use of the information and instructions contained in this work is at your own
+ <pre><code id="answerBlock">Use of the information and instructions contained in this work is at your own
 risk. If any code samples or other technology this work contains or describes is subject to open source
 licenses or the intellectual property rights of others, it is your responsibility to ensure that your use thereof
 complies with such licenses and/or rights.
@@ -5312,7 +5312,7 @@ Hier werden die [Messgrößen der zentralen Tendenz und der Dispersion](21112020
 <span class="n">housing</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+ <pre><code id="answerBlock">&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 20640 entries, 0 to 20639
 Data columns (total 10 columns):
  #   Column              Non-Null Count  Dtype  
@@ -5334,7 +5334,7 @@ memory usage: 1.6+ MB
 <div class="codehilite"><pre><span></span><code><span class="n">housing</span><span class="o">.</span><span class="n">dtypes</span>
 </code></pre></div>
 
-<pre><code>longitude             float64
+ <pre><code id="answerBlock">longitude             float64
 latitude              float64
 housing_median_age    float64
 total_rooms           float64
@@ -5353,7 +5353,7 @@ dtype: object
 <span class="nb">print</span><span class="p">(</span><span class="n">housing</span><span class="p">[</span><span class="s1">&#39;ocean_proximity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 </code></pre></div>
 
-<pre><code>&lt;1H OCEAN     9136
+ <pre><code id="answerBlock">&lt;1H OCEAN     9136
 INLAND        6551
 NEAR OCEAN    2658
 NEAR BAY      2290
@@ -5374,7 +5374,7 @@ Name: ocean_proximity, dtype: int64
 <span class="nb">print</span><span class="p">(</span><span class="n">housing</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(20640, 10)
+ <pre><code id="answerBlock">(20640, 10)
 (20640, 10)
 </code></pre>
 
@@ -5400,7 +5400,7 @@ Name: ocean_proximity, dtype: int64
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure attribute_histogram_plots
+ <pre><code id="answerBlock">Saving figure attribute_histogram_plots
 </code></pre>
 
 <p><img src="02_Califronia_Housing_Data_files/02_Califronia_Housing_Data_35_1.png" alt="png" /></p>
@@ -5423,7 +5423,7 @@ hier die <a href="/Docus/DataScience/Theorie/001_Datasets.html">Theorie zu den D
 <span class="n">housing</span><span class="p">[</span><span class="s2">&quot;income_cat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>3    7236
+ <pre><code id="answerBlock">3    7236
 2    6581
 4    3639
 5    2362
@@ -5453,7 +5453,7 @@ ab hier wird nur noch geprüft, dass die relativen Verteilungen sowohl im komple
 <span class="nb">print</span><span class="p">(</span><span class="n">income_cat_proportions</span><span class="p">(</span><span class="n">housing</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>3    0.350581
+ <pre><code id="answerBlock">3    0.350581
 2    0.318847
 4    0.176308
 5    0.114438
@@ -5465,7 +5465,7 @@ Name: income_cat, dtype: float64
 <span class="nb">print</span><span class="p">(</span><span class="n">income_cat_proportions</span><span class="p">(</span><span class="n">strat_train_set</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>3    0.350594
+ <pre><code id="answerBlock">3    0.350594
 2    0.318859
 4    0.176296
 5    0.114402
@@ -5477,7 +5477,7 @@ Name: income_cat, dtype: float64
 <span class="nb">print</span><span class="p">(</span><span class="n">income_cat_proportions</span><span class="p">(</span><span class="n">strat_test_set</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>3    0.350533
+ <pre><code id="answerBlock">3    0.350533
 2    0.318798
 4    0.176357
 5    0.114583

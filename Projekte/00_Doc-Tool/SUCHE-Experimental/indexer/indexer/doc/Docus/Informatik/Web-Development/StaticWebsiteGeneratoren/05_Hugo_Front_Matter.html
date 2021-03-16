@@ -4656,7 +4656,7 @@ $(document).ready(function() {
 
 <p>Dieses Front matter kann je nach gewünschten Seitentyp als Archtype angelegt werden. Wir nun eine Seite eines bestimmten Typs aufgerufen, so wird konkret diese Vorlage mit genutzt</p>
 
-<pre><code>title: "{{ replace .Name "-" " " | title }}"
+ <pre><code id="answerBlock">title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 ---

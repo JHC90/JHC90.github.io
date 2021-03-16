@@ -4720,7 +4720,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">]])</span> <span class="c1"># matrix</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
 array([[1., 2., 3.],
        [4., 5., 6.]], dtype=float32)&gt;
 </code></pre>
@@ -4728,14 +4728,14 @@ array([[1., 2., 3.],
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span> <span class="c1"># scalar</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=42&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=42&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span> <span class="mf">5.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">]])</span>
 <span class="n">t</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
 array([[1., 2., 3.],
        [4., 5., 6.]], dtype=float32)&gt;
 </code></pre>
@@ -4743,13 +4743,13 @@ array([[1., 2., 3.],
 <div class="codehilite"><pre><span></span><code><span class="n">t</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>TensorShape([2, 3])
+ <pre><code id="answerBlock">TensorShape([2, 3])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">t</span><span class="o">.</span><span class="n">dtype</span>
 </code></pre></div>
 
-<pre><code>tf.float32
+ <pre><code id="answerBlock">tf.float32
 </code></pre>
 
 <h3>Indexing</h3>
@@ -4757,7 +4757,7 @@ array([[1., 2., 3.],
 <div class="codehilite"><pre><span></span><code><span class="n">t</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:]</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 2), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 2), dtype=float32, numpy=
 array([[2., 3.],
        [5., 6.]], dtype=float32)&gt;
 </code></pre>
@@ -4765,7 +4765,7 @@ array([[2., 3.],
 <div class="codehilite"><pre><span></span><code><span class="n">t</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 1), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 1), dtype=float32, numpy=
 array([[2.],
        [5.]], dtype=float32)&gt;
 </code></pre>
@@ -4775,7 +4775,7 @@ array([[2.],
 <div class="codehilite"><pre><span></span><code><span class="n">t</span> <span class="o">+</span> <span class="mi">10</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
 array([[11., 12., 13.],
        [14., 15., 16.]], dtype=float32)&gt;
 </code></pre>
@@ -4783,7 +4783,7 @@ array([[11., 12., 13.],
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 3), dtype=float32, numpy=
 array([[ 1.,  4.,  9.],
        [16., 25., 36.]], dtype=float32)&gt;
 </code></pre>
@@ -4791,7 +4791,7 @@ array([[ 1.,  4.,  9.],
 <div class="codehilite"><pre><span></span><code><span class="n">t</span> <span class="o">@</span> <span class="n">tf</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 2), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 2), dtype=float32, numpy=
 array([[14., 32.],
        [32., 77.]], dtype=float32)&gt;
 </code></pre>
@@ -4803,7 +4803,7 @@ array([[14., 32.],
 <span class="n">K</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">t</span><span class="p">))</span> <span class="o">+</span> <span class="mi">10</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3, 2), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3, 2), dtype=float32, numpy=
 array([[11., 26.],
        [14., 35.],
        [19., 46.]], dtype=float32)&gt;
@@ -4815,33 +4815,33 @@ array([[11., 26.],
 <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3,), dtype=float64, numpy=array([2., 4., 5.])&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3,), dtype=float64, numpy=array([2., 4., 5.])&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">t</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>array([[1., 2., 3.],
+ <pre><code id="answerBlock">array([[1., 2., 3.],
        [4., 5., 6.]], dtype=float32)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[1., 2., 3.],
+ <pre><code id="answerBlock">array([[1., 2., 3.],
        [4., 5., 6.]], dtype=float32)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3,), dtype=float64, numpy=array([ 4., 16., 25.])&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3,), dtype=float64, numpy=array([ 4., 16., 25.])&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>array([[ 1.,  4.,  9.],
+ <pre><code id="answerBlock">array([[ 1.,  4.,  9.],
        [16., 25., 36.]], dtype=float32)
 </code></pre>
 
@@ -4853,7 +4853,7 @@ array([[11., 26.],
     <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>cannot compute AddV2 as input #1(zero-based) was expected to be a float tensor but is a int32 tensor [Op:AddV2] name: add/
+ <pre><code id="answerBlock">cannot compute AddV2 as input #1(zero-based) was expected to be a float tensor but is a int32 tensor [Op:AddV2] name: add/
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
@@ -4862,14 +4862,14 @@ array([[11., 26.],
     <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>cannot compute AddV2 as input #1(zero-based) was expected to be a float tensor but is a double tensor [Op:AddV2] name: add/
+ <pre><code id="answerBlock">cannot compute AddV2 as input #1(zero-based) was expected to be a float tensor but is a double tensor [Op:AddV2] name: add/
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">t2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">40.</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
 <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="o">+</span> <span class="n">tf</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">t2</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=42.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=42.0&gt;
 </code></pre>
 
 <h3>Strings</h3>
@@ -4877,33 +4877,33 @@ array([[11., 26.],
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=string, numpy=b'hello world'&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=string, numpy=b'hello world'&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s2">&quot;café&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=string, numpy=b'caf\xc3\xa9'&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=string, numpy=b'caf\xc3\xa9'&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">u</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;café&quot;</span><span class="p">])</span>
 <span class="n">u</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(4,), dtype=int32, numpy=array([ 99,  97, 102, 233], dtype=int32)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(4,), dtype=int32, numpy=array([ 99,  97, 102, 233], dtype=int32)&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">strings</span><span class="o">.</span><span class="n">unicode_encode</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>
 <span class="n">tf</span><span class="o">.</span><span class="n">strings</span><span class="o">.</span><span class="n">length</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;UTF8_CHAR&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=4&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=4&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">strings</span><span class="o">.</span><span class="n">unicode_decode</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(4,), dtype=int32, numpy=array([ 99,  97, 102, 233], dtype=int32)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(4,), dtype=int32, numpy=array([ 99,  97, 102, 233], dtype=int32)&gt;
 </code></pre>
 
 <h3>String arrays</h3>
@@ -4914,20 +4914,20 @@ array([[11., 26.],
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">strings</span><span class="o">.</span><span class="n">length</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;UTF8_CHAR&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(4,), dtype=int32, numpy=array([4, 6, 5, 2], dtype=int32)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(4,), dtype=int32, numpy=array([4, 6, 5, 2], dtype=int32)&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">r</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">strings</span><span class="o">.</span><span class="n">unicode_decode</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s2">&quot;UTF8&quot;</span><span class="p">)</span>
 <span class="n">r</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.RaggedTensor [[67, 97, 102, 233], [67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232], [21654, 21857]]&gt;
+ <pre><code id="answerBlock">&lt;tf.RaggedTensor [[67, 97, 102, 233], [67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232], [21654, 21857]]&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.RaggedTensor [[67, 97, 102, 233], [67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232], [21654, 21857]]&gt;
+ <pre><code id="answerBlock">&lt;tf.RaggedTensor [[67, 97, 102, 233], [67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232], [21654, 21857]]&gt;
 </code></pre>
 
 <h3>Ragged tensors</h3>
@@ -4935,39 +4935,39 @@ array([[11., 26.],
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>tf.Tensor([ 67 111 102 102 101 101], shape=(6,), dtype=int32)
+ <pre><code id="answerBlock">tf.Tensor([ 67 111 102 102 101 101], shape=(6,), dtype=int32)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.RaggedTensor [[67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232]]&gt;
+ <pre><code id="answerBlock">&lt;tf.RaggedTensor [[67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232]]&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">r2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">ragged</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">],</span> <span class="p">[],</span> <span class="p">[</span><span class="mi">67</span><span class="p">]])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">r</span><span class="p">,</span> <span class="n">r2</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.RaggedTensor [[67, 97, 102, 233], [67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232], [21654, 21857], [65, 66], [], [67]]&gt;
+ <pre><code id="answerBlock">&lt;tf.RaggedTensor [[67, 97, 102, 233], [67, 111, 102, 102, 101, 101], [99, 97, 102, 102, 232], [21654, 21857], [65, 66], [], [67]]&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">r3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">ragged</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">68</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">70</span><span class="p">],</span> <span class="p">[</span><span class="mi">71</span><span class="p">],</span> <span class="p">[],</span> <span class="p">[</span><span class="mi">72</span><span class="p">,</span> <span class="mi">73</span><span class="p">]])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">r</span><span class="p">,</span> <span class="n">r3</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.RaggedTensor [[67, 97, 102, 233, 68, 69, 70], [67, 111, 102, 102, 101, 101, 71], [99, 97, 102, 102, 232], [21654, 21857, 72, 73]]&gt;
+ <pre><code id="answerBlock">&lt;tf.RaggedTensor [[67, 97, 102, 233, 68, 69, 70], [67, 111, 102, 102, 101, 101, 71], [99, 97, 102, 102, 232], [21654, 21857, 72, 73]]&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">strings</span><span class="o">.</span><span class="n">unicode_encode</span><span class="p">(</span><span class="n">r3</span><span class="p">,</span> <span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(4,), dtype=string, numpy=array([b'DEF', b'G', b'', b'HI'], dtype=object)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(4,), dtype=string, numpy=array([b'DEF', b'G', b'', b'HI'], dtype=object)&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">r</span><span class="o">.</span><span class="n">to_tensor</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(4, 6), dtype=int32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(4, 6), dtype=int32, numpy=
 array([[   67,    97,   102,   233,     0,     0],
        [   67,   111,   102,   102,   101,   101],
        [   99,    97,   102,   102,   232,     0],
@@ -4984,7 +4984,7 @@ array([[   67,    97,   102,   233,     0,     0],
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>SparseTensor(indices=tf.Tensor(
+ <pre><code id="answerBlock">SparseTensor(indices=tf.Tensor(
 [[0 1]
  [1 0]
  [2 3]], shape=(3, 2), dtype=int64), values=tf.Tensor([1. 2. 3.], shape=(3,), dtype=float32), dense_shape=tf.Tensor([3 4], shape=(2,), dtype=int64))
@@ -4993,7 +4993,7 @@ array([[   67,    97,   102,   233,     0,     0],
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">to_dense</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3, 4), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3, 4), dtype=float32, numpy=
 array([[0., 1., 0., 0.],
        [2., 0., 0., 0.],
        [0., 0., 0., 3.]], dtype=float32)&gt;
@@ -5008,14 +5008,14 @@ array([[0., 1., 0., 0.],
     <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>unsupported operand type(s) for +: 'SparseTensor' and 'float'
+ <pre><code id="answerBlock">unsupported operand type(s) for +: 'SparseTensor' and 'float'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">s4</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">20.</span><span class="p">],</span> <span class="p">[</span><span class="mf">30.</span><span class="p">,</span> <span class="mf">40.</span><span class="p">],</span> <span class="p">[</span><span class="mf">50.</span><span class="p">,</span> <span class="mf">60.</span><span class="p">],</span> <span class="p">[</span><span class="mf">70.</span><span class="p">,</span> <span class="mf">80.</span><span class="p">]])</span>
 <span class="n">tf</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">sparse_dense_matmul</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">s4</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3, 2), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3, 2), dtype=float32, numpy=
 array([[ 30.,  40.],
        [ 20.,  40.],
        [210., 240.]], dtype=float32)&gt;
@@ -5027,7 +5027,7 @@ array([[ 30.,  40.],
 <span class="nb">print</span><span class="p">(</span><span class="n">s5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>SparseTensor(indices=tf.Tensor(
+ <pre><code id="answerBlock">SparseTensor(indices=tf.Tensor(
 [[0 2]
  [0 1]], shape=(2, 2), dtype=int64), values=tf.Tensor([1. 2.], shape=(2,), dtype=float32), dense_shape=tf.Tensor([3 4], shape=(2,), dtype=int64))
 </code></pre>
@@ -5038,7 +5038,7 @@ array([[ 30.,  40.],
     <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>indices[1] = [0,1] is out of order. Many sparse ops require sorted indices.
+ <pre><code id="answerBlock">indices[1] = [0,1] is out of order. Many sparse ops require sorted indices.
     Use `tf.sparse.reorder` to create a correctly ordered copy.
 
  [Op:SparseToDense]
@@ -5048,7 +5048,7 @@ array([[ 30.,  40.],
 <span class="n">tf</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">to_dense</span><span class="p">(</span><span class="n">s6</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3, 4), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3, 4), dtype=float32, numpy=
 array([[0., 2., 1., 0.],
        [0., 0., 0., 0.],
        [0., 0., 0., 0.]], dtype=float32)&gt;
@@ -5061,7 +5061,7 @@ array([[0., 2., 1., 0.],
 <span class="n">tf</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">to_dense</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">sets</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 6), dtype=int32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 6), dtype=int32, numpy=
 array([[ 2,  3,  4,  5,  6,  7],
        [ 0,  7,  9, 10,  0,  0]], dtype=int32)&gt;
 </code></pre>
@@ -5069,7 +5069,7 @@ array([[ 2,  3,  4,  5,  6,  7],
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">to_dense</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">sets</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 3), dtype=int32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 3), dtype=int32, numpy=
 array([[2, 3, 7],
        [7, 0, 0]], dtype=int32)&gt;
 </code></pre>
@@ -5077,7 +5077,7 @@ array([[2, 3, 7],
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">sparse</span><span class="o">.</span><span class="n">to_dense</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">sets</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2, 2), dtype=int32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2, 2), dtype=int32, numpy=
 array([[5, 0],
        [0, 9]], dtype=int32)&gt;
 </code></pre>
@@ -5090,7 +5090,7 @@ array([[5, 0],
 <div class="codehilite"><pre><span></span><code><span class="n">v</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">v</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
 array([[ 2.,  4.,  6.],
        [ 8., 10., 12.]], dtype=float32)&gt;
 </code></pre>
@@ -5098,7 +5098,7 @@ array([[ 2.,  4.,  6.],
 <div class="codehilite"><pre><span></span><code><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
 array([[ 2., 42.,  6.],
        [ 8., 10., 12.]], dtype=float32)&gt;
 </code></pre>
@@ -5106,7 +5106,7 @@ array([[ 2., 42.,  6.],
 <div class="codehilite"><pre><span></span><code><span class="n">v</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">assign</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
 array([[ 2., 42.,  0.],
        [ 8., 10.,  1.]], dtype=float32)&gt;
 </code></pre>
@@ -5117,14 +5117,14 @@ array([[ 2., 42.,  0.],
     <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>'ResourceVariable' object does not support item assignment
+ <pre><code id="answerBlock">'ResourceVariable' object does not support item assignment
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">v</span><span class="o">.</span><span class="n">scatter_nd_update</span><span class="p">(</span><span class="n">indices</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]],</span>
                     <span class="n">updates</span><span class="o">=</span><span class="p">[</span><span class="mf">100.</span><span class="p">,</span> <span class="mf">200.</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
 array([[100.,  42.,   0.],
        [  8.,  10., 200.]], dtype=float32)&gt;
 </code></pre>
@@ -5134,7 +5134,7 @@ array([[100.,  42.,   0.],
 <span class="n">v</span><span class="o">.</span><span class="n">scatter_update</span><span class="p">(</span><span class="n">sparse_delta</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Variable 'UnreadVariable' shape=(2, 3) dtype=float32, numpy=
 array([[4., 5., 6.],
        [1., 2., 3.]], dtype=float32)&gt;
 </code></pre>
@@ -5150,13 +5150,13 @@ array([[4., 5., 6.],
 <div class="codehilite"><pre><span></span><code><span class="n">array</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2,), dtype=float32, numpy=array([ 3., 10.], dtype=float32)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2,), dtype=float32, numpy=array([ 3., 10.], dtype=float32)&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">array</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3, 2), dtype=float32, numpy=
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3, 2), dtype=float32, numpy=
 array([[1., 2.],
        [0., 0.],
        [5., 7.]], dtype=float32)&gt;
@@ -5166,13 +5166,13 @@ array([[1., 2.],
 <span class="n">mean</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2,), dtype=float32, numpy=array([2., 3.], dtype=float32)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2,), dtype=float32, numpy=array([2., 3.], dtype=float32)&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">variance</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(2,), dtype=float32, numpy=array([4.6666665, 8.666667 ], dtype=float32)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(2,), dtype=float32, numpy=array([4.6666665, 8.666667 ], dtype=float32)&gt;
 </code></pre>
 
 <h2>Custom loss function</h2>
@@ -5237,7 +5237,7 @@ array([[1., 2.],
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 73us/sample - loss: 0.6247 - mae: 0.9969 - val_loss: 0.2884 - val_mae: 0.5913
 Epoch 2/2
@@ -5263,7 +5263,7 @@ Epoch 2/2
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 55us/sample - loss: 0.2056 - mae: 0.4982 - val_loss: 0.2170 - val_mae: 0.5037
 Epoch 2/2
@@ -5293,7 +5293,7 @@ Epoch 2/2
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 69us/sample - loss: 0.2229 - mae: 0.4893 - val_loss: 0.2525 - val_mae: 0.4973
 Epoch 2/2
@@ -5317,7 +5317,7 @@ Epoch 2/2
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 58us/sample - loss: 0.2148 - mae: 0.4796 - val_loss: 0.2111 - val_mae: 0.4713
 Epoch 2/2
@@ -5359,7 +5359,7 @@ Epoch 2/2
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 66us/sample - loss: 0.6934 - mae: 0.8818 - val_loss: 0.3288 - val_mae: 0.5451
 Epoch 2/2
@@ -5383,7 +5383,7 @@ Epoch 2/2
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 0s 33us/sample - loss: 0.2263 - mae: 0.4946 - val_loss: 0.2285 - val_mae: 0.4851
 Epoch 2/2
@@ -5403,7 +5403,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">loss</span><span class="o">.</span><span class="n">threshold</span>
 </code></pre></div>
 
-<pre><code>2.0
+ <pre><code id="answerBlock">2.0
 </code></pre>
 
 <h2>Other Custom Functions</h2>
@@ -5455,7 +5455,7 @@ Epoch 2/2
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 82us/sample - loss: 1.4486 - mae: 0.8727 - val_loss: 2.4208 - val_mae: 0.5681
 Epoch 2/2
@@ -5512,7 +5512,7 @@ Epoch 2/2
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid_scaled</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 70us/sample - loss: 1.4486 - mae: 0.8727 - val_loss: 2.4208 - val_mae: 0.5681
 Epoch 2/2
@@ -5558,7 +5558,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 57us/sample - loss: 2.0326 - huber_fn: 0.9038
 Epoch 2/2
@@ -5584,7 +5584,7 @@ Epoch 2/2
 <span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>WARNING:tensorflow:sample_weight modes were coerced from
+ <pre><code id="answerBlock">WARNING:tensorflow:sample_weight modes were coerced from
   ...
     to  
   ['...']
@@ -5598,7 +5598,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;loss&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;huber_fn&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">sample_weight</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>(0.11744698936265671, 0.11787283955197686)
+ <pre><code id="answerBlock">(0.11744698936265671, 0.11787283955197686)
 </code></pre>
 
 <h3>Streaming metrics</h3>
@@ -5607,25 +5607,25 @@ Epoch 2/2
 <span class="n">precision</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=0.8&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=0.8&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">precision</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=0.5&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=0.5&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">precision</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=0.5&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=0.5&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">precision</span><span class="o">.</span><span class="n">variables</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Variable 'true_positives:0' shape=(1,) dtype=float32, numpy=array([4.], dtype=float32)&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Variable 'true_positives:0' shape=(1,) dtype=float32, numpy=array([4.], dtype=float32)&gt;,
  &lt;tf.Variable 'false_positives:0' shape=(1,) dtype=float32, numpy=array([4.], dtype=float32)&gt;]
 </code></pre>
 
@@ -5668,7 +5668,7 @@ Epoch 2/2
 <span class="n">m</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">2.</span><span class="p">]]),</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">10.</span><span class="p">]]))</span> 
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=14.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=14.0&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># total = total + (|1 - 0|² / 2) + (2 * |9.25 - 5| - 2² / 2) = 14 + 7 = 21</span>
@@ -5679,13 +5679,13 @@ Epoch 2/2
 <span class="n">m</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=7.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=7.0&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">m</span><span class="o">.</span><span class="n">variables</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Variable 'total:0' shape=() dtype=float32, numpy=21.0&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Variable 'total:0' shape=() dtype=float32, numpy=21.0&gt;,
  &lt;tf.Variable 'count:0' shape=() dtype=float32, numpy=3.0&gt;]
 </code></pre>
 
@@ -5693,7 +5693,7 @@ Epoch 2/2
 <span class="n">m</span><span class="o">.</span><span class="n">variables</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Variable 'total:0' shape=() dtype=float32, numpy=0.0&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Variable 'total:0' shape=() dtype=float32, numpy=0.0&gt;,
  &lt;tf.Variable 'count:0' shape=() dtype=float32, numpy=0.0&gt;]
 </code></pre>
 
@@ -5717,7 +5717,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">y_train</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 55us/sample - loss: 0.8646 - huber_metric: 0.8646
 Epoch 2/2
@@ -5741,7 +5741,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">y_train</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/2
 11610/11610 [==============================] - 0s 25us/sample - loss: 0.2349 - huber_metric: 0.2349
 Epoch 2/2
@@ -5759,7 +5759,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">metrics</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">threshold</span>
 </code></pre></div>
 
-<pre><code>2.0
+ <pre><code id="answerBlock">2.0
 </code></pre>
 
 <p>Looks like it works fine! More simply, we could have created the class like this:</p>
@@ -5799,7 +5799,7 @@ Epoch 2/2
                     <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>WARNING:tensorflow:sample_weight modes were coerced from
+ <pre><code id="answerBlock">WARNING:tensorflow:sample_weight modes were coerced from
   ...
     to  
   ['...']
@@ -5813,7 +5813,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;loss&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;HuberMetric&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">sample_weight</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>(0.43299613858249864, 0.4329960495905965)
+ <pre><code id="answerBlock">(0.43299613858249864, 0.4329960495905965)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;my_model_with_a_custom_metric_v2.h5&quot;</span><span class="p">)</span>
@@ -5826,7 +5826,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">y_train</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 57us/sample - loss: 0.2363 - HuberMetric: 0.2363
 Epoch 2/2
@@ -5844,7 +5844,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">metrics</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">threshold</span>
 </code></pre></div>
 
-<pre><code>2.0
+ <pre><code id="answerBlock">2.0
 </code></pre>
 
 <h2>Custom Layers</h2>
@@ -5855,7 +5855,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">exponential_layer</span><span class="p">([</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(3,), dtype=float32, numpy=array([0.36787945, 1.        , 2.7182817 ], dtype=float32)&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(3,), dtype=float32, numpy=array([0.36787945, 1.        , 2.7182817 ], dtype=float32)&gt;
 </code></pre>
 
 <p>Adding an exponential layer at the output of a regression model can be useful if the values to predict are positive and with very different scales (e.g., 0.001, 10., 10000):</p>
@@ -5876,7 +5876,7 @@ Epoch 2/2
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/5
 11610/11610 [==============================] - 1s 60us/sample - loss: nan - val_loss: nan
 Epoch 2/5
@@ -5939,7 +5939,7 @@ nan
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 60us/sample - loss: 2.1425 - val_loss: 1.2779
 Epoch 2/2
@@ -6004,7 +6004,7 @@ Epoch 2/2
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples, validate on 3870 samples
+ <pre><code id="answerBlock">Train on 11610 samples, validate on 3870 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 61us/sample - loss: 0.4776 - val_loss: 0.5223
 Epoch 2/2
@@ -6066,7 +6066,7 @@ Epoch 2/2
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new_scaled</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/5
 11610/11610 [==============================] - 1s 104us/sample - loss: 11.4379
 Epoch 2/5
@@ -6083,7 +6083,7 @@ Epoch 5/5
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;my_custom_model.ckpt&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>WARNING:tensorflow:From /Users/ageron/miniconda3/envs/tf2/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1786: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+ <pre><code id="answerBlock">WARNING:tensorflow:From /Users/ageron/miniconda3/envs/tf2/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1786: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
 Instructions for updating:
 If using Keras pass *_constraint arguments to layers.
 INFO:tensorflow:Assets written to: my_custom_model.ckpt/assets
@@ -6095,7 +6095,7 @@ INFO:tensorflow:Assets written to: my_custom_model.ckpt/assets
 <div class="codehilite"><pre><span></span><code><span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/5
 11610/11610 [==============================] - 1s 123us/sample - loss: 0.6816
 Epoch 2/5
@@ -6130,7 +6130,7 @@ Epoch 5/5
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new_scaled</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/5
 11610/11610 [==============================] - 1s 88us/sample - loss: 0.9281
 Epoch 2/5
@@ -6185,7 +6185,7 @@ Epoch 5/5
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/2
 11610/11610 [==============================] - 1s 98us/sample - loss: 0.7647
 Epoch 2/2
@@ -6203,13 +6203,13 @@ Epoch 2/2
 <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">w1</span> <span class="o">+</span> <span class="n">eps</span><span class="p">,</span> <span class="n">w2</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">))</span> <span class="o">/</span> <span class="n">eps</span>
 </code></pre></div>
 
-<pre><code>36.000003007075065
+ <pre><code id="answerBlock">36.000003007075065
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span> <span class="o">+</span> <span class="n">eps</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">))</span> <span class="o">/</span> <span class="n">eps</span>
 </code></pre></div>
 
-<pre><code>10.000000003174137
+ <pre><code id="answerBlock">10.000000003174137
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">5.</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">3.</span><span class="p">)</span>
@@ -6222,7 +6222,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">gradients</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
  &lt;tf.Tensor: shape=(), dtype=float32, numpy=10.0&gt;]
 </code></pre>
 
@@ -6236,7 +6236,7 @@ Epoch 2/2
     <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>GradientTape.gradient can only be called once on non-persistent tapes.
+ <pre><code id="answerBlock">GradientTape.gradient can only be called once on non-persistent tapes.
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">(</span><span class="n">persistent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
@@ -6250,7 +6250,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">dz_dw1</span><span class="p">,</span> <span class="n">dz_dw2</span>
 </code></pre></div>
 
-<pre><code>(&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
+ <pre><code id="answerBlock">(&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
  &lt;tf.Tensor: shape=(), dtype=float32, numpy=10.0&gt;)
 </code></pre>
 
@@ -6264,7 +6264,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">gradients</span>
 </code></pre></div>
 
-<pre><code>[None, None]
+ <pre><code id="answerBlock">[None, None]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
@@ -6278,7 +6278,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">gradients</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
  &lt;tf.Tensor: shape=(), dtype=float32, numpy=10.0&gt;]
 </code></pre>
 
@@ -6290,7 +6290,7 @@ Epoch 2/2
 <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">([</span><span class="n">z1</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">z3</span><span class="p">],</span> <span class="p">[</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor: shape=(), dtype=float32, numpy=136.0&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Tensor: shape=(), dtype=float32, numpy=136.0&gt;,
  &lt;tf.Tensor: shape=(), dtype=float32, numpy=30.0&gt;]
 </code></pre>
 
@@ -6315,14 +6315,14 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">jacobians</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Tensor: shape=(), dtype=float32, numpy=36.0&gt;,
  &lt;tf.Tensor: shape=(), dtype=float32, numpy=10.0&gt;]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">hessians</span>
 </code></pre></div>
 
-<pre><code>[[&lt;tf.Tensor: shape=(), dtype=float32, numpy=6.0&gt;,
+ <pre><code id="answerBlock">[[&lt;tf.Tensor: shape=(), dtype=float32, numpy=6.0&gt;,
   &lt;tf.Tensor: shape=(), dtype=float32, numpy=2.0&gt;],
  [&lt;tf.Tensor: shape=(), dtype=float32, numpy=2.0&gt;, None]]
 </code></pre>
@@ -6336,7 +6336,7 @@ Epoch 2/2
 <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="p">[</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor: shape=(), dtype=float32, numpy=30.0&gt;, None]
+ <pre><code id="answerBlock">[&lt;tf.Tensor: shape=(), dtype=float32, numpy=30.0&gt;, None]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">100.</span><span class="p">)</span>
@@ -6346,13 +6346,13 @@ Epoch 2/2
 <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="p">[</span><span class="n">x</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor: shape=(), dtype=float32, numpy=nan&gt;]
+ <pre><code id="answerBlock">[&lt;tf.Tensor: shape=(), dtype=float32, numpy=nan&gt;]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">30.</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">))</span> <span class="o">+</span> <span class="mf">1.</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=30.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=30.0&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">([</span><span class="mf">100.</span><span class="p">])</span>
@@ -6362,7 +6362,7 @@ Epoch 2/2
 <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="p">[</span><span class="n">x</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor: shape=(1,), dtype=float32, numpy=array([nan], dtype=float32)&gt;]
+ <pre><code id="answerBlock">[&lt;tf.Tensor: shape=(1,), dtype=float32, numpy=array([nan], dtype=float32)&gt;]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nd">@tf</span><span class="o">.</span><span class="n">custom_gradient</span>
@@ -6384,7 +6384,7 @@ Epoch 2/2
 <span class="n">z</span><span class="p">,</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="p">[</span><span class="n">x</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>(&lt;tf.Tensor: shape=(1,), dtype=float32, numpy=array([1000.], dtype=float32)&gt;,
+ <pre><code id="answerBlock">(&lt;tf.Tensor: shape=(1,), dtype=float32, numpy=array([1000.], dtype=float32)&gt;,
  [&lt;tf.Tensor: shape=(1,), dtype=float32, numpy=array([nan], dtype=float32)&gt;])
 </code></pre>
 
@@ -6428,7 +6428,7 @@ Epoch 2/2
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>50/50 - loss: 0.0900 - mean_square: 858.5000
+ <pre><code id="answerBlock">50/50 - loss: 0.0900 - mean_square: 858.5000
 </code></pre>
 
 <p>A fancier version with a progress bar:</p>
@@ -6445,7 +6445,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">progress_bar</span><span class="p">(</span><span class="mi">3500</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>' 3500/10000 [=&gt;....]'
+ <pre><code id="answerBlock">' 3500/10000 [=&gt;....]'
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">print_status_bar</span><span class="p">(</span><span class="n">iteration</span><span class="p">,</span> <span class="n">total</span><span class="p">,</span> <span class="n">loss</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
@@ -6465,7 +6465,7 @@ Epoch 2/2
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>50/50 [==============================] - loss: 0.0900 - mean_square: 858.5000
+ <pre><code id="answerBlock">50/50 [==============================] - loss: 0.0900 - mean_square: 858.5000
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">keras</span><span class="o">.</span><span class="n">backend</span><span class="o">.</span><span class="n">clear_session</span><span class="p">()</span>
@@ -6504,7 +6504,7 @@ Epoch 2/2
         <span class="n">metric</span><span class="o">.</span><span class="n">reset_states</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Epoch 1/5
+ <pre><code id="answerBlock">Epoch 1/5
 WARNING:tensorflow:Layer dense is casting an input tensor from dtype float64 to the layer's dtype of float32, which is new behavior in TensorFlow 2.  The layer has dtype float32 because it's dtype defaults to floatx.
 
 If you intended to run this layer in float32, you can safely ignore this warning. If in doubt, this warning is likely only an issue if you are porting a TensorFlow 1.X model to TensorFlow 2.
@@ -6552,7 +6552,7 @@ Epoch 5/5
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;To run this cell, please install tqdm, ipywidgets and restart Jupyter&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>HBox(children=(FloatProgress(value=0.0, description='All epochs', max=5.0, style=ProgressStyle(description_wid…
+ <pre><code id="answerBlock">HBox(children=(FloatProgress(value=0.0, description='All epochs', max=5.0, style=ProgressStyle(description_wid…
 
 
 
@@ -6596,32 +6596,32 @@ HBox(children=(FloatProgress(value=0.0, description='Epoch 5/5', max=362.0, styl
 <div class="codehilite"><pre><span></span><code><span class="n">cube</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>8
+ <pre><code id="answerBlock">8
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">cube</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf_cube</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="n">cube</span><span class="p">)</span>
 <span class="n">tf_cube</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.eager.def_function.Function at 0x7f9fa612af90&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.eager.def_function.Function at 0x7f9fa612af90&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf_cube</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=8&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=8&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">tf_cube</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
 </code></pre>
 
 <h3>TF Functions and Concrete Functions</h3>
@@ -6630,19 +6630,19 @@ HBox(children=(FloatProgress(value=0.0, description='Epoch 5/5', max=362.0, styl
 <span class="n">concrete_function</span><span class="o">.</span><span class="n">graph</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.framework.func_graph.FuncGraph at 0x7f9f90165690&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.framework.func_graph.FuncGraph at 0x7f9f90165690&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">concrete_function</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">concrete_function</span> <span class="ow">is</span> <span class="n">tf_cube</span><span class="o">.</span><span class="n">get_concrete_function</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>True
+ <pre><code id="answerBlock">True
 </code></pre>
 
 <h3>Exploring Function Definitions and Graphs</h3>
@@ -6650,14 +6650,14 @@ HBox(children=(FloatProgress(value=0.0, description='Epoch 5/5', max=362.0, styl
 <div class="codehilite"><pre><span></span><code><span class="n">concrete_function</span><span class="o">.</span><span class="n">graph</span>
 </code></pre></div>
 
-<pre><code>&lt;tensorflow.python.framework.func_graph.FuncGraph at 0x7f9f90165690&gt;
+ <pre><code id="answerBlock">&lt;tensorflow.python.framework.func_graph.FuncGraph at 0x7f9f90165690&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">ops</span> <span class="o">=</span> <span class="n">concrete_function</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_operations</span><span class="p">()</span>
 <span class="n">ops</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Operation 'x' type=Placeholder&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Operation 'x' type=Placeholder&gt;,
  &lt;tf.Operation 'pow/y' type=Const&gt;,
  &lt;tf.Operation 'pow' type=Pow&gt;,
  &lt;tf.Operation 'Identity' type=Identity&gt;]
@@ -6667,32 +6667,32 @@ HBox(children=(FloatProgress(value=0.0, description='Epoch 5/5', max=362.0, styl
 <span class="nb">list</span><span class="p">(</span><span class="n">pow_op</span><span class="o">.</span><span class="n">inputs</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor 'x:0' shape=() dtype=float32&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Tensor 'x:0' shape=() dtype=float32&gt;,
  &lt;tf.Tensor 'pow/y:0' shape=() dtype=float32&gt;]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">pow_op</span><span class="o">.</span><span class="n">outputs</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Tensor 'pow:0' shape=() dtype=float32&gt;]
+ <pre><code id="answerBlock">[&lt;tf.Tensor 'pow:0' shape=() dtype=float32&gt;]
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">concrete_function</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_operation_by_name</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Operation 'x' type=Placeholder&gt;
+ <pre><code id="answerBlock">&lt;tf.Operation 'x' type=Placeholder&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">concrete_function</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;Identity:0&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor 'Identity:0' shape=() dtype=float32&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor 'Identity:0' shape=() dtype=float32&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">concrete_function</span><span class="o">.</span><span class="n">function_def</span><span class="o">.</span><span class="n">signature</span>
 </code></pre></div>
 
-<pre><code>name: "__inference_cube_999576"
+ <pre><code id="answerBlock">name: "__inference_cube_999576"
 input_arg {
   name: "x"
   type: DT_FLOAT
@@ -6714,13 +6714,13 @@ output_arg {
 <div class="codehilite"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">tf_cube</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>print: Tensor("x:0", shape=(), dtype=float32)
+ <pre><code id="answerBlock">print: Tensor("x:0", shape=(), dtype=float32)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">result</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=8.0&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">tf_cube</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -6730,7 +6730,7 @@ output_arg {
 <span class="n">result</span> <span class="o">=</span> <span class="n">tf_cube</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">7.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">],</span> <span class="p">[</span><span class="mf">9.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">],</span> <span class="p">[</span><span class="mf">11.</span><span class="p">,</span> <span class="mf">12.</span><span class="p">]]))</span> <span class="c1"># no trace</span>
 </code></pre></div>
 
-<pre><code>print: 2
+ <pre><code id="answerBlock">print: 2
 print: 3
 print: Tensor("x:0", shape=(1, 2), dtype=float32)
 print: Tensor("x:0", shape=(2, 2), dtype=float32)
@@ -6758,7 +6758,7 @@ WARNING:tensorflow:6 out of the last 6 calls to &lt;function tf_cube at 0x7f9f90
 <span class="n">preprocessed_images</span> <span class="o">=</span> <span class="n">shrink</span><span class="p">(</span><span class="n">img_batch_2</span><span class="p">)</span> <span class="c1"># Reuses the same concrete function.</span>
 </code></pre></div>
 
-<pre><code>Tracing Tensor("images:0", shape=(None, 28, 28), dtype=float32)
+ <pre><code id="answerBlock">Tracing Tensor("images:0", shape=(None, 28, 28), dtype=float32)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">img_batch_3</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
@@ -6768,7 +6768,7 @@ WARNING:tensorflow:6 out of the last 6 calls to &lt;function tf_cube at 0x7f9f90
     <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Python inputs incompatible with input_signature:
+ <pre><code id="answerBlock">Python inputs incompatible with input_signature:
   inputs: (
     tf.Tensor(
 [[[0.7413678  0.62854624]
@@ -6794,13 +6794,13 @@ WARNING:tensorflow:6 out of the last 6 calls to &lt;function tf_cube at 0x7f9f90
 <div class="codehilite"><pre><span></span><code><span class="n">add_10</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=15&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=15&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">add_10</span><span class="o">.</span><span class="n">get_concrete_function</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_operations</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Operation 'x' type=Placeholder&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Operation 'x' type=Placeholder&gt;,
  &lt;tf.Operation 'add/y' type=Const&gt;,
  &lt;tf.Operation 'add' type=AddV2&gt;,
  &lt;tf.Operation 'add_1/y' type=Const&gt;,
@@ -6837,13 +6837,13 @@ WARNING:tensorflow:6 out of the last 6 calls to &lt;function tf_cube at 0x7f9f90
 <div class="codehilite"><pre><span></span><code><span class="n">add_10</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=15&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=15&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">add_10</span><span class="o">.</span><span class="n">get_concrete_function</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_operations</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Operation 'x' type=Placeholder&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Operation 'x' type=Placeholder&gt;,
  &lt;tf.Operation 'Const' type=Const&gt;,
  &lt;tf.Operation 'while/maximum_iterations' type=Const&gt;,
  &lt;tf.Operation 'while/loop_counter' type=Const&gt;,
@@ -6863,7 +6863,7 @@ WARNING:tensorflow:6 out of the last 6 calls to &lt;function tf_cube at 0x7f9f90
 <div class="codehilite"><pre><span></span><code><span class="n">add_10</span><span class="o">.</span><span class="n">get_concrete_function</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_operations</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>[&lt;tf.Operation 'x' type=Placeholder&gt;,
+ <pre><code id="answerBlock">[&lt;tf.Operation 'x' type=Placeholder&gt;,
  &lt;tf.Operation 'range/start' type=Const&gt;,
  &lt;tf.Operation 'range/limit' type=Const&gt;,
  &lt;tf.Operation 'range/delta' type=Const&gt;,
@@ -6887,14 +6887,14 @@ WARNING:tensorflow:6 out of the last 6 calls to &lt;function tf_cube at 0x7f9f90
 <span class="n">increment</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=2&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=2&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">function_def</span> <span class="o">=</span> <span class="n">increment</span><span class="o">.</span><span class="n">get_concrete_function</span><span class="p">(</span><span class="n">counter</span><span class="p">)</span><span class="o">.</span><span class="n">function_def</span>
 <span class="n">function_def</span><span class="o">.</span><span class="n">signature</span><span class="o">.</span><span class="n">input_arg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>name: "counter"
+ <pre><code id="answerBlock">name: "counter"
 type: DT_RESOURCE
 </code></pre>
 
@@ -6909,14 +6909,14 @@ type: DT_RESOURCE
 <span class="n">increment</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=2&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=2&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">function_def</span> <span class="o">=</span> <span class="n">increment</span><span class="o">.</span><span class="n">get_concrete_function</span><span class="p">()</span><span class="o">.</span><span class="n">function_def</span>
 <span class="n">function_def</span><span class="o">.</span><span class="n">signature</span><span class="o">.</span><span class="n">input_arg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>name: "assignaddvariableop_resource"
+ <pre><code id="answerBlock">name: "assignaddvariableop_resource"
 type: DT_RESOURCE
 </code></pre>
 
@@ -6934,7 +6934,7 @@ type: DT_RESOURCE
 <span class="n">c</span><span class="o">.</span><span class="n">increment</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=int32, numpy=2&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=int32, numpy=2&gt;
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
@@ -6946,7 +6946,7 @@ type: DT_RESOURCE
 <span class="n">tf</span><span class="o">.</span><span class="n">autograph</span><span class="o">.</span><span class="n">to_code</span><span class="p">(</span><span class="n">add_10</span><span class="o">.</span><span class="n">python_function</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>"def tf__add_10(x):\n  do_return = False\n  retval_ = ag__.UndefinedReturnValue()\n  with ag__.FunctionScope('add_10', 'fscope', ag__.ConversionOptions(recursive=True, user_requested=True, optional_features=(), internal_convert_user_code=True)) as fscope:\n\n    def get_state():\n      return ()\n\n    def set_state(_):\n      pass\n\n    def loop_body(iterates, x):\n      i = iterates\n      x += 1\n      return x,\n    x, = ag__.for_stmt(ag__.converted_call(tf.range, (10,), None, fscope), None, loop_body, get_state, set_state, (x,), ('x',), ())\n    do_return = True\n    retval_ = fscope.mark_return_value(x)\n  do_return,\n  return ag__.retval(retval_)\n"
+ <pre><code id="answerBlock">"def tf__add_10(x):\n  do_return = False\n  retval_ = ag__.UndefinedReturnValue()\n  with ag__.FunctionScope('add_10', 'fscope', ag__.ConversionOptions(recursive=True, user_requested=True, optional_features=(), internal_convert_user_code=True)) as fscope:\n\n    def get_state():\n      return ()\n\n    def set_state(_):\n      pass\n\n    def loop_body(iterates, x):\n      i = iterates\n      x += 1\n      return x,\n    x, = ag__.for_stmt(ag__.converted_call(tf.range, (10,), None, fscope), None, loop_body, get_state, set_state, (x,), ('x',), ())\n    do_return = True\n    retval_ = fscope.mark_return_value(x)\n  do_return,\n  return ag__.retval(retval_)\n"
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">display_tf_code</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
@@ -7054,7 +7054,7 @@ type: DT_RESOURCE
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Tracing MyModel.call()
+ <pre><code id="answerBlock">Tracing MyModel.call()
 Tracing MyDense.call()
 Tracing MyDense.call()
 Tracing MyDense.call()
@@ -7112,7 +7112,7 @@ Epoch 2/2
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">[:</span><span class="mi">64</span><span class="p">],</span> <span class="n">y_test</span><span class="p">[:</span><span class="mi">64</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Tracing MyModel.call()
+ <pre><code id="answerBlock">Tracing MyModel.call()
 Tracing MyDense.call()
 Tracing MyDense.call()
 Tracing MyDense.call()
@@ -7174,7 +7174,7 @@ Tracing metric my_mae()
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">[:</span><span class="mi">64</span><span class="p">],</span> <span class="n">y_test</span><span class="p">[:</span><span class="mi">64</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Tracing MyModel.call()
+ <pre><code id="answerBlock">Tracing MyModel.call()
 Tracing MyDense.call()
 Tracing MyDense.call()
 Tracing MyDense.call()
@@ -7276,7 +7276,7 @@ Tracing metric my_mae()
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Train on 11610 samples
+ <pre><code id="answerBlock">Train on 11610 samples
 Epoch 1/5
 11610/11610 [==============================] - 0s 41us/sample - loss: 3.8096
 Epoch 2/5
@@ -7358,7 +7358,7 @@ Epoch 5/5
     <span class="n">keras_layer_norm</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">custom_layer_norm</span><span class="p">(</span><span class="n">X</span><span class="p">)))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=5.6045884e-08&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=5.6045884e-08&gt;
 </code></pre>
 
 <p>Yep, that's close enough. To be extra sure, let's make alpha and beta completely random and compare again:</p>
@@ -7373,7 +7373,7 @@ Epoch 5/5
     <span class="n">keras_layer_norm</span><span class="p">(</span><span class="n">X</span><span class="p">),</span> <span class="n">custom_layer_norm</span><span class="p">(</span><span class="n">X</span><span class="p">)))</span>
 </code></pre></div>
 
-<pre><code>&lt;tf.Tensor: shape=(), dtype=float32, numpy=2.2921004e-08&gt;
+ <pre><code id="answerBlock">&lt;tf.Tensor: shape=(), dtype=float32, numpy=2.2921004e-08&gt;
 </code></pre>
 
 <p>Still a negligeable difference! Our custom layer works fine.</p>
@@ -7444,7 +7444,7 @@ Epoch 5/5
             <span class="n">metric</span><span class="o">.</span><span class="n">reset_states</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>HBox(children=(FloatProgress(value=0.0, description='All epochs', max=5.0, style=ProgressStyle(description_wid…
+ <pre><code id="answerBlock">HBox(children=(FloatProgress(value=0.0, description='All epochs', max=5.0, style=ProgressStyle(description_wid…
 
 
 
@@ -7545,7 +7545,7 @@ HBox(children=(FloatProgress(value=0.0, description='Epoch 5/5', max=1718.0, sty
             <span class="n">metric</span><span class="o">.</span><span class="n">reset_states</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>HBox(children=(FloatProgress(value=0.0, description='All epochs', max=5.0, style=ProgressStyle(description_wid…
+ <pre><code id="answerBlock">HBox(children=(FloatProgress(value=0.0, description='All epochs', max=5.0, style=ProgressStyle(description_wid…
 
 
 

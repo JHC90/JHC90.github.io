@@ -4732,7 +4732,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">polynomial_svm_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X1D</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Pipeline(steps=[('poly_features', PolynomialFeatures()),
+ <pre><code id="answerBlock">Pipeline(steps=[('poly_features', PolynomialFeatures()),
                 ('scaler', StandardScaler()),
                 ('svm_clf', LinearSVC(C=10, loss='hinge'))])
 </code></pre>
@@ -4754,7 +4754,7 @@ $(document).ready(function() {
 <span class="nb">print</span><span class="p">(</span><span class="n">polynomial_svm_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">5</span><span class="p">]]))</span>
 </code></pre></div>
 
-<pre><code>[0]
+ <pre><code id="answerBlock">[0]
 [0]
 [0]
 #######
@@ -4808,7 +4808,7 @@ $(document).ready(function() {
 <span class="sd">fig.show()&#39;&#39;&#39;</span>
 </code></pre></div>
 
-<pre><code>"import plotly.express as px\ndf = pandasFrameforManipulation\nfig = px.scatter_3d(df, x='x1', y='x2', z='x3',\n                    color='y', symbol='y')\nfig.show()"
+ <pre><code id="answerBlock">"import plotly.express as px\ndf = pandasFrameforManipulation\nfig = px.scatter_3d(df, x='x1', y='x2', z='x3',\n                    color='y', symbol='y')\nfig.show()"
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
@@ -4827,7 +4827,7 @@ $(document).ready(function() {
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">iframe</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>C:\Users\1810837475\Anaconda3\lib\site-packages\IPython\core\display.py:717: UserWarning:
+ <pre><code id="answerBlock">C:\Users\1810837475\Anaconda3\lib\site-packages\IPython\core\display.py:717: UserWarning:
 
 Consider using IPython.display.IFrame instead
 </code></pre>
@@ -4847,7 +4847,7 @@ Consider using IPython.display.IFrame instead
 <span class="n">polynomial_svm_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>C:\Users\1810837475\Anaconda3\lib\site-packages\sklearn\svm\_base.py:976: ConvergenceWarning:
+ <pre><code id="answerBlock">C:\Users\1810837475\Anaconda3\lib\site-packages\sklearn\svm\_base.py:976: ConvergenceWarning:
 
 Liblinear failed to converge, increase the number of iterations.
 

@@ -4727,7 +4727,7 @@ $(document).ready(function() {
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Das Laden der Daten dauert: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>(10000, 784)
+ <pre><code id="answerBlock">(10000, 784)
 (60000, 784)
 (10000,)
 (60000,)
@@ -4752,7 +4752,7 @@ Das Laden der Daten dauert: 98.52713871002197
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Die Trainsingszeit beträgt hier beim OVA: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Die Trainsingszeit beträgt hier beim OVA: 3.5562584400177
+ <pre><code id="answerBlock">Die Trainsingszeit beträgt hier beim OVA: 3.5562584400177
 </code></pre>
 
 <p>Example Prediction einer bekannten Zahl</p>
@@ -4767,7 +4767,7 @@ Das Laden der Daten dauert: 98.52713871002197
 <span class="n">sgd_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="n">some_digit</span><span class="p">])</span> 
 </code></pre></div>
 
-<pre><code>0.0
+ <pre><code id="answerBlock">0.0
 
 
 
@@ -4783,7 +4783,7 @@ array([0.])
 <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">some_digit_scores</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>[[ 178477.91852859 -825652.93929082 -406073.16161789 -373959.62731384
+ <pre><code id="answerBlock">[[ 178477.91852859 -825652.93929082 -406073.16161789 -373959.62731384
   -291310.64271069 -127184.00473948 -602069.357861   -400997.06671775
     42006.36378446 -299272.94493583]]
 
@@ -4797,7 +4797,7 @@ array([0.])
 <div class="codehilite"><pre><span></span><code><span class="n">sgd_clf</span><span class="o">.</span><span class="n">classes_</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>1.0
+ <pre><code id="answerBlock">1.0
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="c1"># Preidction ganzer x_train</span>
@@ -4806,7 +4806,7 @@ array([0.])
 <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.8818833333333334
+ <pre><code id="answerBlock">0.8818833333333334
 </code></pre>
 
 <h2><a href="">OVO-Implementierung für den SGD-Classifier</a></h2>
@@ -4835,7 +4835,7 @@ array([0.])
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Die Trainsingszeit beträgt hier beim OVO: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Die Trainsingszeit beträgt hier beim OVO: 5.055801153182983
+ <pre><code id="answerBlock">Die Trainsingszeit beträgt hier beim OVO: 5.055801153182983
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
@@ -4843,7 +4843,7 @@ array([0.])
 <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.9176833333333333
+ <pre><code id="answerBlock">0.9176833333333333
 </code></pre>
 
 <p>Das OVO ist genauer als das obere OVA</p>
@@ -4860,14 +4860,14 @@ array([0.])
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Die Trainsingszeit beträgt hier beim OVO: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Die Trainsingszeit beträgt hier beim OVO: 7.887535572052002
+ <pre><code id="answerBlock">Die Trainsingszeit beträgt hier beim OVO: 7.887535572052002
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">forest_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="n">some_digit</span><span class="p">])</span>
 <span class="n">forest_clf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">([</span><span class="n">some_digit</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>array([[0.9, 0. , 0. , 0. , 0. , 0. , 0. , 0. , 0.1, 0. ]])
+ <pre><code id="answerBlock">array([[0.9, 0. , 0. , 0. , 0. , 0. , 0. , 0. , 0.1, 0. ]])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
@@ -4875,7 +4875,7 @@ array([0.])
 <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>0.9991666666666666
+ <pre><code id="answerBlock">0.9991666666666666
 </code></pre>
 
 <p>!!! Vorsicht ich betrachte hier die X-Train, mit 0.99  scheint der RF ziemlich zu overfitten</p>
@@ -4889,7 +4889,7 @@ array([0.])
 <span class="n">knn_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>KNeighborsClassifier(n_jobs=-1, n_neighbors=4, weights='distance')
+ <pre><code id="answerBlock">KNeighborsClassifier(n_jobs=-1, n_neighbors=4, weights='distance')
 </code></pre>
 
 <p>y_knn_pred = knn_clf.predict(X_test)from sklearn.metrics import accuracy_score
@@ -4903,7 +4903,7 @@ accuracy_score(y_test, y_knn_pred)</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>(10000, 784)
+ <pre><code id="answerBlock">(10000, 784)
 (60000, 784)
 (10000,)
 (60000,)
@@ -5102,7 +5102,7 @@ require(['plotly'], function(Plotly) {
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Die gesamte Ohrfeige dauert: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">totalEnd</span> <span class="o">-</span> <span class="n">totalStart</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Die komplette Schleife startet um: 2020-12-11 16:25:58
+ <pre><code id="answerBlock">Die komplette Schleife startet um: 2020-12-11 16:25:58
 
 
 #######################################----------------Current Algorithm----------------#######################################
@@ -5478,7 +5478,7 @@ Die gesamte Ohrfeige dauert: 17702.54945707321
 <span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">iframe</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>---------------------------------------------------------------------------
+ <pre><code id="answerBlock">---------------------------------------------------------------------------
 
 KeyError                                  Traceback (most recent call last)
 
@@ -5600,7 +5600,7 @@ for name, clf in zip(names, classifiers):
     print("#######################################----------------" + str(name) + "----------------#######################################")
     print()</p>
 
-<pre><code>start = time.time()
+ <pre><code id="answerBlock">start = time.time()
 # clf = classifiers[1]
 clf.fit(X_train, y_train)
 end1 = time.time()

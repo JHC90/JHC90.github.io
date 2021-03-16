@@ -4720,7 +4720,7 @@ $(document).ready(function() {
     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="n">fig_extension</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">resolution</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>No GPU was detected. LSTMs and CNNs can be very slow without a GPU.
+ <pre><code id="answerBlock">No GPU was detected. LSTMs and CNNs can be very slow without a GPU.
 </code></pre>
 
 <h1>Basic RNNs</h1>
@@ -4748,7 +4748,7 @@ $(document).ready(function() {
 <div class="codehilite"><pre><span></span><code><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>((7000, 50, 1), (7000, 1))
+ <pre><code id="answerBlock">((7000, 50, 1), (7000, 1))
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plot_series</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y_pred</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;$t$&quot;</span><span class="p">,</span> <span class="n">y_label</span><span class="o">=</span><span class="s2">&quot;$x(t)$&quot;</span><span class="p">):</span>
@@ -4774,7 +4774,7 @@ $(document).ready(function() {
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure time_series_plot
+ <pre><code id="answerBlock">Saving figure time_series_plot
 </code></pre>
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_11_1.png" alt="png" /></p>
@@ -4787,7 +4787,7 @@ $(document).ready(function() {
 <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">losses</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_valid</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>0.020211367
+ <pre><code id="answerBlock">0.020211367
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">plot_series</span><span class="p">(</span><span class="n">X_valid</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_valid</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
@@ -4811,7 +4811,7 @@ $(document).ready(function() {
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 0s 66us/sample - loss: 0.1004 - val_loss: 0.0559
 Epoch 2/20
@@ -4857,7 +4857,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 16us/sample - loss: 0.0041
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 16us/sample - loss: 0.0041
 
 
 
@@ -4904,7 +4904,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 2s 298us/sample - loss: 0.0972 - val_loss: 0.0491
 Epoch 2/20
@@ -4950,7 +4950,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 65us/sample - loss: 0.0109
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 65us/sample - loss: 0.0109
 
 
 
@@ -4988,7 +4988,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 6s 864us/sample - loss: 0.0433 - val_loss: 0.0073
 Epoch 2/20
@@ -5034,7 +5034,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 163us/sample - loss: 0.0029
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 163us/sample - loss: 0.0029
 
 
 
@@ -5072,7 +5072,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 5s 679us/sample - loss: 0.0221 - val_loss: 0.0053
 Epoch 2/20
@@ -5118,7 +5118,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 116us/sample - loss: 0.0026
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 116us/sample - loss: 0.0026
 
 
 
@@ -5157,7 +5157,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">Y_pred</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(1, 10, 1)
+ <pre><code id="answerBlock">(1, 10, 1)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plot_multiple_forecasts</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">):</span>
@@ -5174,7 +5174,7 @@ Epoch 20/20
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Saving figure forecast_ahead_plot
+ <pre><code id="answerBlock">Saving figure forecast_ahead_plot
 </code></pre>
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_39_1.png" alt="png" /></p>
@@ -5203,13 +5203,13 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">Y_pred</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>(2000, 10)
+ <pre><code id="answerBlock">(2000, 10)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">Y_valid</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>0.027277283
+ <pre><code id="answerBlock">0.027277283
 </code></pre>
 
 <p>Let's compare this performance with some baselines: naive predictions and a simple linear model:</p>
@@ -5218,7 +5218,7 @@ Epoch 20/20
 <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">Y_valid</span><span class="p">,</span> <span class="n">Y_naive_pred</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>0.22278848
+ <pre><code id="answerBlock">0.22278848
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -5234,7 +5234,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 0s 54us/sample - loss: 0.1348 - val_loss: 0.0610
 Epoch 2/20
@@ -5293,7 +5293,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 5s 692us/sample - loss: 0.0665 - val_loss: 0.0317
 Epoch 2/20
@@ -5369,7 +5369,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">Y_train</span><span class="o">.</span><span class="n">shape</span>
 </code></pre></div>
 
-<pre><code>((7000, 50, 1), (7000, 50, 10))
+ <pre><code id="answerBlock">((7000, 50, 1), (7000, 50, 10))
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -5389,7 +5389,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 5s 732us/sample - loss: 0.0498 - last_time_step_mse: 0.0388 - val_loss: 0.0416 - val_last_time_step_mse: 0.0321
 Epoch 2/20
@@ -5463,7 +5463,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 5s 765us/sample - loss: 0.1936 - last_time_step_mse: 0.1913 - val_loss: 0.0901 - val_last_time_step_mse: 0.0863
 Epoch 2/20
@@ -5546,7 +5546,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 13s 2ms/sample - loss: 0.1539 - last_time_step_mse: 0.1506 - val_loss: 0.0701 - val_last_time_step_mse: 0.0641
 Epoch 2/20
@@ -5632,7 +5632,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 12s 2ms/sample - loss: 0.2208 - last_time_step_mse: 0.2084 - val_loss: 0.0874 - val_last_time_step_mse: 0.0761
 Epoch 2/20
@@ -5691,7 +5691,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 11s 2ms/sample - loss: 0.0760 - last_time_step_mse: 0.0615 - val_loss: 0.0554 - val_last_time_step_mse: 0.0372
 Epoch 2/20
@@ -5737,7 +5737,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 234us/sample - loss: 0.0240 - last_time_step_mse: 0.0086
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 234us/sample - loss: 0.0240 - last_time_step_mse: 0.0086
 
 
 
@@ -5781,7 +5781,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 10s 1ms/sample - loss: 0.0742 - last_time_step_mse: 0.0663 - val_loss: 0.0523 - val_last_time_step_mse: 0.0421
 Epoch 2/20
@@ -5827,7 +5827,7 @@ Epoch 20/20
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>2000/2000 [==============================] - 0s 201us/sample - loss: 0.0241 - last_time_step_mse: 0.0103
+ <pre><code id="answerBlock">2000/2000 [==============================] - 0s 201us/sample - loss: 0.0241 - last_time_step_mse: 0.0103
 
 
 
@@ -5857,7 +5857,7 @@ Epoch 20/20
 
 <h2>Using One-Dimensional Convolutional Layers to Process Sequences</h2>
 
-<pre><code>1D conv layer with kernel size 4, stride 2, VALID padding:
+ <pre><code id="answerBlock">1D conv layer with kernel size 4, stride 2, VALID padding:
 
               |-----2-----|     |-----5---...------|     |-----23----|
         |-----1-----|     |-----4-----|   ...      |-----22----|
@@ -5888,7 +5888,7 @@ Y:     4/13  6/15  8/17 10/19 12/21 14/23 .../53 46/55 48/57 50/59
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">::</span><span class="mi">2</span><span class="p">]))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 7s 938us/sample - loss: 0.0683 - last_time_step_mse: 0.0605 - val_loss: 0.0482 - val_last_time_step_mse: 0.0405
 Epoch 2/20
@@ -5933,7 +5933,7 @@ Epoch 20/20
 
 <h2>WaveNet</h2>
 
-<pre><code>C2  /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\.../\ /\ /\ /\ /\ /\
+ <pre><code id="answerBlock">C2  /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\.../\ /\ /\ /\ /\ /\
    \  /  \  /  \  /  \  /  \  /  \  /  \       /  \  /  \  /  \
      /    \      /    \      /    \                 /    \
 C1  /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\  /\ /.../\ /\ /\ /\ /\ /\ /\
@@ -5956,7 +5956,7 @@ Y: 1  2  3  4  5  6  7  8  9  10 11 12 13 ... 44 45 46 47 48 49 50
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/20
 7000/7000 [==============================] - 2s 275us/sample - loss: 0.0684 - last_time_step_mse: 0.0550 - val_loss: 0.0387 - val_last_time_step_mse: 0.0248
 Epoch 2/20
@@ -6047,7 +6047,7 @@ Epoch 20/20
                     <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">X_valid</span><span class="p">,</span> <span class="n">Y_valid</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>Train on 7000 samples, validate on 2000 samples
+ <pre><code id="answerBlock">Train on 7000 samples, validate on 2000 samples
 Epoch 1/2
 7000/7000 [==============================] - 3s 443us/sample - loss: 0.1299 - last_time_step_mse: 0.1258 - val_loss: 0.1229 - val_last_time_step_mse: 0.1199
 Epoch 2/2
@@ -6084,7 +6084,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">train_files</span>
 </code></pre></div>
 
-<pre><code>['/Users/ageron/.keras/datasets/quickdraw/training.tfrecord-00000-of-00010',
+ <pre><code id="answerBlock">['/Users/ageron/.keras/datasets/quickdraw/training.tfrecord-00000-of-00010',
  '/Users/ageron/.keras/datasets/quickdraw/training.tfrecord-00001-of-00010',
  '/Users/ageron/.keras/datasets/quickdraw/training.tfrecord-00002-of-00010',
  '/Users/ageron/.keras/datasets/quickdraw/training.tfrecord-00003-of-00010',
@@ -6099,7 +6099,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">eval_files</span>
 </code></pre></div>
 
-<pre><code>['/Users/ageron/.keras/datasets/quickdraw/eval.tfrecord-00000-of-00010',
+ <pre><code id="answerBlock">['/Users/ageron/.keras/datasets/quickdraw/eval.tfrecord-00000-of-00010',
  '/Users/ageron/.keras/datasets/quickdraw/eval.tfrecord-00001-of-00010',
  '/Users/ageron/.keras/datasets/quickdraw/eval.tfrecord-00002-of-00010',
  '/Users/ageron/.keras/datasets/quickdraw/eval.tfrecord-00003-of-00010',
@@ -6125,7 +6125,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="nb">sorted</span><span class="p">(</span><span class="n">class_names</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>['aircraft carrier',
+ <pre><code id="answerBlock">['aircraft carrier',
  'airplane',
  'alarm clock',
  'ambulance',
@@ -6510,7 +6510,7 @@ Epoch 2/2
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;labels =&quot;</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>sketches = tf.Tensor(
+ <pre><code id="answerBlock">sketches = tf.Tensor(
 [[[-0.07058823  0.04255319  0.        ]
   [-0.01568627  0.0425532   0.        ]
   [-0.09803921  0.03191489  0.        ]
@@ -6636,7 +6636,7 @@ labels = tf.Tensor(
                     <span class="n">validation_data</span><span class="o">=</span><span class="n">cropped_valid_set</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Epoch 1/2
+ <pre><code id="answerBlock">Epoch 1/2
 107813/107813 [==============================] - 2182s 20ms/step - loss: 3.8473 - accuracy: 0.2086 - sparse_top_k_categorical_accuracy: 0.4242 - val_loss: 2.6672 - val_accuracy: 0.3872 - val_sparse_top_k_categorical_accuracy: 0.6771
 Epoch 2/2
 107813/107813 [==============================] - 2049s 19ms/step - loss: 2.3393 - accuracy: 0.4502 - sparse_top_k_categorical_accuracy: 0.7367 - val_loss: 2.1072 - val_accuracy: 0.4968 - val_sparse_top_k_categorical_accuracy: 0.7759
@@ -6649,7 +6649,7 @@ Epoch 2/2
 <div class="codehilite"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">keras</span><span class="o">.</span><span class="n">metrics</span><span class="o">.</span><span class="n">sparse_top_k_categorical_accuracy</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_probas</span><span class="p">))</span>
 </code></pre></div>
 
-<pre><code>0.6899671
+ <pre><code id="answerBlock">0.6899671
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">n_new</span> <span class="o">=</span> <span class="mi">10</span>
@@ -6669,7 +6669,7 @@ Epoch 2/2
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_0.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. firetruck 46.565%
   2. police car 30.455%
   3. ambulance 3.810%
@@ -6680,7 +6680,7 @@ Answer: firetruck
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_2.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. mouth 23.162%
   2. pond 14.151%
   3. pool 12.582%
@@ -6691,7 +6691,7 @@ Answer: mouth
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_4.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. jail 71.532%
   2. fence 6.519%
   3. swing set 5.708%
@@ -6702,7 +6702,7 @@ Answer: jail
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_6.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. baseball 79.233%
   2. watermelon 7.687%
   3. basketball 5.259%
@@ -6713,7 +6713,7 @@ Answer: baseball
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_8.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. basketball 51.888%
   2. baseball 17.328%
   3. onion 12.688%
@@ -6724,7 +6724,7 @@ Answer: baseball
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_10.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. lantern 7.235%
   2. toothpaste 6.845%
   3. drill 6.254%
@@ -6735,7 +6735,7 @@ Answer: brain
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_12.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. animal migration 8.771%
   2. blackberry 7.932%
   3. blueberry 6.413%
@@ -6746,7 +6746,7 @@ Answer: helicopter
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_14.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. vase 42.793%
   2. wine glass 13.744%
   3. shovel 8.136%
@@ -6757,7 +6757,7 @@ Answer: vase
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_16.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. anvil 25.870%
   2. drill 9.670%
   3. nail 7.246%
@@ -6768,7 +6768,7 @@ Answer: anvil
 
 <p><img src="XXBU_processing_sequences_using_rnns_and_cnns_files/XXBU_processing_sequences_using_rnns_and_cnns_116_18.png" alt="png" /></p>
 
-<pre><code>Top-5 predictions:
+ <pre><code id="answerBlock">Top-5 predictions:
   1. hurricane 34.674%
   2. tornado 16.056%
   3. blackberry 7.664%
@@ -6780,7 +6780,7 @@ Answer: pillow
 <div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;my_sketchrnn&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>WARNING:tensorflow:From /Users/ageron/miniconda3/envs/tf2/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1786: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+ <pre><code id="answerBlock">WARNING:tensorflow:From /Users/ageron/miniconda3/envs/tf2/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1786: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
 Instructions for updating:
 If using Keras pass *_constraint arguments to layers.
 INFO:tensorflow:Assets written to: my_sketchrnn/assets
@@ -6817,7 +6817,7 @@ INFO:tensorflow:Assets written to: my_sketchrnn/assets
 <div class="codehilite"><pre><span></span><code><span class="n">train_chorales</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
 
-<pre><code>[[74, 70, 65, 58],
+ <pre><code id="answerBlock">[[74, 70, 65, 58],
  [74, 70, 65, 58],
  [74, 70, 65, 58],
  [74, 70, 65, 58],
@@ -7152,7 +7152,7 @@ INFO:tensorflow:Assets written to: my_sketchrnn/assets
 <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
 
-<pre><code>Model: "sequential"
+ <pre><code id="answerBlock">Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -7192,7 +7192,7 @@ _________________________________________________________________
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_set</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="n">valid_set</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>Epoch 1/20
+ <pre><code id="answerBlock">Epoch 1/20
 98/98 [==============================] - 17s 171ms/step - loss: 1.8198 - accuracy: 0.5358 - val_loss: 3.7675 - val_accuracy: 0.0428
 Epoch 2/20
 98/98 [==============================] - 15s 152ms/step - loss: 0.8885 - accuracy: 0.7641 - val_loss: 4.1054 - val_accuracy: 0.0470
@@ -7248,7 +7248,7 @@ Epoch 20/20
 <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_set</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>     34/Unknown - 2s 66ms/step - loss: 0.6557 - accuracy: 0.8164
+ <pre><code id="answerBlock">     34/Unknown - 2s 66ms/step - loss: 0.6557 - accuracy: 0.8164
 
 
 

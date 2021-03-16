@@ -4902,25 +4902,25 @@ um das Vorgehen zu verstehen
 <span class="n">le</span><span class="o">.</span><span class="n">fit</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>LabelEncoder()
+ <pre><code id="answerBlock">LabelEncoder()
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">le</span><span class="o">.</span><span class="n">classes_</span>
 </code></pre></div>
 
-<pre><code>array([1, 2, 6])
+ <pre><code id="answerBlock">array([1, 2, 6])
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">le</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>array([0, 0, 1, 2], dtype=int64)
+ <pre><code id="answerBlock">array([0, 0, 1, 2], dtype=int64)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">le</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>array([1, 1, 2, 6])
+ <pre><code id="answerBlock">array([1, 1, 2, 6])
 </code></pre>
 
 <p><strong>BSP2</strong></p>
@@ -4929,25 +4929,25 @@ um das Vorgehen zu verstehen
 <span class="n">le</span><span class="o">.</span><span class="n">fit</span><span class="p">([</span><span class="s1">&#39;fb&#39;</span><span class="p">,</span> <span class="s1">&#39;fb&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>LabelEncoder()
+ <pre><code id="answerBlock">LabelEncoder()
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">le</span><span class="o">.</span><span class="n">classes_</span>
 </code></pre></div>
 
-<pre><code>array(['SZ', 'fb', 'wa'], dtype='&lt;U2')
+ <pre><code id="answerBlock">array(['SZ', 'fb', 'wa'], dtype='&lt;U2')
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">le</span><span class="o">.</span><span class="n">transform</span><span class="p">([</span><span class="s1">&#39;fb&#39;</span><span class="p">,</span> <span class="s1">&#39;fb&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;wa&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">,</span><span class="s1">&#39;SZ&#39;</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>array([1, 1, 2, 2, 2, 2, 0, 0, 0, 0], dtype=int64)
+ <pre><code id="answerBlock">array([1, 1, 2, 2, 2, 2, 0, 0, 0, 0], dtype=int64)
 </code></pre>
 
 <div class="codehilite"><pre><span></span><code><span class="n">le</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </code></pre></div>
 
-<pre><code>array(['fb', 'fb', 'wa', 'wa', 'wa', 'wa', 'SZ', 'SZ', 'SZ', 'SZ'],
+ <pre><code id="answerBlock">array(['fb', 'fb', 'wa', 'wa', 'wa', 'wa', 'SZ', 'SZ', 'SZ', 'SZ'],
       dtype='&lt;U2')
 </code></pre>
 
@@ -4965,7 +4965,7 @@ um das Vorgehen zu verstehen
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 </code></pre></div>
 
-<pre><code>&lt;matplotlib.collections.PathCollection at 0x2a4d8bab9c8&gt;
+ <pre><code id="answerBlock">&lt;matplotlib.collections.PathCollection at 0x2a4d8bab9c8&gt;
 </code></pre>
 
 <p><img src="SK-Learn_files/SK-Learn_41_1.png" alt="png" /></p>
