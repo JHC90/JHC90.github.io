@@ -171,3 +171,187 @@ height:300px;
     float: right;
 }
 
+p {  margin-top: .75em;
+    text-align: justify;
+    margin-bottom: .75em;
+    }
+h1,h2,h3,h4,h5,h6 {
+    text-align: center; /* all headings centered */
+    clear: both;
+    }
+hr { width: 33%;
+margin-top: 2em;
+margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+  }
+
+table {margin-left: auto; margin-right: auto;}
+
+body{margin-left: 10%;
+    margin-right: 10%;
+    width:960px;
+    font-family: 'Open Sans', sans-serif;
+   }
+
+.linenum  {position: absolute; top: auto; left: 4%;} /* poetry number */
+.blockquot{margin-left: 5%; margin-right: 10%;}
+.blockquotsmall{margin-left: 5%; margin-right: 10%; font-size: smaller}
+.pagenum  {position: absolute; left: 92%; font-size: smaller; text-align: right;} /* page numbers */
+.sidenote {width: 20%; padding-bottom: .5em; padding-top: .5em;
+          padding-left: .5em; padding-right: .5em; margin-left: 1em;
+          float: right; clear: right; margin-top: 1em;
+          font-size: smaller; background: #eeeeee; border: dashed 1px;}
+
+.bb       {border-bottom: solid 2px;}
+.bl       {border-left: solid 2px;}
+.bt       {border-top: solid 2px;}
+.br       {border-right: solid 2px;}
+.bbox     {border: solid 2px;}
+
+.center   {text-align: center;}
+.smcap    {font-variant: small-caps;}
+
+.caption  {font-weight: bold;}
+
+.figcenter   {margin: auto; text-align: center; margin-bottom: 3em; margin-top: 3em;}
+
+.figleft     {float: left; clear: left; margin-left: 0; margin-bottom: 1em; margin-top:
+            1em; margin-right: 1em; padding: 0; text-align: center;}
+
+.figright    {float: right; clear: right; margin-left: 1em; margin-bottom: 1em;
+            margin-top: 1em; margin-right: 0; padding: 0; text-align: center;}
+
+.footnotes        {border: dashed 1px;}
+.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+.fnanchor         {vertical-align: super; font-size: .8em; text-decoration: none;}
+
+.poem             {margin-left:10%; margin-right:10%; text-align: left;}
+.poem br          {display: none;}
+.poem .stanza     {margin: 1em 0em 1em 0em;}
+.poem span        {display: block; margin: 0; padding-left: 3em; text-indent: -3em;}
+.poem span.i2     {display: block; margin-left: 2em;}
+.poem span.i4     {display: block; margin-left: 4em;}
+hr.full { width: 100%; }
+pre      {font-size: 75%;}
+
+/* Search results Styling */
+/* Search results Styling */
+
+.searchExpression {
+color: #0050A0;
+background-color: #EBEFF8;
+font-size: 12pt;
+}
+.searchresult li a {
+text-decoration: none;
+color: #0050A0;
+}
+.searchresult li { color: #0050A0; }
+.shortdesclink { color: gray; font-size: 9pt; }
+.searchText { float:left;width:150px; }
+.searchButton {
+padding: 2px 12px 2px 12px;
+background-color:#bbb;
+border:#bbb solid 1pt;
+font-weight: bold;
+font-size: 10pt
+}
+.searchButton:hover{
+background-color: #cccccc;
+}
+.searchFieldSet {}
+.title, div.toc>p{ }	
+
+p.breadcrumbs {
+   display: inline;
+margin-bottom: 0px;
+margin-top: 33px;
+}
+
+p.breadcrumbs a {
+padding-right: 12px;
+margin-right: 5px;
+text-decoration: none;
+color: #575757;
+text-transform: uppercase;
+font-size: 10px;
+}
+
+p.breadcrumbs a:first-child {background: url(../images/breadcrumb-arrow-white.png) no-repeat right center;}
+
+p.breadcrumbs a:hover {text-decoration: underline;}
+
+.star ul.star { 
+LIST-STYLE: none; 
+MARGIN: 0; 
+PADDING: 0; 
+WIDTH: 85px;
+/* was 100 */ 
+HEIGHT: 20px;
+LEFT: 1px; 
+TOP: -5px; 
+POSITION: relative; 
+FLOAT: right; 
+BACKGROUND: url('common/images/starsSmall.png') repeat-x 0 -25px;
+}
+.star li { 
+PADDING: 0; 
+MARGIN: 0; 
+FLOAT: right; 
+DISPLAY: block; 
+WIDTH: 85px;
+/* was 100 */
+HEIGHT: 20px; 
+TEXT-DECORATION: none; 
+text-indent: -9000px; 
+Z-INDEX: 20; 
+POSITION: absolute; 
+PADDING: 0; 
+}
+.star li.curr { 
+BACKGROUND: url('common/images/starsSmall.png') left 25px; 
+FONT-SIZE: 1px; 
+}
+.highlight { background-color: #c5d3c3; }
+
+.search_hidden {
+display:none;
+}
+
+.widgettitle {
+font-size: 0.9em;
+padding: 0.8em;
+margin: -0.5em -0.5em 1.5em;
+background: #333 none repeat scroll 0% 0%;
+color: #FFF;
+text-transform: uppercase;
+}
+
+#searchDiv, #tocDiv {
+margin-bottom: 1.5em;
+border: 1px solid #DDD;
+padding: 1.5em;
+box-shadow: 0px 0px 4px #DDD;
+background: #FFF none repeat scroll 0% 0%;
+}
+
+
+#content {
+
+width:100%;
+}
+#main {
+float:left;
+width:40em;
+padding:5px;
+}
+
+#sidebar {
+padding:10px;
+float:left;
+width:18em;
+background:#fff;
+}
