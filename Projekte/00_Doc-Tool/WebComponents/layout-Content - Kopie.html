@@ -142,7 +142,27 @@ $(document).ready(function() {
         <div id="asideBreadCrump">Page-ID: {{pageID}} 
         <hr>
         {{ breadcrump }} 
-        
+        <hr>
+		 <div id="searchDiv">
+		<h3 class="widgettitle">Suche</h3>
+		<div id="search">
+		   <!-- <form onsubmit="Verifie(searchForm);return false" name="searchForm" class="searchForm">
+								  <div><input id="textToSearch" name="textToSearch" type="search" placeholder="Search" class="searchText" tabindex="1" /> &nbsp; <input onclick="Verifie(searchForm)" type="button" class="searchButton" value="Go" id="doSearch" tabindex="1" /></div>
+							   </form> -->
+
+		  <form onsubmit="Verifie(searchForm);return false" name="searchForm" class="searchForm">
+			<div>
+			<input id="textToSearch" name="textToSearch" type="search" placeholder="Suchbegriff..." class="searchText" tabindex="1" /> &nbsp;
+			<input onclick="Verifie(searchForm)" type="button" class="searchButton" value="Suche" id="doSearch" tabindex="1" />
+
+			<!-- <input onclick="Verifie(searchForm);window.location.href='searchresult.html'" type="button" class="searchButton" value="Suche" id="doSearch" tabindex="1" /> -->
+			</div>
+			</form>
+		  </div>
+		  <p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Such-Hervorhebung (An/Aus)</a></p>
+							<!--<p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p>-->
+		</div>
+		
         </div>
         <div id=“content_idx“>
 			<div id="article">

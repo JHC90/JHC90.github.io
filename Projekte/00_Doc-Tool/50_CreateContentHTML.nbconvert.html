@@ -123,6 +123,20 @@ $(document).ready(function() {
 		}
 	}
 </style>
+ <!-- Suchfunktion -->
+  <script type="text/javascript" src="common/browserDetect.js"></script>
+  <script type="text/javascript" src="common/jquery/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="common/jquery/jquery.ui.all.js"></script>
+  <script type="text/javascript" src="common/jquery/jquery.cookie.js"></script>
+  <script type="text/javascript" src="common/jquery/treeview/jquery.treeview.min.js"></script>
+  <script type="text/javascript" src="search/l10n.js"></script>
+  <script type="text/javascript" src="search/htmlFileInfoList.js"></script>
+  <script type="text/javascript" src="search/nwSearchFnt.js"></script>
+  <script type="text/javascript" src="search/stemmers/de_stemmer.js"></script>
+  <script type="text/javascript" src="search/index-1.js"></script>
+  <script type="text/javascript" src="search/index-2.js"></script>
+  <script type="text/javascript" src="search/index-3.js"></script>
+  <script type="text/javascript" src="common/main.js"></script>
 </head>
 <body>
 	<div id="headerBOXabsolute">
@@ -139,13 +153,18 @@ $(document).ready(function() {
    <div class="collapse navbar-collapse" id="main_nav">
     <ul class="navbar-nav">
      <li class="nav-item">
-      <a class="nav-link" href="file:////index.html">
+      <a class="nav-link"  href="/index.html">
        Home
       </a>
      </li>
      <li class="nav-item">
       <a class="nav-link" href="/about.html">
        About
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link"  href="/searchresult.html">
+       Suchen
       </a>
      </li>
      <li class="nav-item dropdown">
@@ -2739,6 +2758,30 @@ $(document).ready(function() {
                Typisierung
               </a>
              </li>
+             <li>
+              <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Paralellisierung/SectionIndex_DocusInformatikProgrammierenGrundbegriffe-ProgrammierenParalellisierung.html">
+               Paralellisierung &gt;
+              </a>
+              <ul class="submenu dropdown-menu">
+               <li>
+                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Paralellisierung/00_Theorie.html">
+                 00_Theorie
+                </a>
+               </li>
+               <li>
+                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Paralellisierung/10_FlynnsTheory.html">
+                 10_FlynnsTheory
+                </a>
+               </li>
+               <li>
+                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/Paralellisierung/Quellen/SectionIndex_DocusInformatikProgrammierenGrundbegriffe-ProgrammierenParalellisierungQuellen.html">
+                 Quellen &gt;
+                </a>
+                <ul class="submenu dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
             </ul>
            </li>
            <li>
@@ -2893,66 +2936,6 @@ $(document).ready(function() {
                 </a>
                </li>
                <li>
-                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_OS/SectionIndex_DocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_OS.html">
-                 00_SystemProgramming_OS &gt;
-                </a>
-                <ul class="submenu dropdown-menu">
-                 <li>
-                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_OS/00_OS-Modul.html">
-                   00_OS-Modul
-                  </a>
-                 </li>
-                </ul>
-               </li>
-               <li>
-                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Platform/SectionIndex_DocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_Platform.html">
-                 00_SystemProgramming_Platform &gt;
-                </a>
-                <ul class="submenu dropdown-menu">
-                 <li>
-                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Platform/00_PlatformModul.html">
-                   00_PlatformModul
-                  </a>
-                 </li>
-                </ul>
-               </li>
-               <li>
-                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_SHUTIL/SectionIndex_DocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_SHUTIL.html">
-                 00_SystemProgramming_SHUTIL &gt;
-                </a>
-                <ul class="submenu dropdown-menu">
-                 <li>
-                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_SHUTIL/00_OS-Modul.html">
-                   00_OS-Modul
-                  </a>
-                 </li>
-                </ul>
-               </li>
-               <li>
-                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Subprocesses/SectionIndex_DocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_Subprocesses.html">
-                 00_SystemProgramming_Subprocesses &gt;
-                </a>
-                <ul class="submenu dropdown-menu">
-                 <li>
-                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Subprocesses/00_Subprocesses.html">
-                   00_Subprocesses
-                  </a>
-                 </li>
-                </ul>
-               </li>
-               <li>
-                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_SYS/SectionIndex_DocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_SYS.html">
-                 00_SystemProgramming_SYS &gt;
-                </a>
-                <ul class="submenu dropdown-menu">
-                 <li>
-                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_SYS/00_SYS-Modul.html">
-                   00_SYS-Modul
-                  </a>
-                 </li>
-                </ul>
-               </li>
-               <li>
                 <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Threading/SectionIndex_DocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_Threading.html">
                  00_SystemProgramming_Threading &gt;
                 </a>
@@ -2960,6 +2943,38 @@ $(document).ready(function() {
                  <li>
                   <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Threading/00_SYS-Threading.html">
                    00_SYS-Threading
+                  </a>
+                 </li>
+                </ul>
+               </li>
+               <li>
+                <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_System_Programming/SectionIndex_DocusInformatikProgrammierenPython10_Bibliotheken00_System_Programming.html">
+                 00_System_Programming &gt;
+                </a>
+                <ul class="submenu dropdown-menu">
+                 <li>
+                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_System_Programming/00_OS-Modul.html">
+                   00_OS-Modul
+                  </a>
+                 </li>
+                 <li>
+                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_System_Programming/00_PlatformModul.html">
+                   00_PlatformModul
+                  </a>
+                 </li>
+                 <li>
+                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_System_Programming/00_SHUTIL-Modul.html">
+                   00_SHUTIL-Modul
+                  </a>
+                 </li>
+                 <li>
+                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_System_Programming/00_Subprocesses.html">
+                   00_Subprocesses
+                  </a>
+                 </li>
+                 <li>
+                  <a class="dropdown-item" href="/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_System_Programming/00_SYS-Modul.html">
+                   00_SYS-Modul
                   </a>
                  </li>
                 </ul>
@@ -4296,6 +4311,11 @@ $(document).ready(function() {
           </a>
          </li>
          <li>
+          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/110_Uploader.html">
+           110_Uploader
+          </a>
+         </li>
+         <li>
           <a class="dropdown-item" href="/Projekte/00_Doc-Tool/20_CreateSectionFiles.html">
            20_CreateSectionFiles
           </a>
@@ -4502,24 +4522,66 @@ $(document).ready(function() {
                 </a>
                 <ul class="submenu dropdown-menu">
                  <li>
-                  <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocus.html">
+                  <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/new/SectionIndex_Projekte00_Doc-ToolSUCHE-Experimentalindexerindexerdocnew.html">
+                   new &gt;
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                  </ul>
+                 </li>
+                 <li>
+                  <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/verwandlung/SectionIndex_Projekte00_Doc-ToolSUCHE-Experimentalindexerindexerdocverwandlung.html">
+                   verwandlung &gt;
+                  </a>
+                  <ul class="submenu dropdown-menu">
+                  </ul>
+                 </li>
+                </ul>
+               </li>
+               <li>
+                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/lib/SectionIndex_Projekte00_Doc-ToolSUCHE-Experimentalindexerindexerlib.html">
+                 lib &gt;
+                </a>
+                <ul class="submenu dropdown-menu">
+                </ul>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+           <li>
+            <a class="dropdown-item" href="nan">
+             indexerOld &gt;
+            </a>
+            <ul class="submenu dropdown-menu">
+             <li>
+              <a class="dropdown-item" href="nan">
+               indexer &gt;
+              </a>
+              <ul class="submenu dropdown-menu">
+               <li>
+                <a class="dropdown-item" href="nan">
+                 doc &gt;
+                </a>
+                <ul class="submenu dropdown-menu">
+                 <li>
+                  <a class="dropdown-item" href="nan">
                    Docus &gt;
                   </a>
                   <ul class="submenu dropdown-menu">
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Auszeichnnungssprachen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusAuszeichnnungssprachen.html">
+                    <a class="dropdown-item" href="nan">
                      Auszeichnnungssprachen &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Auszeichnnungssprachen/Latex/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusAuszeichnnungssprachenLatex.html">
+                      <a class="dropdown-item" href="nan">
                        Latex &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Auszeichnnungssprachen/Markdown/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusAuszeichnnungssprachenMarkdown.html">
+                      <a class="dropdown-item" href="nan">
                        Markdown &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
@@ -4528,22 +4590,22 @@ $(document).ready(function() {
                     </ul>
                    </li>
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScience.html">
+                    <a class="dropdown-item" href="nan">
                      DataScience &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist.html">
+                      <a class="dropdown-item" href="nan">
                        Checklist &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/01_BigPicture/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist01_BigPicture.html">
+                        <a class="dropdown-item" href="nan">
                          01_BigPicture &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/01_BigPicture/xx_Template/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist01_BigPicturexx_Template.html">
+                          <a class="dropdown-item" href="nan">
                            xx_Template &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
@@ -4552,49 +4614,49 @@ $(document).ready(function() {
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/02_GetTheData/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist02_GetTheData.html">
+                        <a class="dropdown-item" href="nan">
                          02_GetTheData &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/03_Exploration/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist03_Exploration.html">
+                        <a class="dropdown-item" href="nan">
                          03_Exploration &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/04_Preparation/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist04_Preparation.html">
+                        <a class="dropdown-item" href="nan">
                          04_Preparation &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/05_Short-ListPromissingModels/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist05_Short-ListPromissingModels.html">
+                        <a class="dropdown-item" href="nan">
                          05_Short-ListPromissingModels &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/06_FineTune/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist06_FineTune.html">
+                        <a class="dropdown-item" href="nan">
                          06_FineTune &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/07_Present/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist07_Present.html">
+                        <a class="dropdown-item" href="nan">
                          07_Present &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Checklist/08_Launch/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceChecklist08_Launch.html">
+                        <a class="dropdown-item" href="nan">
                          08_Launch &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -4603,17 +4665,17 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxis.html">
+                      <a class="dropdown-item" href="nan">
                        Praxis &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Beispiel-Projekte-handsonml/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisBeispiel-Projekte-handsonml.html">
+                        <a class="dropdown-item" href="nan">
                          Beispiel-Projekte-handsonml &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Beispiel-Projekte-handsonml/01_the_machine_learning_landscape_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisBeispiel-Projekte-handsonml01_the_machine_learning_landscape_files.html">
+                          <a class="dropdown-item" href="nan">
                            01_the_machine_learning_landscape_files &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
@@ -4622,43 +4684,43 @@ $(document).ready(function() {
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation.html">
+                        <a class="dropdown-item" href="nan">
                          Klassifikation &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification.html">
+                          <a class="dropdown-item" href="nan">
                            00_Binary_Classification &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification00_IRIS.html">
+                            <a class="dropdown-item" href="nan">
                              00_IRIS &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/20_IRIS_Data_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification00_IRIS20_IRIS_Data_files.html">
+                              <a class="dropdown-item" href="nan">
                                20_IRIS_Data_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/30_IRIS_EDA_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification00_IRIS30_IRIS_EDA_files.html">
+                              <a class="dropdown-item" href="nan">
                                30_IRIS_EDA_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/50_IRISBinary_Modeling_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification00_IRIS50_IRISBinary_Modeling_files.html">
+                              <a class="dropdown-item" href="nan">
                                50_IRISBinary_Modeling_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/00_IRIS/pipe_tools/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification00_IRISpipe_tools.html">
+                              <a class="dropdown-item" href="nan">
                                pipe_tools &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -4667,26 +4729,26 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/25_Titanic/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification25_Titanic.html">
+                            <a class="dropdown-item" href="nan">
                              25_Titanic &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/25_Titanic/30_Titanic_EDA_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification25_Titanic30_Titanic_EDA_files.html">
+                              <a class="dropdown-item" href="nan">
                                30_Titanic_EDA_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/25_Titanic/50_Titanic_Binary_Modeling_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification25_Titanic50_Titanic_Binary_Modeling_files.html">
+                              <a class="dropdown-item" href="nan">
                                50_Titanic_Binary_Modeling_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/25_Titanic/pipe_tools/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification25_Titanicpipe_tools.html">
+                              <a class="dropdown-item" href="nan">
                                pipe_tools &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -4695,12 +4757,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/50_MNIST/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification50_MNIST.html">
+                            <a class="dropdown-item" href="nan">
                              50_MNIST &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/00_Binary_Classification/50_MNIST/50_MNISTBinary_Modeling_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation00_Binary_Classification50_MNIST50_MNISTBinary_Modeling_files.html">
+                              <a class="dropdown-item" href="nan">
                                50_MNISTBinary_Modeling_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -4711,50 +4773,50 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_Classification.html">
+                          <a class="dropdown-item" href="nan">
                            50_Multiclass_Classification &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHION.html">
+                            <a class="dropdown-item" href="nan">
                              MNIST-FASHION &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/20_MNIST_Data_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHION20_MNIST_Data_files.html">
+                              <a class="dropdown-item" href="nan">
                                20_MNIST_Data_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/30_MNIST_EDA_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHION30_MNIST_EDA_files.html">
+                              <a class="dropdown-item" href="nan">
                                30_MNIST_EDA_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/60_MNIST_MultiOuputClassification_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHION60_MNIST_MultiOuputClassification_files.html">
+                              <a class="dropdown-item" href="nan">
                                60_MNIST_MultiOuputClassification_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/999_ExerciseMNIST_Millinger_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHION999_ExerciseMNIST_Millinger_files.html">
+                              <a class="dropdown-item" href="nan">
                                999_ExerciseMNIST_Millinger_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/backup/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHIONbackup.html">
+                              <a class="dropdown-item" href="nan">
                                backup &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/backup/Orginal-MNIST-Kopie_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHIONbackupOrginal-MNIST-Kopie_files.html">
+                                <a class="dropdown-item" href="nan">
                                  Orginal-MNIST-Kopie_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -4763,7 +4825,7 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST-FASHION/Orginal-MNIST_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST-FASHIONOrginal-MNIST_files.html">
+                              <a class="dropdown-item" href="nan">
                                Orginal-MNIST_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -4772,45 +4834,45 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOML.html">
+                            <a class="dropdown-item" href="nan">
                              MNIST_HOML &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/20_MNIST_Data_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOML20_MNIST_Data_files.html">
+                              <a class="dropdown-item" href="nan">
                                20_MNIST_Data_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/30_MNIST_EDA_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOML30_MNIST_EDA_files.html">
+                              <a class="dropdown-item" href="nan">
                                30_MNIST_EDA_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/60_MNIST_MultiOuputClassification_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOML60_MNIST_MultiOuputClassification_files.html">
+                              <a class="dropdown-item" href="nan">
                                60_MNIST_MultiOuputClassification_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/999_ExerciseMNIST_Millinger_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOML999_ExerciseMNIST_Millinger_files.html">
+                              <a class="dropdown-item" href="nan">
                                999_ExerciseMNIST_Millinger_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/backup/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOMLbackup.html">
+                              <a class="dropdown-item" href="nan">
                                backup &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/backup/Orginal-MNIST-Kopie_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOMLbackupOrginal-MNIST-Kopie_files.html">
+                                <a class="dropdown-item" href="nan">
                                  Orginal-MNIST-Kopie_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -4819,7 +4881,7 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Klassifikation/50_Multiclass_Classification/MNIST_HOML/Orginal-MNIST_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisKlassifikation50_Multiclass_ClassificationMNIST_HOMLOrginal-MNIST_files.html">
+                              <a class="dropdown-item" href="nan">
                                Orginal-MNIST_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -4832,45 +4894,45 @@ $(document).ready(function() {
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisRegression.html">
+                        <a class="dropdown-item" href="nan">
                          Regression &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisRegression50_HOML-California-Housing-Prices.html">
+                          <a class="dropdown-item" href="nan">
                            50_HOML-California-Housing-Prices &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/02_Califronia_Housing_Data_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisRegression50_HOML-California-Housing-Prices02_Califronia_Housing_Data_files.html">
+                            <a class="dropdown-item" href="nan">
                              02_Califronia_Housing_Data_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/03_Califronia_Housing_EDA_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisRegression50_HOML-California-Housing-Prices03_Califronia_Housing_EDA_files.html">
+                            <a class="dropdown-item" href="nan">
                              03_Califronia_Housing_EDA_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/04_Califronia_Housing_DataPreprocessing_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisRegression50_HOML-California-Housing-Prices04_Califronia_Housing_DataPreprocessing_files.html">
+                            <a class="dropdown-item" href="nan">
                              04_Califronia_Housing_DataPreprocessing_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/05_Califronia_Housing_Modeling_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisRegression50_HOML-California-Housing-Prices05_Califronia_Housing_Modeling_files.html">
+                            <a class="dropdown-item" href="nan">
                              05_Califronia_Housing_Modeling_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Praxis/Regression/50_HOML-California-Housing-Prices/pipe_tools/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataSciencePraxisRegression50_HOML-California-Housing-Pricespipe_tools.html">
+                            <a class="dropdown-item" href="nan">
                              pipe_tools &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -4883,81 +4945,81 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Quellen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceQuellen.html">
+                      <a class="dropdown-item" href="nan">
                        Quellen &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorie.html">
+                      <a class="dropdown-item" href="nan">
                        Theorie &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen.html">
+                        <a class="dropdown-item" href="nan">
                          Algorithmen &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning.html">
+                          <a class="dropdown-item" href="nan">
                            100_Deep-Learning &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/10_DL-Basics/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning10_DL-Basics.html">
+                            <a class="dropdown-item" href="nan">
                              10_DL-Basics &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/15_Keras/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning15_Keras.html">
+                            <a class="dropdown-item" href="nan">
                              15_Keras &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow.html">
+                            <a class="dropdown-item" href="nan">
                              20_Tensorflow &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/100_Deployment/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow100_Deployment.html">
+                              <a class="dropdown-item" href="nan">
                                100_Deployment &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/10_Basic-Implementation/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow10_Basic-Implementation.html">
+                              <a class="dropdown-item" href="nan">
                                10_Basic-Implementation &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/10_Basic-Implementation/10_Perceptron_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow10_Basic-Implementation10_Perceptron_files.html">
+                                <a class="dropdown-item" href="nan">
                                  10_Perceptron_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
                                 </ul>
                                </li>
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/10_Basic-Implementation/50_ImageClassifier_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow10_Basic-Implementation50_ImageClassifier_files.html">
+                                <a class="dropdown-item" href="nan">
                                  50_ImageClassifier_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
                                 </ul>
                                </li>
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/10_Basic-Implementation/55_Regression_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow10_Basic-Implementation55_Regression_files.html">
+                                <a class="dropdown-item" href="nan">
                                  55_Regression_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
                                 </ul>
                                </li>
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/10_Basic-Implementation/XXBU_neural_nets_with_keras_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow10_Basic-ImplementationXXBU_neural_nets_with_keras_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_neural_nets_with_keras_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -4966,12 +5028,12 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/20_TrainingDL/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow20_TrainingDL.html">
+                              <a class="dropdown-item" href="nan">
                                20_TrainingDL &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/20_TrainingDL/XXBU_training_deep_neural_networks_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow20_TrainingDLXXBU_training_deep_neural_networks_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_training_deep_neural_networks_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -4980,12 +5042,12 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/30_CustomModells/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow30_CustomModells.html">
+                              <a class="dropdown-item" href="nan">
                                30_CustomModells &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/30_CustomModells/XXBU_custom_models_and_training_with_tensorflow_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow30_CustomModellsXXBU_custom_models_and_training_with_tensorflow_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_custom_models_and_training_with_tensorflow_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -4994,19 +5056,19 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/40_LoadindAndPreprocessingWithTF/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow40_LoadindAndPreprocessingWithTF.html">
+                              <a class="dropdown-item" href="nan">
                                40_LoadindAndPreprocessingWithTF &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/50_CNN/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow50_CNN.html">
+                              <a class="dropdown-item" href="nan">
                                50_CNN &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/50_CNN/XXBU_deep_computer_vision_with_cnns_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow50_CNNXXBU_deep_computer_vision_with_cnns_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_deep_computer_vision_with_cnns_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -5015,12 +5077,12 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/60_RNN_CNN/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow60_RNN_CNN.html">
+                              <a class="dropdown-item" href="nan">
                                60_RNN_CNN &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/60_RNN_CNN/XXBU_processing_sequences_using_rnns_and_cnns_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow60_RNN_CNNXXBU_processing_sequences_using_rnns_and_cnns_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_processing_sequences_using_rnns_and_cnns_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -5029,12 +5091,12 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/70_NLP/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow70_NLP.html">
+                              <a class="dropdown-item" href="nan">
                                70_NLP &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/70_NLP/XXBU_nlp_with_rnns_and_attention_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow70_NLPXXBU_nlp_with_rnns_and_attention_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_nlp_with_rnns_and_attention_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -5043,12 +5105,12 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/80_Learning/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow80_Learning.html">
+                              <a class="dropdown-item" href="nan">
                                80_Learning &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/80_Learning/XXBU_autoencoders_and_gans_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow80_LearningXXBU_autoencoders_and_gans_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_autoencoders_and_gans_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -5057,12 +5119,12 @@ $(document).ready(function() {
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/90_RFL/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow90_RFL.html">
+                              <a class="dropdown-item" href="nan">
                                90_RFL &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                                <li>
-                                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_Deep-Learning/20_Tensorflow/90_RFL/XXBU_reinforcement_learning_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_Deep-Learning20_Tensorflow90_RFLXXBU_reinforcement_learning_files.html">
+                                <a class="dropdown-item" href="nan">
                                  XXBU_reinforcement_learning_files &gt;
                                 </a>
                                 <ul class="submenu dropdown-menu">
@@ -5075,52 +5137,52 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/100_OptimizationALgorithms/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen100_OptimizationALgorithms.html">
+                          <a class="dropdown-item" href="nan">
                            100_OptimizationALgorithms &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression.html">
+                          <a class="dropdown-item" href="nan">
                            10_Regression &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/01_Basic-Idea-Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression01_Basic-Idea-Regression.html">
+                            <a class="dropdown-item" href="nan">
                              01_Basic-Idea-Regression &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/01_OLS/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression01_OLS.html">
+                            <a class="dropdown-item" href="nan">
                              01_OLS &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/02_RidgeRegression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression02_RidgeRegression.html">
+                            <a class="dropdown-item" href="nan">
                              02_RidgeRegression &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/04_LassoRegression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression04_LassoRegression.html">
+                            <a class="dropdown-item" href="nan">
                              04_LassoRegression &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/05_PolynominaleRegression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression05_PolynominaleRegression.html">
+                            <a class="dropdown-item" href="nan">
                              05_PolynominaleRegression &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/05_PolynominaleRegression/10_PolynoimnalRegression_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression05_PolynominaleRegression10_PolynoimnalRegression_files.html">
+                              <a class="dropdown-item" href="nan">
                                10_PolynoimnalRegression_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5129,68 +5191,68 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/06_ElasticNet/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression06_ElasticNet.html">
+                            <a class="dropdown-item" href="nan">
                              06_ElasticNet &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/100_NN/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression100_NN.html">
+                            <a class="dropdown-item" href="nan">
                              100_NN &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/10_DecisionTree-Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression10_DecisionTree-Regression.html">
+                            <a class="dropdown-item" href="nan">
                              10_DecisionTree-Regression &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/20_RandomForrest-Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression20_RandomForrest-Regression.html">
+                            <a class="dropdown-item" href="nan">
                              20_RandomForrest-Regression &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/30_SVM/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression30_SVM.html">
+                            <a class="dropdown-item" href="nan">
                              30_SVM &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/40_StochasticGradientDescent/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_Regression40_StochasticGradientDescent.html">
+                            <a class="dropdown-item" href="nan">
                              40_StochasticGradientDescent &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/Jupyter-notebooks-Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_RegressionJupyter-notebooks-Regression.html">
+                            <a class="dropdown-item" href="nan">
                              Jupyter-notebooks-Regression &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/Jupyter-notebooks-Regression/Basic-CreateLinearRegressionDataSet_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_RegressionJupyter-notebooks-RegressionBasic-CreateLinearRegressionDataSet_files.html">
+                              <a class="dropdown-item" href="nan">
                                Basic-CreateLinearRegressionDataSet_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/Jupyter-notebooks-Regression/Basic-Regression_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_RegressionJupyter-notebooks-RegressionBasic-Regression_files.html">
+                              <a class="dropdown-item" href="nan">
                                Basic-Regression_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/10_Regression/Jupyter-notebooks-Regression/Data/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen10_RegressionJupyter-notebooks-RegressionData.html">
+                              <a class="dropdown-item" href="nan">
                                Data &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5201,24 +5263,24 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification.html">
+                          <a class="dropdown-item" href="nan">
                            20_Classification &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/00_Binary_Classification/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification00_Binary_Classification.html">
+                            <a class="dropdown-item" href="nan">
                              00_Binary_Classification &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/00_Binary_Classification/00_Basic_Idea_Binary_Classification/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification00_Binary_Classification00_Basic_Idea_Binary_Classification.html">
+                              <a class="dropdown-item" href="nan">
                                00_Basic_Idea_Binary_Classification &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/00_Binary_Classification/30_Stochastic_Gradient_Descent/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification00_Binary_Classification30_Stochastic_Gradient_Descent.html">
+                              <a class="dropdown-item" href="nan">
                                30_Stochastic_Gradient_Descent &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5227,40 +5289,40 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/100_PerformanceMeasureClassification/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification100_PerformanceMeasureClassification.html">
+                            <a class="dropdown-item" href="nan">
                              100_PerformanceMeasureClassification &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/10_MulticlassClassification/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification10_MulticlassClassification.html">
+                            <a class="dropdown-item" href="nan">
                              10_MulticlassClassification &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/20_MultiLabelClassifcation/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification20_MultiLabelClassifcation.html">
+                            <a class="dropdown-item" href="nan">
                              20_MultiLabelClassifcation &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification50_Algorithms-Allgemein.html">
+                            <a class="dropdown-item" href="nan">
                              50_Algorithms-Allgemein &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/10_Logistic-Regression_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification50_Algorithms-Allgemein10_Logistic-Regression_files.html">
+                              <a class="dropdown-item" href="nan">
                                10_Logistic-Regression_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/20_Classification/50_Algorithms-Allgemein/20_SoftmaxRegression_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen20_Classification50_Algorithms-Allgemein20_SoftmaxRegression_files.html">
+                              <a class="dropdown-item" href="nan">
                                20_SoftmaxRegression_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5271,17 +5333,17 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmen.html">
+                          <a class="dropdown-item" href="nan">
                            30_HybrideAlgorithmen &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/DecisionTrees/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenDecisionTrees.html">
+                            <a class="dropdown-item" href="nan">
                              DecisionTrees &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/DecisionTrees/10_DecsionTrees_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenDecisionTrees10_DecsionTrees_files.html">
+                              <a class="dropdown-item" href="nan">
                                10_DecsionTrees_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5290,54 +5352,54 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM.html">
+                            <a class="dropdown-item" href="nan">
                              SVM &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/10_LinearSVM_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM10_LinearSVM_files.html">
+                              <a class="dropdown-item" href="nan">
                                10_LinearSVM_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/20_Non-Linear-SVM_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM20_Non-Linear-SVM_files.html">
+                              <a class="dropdown-item" href="nan">
                                20_Non-Linear-SVM_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/30_PolynominalKernel-Kopie_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM30_PolynominalKernel-Kopie_files.html">
+                              <a class="dropdown-item" href="nan">
                                30_PolynominalKernel-Kopie_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/30_PolynominalKernel_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM30_PolynominalKernel_files.html">
+                              <a class="dropdown-item" href="nan">
                                30_PolynominalKernel_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/40_AddingSimilarityFeature_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM40_AddingSimilarityFeature_files.html">
+                              <a class="dropdown-item" href="nan">
                                40_AddingSimilarityFeature_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/50_GausianRBF-KernelSVM-Kopie_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM50_GausianRBF-KernelSVM-Kopie_files.html">
+                              <a class="dropdown-item" href="nan">
                                50_GausianRBF-KernelSVM-Kopie_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/30_HybrideAlgorithmen/SVM/60_SVM-Regression_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen30_HybrideAlgorithmenSVM60_SVM-Regression_files.html">
+                              <a class="dropdown-item" href="nan">
                                60_SVM-Regression_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5348,12 +5410,12 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/999_Zusatzmaterila/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen999_Zusatzmaterila.html">
+                          <a class="dropdown-item" href="nan">
                            999_Zusatzmaterila &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Algorithmen/999_Zusatzmaterila/04_training_linear_models_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAlgorithmen999_Zusatzmaterila04_training_linear_models_files.html">
+                            <a class="dropdown-item" href="nan">
                              04_training_linear_models_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -5364,24 +5426,24 @@ $(document).ready(function() {
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/AnwendungenVonMachineLearning/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieAnwendungenVonMachineLearning.html">
+                        <a class="dropdown-item" href="nan">
                          AnwendungenVonMachineLearning &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen.html">
+                        <a class="dropdown-item" href="nan">
                          MathematischeGrundlagen &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen10_Daten.html">
+                          <a class="dropdown-item" href="nan">
                            10_Daten &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/10_Daten/60_BivariateDaten_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen10_Daten60_BivariateDaten_files.html">
+                            <a class="dropdown-item" href="nan">
                              60_BivariateDaten_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -5390,42 +5452,42 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/20_Wahrscheinlichkeiten/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen20_Wahrscheinlichkeiten.html">
+                          <a class="dropdown-item" href="nan">
                            20_Wahrscheinlichkeiten &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/30_Verteilungen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen30_Verteilungen.html">
+                          <a class="dropdown-item" href="nan">
                            30_Verteilungen &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/40_Statistik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen40_Statistik.html">
+                          <a class="dropdown-item" href="nan">
                            40_Statistik &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/50_Anova/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen50_Anova.html">
+                          <a class="dropdown-item" href="nan">
                            50_Anova &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/60_Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen60_Regression.html">
+                          <a class="dropdown-item" href="nan">
                            60_Regression &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/MathematischeGrundlagen/70_QuiQuadrat/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieMathematischeGrundlagen70_QuiQuadrat.html">
+                          <a class="dropdown-item" href="nan">
                            70_QuiQuadrat &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
@@ -5434,7 +5496,7 @@ $(document).ready(function() {
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/DataScience/Theorie/Visulaisierungen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusDataScienceTheorieVisulaisierungen.html">
+                        <a class="dropdown-item" href="nan">
                          Visulaisierungen &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -5445,19 +5507,19 @@ $(document).ready(function() {
                     </ul>
                    </li>
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Forschung/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusForschung.html">
+                    <a class="dropdown-item" href="nan">
                      Forschung &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Forschung/Forschungsmethoden/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusForschungForschungsmethoden.html">
+                      <a class="dropdown-item" href="nan">
                        Forschungsmethoden &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Forschung/WissenschaftlicheBasics/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusForschungWissenschaftlicheBasics.html">
+                      <a class="dropdown-item" href="nan">
                        WissenschaftlicheBasics &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
@@ -5466,12 +5528,12 @@ $(document).ready(function() {
                     </ul>
                    </li>
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Hardware/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusHardware.html">
+                    <a class="dropdown-item" href="nan">
                      Hardware &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Hardware/TP-Link/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusHardwareTP-Link.html">
+                      <a class="dropdown-item" href="nan">
                        TP-Link &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
@@ -5480,17 +5542,17 @@ $(document).ready(function() {
                     </ul>
                    </li>
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatik.html">
+                    <a class="dropdown-item" href="nan">
                      Informatik &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Grundbegriffe/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikGrundbegriffe.html">
+                      <a class="dropdown-item" href="nan">
                        Grundbegriffe &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Grundbegriffe/DateiFormate/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikGrundbegriffeDateiFormate.html">
+                        <a class="dropdown-item" href="nan">
                          DateiFormate &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -5499,12 +5561,12 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Hardware/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikHardware.html">
+                      <a class="dropdown-item" href="nan">
                        Hardware &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Hardware/TP-Link/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikHardwareTP-Link.html">
+                        <a class="dropdown-item" href="nan">
                          TP-Link &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -5513,54 +5575,54 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/IT-Management/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikIT-Management.html">
+                      <a class="dropdown-item" href="nan">
                        IT-Management &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Netzwerktechnik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikNetzwerktechnik.html">
+                      <a class="dropdown-item" href="nan">
                        Netzwerktechnik &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Netzwerktechnik/Ausstreckung/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikNetzwerktechnikAusstreckung.html">
+                        <a class="dropdown-item" href="nan">
                          Ausstreckung &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Netzwerktechnik/Hardware/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikNetzwerktechnikHardware.html">
+                        <a class="dropdown-item" href="nan">
                          Hardware &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Netzwerktechnik/Hardware-Netzwerktechnik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikNetzwerktechnikHardware-Netzwerktechnik.html">
+                        <a class="dropdown-item" href="nan">
                          Hardware-Netzwerktechnik &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Netzwerktechnik/Modelle/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikNetzwerktechnikModelle.html">
+                        <a class="dropdown-item" href="nan">
                          Modelle &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Netzwerktechnik/Protokolle/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikNetzwerktechnikProtokolle.html">
+                        <a class="dropdown-item" href="nan">
                          Protokolle &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Netzwerktechnik/Topologien/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikNetzwerktechnikTopologien.html">
+                        <a class="dropdown-item" href="nan">
                          Topologien &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -5569,36 +5631,36 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Informatik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-Informatik.html">
+                      <a class="dropdown-item" href="nan">
                        Operating-Informatik &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Informatik/Hardware/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-InformatikHardware.html">
+                        <a class="dropdown-item" href="nan">
                          Hardware &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Informatik/Theorie/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-InformatikTheorie.html">
+                        <a class="dropdown-item" href="nan">
                          Theorie &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Informatik/Windows/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-InformatikWindows.html">
+                        <a class="dropdown-item" href="nan">
                          Windows &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Informatik/Windows/Tools/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-InformatikWindowsTools.html">
+                          <a class="dropdown-item" href="nan">
                            Tools &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Informatik/Windows/Tools/PC-WELTHotKeys/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-InformatikWindowsToolsPC-WELTHotKeys.html">
+                            <a class="dropdown-item" href="nan">
                              PC-WELTHotKeys &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -5611,12 +5673,12 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Systeme/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-Systeme.html">
+                      <a class="dropdown-item" href="nan">
                        Operating-Systeme &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Operating-Systeme/Windows/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikOperating-SystemeWindows.html">
+                        <a class="dropdown-item" href="nan">
                          Windows &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -5625,36 +5687,36 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammieren.html">
+                      <a class="dropdown-item" href="nan">
                        Programmieren &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Grundbegriffe-Programmieren/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenGrundbegriffe-Programmieren.html">
+                        <a class="dropdown-item" href="nan">
                          Grundbegriffe-Programmieren &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython.html">
+                        <a class="dropdown-item" href="nan">
                          Python &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/00_HelloWorld/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython00_HelloWorld.html">
+                          <a class="dropdown-item" href="nan">
                            00_HelloWorld &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/05_Basics/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython05_Basics.html">
+                          <a class="dropdown-item" href="nan">
                            05_Basics &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/05_Basics/07-EingebauteFunktionen_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython05_Basics07-EingebauteFunktionen_files.html">
+                            <a class="dropdown-item" href="nan">
                              07-EingebauteFunktionen_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -5663,59 +5725,59 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken.html">
+                          <a class="dropdown-item" href="nan">
                            10_Bibliotheken &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_OS/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_OS.html">
+                            <a class="dropdown-item" href="nan">
                              00_SystemProgramming_OS &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Platform/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_Platform.html">
+                            <a class="dropdown-item" href="nan">
                              00_SystemProgramming_Platform &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_SHUTIL/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_SHUTIL.html">
+                            <a class="dropdown-item" href="nan">
                              00_SystemProgramming_SHUTIL &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Subprocesses/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_Subprocesses.html">
+                            <a class="dropdown-item" href="nan">
                              00_SystemProgramming_Subprocesses &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_SYS/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_SYS.html">
+                            <a class="dropdown-item" href="nan">
                              00_SystemProgramming_SYS &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/00_SystemProgramming_Threading/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken00_SystemProgramming_Threading.html">
+                            <a class="dropdown-item" href="nan">
                              00_SystemProgramming_Threading &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/110_Seaborn/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken110_Seaborn.html">
+                            <a class="dropdown-item" href="nan">
                              110_Seaborn &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/110_Seaborn/Packet_Visualisierung_Seaborn_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken110_SeabornPacket_Visualisierung_Seaborn_files.html">
+                              <a class="dropdown-item" href="nan">
                                Packet_Visualisierung_Seaborn_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5724,61 +5786,61 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/120_Plotly/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken120_Plotly.html">
+                            <a class="dropdown-item" href="nan">
                              120_Plotly &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/500_Sharpoint/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken500_Sharpoint.html">
+                            <a class="dropdown-item" href="nan">
                              500_Sharpoint &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/510_GeoCode/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken510_GeoCode.html">
+                            <a class="dropdown-item" href="nan">
                              510_GeoCode &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/520_Selenium/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken520_Selenium.html">
+                            <a class="dropdown-item" href="nan">
                              520_Selenium &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/520_Selenium/01_InstallationSlenium_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken520_Selenium01_InstallationSlenium_files.html">
+                              <a class="dropdown-item" href="nan">
                                01_InstallationSlenium_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/520_Selenium/02_Selenium-Basic-Interaction_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken520_Selenium02_Selenium-Basic-Interaction_files.html">
+                              <a class="dropdown-item" href="nan">
                                02_Selenium-Basic-Interaction_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/520_Selenium/03_SeleniumUnittest_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken520_Selenium03_SeleniumUnittest_files.html">
+                              <a class="dropdown-item" href="nan">
                                03_SeleniumUnittest_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/520_Selenium/04_Selenium_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken520_Selenium04_Selenium_files.html">
+                              <a class="dropdown-item" href="nan">
                                04_Selenium_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/520_Selenium/WebDriver/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_Bibliotheken520_SeleniumWebDriver.html">
+                              <a class="dropdown-item" href="nan">
                                WebDriver &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5787,12 +5849,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Matplotlib/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenMatplotlib.html">
+                            <a class="dropdown-item" href="nan">
                              Matplotlib &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Matplotlib/Matplotlib_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenMatplotlibMatplotlib_files.html">
+                              <a class="dropdown-item" href="nan">
                                Matplotlib_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5801,12 +5863,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Numpy/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenNumpy.html">
+                            <a class="dropdown-item" href="nan">
                              Numpy &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Numpy/Data/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenNumpyData.html">
+                              <a class="dropdown-item" href="nan">
                                Data &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5815,12 +5877,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Pandas/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenPandas.html">
+                            <a class="dropdown-item" href="nan">
                              Pandas &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Pandas/Packet_Visualisierung_Pandas_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenPandasPacket_Visualisierung_Pandas_files.html">
+                              <a class="dropdown-item" href="nan">
                                Packet_Visualisierung_Pandas_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5829,47 +5891,47 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Scapy/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenScapy.html">
+                            <a class="dropdown-item" href="nan">
                              Scapy &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSelenium.html">
+                            <a class="dropdown-item" href="nan">
                              Selenium &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/01_InstallationSlenium_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSelenium01_InstallationSlenium_files.html">
+                              <a class="dropdown-item" href="nan">
                                01_InstallationSlenium_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/02_Selenium-Basic-Interaction_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSelenium02_Selenium-Basic-Interaction_files.html">
+                              <a class="dropdown-item" href="nan">
                                02_Selenium-Basic-Interaction_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/03_SeleniumUnittest_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSelenium03_SeleniumUnittest_files.html">
+                              <a class="dropdown-item" href="nan">
                                03_SeleniumUnittest_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/04_Selenium_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSelenium04_Selenium_files.html">
+                              <a class="dropdown-item" href="nan">
                                04_Selenium_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Selenium/WebDriver/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSeleniumWebDriver.html">
+                              <a class="dropdown-item" href="nan">
                                WebDriver &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5878,19 +5940,19 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/SK-Learn/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSK-Learn.html">
+                            <a class="dropdown-item" href="nan">
                              SK-Learn &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/SK-Learn/Packet_ML_SK-Learn_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSK-LearnPacket_ML_SK-Learn_files.html">
+                              <a class="dropdown-item" href="nan">
                                Packet_ML_SK-Learn_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/SK-Learn/SK-Learn_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSK-LearnSK-Learn_files.html">
+                              <a class="dropdown-item" href="nan">
                                SK-Learn_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5899,7 +5961,7 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/10_Bibliotheken/Sockets/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPython10_BibliothekenSockets.html">
+                            <a class="dropdown-item" href="nan">
                              Sockets &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -5908,59 +5970,59 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungen.html">
+                          <a class="dropdown-item" href="nan">
                            Lösungen &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/30_DatenFirstCheck_NA-WerteSichten_Duplikate_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungen30_DatenFirstCheck_NA-WerteSichten_Duplikate_files.html">
+                            <a class="dropdown-item" href="nan">
                              30_DatenFirstCheck_NA-WerteSichten_Duplikate_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/40_DataTrainTestSplit_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungen40_DataTrainTestSplit_files.html">
+                            <a class="dropdown-item" href="nan">
                              40_DataTrainTestSplit_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/50_DataCleaningNA-Werte_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungen50_DataCleaningNA-Werte_files.html">
+                            <a class="dropdown-item" href="nan">
                              50_DataCleaningNA-Werte_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungensklearn-pipelines.html">
+                            <a class="dropdown-item" href="nan">
                              sklearn-pipelines &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/10_Basic-Idea-one-Step_Data-Pipeline_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungensklearn-pipelines10_Basic-Idea-one-Step_Data-Pipeline_files.html">
+                              <a class="dropdown-item" href="nan">
                                10_Basic-Idea-one-Step_Data-Pipeline_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/20_Data-Pipeline_MediumAusbau_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungensklearn-pipelines20_Data-Pipeline_MediumAusbau_files.html">
+                              <a class="dropdown-item" href="nan">
                                20_Data-Pipeline_MediumAusbau_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/30_BSP-Kohlegger_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungensklearn-pipelines30_BSP-Kohlegger_files.html">
+                              <a class="dropdown-item" href="nan">
                                30_BSP-Kohlegger_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/Lösungen/sklearn-pipelines/pipe_tools/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonLösungensklearn-pipelinespipe_tools.html">
+                              <a class="dropdown-item" href="nan">
                                pipe_tools &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -5971,7 +6033,7 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Programmieren/Python/PyhonInteraktion/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikProgrammierenPythonPyhonInteraktion.html">
+                          <a class="dropdown-item" href="nan">
                            PyhonInteraktion &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
@@ -5982,69 +6044,69 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Software/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikSoftware.html">
+                      <a class="dropdown-item" href="nan">
                        Software &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikTools.html">
+                      <a class="dropdown-item" href="nan">
                        Tools &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/CloudStorage/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsCloudStorage.html">
+                        <a class="dropdown-item" href="nan">
                          CloudStorage &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentation.html">
+                        <a class="dropdown-item" href="nan">
                          Dokumentation &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/Gimp/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationGimp.html">
+                          <a class="dropdown-item" href="nan">
                            Gimp &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/Git/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationGit.html">
+                          <a class="dropdown-item" href="nan">
                            Git &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/Git/00_Git_Basics/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationGit00_Git_Basics.html">
+                            <a class="dropdown-item" href="nan">
                              00_Git_Basics &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/Git/10_Git_Branches/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationGit10_Git_Branches.html">
+                            <a class="dropdown-item" href="nan">
                              10_Git_Branches &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/Git/Git_CheatSheetsPDF/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationGitGit_CheatSheetsPDF.html">
+                            <a class="dropdown-item" href="nan">
                              Git_CheatSheetsPDF &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/Git/Udemy-Course/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationGitUdemy-Course.html">
+                            <a class="dropdown-item" href="nan">
                              Udemy-Course &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/Git/Udemy-Course/01_Linux_Crashkurs/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationGitUdemy-Course01_Linux_Crashkurs.html">
+                              <a class="dropdown-item" href="nan">
                                01_Linux_Crashkurs &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6055,7 +6117,7 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Tools/Dokumentation/VS-Code/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikToolsDokumentationVS-Code.html">
+                          <a class="dropdown-item" href="nan">
                            VS-Code &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
@@ -6066,47 +6128,47 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Web-Development/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikWeb-Development.html">
+                      <a class="dropdown-item" href="nan">
                        Web-Development &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Web-Development/CSS/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikWeb-DevelopmentCSS.html">
+                        <a class="dropdown-item" href="nan">
                          CSS &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Web-Development/Grundbegriffe-Webentwicklung/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikWeb-DevelopmentGrundbegriffe-Webentwicklung.html">
+                        <a class="dropdown-item" href="nan">
                          Grundbegriffe-Webentwicklung &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Web-Development/HTML/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikWeb-DevelopmentHTML.html">
+                        <a class="dropdown-item" href="nan">
                          HTML &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Web-Development/JavaScript/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikWeb-DevelopmentJavaScript.html">
+                        <a class="dropdown-item" href="nan">
                          JavaScript &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Web-Development/Paralax/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikWeb-DevelopmentParalax.html">
+                        <a class="dropdown-item" href="nan">
                          Paralax &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                         </ul>
                        </li>
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Informatik/Web-Development/StaticWebsiteGeneratoren/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusInformatikWeb-DevelopmentStaticWebsiteGeneratoren.html">
+                        <a class="dropdown-item" href="nan">
                          StaticWebsiteGeneratoren &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -6117,48 +6179,48 @@ $(document).ready(function() {
                     </ul>
                    </li>
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMathe.html">
+                    <a class="dropdown-item" href="nan">
                      Mathe &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Logik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheLogik.html">
+                      <a class="dropdown-item" href="nan">
                        Logik &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Regression/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheRegression.html">
+                      <a class="dropdown-item" href="nan">
                        Regression &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastik.html">
+                      <a class="dropdown-item" href="nan">
                        Stochastik &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistik.html">
+                        <a class="dropdown-item" href="nan">
                          Statistik &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Basics/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikBasics.html">
+                          <a class="dropdown-item" href="nan">
                            Basics &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Korrelationen/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikKorrelationen.html">
+                          <a class="dropdown-item" href="nan">
                            Korrelationen &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Korrelationen/EDA_5_Correlations_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikKorrelationenEDA_5_Correlations_files.html">
+                            <a class="dropdown-item" href="nan">
                              EDA_5_Correlations_files &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -6167,17 +6229,17 @@ $(document).ready(function() {
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-Projects.html">
+                          <a class="dropdown-item" href="nan">
                            Sample-Projects &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Advertisment/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsAdvertisment.html">
+                            <a class="dropdown-item" href="nan">
                              Advertisment &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Advertisment/Advvertisment_SimpleRegression_WalkThrough_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsAdvertismentAdvvertisment_SimpleRegression_WalkThrough_files.html">
+                              <a class="dropdown-item" href="nan">
                                Advvertisment_SimpleRegression_WalkThrough_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6186,12 +6248,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Boston-Housing/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsBoston-Housing.html">
+                            <a class="dropdown-item" href="nan">
                              Boston-Housing &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Boston-Housing/Boston-QuickAndDirtyImplementierung_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsBoston-HousingBoston-QuickAndDirtyImplementierung_files.html">
+                              <a class="dropdown-item" href="nan">
                                Boston-QuickAndDirtyImplementierung_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6200,12 +6262,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Chrun/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsChrun.html">
+                            <a class="dropdown-item" href="nan">
                              Chrun &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Chrun/Chrun-Supervised-Binary-Classification_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsChrunChrun-Supervised-Binary-Classification_files.html">
+                              <a class="dropdown-item" href="nan">
                                Chrun-Supervised-Binary-Classification_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6214,12 +6276,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Clustering-Shopping-Data/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsClustering-Shopping-Data.html">
+                            <a class="dropdown-item" href="nan">
                              Clustering-Shopping-Data &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Clustering-Shopping-Data/Shoping-Data-Clustering_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsClustering-Shopping-DataShoping-Data-Clustering_files.html">
+                              <a class="dropdown-item" href="nan">
                                Shoping-Data-Clustering_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6228,12 +6290,12 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Iris/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsIris.html">
+                            <a class="dropdown-item" href="nan">
                              Iris &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/Iris/Iris-WorkThrough_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsIrisIris-WorkThrough_files.html">
+                              <a class="dropdown-item" href="nan">
                                Iris-WorkThrough_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6242,19 +6304,19 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/ISLR/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsISLR.html">
+                            <a class="dropdown-item" href="nan">
                              ISLR &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/ISLR/00_ISLR_Advertisment_LinearRegression_files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsISLR00_ISLR_Advertisment_LinearRegression_files.html">
+                              <a class="dropdown-item" href="nan">
                                00_ISLR_Advertisment_LinearRegression_files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
                               </ul>
                              </li>
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Docus/Mathe/Stochastik/Statistik/Sample-Projects/ISLR/10_ISLR_Income__files/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocDocusMatheStochastikStatistikSample-ProjectsISLR10_ISLR_Income__files.html">
+                              <a class="dropdown-item" href="nan">
                                10_ISLR_Income__files &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6273,58 +6335,58 @@ $(document).ready(function() {
                   </ul>
                  </li>
                  <li>
-                  <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte.html">
+                  <a class="dropdown-item" href="nan">
                    Projekte &gt;
                   </a>
                   <ul class="submenu dropdown-menu">
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-Tool.html">
+                    <a class="dropdown-item" href="nan">
                      00_Doc-Tool &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/Bash-Script/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolBash-Script.html">
+                      <a class="dropdown-item" href="nan">
                        Bash-Script &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/Ideen-Container/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolIdeen-Container.html">
+                      <a class="dropdown-item" href="nan">
                        Ideen-Container &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/Legacy/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolLegacy.html">
+                      <a class="dropdown-item" href="nan">
                        Legacy &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/SUCHE-Experimental/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolSUCHE-Experimental.html">
+                      <a class="dropdown-item" href="nan">
                        SUCHE-Experimental &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolSUCHE-Experimentalindexer.html">
+                        <a class="dropdown-item" href="nan">
                          indexer &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolSUCHE-Experimentalindexerindexer.html">
+                          <a class="dropdown-item" href="nan">
                            indexer &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolSUCHE-Experimentalindexerindexerdoc.html">
+                            <a class="dropdown-item" href="nan">
                              doc &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
                              <li>
-                              <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/verwandlung/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolSUCHE-Experimentalindexerindexerdocverwandlung.html">
+                              <a class="dropdown-item" href="nan">
                                verwandlung &gt;
                               </a>
                               <ul class="submenu dropdown-menu">
@@ -6333,7 +6395,7 @@ $(document).ready(function() {
                             </ul>
                            </li>
                            <li>
-                            <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/lib/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolSUCHE-Experimentalindexerindexerlib.html">
+                            <a class="dropdown-item" href="nan">
                              lib &gt;
                             </a>
                             <ul class="submenu dropdown-menu">
@@ -6346,12 +6408,12 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/TestWebsite/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolTestWebsite.html">
+                      <a class="dropdown-item" href="nan">
                        TestWebsite &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/TestWebsite/lokal/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolTestWebsitelokal.html">
+                        <a class="dropdown-item" href="nan">
                          lokal &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
@@ -6360,24 +6422,24 @@ $(document).ready(function() {
                       </ul>
                      </li>
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/WebComponents/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolWebComponents.html">
+                      <a class="dropdown-item" href="nan">
                        WebComponents &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
                        <li>
-                        <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/WebComponents/static/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolWebComponentsstatic.html">
+                        <a class="dropdown-item" href="nan">
                          static &gt;
                         </a>
                         <ul class="submenu dropdown-menu">
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/WebComponents/static/css/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolWebComponentsstaticcss.html">
+                          <a class="dropdown-item" href="nan">
                            css &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
                           </ul>
                          </li>
                          <li>
-                          <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/00_Doc-Tool/WebComponents/static/js/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte00_Doc-ToolWebComponentsstaticjs.html">
+                          <a class="dropdown-item" href="nan">
                            js &gt;
                           </a>
                           <ul class="submenu dropdown-menu">
@@ -6390,12 +6452,12 @@ $(document).ready(function() {
                     </ul>
                    </li>
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/10_Konzeptionelles-Programmieren/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte10_Konzeptionelles-Programmieren.html">
+                    <a class="dropdown-item" href="nan">
                      10_Konzeptionelles-Programmieren &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/10_Konzeptionelles-Programmieren/Ideen-Container/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekte10_Konzeptionelles-ProgrammierenIdeen-Container.html">
+                      <a class="dropdown-item" href="nan">
                        Ideen-Container &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
@@ -6404,12 +6466,12 @@ $(document).ready(function() {
                     </ul>
                    </li>
                    <li>
-                    <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/Home-Network/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekteHome-Network.html">
+                    <a class="dropdown-item" href="nan">
                      Home-Network &gt;
                     </a>
                     <ul class="submenu dropdown-menu">
                      <li>
-                      <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/doc/Projekte/Home-Network/TP-Link/SectionIndex_Projekte00_Doc-ToolSUCHE-ExperimentalindexerindexerdocProjekteHome-NetworkTP-Link.html">
+                      <a class="dropdown-item" href="nan">
                        TP-Link &gt;
                       </a>
                       <ul class="submenu dropdown-menu">
@@ -6443,7 +6505,7 @@ $(document).ready(function() {
                 </ul>
                </li>
                <li>
-                <a class="dropdown-item" href="/Projekte/00_Doc-Tool/SUCHE-Experimental/indexer/indexer/lib/SectionIndex_Projekte00_Doc-ToolSUCHE-Experimentalindexerindexerlib.html">
+                <a class="dropdown-item" href="nan">
                  lib &gt;
                 </a>
                 <ul class="submenu dropdown-menu">
@@ -6545,12 +6607,6 @@ $(document).ready(function() {
       </ul>
      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-     <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="search"/>
-     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-      Search
-     </button>
-    </form>
    </div>
   </nav>
  
@@ -6567,7 +6623,27 @@ $(document).ready(function() {
         <div id="asideBreadCrump">Page-ID: 11032021-DoctoolCreateInfoFile50 
         <hr>
          
-        
+        <hr>
+		 <div id="searchDiv">
+		<h3 class="widgettitle">Suche</h3>
+		<div id="search">
+		   <!-- <form onsubmit="Verifie(searchForm);return false" name="searchForm" class="searchForm">
+								  <div><input id="textToSearch" name="textToSearch" type="search" placeholder="Search" class="searchText" tabindex="1" /> &nbsp; <input onclick="Verifie(searchForm)" type="button" class="searchButton" value="Go" id="doSearch" tabindex="1" /></div>
+							   </form> -->
+
+		  <form onsubmit="Verifie(searchForm);window.location.href='/searchresult.html';return false" name="searchForm" class="searchForm">
+			<div>
+			<input id="textToSearch" name="textToSearch" type="search" placeholder="Suchbegriff..." class="searchText" tabindex="1" /> &nbsp;
+			<input onclick="Verifie(searchForm)" type="button" class="searchButton" value="Suche" id="doSearch" tabindex="1" />
+
+			<!-- <input onclick="Verifie(searchForm);window.location.href='searchresult.html'" type="button" class="searchButton" value="Suche" id="doSearch" tabindex="1" /> -->
+			</div>
+			</form>
+		  </div>
+		  <p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Such-Hervorhebung (An/Aus)</a></p>
+							<!--<p class="searchHighlight"><a href="#" onclick="toggleHighlight()">Search Highlighter (On/Off)</a></p>-->
+		</div>
+		
         </div>
         <div id=“content_idx“>
 			<div id="article">
@@ -6705,537 +6781,549 @@ $(document).ready(function() {
     <span class="p">)</span> 
 </code></pre></div>
 
- <pre><code id="answerBlock">1/527
-2/527
-3/527
-4/527
-5/527
-6/527
-7/527
-8/527
-9/527
-10/527
-11/527
-12/527
-13/527
-14/527
-15/527
-16/527
-17/527
-18/527
-19/527
-20/527
-21/527
-22/527
-23/527
-24/527
-25/527
-26/527
-27/527
-28/527
-29/527
-30/527
-31/527
-32/527
-33/527
-34/527
-35/527
-36/527
-37/527
-38/527
-39/527
-40/527
-41/527
-42/527
-43/527
-44/527
-45/527
-46/527
-47/527
-48/527
-49/527
-50/527
-51/527
-52/527
-53/527
-54/527
-55/527
-56/527
-57/527
-58/527
-59/527
-60/527
-61/527
-62/527
-63/527
-64/527
-65/527
-66/527
-67/527
-68/527
-69/527
-70/527
-71/527
-72/527
-73/527
-74/527
-75/527
-76/527
-77/527
-78/527
-79/527
-80/527
-81/527
-82/527
-83/527
-84/527
-85/527
-86/527
-87/527
-88/527
-89/527
-90/527
-91/527
-92/527
-93/527
-94/527
-95/527
-96/527
-97/527
-98/527
-99/527
-100/527
-101/527
-102/527
-103/527
-104/527
-105/527
-106/527
-107/527
-108/527
-109/527
-110/527
-111/527
-112/527
-113/527
-114/527
-115/527
-116/527
-117/527
-118/527
-119/527
-120/527
-121/527
-122/527
-123/527
-124/527
-125/527
-126/527
-127/527
-128/527
-129/527
-130/527
-131/527
-132/527
-133/527
-134/527
-135/527
-136/527
-137/527
-138/527
-139/527
-140/527
-141/527
-142/527
-143/527
-144/527
-145/527
-146/527
-147/527
-148/527
-149/527
-150/527
-151/527
-152/527
-153/527
-154/527
-155/527
-156/527
-157/527
-158/527
-159/527
-160/527
-161/527
-162/527
-163/527
-164/527
-165/527
-166/527
-167/527
-168/527
-169/527
-170/527
-171/527
-172/527
-173/527
-174/527
-175/527
-176/527
-177/527
-178/527
-179/527
-180/527
-181/527
-182/527
-183/527
-184/527
-185/527
-186/527
-187/527
-188/527
-189/527
-190/527
-191/527
-192/527
-193/527
-194/527
-195/527
-196/527
-197/527
-198/527
-199/527
-200/527
-201/527
-202/527
-203/527
-204/527
-205/527
-206/527
-207/527
-208/527
-209/527
-210/527
-211/527
-212/527
-213/527
-214/527
-215/527
-216/527
-217/527
-218/527
-219/527
-220/527
-221/527
-222/527
-223/527
-224/527
-225/527
-226/527
-227/527
-228/527
-229/527
-230/527
-231/527
-232/527
-233/527
-234/527
-235/527
-236/527
-237/527
-238/527
-239/527
-240/527
-241/527
-242/527
-243/527
-244/527
-245/527
-246/527
-247/527
-248/527
-249/527
-250/527
-251/527
-252/527
-253/527
-254/527
-255/527
-256/527
-257/527
-258/527
-259/527
-260/527
-261/527
-262/527
-263/527
-264/527
-265/527
-266/527
-267/527
-268/527
-269/527
-270/527
-271/527
-272/527
-273/527
-274/527
-275/527
-276/527
-277/527
-278/527
-279/527
-280/527
-281/527
-282/527
-283/527
-284/527
-285/527
-286/527
-287/527
-288/527
-289/527
-290/527
-291/527
-292/527
-293/527
-294/527
-295/527
-296/527
-297/527
-298/527
-299/527
-300/527
-301/527
-302/527
-303/527
-304/527
-305/527
-306/527
-307/527
-308/527
-309/527
-310/527
-311/527
-312/527
-313/527
-314/527
-315/527
-316/527
-317/527
-318/527
-319/527
-320/527
-321/527
-322/527
-323/527
-324/527
-325/527
-326/527
-327/527
-328/527
-329/527
-330/527
-331/527
-332/527
-333/527
-334/527
-335/527
-336/527
-337/527
-338/527
-339/527
-340/527
-341/527
-342/527
-343/527
-344/527
-345/527
-346/527
-347/527
-348/527
-349/527
-350/527
-351/527
-352/527
-353/527
-354/527
-355/527
-356/527
-357/527
-358/527
-359/527
-360/527
-361/527
-362/527
-363/527
-364/527
-365/527
-366/527
-367/527
-368/527
-369/527
-370/527
-371/527
-372/527
-373/527
-374/527
-375/527
-376/527
-377/527
-378/527
-379/527
-380/527
-381/527
-382/527
-383/527
-384/527
-385/527
-386/527
-387/527
-388/527
-389/527
-390/527
-391/527
-392/527
-393/527
-394/527
-395/527
-396/527
-397/527
-398/527
-399/527
-400/527
-401/527
-402/527
-403/527
-404/527
-405/527
-406/527
-407/527
-408/527
-409/527
-410/527
-411/527
-412/527
-413/527
-414/527
-415/527
-416/527
-417/527
-418/527
-419/527
-420/527
-421/527
-422/527
-423/527
-424/527
-425/527
-426/527
-427/527
-428/527
-429/527
-430/527
-431/527
-432/527
-433/527
-434/527
-435/527
-436/527
-437/527
-438/527
-439/527
-440/527
-441/527
-442/527
-443/527
-444/527
-445/527
-446/527
-447/527
-448/527
-449/527
-450/527
-451/527
-452/527
-453/527
-454/527
-455/527
-456/527
-457/527
-458/527
-459/527
-460/527
-461/527
-462/527
-463/527
-464/527
-465/527
-466/527
-467/527
-468/527
-469/527
-470/527
-471/527
-472/527
-473/527
-474/527
-475/527
-476/527
-477/527
-478/527
-479/527
-480/527
-481/527
-482/527
-483/527
-484/527
-485/527
-486/527
-487/527
-488/527
-489/527
-490/527
-491/527
-492/527
-493/527
-494/527
-495/527
-496/527
-497/527
-498/527
-499/527
-500/527
-501/527
-502/527
-503/527
-504/527
-505/527
-506/527
-507/527
-508/527
-509/527
-510/527
-511/527
-512/527
-513/527
-514/527
-515/527
-516/527
-517/527
-518/527
-519/527
-520/527
-521/527
-522/527
-523/527
-524/527
-525/527
-526/527
-527/527
+ <pre><code id="answerBlock">1/532
+2/532
+3/532
+4/532
+5/532
+6/532
+7/532
+8/532
+9/532
+10/532
+11/532
+12/532
+13/532
+14/532
+15/532
+16/532
+17/532
+18/532
+19/532
+20/532
+21/532
+22/532
+23/532
+24/532
+25/532
+26/532
+27/532
+28/532
+29/532
+30/532
+31/532
+32/532
+33/532
+34/532
+35/532
+36/532
+37/532
+38/532
+39/532
+40/532
+41/532
+42/532
+43/532
+44/532
+45/532
+46/532
+47/532
+48/532
+49/532
+50/532
+51/532
+52/532
+53/532
+54/532
+55/532
+56/532
+57/532
+58/532
+59/532
+60/532
+61/532
+62/532
+63/532
+64/532
+65/532
+66/532
+67/532
+68/532
+69/532
+70/532
+71/532
+72/532
+73/532
+74/532
+75/532
+76/532
+77/532
+78/532
+79/532
+80/532
+81/532
+82/532
+83/532
+84/532
+85/532
+86/532
+87/532
+88/532
+89/532
+90/532
+91/532
+92/532
+93/532
+94/532
+95/532
+96/532
+97/532
+98/532
+99/532
+100/532
+101/532
+102/532
+103/532
+104/532
+105/532
+106/532
+107/532
+108/532
+109/532
+110/532
+111/532
+112/532
+113/532
+114/532
+115/532
+116/532
+117/532
+118/532
+119/532
+120/532
+121/532
+122/532
+123/532
+124/532
+125/532
+126/532
+127/532
+128/532
+129/532
+130/532
+131/532
+132/532
+133/532
+134/532
+135/532
+136/532
+137/532
+138/532
+139/532
+140/532
+141/532
+142/532
+143/532
+144/532
+145/532
+146/532
+147/532
+148/532
+149/532
+150/532
+151/532
+152/532
+153/532
+154/532
+155/532
+156/532
+157/532
+158/532
+159/532
+160/532
+161/532
+162/532
+163/532
+164/532
+165/532
+166/532
+167/532
+168/532
+169/532
+170/532
+171/532
+172/532
+173/532
+174/532
+175/532
+176/532
+177/532
+178/532
+179/532
+180/532
+181/532
+182/532
+183/532
+184/532
+185/532
+186/532
+187/532
+188/532
+189/532
+190/532
+191/532
+192/532
+193/532
+194/532
+195/532
+196/532
+197/532
+198/532
+199/532
+200/532
+201/532
+202/532
+203/532
+204/532
+205/532
+206/532
+207/532
+208/532
+209/532
+210/532
+211/532
+212/532
+213/532
+214/532
+215/532
+216/532
+217/532
+218/532
+219/532
+220/532
+221/532
+222/532
+223/532
+224/532
+225/532
+226/532
+227/532
+228/532
+229/532
+230/532
+231/532
+232/532
+233/532
+234/532
+235/532
+236/532
+237/532
+238/532
+239/532
+240/532
+241/532
+242/532
+243/532
+244/532
+245/532
+246/532
+247/532
+248/532
+249/532
+250/532
+251/532
+252/532
+253/532
+254/532
+255/532
+256/532
+257/532
+258/532
+259/532
+260/532
+261/532
+262/532
+263/532
+264/532
+265/532
+266/532
+267/532
+268/532
+269/532
+270/532
+271/532
+272/532
+273/532
+274/532
+275/532
+276/532
+277/532
+278/532
+279/532
+280/532
+281/532
+282/532
+283/532
+284/532
+285/532
+286/532
+287/532
+288/532
+289/532
+290/532
+291/532
+292/532
+293/532
+294/532
+295/532
+296/532
+297/532
+298/532
+299/532
+300/532
+301/532
+302/532
+303/532
+304/532
+305/532
+306/532
+307/532
+308/532
+309/532
+310/532
+311/532
+312/532
+313/532
+314/532
+315/532
+316/532
+317/532
+318/532
+319/532
+320/532
+321/532
+322/532
+323/532
+324/532
+325/532
+326/532
+327/532
+328/532
+329/532
+330/532
+331/532
+332/532
+333/532
+334/532
+335/532
+336/532
+337/532
+338/532
+339/532
+340/532
+341/532
+342/532
+343/532
+344/532
+345/532
+346/532
+347/532
+348/532
+349/532
+350/532
+351/532
+352/532
+353/532
+354/532
+355/532
+356/532
+357/532
+358/532
+359/532
+360/532
+361/532
+362/532
+363/532
+364/532
+365/532
+366/532
+367/532
+368/532
+369/532
+370/532
+371/532
+372/532
+373/532
+374/532
+375/532
+376/532
+377/532
+378/532
+379/532
+380/532
+381/532
+382/532
+383/532
+384/532
+385/532
+386/532
+387/532
+388/532
+389/532
+390/532
+391/532
+392/532
+393/532
+394/532
+395/532
+396/532
+397/532
+398/532
+399/532
+400/532
+401/532
+402/532
+403/532
+404/532
+405/532
+406/532
+407/532
+408/532
+409/532
+410/532
+411/532
+412/532
+413/532
+414/532
+415/532
+416/532
+417/532
+418/532
+419/532
+420/532
+421/532
+422/532
+423/532
+424/532
+425/532
+426/532
+427/532
+428/532
+429/532
+430/532
+431/532
+432/532
+433/532
+434/532
+435/532
+436/532
+437/532
+438/532
+439/532
+440/532
+441/532
+442/532
+443/532
+444/532
+445/532
+446/532
+447/532
+448/532
+449/532
+450/532
+451/532
+452/532
+453/532
+454/532
+455/532
+456/532
+457/532
+458/532
+459/532
+460/532
+461/532
+462/532
+463/532
+464/532
+465/532
+466/532
+467/532
+468/532
+469/532
+470/532
+471/532
+472/532
+473/532
+474/532
+475/532
+476/532
+477/532
+478/532
+479/532
+480/532
+481/532
+482/532
+483/532
+484/532
+485/532
+486/532
+487/532
+488/532
+489/532
+490/532
+491/532
+492/532
+493/532
+494/532
+495/532
+496/532
+497/532
+498/532
+499/532
+500/532
+501/532
+502/532
+503/532
+504/532
+505/532
+506/532
+507/532
+508/532
+509/532
+510/532
+511/532
+512/532
+513/532
+514/532
+515/532
+516/532
+517/532
+518/532
+519/532
+520/532
+521/532
+522/532
+523/532
+524/532
+525/532
+526/532
+527/532
+528/532
+529/532
+530/532
+531/532
+532/532
 </code></pre>
 
-<div class="codehilite"><pre><span></span><code>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="c1"># datetime object containing current date and time</span>
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="n">dt_string</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y %H:%M:%S&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Letzte manuelle Ausführung =&quot;</span><span class="p">,</span> <span class="n">dt_string</span><span class="p">)</span>
 </code></pre></div>
+
+ <pre><code id="answerBlock">Letzte manuelle Ausführung = 16/03/2021 14:54:41
+</code></pre>
  
 			</div>
 		</div>
